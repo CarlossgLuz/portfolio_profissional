@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Carlos Gabriel | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/static/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="shortcut icon" href="/static/uploads/img/logo.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="page">
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="sidebar__top">
+        <div class="brand">
+          <div class="brand__logo">
+            <img src="/static/uploads/img/avatar.png" alt="Avatar" />
+          </div>
+          <div class="brand__info">
+            <span class="brand__name">Carlos Gabriel</span>
+            <span class="brand__role">Full Stack Developer</span>
+          </div>
+        </div>
+
+        <button class="sidebar__toggle" aria-label="Alternar navegação">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <nav class="nav">
+        <a href="#inicio" class="nav__link nav__link--active" data-scroll-to>Início</a>
+        <a href="#sobre" class="nav__link" data-scroll-to>Sobre</a>
+        <a href="#skills" class="nav__link" data-scroll-to>Skills</a>
+        <a href="#projetos" class="nav__link" data-scroll-to>Projetos</a>
+        <a href="#formacao" class="nav__link" data-scroll-to>Formação</a>
+        <a href="#certificacoes" class="nav__link" data-scroll-to>Certificações</a>
+        <a href="#contato" class="nav__link" data-scroll-to>Contato</a>
+      </nav>
+
+      <div class="sidebar__bottom">
+        <div class="sidebar__meta">
+          <span>Mauá - SP</span>
+          <span>18 anos</span>
+        </div>
+        <div class="sidebar__tags">
+          <span class="tag">Front-End</span>
+          <span class="tag">Back-End</span>
+          <span class="tag">Banco de Dados</span>
+          <span class="tag">Cloud</span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main">
+
+      <!-- HERO / INÍCIO -->
+      <section id="inicio" class="section section--hero reveal">
+        <div class="hero hero--banner">
+          <p class="hero__kicker">Desenvolvedor Full Stack</p>
+
+          <h1 class="hero__title">
+            CARLOS GABRIEL
+          </h1>
+
+          <p class="hero__subtitle">
+            Estudante de Desenvolvimento de Sistemas em busca da primeira oportunidade
+            de contriubir em uma equipe, aplicando conhecimentos em
+            <strong>Python, JavaScript, HTML/CSS, SQL, GCP, Azure e Power BI</strong>
+            em projetos reais.
+          </p>
+
+          <div class="hero__cta">
+            <a href="#contato" class="btn btn--primary">Entre em contato</a>
+            <a href="#projetos" class="btn btn--ghost">Ver projetos</a>
+          </div>
+
+          <div class="hero__meta">
+            <div class="hero__meta-item">
+              <span class="hero__meta-label">Linguagens</span>
+              <span class="hero__meta-value">Python · JavaScript · Java</span>
+            </div>
+            <div class="hero__meta-item">
+              <span class="hero__meta-label">Front-End</span>
+              <span class="hero__meta-value">HTML5 · CSS3 · JavaScript</span>
+            </div>
+            <div class="hero__meta-item">
+              <span class="hero__meta-label">Back-End e Bancos</span>
+              <span class="hero__meta-value">FastAPI · Flask · SQLite · MySQL</span>
+            </div>
+            <div class="hero__meta-item">
+              <span class="hero__meta-label">Cloud e DevOps</span>
+              <span class="hero__meta-value">GCP · Azure · Git · Github</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SOBRE -->
+      <section id="sobre" class="section reveal">
+        <header class="section__header">
+          <p class="section__eyebrow">Contexto</p>
+          <h2>Sobre</h2>
+          <p>Uma visão direta de quem eu sou e onde quero chegar.</p>
+        </header>
+
+        <div class="grid grid--2">
+          <article class="card card--glass">
+            <h3>Resumo profissional</h3>
+            <p>
+              Estudante técnico em <strong>Desenvolvimento de Sistemas (SENAI)</strong>
+              e <strong>Informática para Internet (Proz)</strong>, com base em
+              Desenvolvimento, Banco de Dados e Cloud.
+            </p>
+            <p>
+              Busco minha primeira oportunidade para evoluir em um ambiente profissional,
+              contribuindo com código limpo, curiosidade técnica e visão de produto.
+            </p>
+          </article>
+
+          <article class="card card--glass">
+            <h3>Como posso ajudar seu time</h3>
+            <ul class="list list--check">
+              <li>Transformar regras de negócio em interfaces e APIs simples.</li>
+              <li>Apoiar tarefas de manutenção, testes e documentação.</li>
+              <li>Aprender rápido o stack da empresa e processos internos.</li>
+              <li>Contribuir com dashboards em Power BI / Looker Studio.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section id="skills" class="section reveal">
+        <header class="section__header">
+          <p class="section__eyebrow">Competências</p>
+          <h2>Skills</h2>
+          <p>Stack técnico e competências que já coloco em prática.</p>
+        </header>
+
+        <div class="grid grid--3">
+          <article class="card">
+            <h3>Linguagens</h3>
+            <ul class="chips">
+              <li>Python</li>
+              <li>Java</li>
+              <li>JavaScript</li>
+              <li>SQL</li>
+            </ul>
+            <p class="card__note">
+              Foco em lógica, estruturas básicas e legibilidade de código.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Front-end</h3>
+            <ul class="chips">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+            </ul>
+            <p class="card__note">
+              Interfaces responsivas, semântica correta e atenção à experiência.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Cloud & Dados</h3>
+            <ul class="chips">
+              <li>GCP</li>
+              <li>Azure</li>
+              <li>Power BI</li>
+              <li>Looker Studio</li>
+            </ul>
+            <p class="card__note">
+              Conceitos de nuvem, dashboards e análise de dados básica.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Ferramentas e Métodos</h3>
+            <ul class="chips">
+              <li>Git / GitHub</li>
+              <li>Scrum</li>
+              <li>Kanban</li>
+              <li>Pacote Office</li>
+            </ul>
+            <p class="card__note">
+              Vivência com versionamento e rotinas ágeis em equipe.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Soft Skills</h3>
+            <ul class="list list--dot">
+              <li>Comprometimento com responsabilidades.</li>
+              <li>Bom relacionamento interpessoal.</li>
+              <li>Organização e pontualidade.</li>
+              <li>Comunicação clara.</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Idiomas</h3>
+            <ul class="chips">
+                <li>Inglês</li>
+            </ul>
+            <p class="card-note">
+                Inglês Intermediário, com foco em leitura de documentação técnica.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- PROJETOS -->
+      <section id="projetos" class="section reveal">
+        <header class="section__header">
+          <p class="section__eyebrow">Entrega</p>
+          <h2>Projetos</h2>
+          <p>Alguns exemplos de como eu aplico o que estudo.</p>
+        </header>
+
+        <div class="grid grid--3 projects-grid">
+          <!-- Projeto 1 -->
+          <article class="card project-card">
+            <a href="#" class="project-card__image-wrapper">
+              <img src="/static/uploads/img/projetos/dashboard.png" alt="Dashboard de dados em Power BI" class="project-card__image" />
+            </a>
+            <div class="project-card__body">
+              <h3>Dashboard Interativo</h3>
+              <p class="project-card__meta">Power BI · Dados · Visualização</p>
+              <p class="project-card__desc">
+                Painel interativo para acompanhamento de métricas, com foco em clareza
+                visual e leitura rápida de indicadores principais.
+              </p>
+              <div class="project-card__tags">
+                <span>Power BI</span>
+                <span>Modelagem com DAX</span>
+                <span>Gráficos Dinâmicos</span>
+                <span>Filtros Dinâmicos</span>
+              </div>
+              <a href="https://app.powerbi.com/view?r=eyJrIjoiYzBlMTFiN2YtZGZjMi00MzE4LWFiNDktZjZmNzg0ODU2YjQ4IiwidCI6ImIxMDUxYzRiLTNiOTQtNDFhYi05NDQxLWU3M2E3MjM0MmZkZCJ9&authuser=0" class="btn btn--ghost btn--project" data-project-link target="_blank">
+                Ver mais
+              </a>
+            </div>
+          </article>
+
+          <!-- Projeto 2 -->
+          <article class="card project-card">
+            <a href="#" class="project-card__image-wrapper">
+              <img src="/static/uploads/img/projetos/landing_page.png" alt="Landing page responsiva" class="project-card__image" />
+            </a>
+            <div class="project-card__body">
+              <h3>Landing Page Responsiva</h3>
+              <p class="project-card__meta">HTML · CSS · JavaScript</p>
+              <p class="project-card__desc">
+                Landing Page responsiva para a marca Aurion Nutrition. Projeto focado em UX/UI, usabilidade e micro-interações.
+              </p>
+              <div class="project-card__tags">
+                <span>Focado em UX/UI</span>
+                <span>JavaScript</span>
+                <span>Site Responsivo</span>
+                <span>Animações</span>
+                <span>Clean Code</span>
+              </div>
+              <a href="https://github.com/CarlossgLuz/aurion_landing_page" class="btn btn--ghost btn--project" data-project-link target="_blank">
+                Ver mais
+              </a>
+            </div>
+          </article>
+
+          <!-- Projeto 3 -->
+          <article class="card project-card">
+            <a href="#" class="project-card__image-wrapper">
+              <img src="/static/uploads/img/projetos/sistema_escolar.png" alt="API backend" class="project-card__image" />
+            </a>
+            <div class="project-card__body">
+              <h3>CRUD Sistema Escolar</h3>
+              <p class="project-card__meta">Python · SQLite</p>
+              <p class="project-card__desc">
+                Sistema Escolar completo com foco em arquitetura limpa, organização em camadas e persistência de dados usando SQLite.
+              </p>
+              <div class="project-card__tags">
+                <span>CRUD</span>
+                <span>CLI Interativo</span>
+                <span>Organização em Camadas</span>
+                <span>Validações</span>
+                <span>Clean Code</span>
+              </div>
+              <a href="https://github.com/CarlossgLuz/crud_sistema_escolar_sqlite" class="btn btn--ghost btn--project" data-project-link target="_blank">
+                Ver mais
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- FORMAÇÃO -->
+      <section id="formacao" class="section reveal">
+        <header class="section__header">
+          <p class="section__eyebrow">Base</p>
+          <h2>Formação</h2>
+          <p>Formações alinhadas à área de tecnologia.</p>
+        </header>
+
+        <div class="timeline">
+          <article class="timeline__item">
+            <div class="timeline__dot"></div>
+            <div class="timeline__content">
+              <h3>Curso Técnico em Desenvolvimento de Sistemas</h3>
+              <p class="timeline__meta">SENAI Francisco Matarazzo · 1200h · 2024 - 2026</p>
+            </div>
+          </article>
+
+          <article class="timeline__item">
+            <div class="timeline__dot"></div>
+            <div class="timeline__content">
+              <h3>Curso Técnico Integrado em Informática para Internet</h3>
+              <p class="timeline__meta">Proz Educação · 1200h · 2023 - 2024</p>
+            </div>
+          </article>
+
+          <article class="timeline__item">
+            <div class="timeline__dot"></div>
+            <div class="timeline__content">
+              <h3>Ensino Médio Completo</h3>
+              <p class="timeline__meta">E.E. Prof Mercedes V. Giannocario · 2022 - 2024</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- CERTIFICAÇÕES -->
+      <section id="certificacoes" class="section reveal">
+        <header class="section__header">
+          <p class="section__eyebrow">Validação</p>
+          <h2>Certificações & Badges</h2>
+          <p>Provas formais do que já estudei.</p>
+        </header>
+
+        <div class="grid grid--2">
+          <article class="card">
+            <h3>Certificações em destaque</h3>
+            <ul class="list list--dot">
+              <li>Scrum Foundation Professional Certification (SFPC)</li>
+              <li>Google Cloud Computing Foundations Certificate</li>
+              <li>Implementação de Serviços em Nuvem - Microsoft AZ-900</li>
+              <li>Fundamentos de Inteligência Artificial Generativa - Google Cloud</li>
+            </ul>
+            <br/>
+            <p class="card__note">
+              Além de outras formações em Programação, Cloud e Produtividade.
+            </p>
+          </article>
+
+          <article class="card card--link">
+            <h3>Ver todos os certificados</h3>
+            <p>Acesso completo às certificações e badges:</p>
+            <ul class="list list--link">
+              <li>
+                <a href="https://drive.google.com/drive/folders/1tqgqmkPdQKNs1aRKDJx9HC5pRPwwvDYn?usp=sharing" target="_blank" rel="noopener noreferrer">
+                  Pasta com certificados (Google Drive)
+                </a>
+              </li>
+              <li>
+                <a href="https://www.credly.com/users/carlos-gabriel.3078ca93" target="_blank" rel="noopener noreferrer">
+                  Badges no Credly
+                </a>
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- CONTATO -->
+      <section id="contato" class="section section--contact reveal">
+        <header class="section__header">
+          <p class="section__eyebrow">Próximo passo</p>
+          <h2>Contato</h2>
+          <p>Vamos conversar sobre como posso apoiar seu time.</p>
+        </header>
+
+        <div class="grid grid--2 grid--contact">
+          <article class="card">
+            <h3>Dados de contato</h3>
+            <ul class="contact-list">
+              <li>
+                <span class="contact-label">Telefone</span>
+                <a href="tel:+5511967622665">+55 (11) 96762-2665</a>
+              </li>
+              <li>
+                <span class="contact-label">E-mail</span>
+                <a href="mailto:carlosgabriel.contato2007@gmail.com">
+                  carlosgabriel.contato2007@gmail.com
+                </a>
+              </li>
+              <li>
+                <span class="contact-label">LinkedIn</span>
+                <a href="https://www.linkedin.com/in/carlos-gabriel-gomes-luz-0318862a0" target="_blank" rel="noopener noreferrer">
+                  /in/carlos-gabriel-gomes-luz-0318862a0
+                </a>
+              </li>
+              <li>
+                <span class="contact-label">GitHub</span>
+                <a href="https://github.com/CarlossgLuz" target="_blank" rel="noopener noreferrer">
+                  github.com/CarlossgLuz
+                </a>
+              </li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Mensagem rápida</h3>
+            <form class="contact-form" id="contact-form">
+              <div class="field">
+                <label for="nome">Nome</label>
+                <input id="nome" name="nome" type="text" placeholder="Seu nome" required />
+              </div>
+              <div class="field">
+                <label for="email">E-mail</label>
+                <input id="email" name="email" type="email" placeholder="seuemail@exemplo.com" required />
+              </div>
+              <div class="field">
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" rows="4" placeholder="Conte rapidamente o que você precisa." required></textarea>
+              </div>
+              <button type="submit" class="btn btn--primary">Enviar mensagem</button>
+              <p class="contact-form__hint">
+                Formulário demonstrativo. Conecte com seu backend ou serviço de e-mail para funcionar de fato.
+              </p>
+            </form>
+          </article>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <span>© <span id="year"></span> Carlos Gabriel. Todos os direitos reservados.</span>
+      </footer>
+    </main>
+
+    <!-- BOTÃO VOLTAR AO TOPO -->
+    <button class="back-to-top" aria-label="Voltar ao topo">
+      ↑
+    </button>
+  </div>
+
+  <script src="/static/js/script.js"></script>
+</body>
+</html>

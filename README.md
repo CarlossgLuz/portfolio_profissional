@@ -2,6 +2,8 @@
 
 > Portfolio pessoal desenvolvido para apresentar projetos, habilidades técnicas e experiência em desenvolvimento Web. Estruturado com foco em performance, responsividade, UI/UX moderno e código organizado. O projeto está em **evolução contínua** e receberá atualizações frequentes.
 
+➡️ LINK: https://carlosgabriel.netlify.app/ ⬅️
+
 ---
 
 ## Índice
@@ -62,21 +64,14 @@ index.html
 
 ### UI/UX
 - Layout limpo e responsivo  
-- Ajustes finos de espaçamento  
 - Organização por seções independentes  
 - Paleta suave com contraste adequado  
 - Botão de "Voltar ao Topo"  
 
 ### Responsividade
-- Correções específicas para mobile  
-- Redução de espaçamentos exagerados  
+- Tamanhos específicos para mobile    
 - Header completamente funcional em todas resoluções  
-- Menu hambúrguer revisado e ajustado  
-
-### Estrutura para Expansão
-- Suporte futuro para dark mode  
-- Possibilidade de integração com API  
-- Adição progressiva de novos projetos  
+- Menu hambúrguer
 
 ---
 
@@ -85,8 +80,7 @@ index.html
 - HTML5  
 - CSS3 (arquitetura modular)  
 - JavaScript ES6+  
-- Figma  
-- Netlify ou GitHub Pages  
+- Netlify
 
 ---
 
@@ -94,10 +88,10 @@ index.html
 
 ```bash
 # 1. Clone o repositório
-git clone https://github.com/SEU_USUARIO/portfolio-oficial.git
+git clone https://github.com/CarlossgLuz/portfolio_profissional.git
 
 # 2. Acesse o diretório
-cd portfolio-oficial
+cd portfolio_profissional
 
 # 3. Execute abrindo o arquivo principal
 open index.html
@@ -116,17 +110,12 @@ start index.html
 ```bash
 Portfolio Oficial/
 ├── index.html
-├── css/
-│   ├── global.css
-│   ├── hero.css
-│   ├── about.css
-│   ├── projects.css
-│   ├── contact.css
-│   └── responsive.css
-├── js/
-│   ├── main.js
-│   └── menu.js
-├── images/
+├── static/
+│  ├── css/
+│  │   └── style.css
+│  ├── js/
+│  │   ├── script.js
+│  ├── uploads\img
 └── README.md
 ```
 

@@ -1,0 +1,12 @@
+/* Responsive behavior preserved in a dedicated file for maintainability. */
+@media(max-width:820px){.npill{display:none}.ncta{display:none}.ham{display:flex}}
+@media(max-width:640px){.hsub{grid-template-columns:1fr;gap:1.6rem}}
+@media(max-width:720px){.agrid{grid-template-columns:1fr;gap:2.2rem}}
+@media(max-width:860px){.egrid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:860px){.ecard:nth-child(2){border-right:none}.ecard:nth-child(3){border-top:1px solid var(--border)}.ecard:nth-child(4){border-top:1px solid var(--border);border-right:none}}
+@media(max-width:440px){.egrid{grid-template-columns:1fr}}
+@media(max-width:440px){.ecard{border-right:none;border-top:1px solid var(--border)}.ecard:first-child{border-top:none}}
+@media(max-width:700px){.xlayout{grid-template-columns:1fr;gap:2rem}}
+@media(max-width:700px){.xmeta{position:static}}
+@media(max-width:600px){.pgrid{grid-template-columns:1fr}}
+@media(max-width:680px){.elayout{grid-template-columns:1fr;gap:3rem}}

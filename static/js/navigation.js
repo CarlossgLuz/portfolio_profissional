@@ -15,7 +15,7 @@ window.addEventListener(
 
 const ham = $("ham");
 const mob = $("mob");
-const links = mob.querySelectorAll("a");
+const links = mob.querySelectorAll("a[href^='#']");
 let isOpen = false;
 
 function setMenu(state) {
@@ -26,7 +26,10 @@ function setMenu(state) {
   document.body.style.overflow = isOpen ? "hidden" : "";
 
   if (isOpen) {
-    setTimeout(() => mob.querySelector("a").focus(), 50);
+    setTimeout(() => {
+      const firstFocusable = mob.querySelector("button, a");
+      if (firstFocusable) firstFocusable.focus();
+    }, 50);
   }
 }
 

@@ -1,16 +1,17 @@
-// Terminal intro kept isolated so the startup sequence stays readable.
+// Terminal intro keeps the original timing while reading the active locale strings.
 (async () => {
   const intro = $("intro");
   const cmdEl = $("tcmd");
   const carEl = $("tcar");
   const outEl = $("tout");
+  const pack = window.portfolioI18n.getPack();
   document.body.style.overflow = "hidden";
 
   await wait(160);
   intro.classList.add("active");
   await wait(400);
 
-  const cmd = 'node portfolio --init --author="carlos_gabriel"';
+  const cmd = pack.intro.command;
   for (const ch of cmd) {
     cmdEl.textContent += ch;
     await wait(32 + Math.random() * 18);
@@ -26,9 +27,9 @@
     outEl.appendChild(node);
   }
 
-  addLine('<span style="color:var(--dim)">  Initializing build environment...</span>');
+  addLine(`<span style="color:var(--dim)">  ${pack.intro.line1}</span>`);
   await wait(130);
-  addLine('<span style="color:var(--dim)">  Loading: react &middot; next &middot; typescript &middot; tailwind</span>');
+  addLine(`<span style="color:var(--dim)">  ${pack.intro.line2}</span>`);
   await wait(110);
 
   const row = document.createElement("div");
@@ -54,15 +55,15 @@
   });
 
   await wait(100);
-  addLine('<span style="color:#28CA41">  &#10004; Dependencies resolved</span>');
+  addLine(`<span style="color:#28CA41">  &#10004; ${pack.intro.resolved}</span>`);
   await wait(80);
-  addLine('<span style="color:var(--dim)">  Stack: web &middot; backend &middot; mobile &middot; infra &amp; cloud</span>');
+  addLine(`<span style="color:var(--dim)">  ${pack.intro.stack}</span>`);
   await wait(80);
-  addLine('<span style="color:var(--dim)">  Location: Sao Paulo &mdash; Brazil</span>');
+  addLine(`<span style="color:var(--dim)">  ${pack.intro.location}</span>`);
   await wait(80);
-  addLine('  Status: <span style="color:#28CA41">available for opportunities</span>');
+  addLine(`  ${pack.intro.statusLabel} <span style="color:#28CA41">${pack.intro.statusValue}</span>`);
   await wait(130);
-  addLine('<span style="color:var(--accent);font-weight:500">  &#9658; carlos_gabriel.portfolio() &mdash; ready</span>');
+  addLine(`<span style="color:var(--accent);font-weight:500">  &#9658; ${pack.intro.ready}</span>`);
   await wait(650);
 
   intro.classList.add("exit");

@@ -90,12 +90,14 @@ h1.hn{font-size:clamp(3.8rem,11vw,9rem);font-weight:800;line-height:.95;letter-s
 .citem{padding:1.1rem 0;border-top:1px solid var(--border);display:flex;gap:.85rem;align-items:center}
 .citem:last-child{border-bottom:1px solid var(--border)}
 .cbadge{width:32px;height:32px;flex-shrink:0;border-radius:5px;display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:.63rem;font-weight:500}
+.cbadge__icon{width:18px;height:18px;display:block}
 .cbadge.az{background:rgba(0,120,212,.12);color:#4DA6FF}
 .cbadge.gc{background:rgba(234,67,53,.1);color:#F28B82}
 .cbadge.ai{background:rgba(66,133,244,.1);color:#7BAAF7}
 .cbadge.sc{background:rgba(34,211,168,.1);color:var(--accent)}
 .cn{font-size:.87rem;font-weight:500;color:var(--bright);margin-bottom:.14rem}
 .ci{font-family:var(--mono);font-size:.66rem;color:var(--dim)}
+.edu-actions{display:flex;flex-wrap:wrap;gap:1.1rem;align-items:center;margin-top:1.4rem}
 
 #contact .wrap{text-align:center}
 .cpre{font-family:var(--mono);font-size:.7rem;letter-spacing:.18em;color:var(--accent);text-transform:uppercase;display:block;margin-bottom:1.1rem}
@@ -106,3 +108,4 @@ h1.hn{font-size:clamp(3.8rem,11vw,9rem);font-weight:800;line-height:.95;letter-s
 .cl2{font-family:var(--mono);font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--dim);text-decoration:none;display:flex;align-items:center;gap:.42rem;transition:color .22s}
 .cl2:hover{color:var(--bright)}
 .cl2 svg{width:14px;height:14px;flex-shrink:0}
+.cnote{max-width:58ch;margin:1.1rem auto 0;font-family:var(--mono);font-size:.54rem;line-height:1.8;letter-spacing:.015em;color:rgba(148,163,184,.46);text-wrap:balance}

@@ -7,7 +7,8 @@ window.addEventListener(
   () => {
     const top = document.documentElement.scrollTop;
     const height = document.documentElement.scrollHeight - window.innerHeight;
-    prog.style.width = `${(top / height) * 100}%`;
+    const progress = height > 0 ? (top / height) * 100 : 0;
+    prog.style.width = `${progress}%`;
     nav.classList.toggle("scrolled", window.scrollY > 50);
   },
   { passive: true }
@@ -41,6 +42,12 @@ document.addEventListener("keydown", (event) => {
   }
 });
 
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 820 && isOpen) {
+    setMenu(false);
+  }
+});
+
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", (event) => {
     const target = document.querySelector(anchor.getAttribute("href"));
@@ -53,3 +60,5 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     });
   });
 });
+
+nav.classList.toggle("scrolled", window.scrollY > 50);

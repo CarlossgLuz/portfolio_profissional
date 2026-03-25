@@ -8,47 +8,47 @@ const portfolioTranslations = {
       ogTitle: "Carlos Gabriel | Desenvolvedor de Sistemas, Web, Backend e Infra",
       ogDescription: "Web · Backend · Mobile · Infra & Cloud",
       ogLocale: "pt_BR",
-      ogImageAlt: "Portfolio de Carlos Gabriel com foco em web, backend, mobile e infraestrutura.",
+      ogImageAlt: "Portfólio de Carlos Gabriel com foco em web, backend, mobile e infraestrutura.",
     },
     aria: {
       progress: "Progresso de leitura",
-      loadingPortfolio: "Carregando portfolio",
+      loadingPortfolio: "Carregando portfólio",
       menu: "Menu",
       primaryNav: "Principal",
       openMenu: "Abrir menu",
-      presentation: "Apresentacao",
+      presentation: "Apresentação",
       externalLinks: "Links externos",
-      languageSelector: "Selecao de idioma",
+      languageSelector: "Seleção de idioma",
       phone: "Telefone",
-      resume: "Baixar curriculo",
+      resume: "Baixar currículo",
     },
     nav: {
       about: "Sobre",
-      skills: "Skills",
-      experience: "Experiencia",
+      skills: "Competências",
+      experience: "Experiência",
       projects: "Projetos",
       contact: "Contato",
     },
     cta: {
       projects: "Ver projetos",
       contact: "Falar comigo",
-      resume: "Baixar curriculo",
+      resume: "Baixar currículo",
       email: "Mandar e-mail",
       credly: "Ver badges no Credly",
     },
     hero: {
-      badge: "Desenvolvedor · Sao Paulo, SP",
+      badge: "Desenvolvedor · São Paulo, SP",
       description:
-        "Desenvolvedor com atuacao em <strong>web, backend, mobile</strong> e <strong>infraestrutura</strong>. Estagiario na Xmart Solutions &mdash; construindo software com atencao a produto, clareza arquitetural e confiabilidade operacional.",
-      scroll: "scroll",
-      stats: { areas: "Areas", repos: "Repos", certs: "Certs" },
+        "Desenvolvedor com atuação em <strong>web, backend, mobile</strong> e <strong>infraestrutura</strong>. Estagiário na Xmart Solutions &mdash; construindo software com atenção a produto, clareza arquitetural e confiabilidade operacional.",
+      scroll: "rolar",
+      stats: { areas: "Áreas", repos: "Repositórios", certs: "Certificações" },
     },
     about: {
       eye: "Sobre",
-      heading: "Tecnica solida.<br>Visao de <em>produto</em>.",
-      p1: "Tenho 18 anos, moro em Sao Paulo (SP) e estou construindo minha carreira com intencao. Nao sou o desenvolvedor que so escreve codigo &mdash; me interessa entender o sistema inteiro: a interface, o backend, a infraestrutura e como tudo se conecta para gerar valor real.",
-      p2: "Na <strong>Xmart Solutions</strong>, atuo com rotina pratica em ambientes virtualizados, monitoramento com Zabbix e Grafana, ajustes em interfaces web e suporte a operacoes de infraestrutura. Um ambiente que me forca a pensar alem do codigo.",
-      p3: "Curso <strong>Analise e Desenvolvimento de Sistemas na Impacta</strong> e mantenho projetos proprios &mdash; do frontend responsivo ao app mobile com persistencia local. Ingles intermediario, foco em documentacao tecnica.",
+      heading: "Técnica sólida.<br>Visão de <em>produto</em>.",
+      p1: "Tenho 18 anos, moro em São Paulo (SP) e estou construindo minha carreira com intenção. Não sou o desenvolvedor que só escreve código &mdash; me interessa entender o sistema inteiro: a interface, o backend, a infraestrutura e como tudo se conecta para gerar valor real.",
+      p2: "Na <strong>Xmart Solutions</strong>, atuo com rotina prática em ambientes virtualizados, monitoramento com Zabbix e Grafana, ajustes em interfaces web e suporte a operações de infraestrutura. Um ambiente que me força a pensar além do código.",
+      p3: "Curso <strong>Análise e Desenvolvimento de Sistemas na Impacta</strong> e mantenho projetos próprios &mdash; do frontend responsivo ao app mobile com persistência local. Inglês intermediário, foco em documentação técnica.",
       tags: {
         frontend: "Frontend",
         backend: "Backend",
@@ -59,7 +59,7 @@ const portfolioTranslations = {
       },
     },
     expertise: {
-      eye: "Stack &amp; Competencias",
+      eye: "Stack &amp; Competências",
       cards: {
         frontend: {
           title: "Frontend &amp; Web",
@@ -92,64 +92,64 @@ const portfolioTranslations = {
       },
     },
     experience: {
-      eye: "Experiencia",
+      eye: "Experiência",
       period: "2024 &mdash; Presente",
-      location: "Sao Paulo, SP<br>Estagio · Dev de Sistemas",
-      role: "Estagiario de Desenvolvimento de Sistemas",
+      location: "São Paulo, SP<br>Estágio · Dev de Sistemas",
+      role: "Estagiário de Desenvolvimento de Sistemas",
       items: [
-        "Suporte tecnico e troubleshooting com foco em resolucao rapida e estabilidade de ambiente",
-        "Apoio a administracao de ambientes virtualizados com Proxmox",
-        "Implementacao e evolucao de monitoramento com Zabbix e Grafana",
-        "Ajustes e melhorias em paginas e interfaces web em producao",
-        "Organizacao e gestao de credenciais com SysPass",
-        "Registros e evidencias de operacoes em AWS S3",
+        "Suporte técnico e troubleshooting com foco em resolução rápida e estabilidade de ambiente",
+        "Apoio à administração de ambientes virtualizados com Proxmox",
+        "Implementação e evolução de monitoramento com Zabbix e Grafana",
+        "Ajustes e melhorias em páginas e interfaces web em produção",
+        "Organização e gestão de credenciais com SysPass",
+        "Registros e evidências de operações em AWS S3",
       ],
     },
     projects: {
       eye: "Projetos",
-      heading: "Codigo com proposito,<br>entrega com criterio.",
-      description: "Projetos que demonstram o que faco na pratica &mdash; do frontend ao backend e mobile.",
+      heading: "Código com propósito,<br>entrega com critério.",
+      description: "Projetos que demonstram o que faço na prática &mdash; do frontend ao backend e mobile.",
       cards: {
         one: {
-          label: "01 · Producao",
+          label: "01 · Produção",
           description:
-            "Landing multilingue com internacionalizacao via next-intl. Animacoes com Framer Motion e deploy em producao na Vercel para distribuicao do APK do projeto Clarium.",
+            "Landing multilíngue com internacionalização via next-intl. Animações com Framer Motion e deploy em produção na Vercel para distribuição do APK do projeto Clarium.",
           link: "clarium.vercel.app",
         },
         two: {
           label: "02 · Mobile",
           description:
-            "App mobile para controle financeiro. Expo Router, TypeScript e persistencia local com SQLite &mdash; arquitetura offline-first sem dependencia de servidor.",
-          link: "Ver repositorio",
+            "App mobile para controle financeiro. Expo Router, TypeScript e persistência local com SQLite &mdash; arquitetura offline-first sem dependência de servidor.",
+          link: "Ver repositório",
         },
         three: {
           label: "03 · Backend",
           description:
-            "Sistema completo em Python com SQLite. Arquitetura em camadas, CRUD, validacoes de entrada e CLI interativo. Separacao clara de responsabilidades e codigo limpo.",
+            "Sistema completo em Python com SQLite. Arquitetura em camadas, CRUD, validações de entrada e CLI interativo. Separação clara de responsabilidades e código limpo.",
           stack: "Camadas",
-          link: "Ver repositorio",
+          link: "Ver repositório",
         },
         four: {
           label: "04 · Dados",
           title: "Dashboard Interativo",
           description:
-            "Painel em Power BI com modelagem em DAX, graficos dinamicos e filtros interativos. Foco em leitura rapida de indicadores para tomada de decisao.",
-          stack: "Visualizacao",
+            "Painel em Power BI com modelagem em DAX, gráficos dinâmicos e filtros interativos. Foco em leitura rápida de indicadores para tomada de decisão.",
+          stack: "Visualização",
           link: "Ver dashboard",
         },
       },
     },
     education: {
-      sectionLabel: "Formacao e certificacoes",
-      eye: "Formacao &amp; Certificacoes",
-      heading: 'Formacao<span style="color:var(--accent)">.</span>',
-      certHeading: 'Certificacoes<span style="color:var(--accent)">.</span>',
+      sectionLabel: "Formação e certificações",
+      eye: "Formação &amp; Certificações",
+      heading: 'Formação<span style="color:var(--accent)">.</span>',
+      certHeading: 'Certificações<span style="color:var(--accent)">.</span>',
       items: {
-        adsTitle: "CST em Analise e Desenvolvimento de Sistemas",
+        adsTitle: "CST em Análise e Desenvolvimento de Sistemas",
         adsPeriod: "Em curso",
-        dsTitle: "Tecnico em Desenvolvimento de Sistemas",
-        internetTitle: "Tecnico em Informatica para Internet",
-        highschoolTitle: "Ensino Medio",
+        dsTitle: "Técnico em Desenvolvimento de Sistemas",
+        internetTitle: "Técnico em Informática para Internet",
+        highschoolTitle: "Ensino Médio",
       },
       certs: {
         aiTitle: "Fundamentos de IA Generativa",
@@ -158,33 +158,33 @@ const portfolioTranslations = {
     contact: {
       pretitle: "Entre em contato",
       heading: 'Vamos conversar<span style="color:var(--accent)">.</span>',
-      description: "Aberto a oportunidades de estagio, projetos e colaboracoes. Me fala o que voce tem em mente.",
-      inlineResume: "Curriculo",
+      description: "Aberto a oportunidades de estágio, projetos e colaborações. Me fala o que você tem em mente.",
+      inlineResume: "Currículo",
       phoneLabel: "Telefone",
     },
     legal: {
-      note: "Portfolio oficial, curriculo e links profissionais centralizados aqui, no GitHub, LinkedIn e Credly. O codigo e aberto, mas identidade visual e textos autorais seguem como parte deste trabalho.",
+      note: "Portfólio oficial, currículo e links profissionais centralizados aqui, no GitHub, LinkedIn e Credly. O código é aberto, mas identidade visual e textos autorais seguem como parte deste trabalho.",
     },
     footer: {
-      copy: "&copy; 2026 Carlos Gabriel &middot; Sao Paulo, SP",
+      copy: "&copy; 2026 Carlos Gabriel &middot; São Paulo, SP",
     },
     intro: {
       command: 'node portfolio --init --author="carlos_gabriel"',
-      line1: "Initializing build environment...",
-      line2: "Loading: react · next · typescript · tailwind",
-      resolved: "Dependencies resolved",
-      stack: "Stack: web · backend · mobile · infra & cloud",
-      location: "Location: Sao Paulo — Brazil",
+      line1: "Inicializando ambiente de build...",
+      line2: "Carregando: react · next · typescript · tailwind",
+      resolved: "Dependências resolvidas",
+      stack: "Stack: web · backend · mobile · infra e nuvem",
+      location: "Localização: São Paulo — Brasil",
       statusLabel: "Status:",
-      statusValue: "available for opportunities",
-      ready: "carlos_gabriel.portfolio() — ready",
+      statusValue: "disponível para oportunidades",
+      ready: "carlos_gabriel.portfolio() — pronto",
     },
   },
   en: {
     meta: {
       title: "Carlos Gabriel | Systems Developer, Web, Backend and Infra",
       description:
-        "Carlos Gabriel's portfolio focused on web, backend, mobile and infrastructure. Systems Development intern at Xmart Solutions in Sao Paulo.",
+        "Carlos Gabriel's portfolio focused on web, backend, mobile and infrastructure. Systems Development intern at Xmart Solutions in São Paulo.",
       ogTitle: "Carlos Gabriel | Systems Developer, Web, Backend and Infra",
       ogDescription: "Web · Backend · Mobile · Infra & Cloud",
       ogLocale: "en_US",
@@ -217,7 +217,7 @@ const portfolioTranslations = {
       credly: "View Credly badges",
     },
     hero: {
-      badge: "Developer · Sao Paulo, SP",
+      badge: "Developer · São Paulo, SP",
       description:
         "Developer working across <strong>web, backend, mobile</strong> and <strong>infrastructure</strong>. Intern at Xmart Solutions &mdash; building software with product awareness, architectural clarity and operational reliability.",
       scroll: "scroll",
@@ -226,7 +226,7 @@ const portfolioTranslations = {
     about: {
       eye: "About",
       heading: "Solid technical base.<br><em>Product</em> mindset.",
-      p1: "I am 18 years old, based in Sao Paulo (SP), and building my career with intent. I am not the kind of developer who only writes code &mdash; I care about understanding the whole system: interface, backend, infrastructure and how everything connects to create real value.",
+      p1: "I am 18 years old, based in São Paulo (SP), and building my career with intent. I am not the kind of developer who only writes code &mdash; I care about understanding the whole system: interface, backend, infrastructure and how everything connects to create real value.",
       p2: "At <strong>Xmart Solutions</strong>, I work hands-on with virtualized environments, monitoring with Zabbix and Grafana, web interface adjustments and infrastructure support. It is an environment that pushes me to think beyond code.",
       p3: "I study <strong>Systems Analysis and Development at Impacta</strong> and maintain my own projects &mdash; from responsive frontend work to a mobile app with local persistence. Intermediate English, focused on technical documentation.",
       tags: {
@@ -268,7 +268,7 @@ const portfolioTranslations = {
     experience: {
       eye: "Experience",
       period: "2024 &mdash; Present",
-      location: "Sao Paulo, SP<br>Internship · Systems Dev",
+      location: "São Paulo, SP<br>Internship · Systems Dev",
       role: "Systems Development Intern",
       items: [
         "Technical support and troubleshooting focused on fast resolution and environment stability",
@@ -340,7 +340,7 @@ const portfolioTranslations = {
       note: "Official portfolio, resume and professional links are centralized here, on GitHub, LinkedIn and Credly. The code is open, while visual identity and authored copy remain part of this work.",
     },
     footer: {
-      copy: "&copy; 2026 Carlos Gabriel &middot; Sao Paulo, SP",
+      copy: "&copy; 2026 Carlos Gabriel &middot; São Paulo, SP",
     },
     intro: {
       command: 'node portfolio --init --author="carlos_gabriel"',
@@ -348,7 +348,7 @@ const portfolioTranslations = {
       line2: "Loading: react · next · typescript · tailwind",
       resolved: "Dependencies resolved",
       stack: "Stack: web · backend · mobile · infra & cloud",
-      location: "Location: Sao Paulo — Brazil",
+      location: "Location: São Paulo — Brazil",
       statusLabel: "Status:",
       statusValue: "available for opportunities",
       ready: "carlos_gabriel.portfolio() — ready",
@@ -358,7 +358,7 @@ const portfolioTranslations = {
     meta: {
       title: "Carlos Gabriel | Desarrollador de Sistemas, Web, Backend e Infra",
       description:
-        "Portafolio de Carlos Gabriel con enfoque en web, backend, mobile e infraestructura. Becario de Desarrollo de Sistemas en Xmart Solutions en Sao Paulo.",
+        "Portafolio de Carlos Gabriel con enfoque en web, backend, mobile e infraestructura. Becario de Desarrollo de Sistemas en Xmart Solutions en São Paulo.",
       ogTitle: "Carlos Gabriel | Desarrollador de Sistemas, Web, Backend e Infra",
       ogDescription: "Web · Backend · Mobile · Infra & Cloud",
       ogLocale: "es_ES",
@@ -368,12 +368,12 @@ const portfolioTranslations = {
       progress: "Progreso de lectura",
       loadingPortfolio: "Cargando portafolio",
       menu: "Menu",
-      primaryNav: "Navegacion principal",
-      openMenu: "Abrir menu",
-      presentation: "Presentacion",
+      primaryNav: "Navegación principal",
+      openMenu: "Abrir menú",
+      presentation: "Presentación",
       externalLinks: "Enlaces externos",
       languageSelector: "Selector de idioma",
-      phone: "Telefono",
+      phone: "Teléfono",
       resume: "Descargar CV",
     },
     nav: {
@@ -391,7 +391,7 @@ const portfolioTranslations = {
       credly: "Ver badges en Credly",
     },
     hero: {
-      badge: "Desarrollador · Sao Paulo, SP",
+      badge: "Desarrollador · São Paulo, SP",
       description:
         "Desarrollador con actuacion en <strong>web, backend, mobile</strong> e <strong>infraestructura</strong>. Becario en Xmart Solutions &mdash; construyendo software con criterio de producto, claridad arquitectonica y confiabilidad operativa.",
       scroll: "scroll",
@@ -400,9 +400,9 @@ const portfolioTranslations = {
     about: {
       eye: "Sobre",
       heading: "Base tecnica solida.<br>Vision de <em>producto</em>.",
-      p1: "Tengo 18 anos, vivo en Sao Paulo (SP) y estoy construyendo mi carrera con intencion. No soy el desarrollador que solo escribe codigo &mdash; me interesa entender el sistema completo: la interfaz, el backend, la infraestructura y como todo se conecta para generar valor real.",
-      p2: "En <strong>Xmart Solutions</strong>, trabajo de forma practica con entornos virtualizados, monitoreo con Zabbix y Grafana, ajustes en interfaces web y soporte a operaciones de infraestructura. Es un entorno que me obliga a pensar mas alla del codigo.",
-      p3: "Estudio <strong>Analisis y Desarrollo de Sistemas en Impacta</strong> y mantengo proyectos propios &mdash; desde frontend responsivo hasta una app mobile con persistencia local. Ingles intermedio, con foco en documentacion tecnica.",
+      p1: "Tengo 18 años, vivo en São Paulo (SP) y estoy construyendo mi carrera con intención. No soy el desarrollador que solo escribe código &mdash; me interesa entender el sistema completo: la interfaz, el backend, la infraestructura y cómo todo se conecta para generar valor real.",
+      p2: "En <strong>Xmart Solutions</strong>, trabajo de forma práctica con entornos virtualizados, monitoreo con Zabbix y Grafana, ajustes en interfaces web y soporte a operaciones de infraestructura. Es un entorno que me obliga a pensar más allá del código.",
+      p3: "Estudio <strong>Análisis y Desarrollo de Sistemas en Impacta</strong> y mantengo proyectos propios &mdash; desde frontend responsivo hasta una app mobile con persistencia local. Inglés intermedio, con foco en documentación técnica.",
       tags: {
         frontend: "Frontend",
         backend: "Backend",
@@ -442,26 +442,26 @@ const portfolioTranslations = {
     experience: {
       eye: "Experiencia",
       period: "2024 &mdash; Actualidad",
-      location: "Sao Paulo, SP<br>Beca · Des. de Sistemas",
+      location: "São Paulo, SP<br>Beca · Des. de Sistemas",
       role: "Becario de Desarrollo de Sistemas",
       items: [
-        "Soporte tecnico y troubleshooting con foco en resolucion rapida y estabilidad del entorno",
-        "Apoyo en la administracion de entornos virtualizados con Proxmox",
-        "Implementacion y evolucion del monitoreo con Zabbix y Grafana",
-        "Ajustes y mejoras en paginas e interfaces web en produccion",
-        "Organizacion y gestion de credenciales con SysPass",
+        "Soporte técnico y troubleshooting con foco en resolución rápida y estabilidad del entorno",
+        "Apoyo en la administración de entornos virtualizados con Proxmox",
+        "Implementación y evolución del monitoreo con Zabbix y Grafana",
+        "Ajustes y mejoras en páginas e interfaces web en producción",
+        "Organización y gestión de credenciales con SysPass",
         "Registros y evidencias operativas en AWS S3",
       ],
     },
     projects: {
       eye: "Proyectos",
-      heading: "Codigo con proposito,<br>entrega con criterio.",
-      description: "Proyectos que muestran lo que hago en la practica &mdash; desde frontend hasta backend y mobile.",
+      heading: "Código con propósito,<br>entrega con criterio.",
+      description: "Proyectos que muestran lo que hago en la práctica &mdash; desde frontend hasta backend y mobile.",
       cards: {
         one: {
-          label: "01 · Produccion",
+          label: "01 · Producción",
           description:
-            "Landing multilingue con internacionalizacion via next-intl. Animaciones con Framer Motion y despliegue en produccion en Vercel para distribuir el APK del proyecto Clarium.",
+            "Landing multilingüe con internacionalización via next-intl. Animaciones con Framer Motion y despliegue en producción en Vercel para distribuir el APK del proyecto Clarium.",
           link: "clarium.vercel.app",
         },
         two: {
@@ -473,7 +473,7 @@ const portfolioTranslations = {
         three: {
           label: "03 · Backend",
           description:
-            "Sistema completo en Python con SQLite. Arquitectura en capas, CRUD, validaciones de entrada y CLI interactiva. Separacion clara de responsabilidades y codigo limpio.",
+            "Sistema completo en Python con SQLite. Arquitectura en capas, CRUD, validaciones de entrada y CLI interactiva. Separación clara de responsabilidades y código limpio.",
           stack: "Capas",
           link: "Ver repositorio",
         },
@@ -481,23 +481,23 @@ const portfolioTranslations = {
           label: "04 · Datos",
           title: "Dashboard Interactivo",
           description:
-            "Panel en Power BI con modelado en DAX, graficos dinamicos y filtros interactivos. Enfocado en lectura rapida de indicadores para toma de decisiones.",
-          stack: "Visualizacion",
+            "Panel en Power BI con modelado en DAX, gráficos dinámicos y filtros interactivos. Enfocado en lectura rápida de indicadores para toma de decisiones.",
+          stack: "Visualización",
           link: "Ver dashboard",
         },
       },
     },
     education: {
-      sectionLabel: "Formacion y certificaciones",
-      eye: "Formacion &amp; Certificaciones",
-      heading: 'Formacion<span style="color:var(--accent)">.</span>',
+      sectionLabel: "Formación y certificaciones",
+      eye: "Formación &amp; Certificaciones",
+      heading: 'Formación<span style="color:var(--accent)">.</span>',
       certHeading: 'Certificaciones<span style="color:var(--accent)">.</span>',
       items: {
-        adsTitle: "Carrera en Analisis y Desarrollo de Sistemas",
+        adsTitle: "Carrera en Análisis y Desarrollo de Sistemas",
         adsPeriod: "En curso",
-        dsTitle: "Tecnico en Desarrollo de Sistemas",
-        internetTitle: "Tecnico en Informatica para Internet",
-        highschoolTitle: "Educacion secundaria",
+        dsTitle: "Técnico en Desarrollo de Sistemas",
+        internetTitle: "Técnico en Informática para Internet",
+        highschoolTitle: "Educación secundaria",
       },
       certs: {
         aiTitle: "Fundamentos de IA Generativa",
@@ -506,15 +506,15 @@ const portfolioTranslations = {
     contact: {
       pretitle: "Ponte en contacto",
       heading: 'Hablemos<span style="color:var(--accent)">.</span>',
-      description: "Abierto a oportunidades de beca, proyectos y colaboraciones. Cuentame que tienes en mente.",
+      description: "Abierto a oportunidades de beca, proyectos y colaboraciones. Cuéntame qué tienes en mente.",
       inlineResume: "CV",
-      phoneLabel: "Telefono",
+      phoneLabel: "Teléfono",
     },
     legal: {
-      note: "Portafolio oficial, CV y enlaces profesionales centralizados aqui, en GitHub, LinkedIn y Credly. El codigo es abierto, mientras que la identidad visual y los textos de autor siguen siendo parte de este trabajo.",
+      note: "Portafolio oficial, CV y enlaces profesionales centralizados aquí, en GitHub, LinkedIn y Credly. El código es abierto, mientras que la identidad visual y los textos de autor siguen siendo parte de este trabajo.",
     },
     footer: {
-      copy: "&copy; 2026 Carlos Gabriel &middot; Sao Paulo, SP",
+      copy: "&copy; 2026 Carlos Gabriel &middot; São Paulo, SP",
     },
     intro: {
       command: 'node portfolio --init --author="carlos_gabriel"',
@@ -522,7 +522,7 @@ const portfolioTranslations = {
       line2: "Loading: react · next · typescript · tailwind",
       resolved: "Dependencies resolved",
       stack: "Stack: web · backend · mobile · infra & cloud",
-      location: "Location: Sao Paulo — Brazil",
+      location: "Location: São Paulo — Brazil",
       statusLabel: "Status:",
       statusValue: "available for opportunities",
       ready: "carlos_gabriel.portfolio() — ready",
@@ -588,10 +588,10 @@ function updateSchema(langPack) {
     ],
     address: {
       "@type": "PostalAddress",
-      addressLocality: "Sao Paulo",
+      addressLocality: "São Paulo",
       addressCountry: "BR",
     },
-    alumniOf: ["Impacta Tecnologia", "SENAI Francisco Matarazzo", "Proz Educacao"],
+    alumniOf: ["Impacta Tecnologia", "SENAI Francisco Matarazzo", "Proz Educação"],
     knowsAbout: ["Frontend", "Backend", "Mobile", "Infrastructure", "Cloud", "Observability"],
   };
 
@@ -620,7 +620,6 @@ function applyTranslations(lang) {
   setText("hero-stat-certs", pack.hero.stats.certs);
   setText("cta-projects", pack.cta.projects);
   setText("cta-contact-text", pack.cta.contact);
-  setText("cta-resume-text", pack.cta.resume);
   setText("hero-scroll", pack.hero.scroll);
 
   setText("about-eye", pack.about.eye);

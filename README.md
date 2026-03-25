@@ -1,6 +1,6 @@
 # Carlos Gabriel Portfolio
 
-Portfólio estático multilíngue com layout preservado, animações leves, SEO on-page e avisos de uso para reduzir risco de fraude e impersonação.
+Portfólio estático multilíngue com layout preservado, animações leves, SEO on-page, tema claro/escuro e avisos de uso para reduzir risco de fraude e impersonação.
 
 ## Visão geral
 
@@ -8,7 +8,11 @@ Portfólio estático multilíngue com layout preservado, animações leves, SEO 
 - idiomas suportados: `pt-BR`, `en`, `es`
 - troca de idioma com persistência em `localStorage` e suporte via `?lang=`
 - URLs de idioma são resolvidas por query string, sem páginas duplicadas por rota
-- currículo disponível para visualização e download
+- conteúdo em pt-BR revisado com acentuação e ortografia consistentes
+- alternância de tema claro/escuro com persistência da preferência e respeito ao tema do sistema
+- currículo disponível para visualização e download em áreas contextuais do site
+- hero sem CTA de currículo, para manter o foco na apresentação principal
+- ajustes de responsividade para telas pequenas, médias e grandes
 - SEO básico com canonical, hreflang, Open Graph, Twitter Cards, `robots.txt`, `sitemap.xml` e JSON-LD
 - proteção complementar de identidade via `NOTICE`, `SECURITY.md` e `BRAND.md`
 
@@ -61,11 +65,24 @@ portfolio_profissional/
 - `index.html`
   Estrutura principal do site, metadados SEO, schema `Person` e marcação do conteúdo.
 - `static/js/i18n.js`
-  Dicionários de idioma, persistência da linguagem, atualização de meta tags, canonical e schema.
+  Dicionários de idioma, persistência da linguagem, atualização de meta tags, canonical, schema e textos traduzidos.
+- `static/js/navigation.js`
+  Navegação, menu mobile, progresso de leitura e comportamento de ancoragem.
+- `static/js/intro.js`
+  Intro de terminal com mensagens localizadas.
+- `static/js/reveal.js`
+  Revelação progressiva de seções ao entrar na viewport.
 - `static/docs/CV_Carlos_Gabriel_03-2026.pdf`
   PDF público usado nos CTAs de currículo.
 - `static/img/og-cover.svg`
   Imagem social usada por Open Graph e Twitter Cards.
+
+## Tema e interface
+
+- O site oferece alternância entre tema claro e escuro por meio do controle visual na navegação.
+- A preferência é persistida no navegador e, na primeira visita, o sistema respeita `prefers-color-scheme`.
+- O visual mantém a mesma direção editorial, com contraste ajustado para leitura e estados interativos consistentes.
+- A responsividade foi refinada para preservar hierarquia, legibilidade e toque em telas menores.
 
 ## Internacionalização
 
@@ -95,7 +112,6 @@ O currículo está disponível em:
 
 O site oferece acesso em:
 
-- hero
 - menu mobile
 - seção de certificações
 - seção de contato
@@ -127,4 +143,6 @@ Implementado:
 - preservar o layout e a direção visual existentes
 - evitar regressões nas animações e no comportamento mobile
 - manter a camada de idioma centralizada em `static/js/i18n.js`
+- manter o controle de tema sincronizado com CSS e armazenamento local
+- revisar textos de interface sempre que houver novas seções ou CTAs
 - não espalhar textos duplicados fora da estrutura principal sem necessidade

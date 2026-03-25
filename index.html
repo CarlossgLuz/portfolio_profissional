@@ -4,25 +4,41 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Carlos Gabriel — Desenvolvedor de Sistemas</title>
-  <meta name="description" content="Portfolio de Carlos Gabriel — web, backend, mobile e infraestrutura. Estagiario na Xmart Solutions, em Sao Paulo, com projetos, certificacoes e curriculo para download.">
+  <meta name="description" content="Portfólio de Carlos Gabriel — web, backend, mobile e infraestrutura. Estagiário na Xmart Solutions, em São Paulo, com projetos e certificações.">
   <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
   <meta name="author" content="Carlos Gabriel">
   <meta property="og:title" content="Carlos Gabriel — Desenvolvedor de Sistemas">
   <meta property="og:description" content="Web · Backend · Mobile · Infra & Cloud">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://carlosgabriel.netlify.app/">
-  <meta property="og:site_name" content="Carlos Gabriel Portfolio">
+  <meta property="og:site_name" content="Carlos Gabriel Portfólio">
   <meta property="og:locale" content="pt_BR">
   <meta property="og:locale:alternate" content="en_US">
   <meta property="og:locale:alternate" content="es_ES">
   <meta property="og:image" content="https://carlosgabriel.netlify.app/static/img/og-cover.svg">
-  <meta property="og:image:alt" content="Portfolio de Carlos Gabriel com foco em web, backend, mobile e infraestrutura.">
+  <meta property="og:image:alt" content="Portfólio de Carlos Gabriel com foco em web, backend, mobile e infraestrutura.">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Carlos Gabriel — Desenvolvedor de Sistemas">
   <meta name="twitter:description" content="Web · Backend · Mobile · Infra & Cloud">
   <meta name="twitter:image" content="https://carlosgabriel.netlify.app/static/img/og-cover.svg">
-  <meta name="twitter:image:alt" content="Portfolio de Carlos Gabriel com foco em web, backend, mobile e infraestrutura.">
+  <meta name="twitter:image:alt" content="Portfólio de Carlos Gabriel com foco em web, backend, mobile e infraestrutura.">
   <meta name="theme-color" content="#050810">
+  <script>
+    (function () {
+      var storageKey = "portfolio-theme";
+      var storedTheme = null;
+
+      try {
+        storedTheme = localStorage.getItem(storageKey);
+      } catch (error) {}
+
+      var preferredTheme = window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+      var theme = storedTheme === "light" || storedTheme === "dark" ? storedTheme : preferredTheme;
+
+      document.documentElement.setAttribute("data-theme", theme);
+      document.documentElement.style.colorScheme = theme;
+    })();
+  </script>
   <link rel="icon" type="image/svg+xml" href="./static/img/favicon.svg">
   <link rel="shortcut icon" href="./static/img/favicon.svg">
   <link rel="canonical" href="https://carlosgabriel.netlify.app/">
@@ -49,7 +65,7 @@
       "telephone": "+55-11-96762-2665",
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "Sao Paulo",
+        "addressLocality": "São Paulo",
         "addressCountry": "BR"
       },
       "sameAs": [
@@ -65,7 +81,7 @@
   <div id="cr" aria-hidden="true"></div>
   <div id="prog" role="progressbar" aria-label="Progresso de leitura"></div>
 
-  <div id="intro" role="dialog" aria-modal="true" aria-label="Carregando portfolio">
+  <div id="intro" role="dialog" aria-modal="true" aria-label="Carregando portfólio">
     <div class="term">
       <div class="tb">
         <div class="tb-btn r"></div>
@@ -86,14 +102,18 @@
 
   <div id="mob" role="dialog" aria-modal="true" aria-label="Menu">
     <a href="#about" class="ma" id="mob-nav-about">Sobre</a>
-    <a href="#expertise" class="ma" id="mob-nav-skills">Skills</a>
-    <a href="#experience" class="ma" id="mob-nav-experience">Experiencia</a>
+    <a href="#expertise" class="ma" id="mob-nav-skills">Competências</a>
+    <a href="#experience" class="ma" id="mob-nav-experience">Experiência</a>
     <a href="#projects" class="ma" id="mob-nav-projects">Projetos</a>
     <a href="#contact" class="ma" id="mob-nav-contact">Contato</a>
     <div class="msep"></div>
     <a href="mailto:carlosgabriel.contato2007@gmail.com" class="meml" id="mob-email">carlosgabriel.contato2007@gmail.com</a>
-    <a href="./static/docs/CV_Carlos_Gabriel_03-2026.pdf" class="meml" id="mob-resume" download>Baixar curriculo</a>
-    <div class="mlang" aria-label="Selecao de idioma">
+    <a href="./static/docs/CV_Carlos_Gabriel_03-2026.pdf" class="meml" id="mob-resume" download>Baixar currículo</a>
+    <button type="button" class="theme-toggle theme-toggle--mobile" id="theme-toggle-mobile" aria-label="Alternar para o tema claro" aria-pressed="true">
+      <span class="theme-toggle__icon" aria-hidden="true"></span>
+      <span class="theme-toggle__label">Escuro</span>
+    </button>
+    <div class="mlang" aria-label="Seleção de idioma">
       <button type="button" class="lang-btn is-active" data-lang="pt-BR" aria-pressed="true" lang="pt-BR">PT</button>
       <button type="button" class="lang-btn" data-lang="en" aria-pressed="false" lang="en">EN</button>
       <button type="button" class="lang-btn" data-lang="es" aria-pressed="false" lang="es">ES</button>
@@ -104,14 +124,20 @@
     <a href="#hero" class="nlogo" aria-label="Carlos Gabriel">Carlos Gabriel</a>
     <ul class="npill" role="list">
       <li><a href="#about" id="nav-about">Sobre</a></li>
-      <li><a href="#expertise" id="nav-skills">Skills</a></li>
-      <li><a href="#experience" id="nav-experience">Experiencia</a></li>
+      <li><a href="#expertise" id="nav-skills">Competências</a></li>
+      <li><a href="#experience" id="nav-experience">Experiência</a></li>
       <li><a href="#projects" id="nav-projects">Projetos</a></li>
     </ul>
-    <div class="lang-switcher" aria-label="Selecao de idioma">
-      <button type="button" class="lang-btn is-active" data-lang="pt-BR" aria-pressed="true" lang="pt-BR">PT</button>
-      <button type="button" class="lang-btn" data-lang="en" aria-pressed="false" lang="en">EN</button>
-      <button type="button" class="lang-btn" data-lang="es" aria-pressed="false" lang="es">ES</button>
+    <div class="nav-actions">
+      <button type="button" class="theme-toggle" id="theme-toggle-desktop" aria-label="Alternar para o tema claro" aria-pressed="true">
+        <span class="theme-toggle__icon" aria-hidden="true"></span>
+        <span class="theme-toggle__label">Escuro</span>
+      </button>
+      <div class="lang-switcher" aria-label="Seleção de idioma">
+        <button type="button" class="lang-btn is-active" data-lang="pt-BR" aria-pressed="true" lang="pt-BR">PT</button>
+        <button type="button" class="lang-btn" data-lang="en" aria-pressed="false" lang="en">EN</button>
+        <button type="button" class="lang-btn" data-lang="es" aria-pressed="false" lang="es">ES</button>
+      </div>
     </div>
     <a href="#contact" class="ncta" id="nav-contact">Contato</a>
     <button class="ham" id="ham" aria-label="Abrir menu" aria-expanded="false" aria-controls="mob">
@@ -121,32 +147,31 @@
     </button>
   </nav>
 
-  <section id="hero" aria-label="Apresentacao">
+  <section id="hero" aria-label="Apresentação">
     <div class="hi">
       <div class="hbadge">
         <div class="bdot" aria-hidden="true"></div>
-        <span class="btxt" id="hero-badge">Desenvolvedor · Sao Paulo, SP</span>
+        <span class="btxt" id="hero-badge">Desenvolvedor · São Paulo, SP</span>
       </div>
       <h1 class="hn" aria-label="Carlos Gabriel">
         <span class="nl"><span class="ni">Carlos</span></span>
         <span class="nl"><span class="ni">Gabriel<span style="color:var(--accent)">.</span></span></span>
       </h1>
       <div class="hsub">
-        <p class="hdesc" id="hero-description">Desenvolvedor com atuacao em <strong>web, backend, mobile</strong> e <strong>infraestrutura</strong>. Estagiario na Xmart Solutions &mdash; construindo software com atencao a produto, clareza arquitetural e confiabilidade operacional.</p>
+        <p class="hdesc" id="hero-description">Desenvolvedor com atuação em <strong>web, backend, mobile</strong> e <strong>infraestrutura</strong>. Estagiário na Xmart Solutions &mdash; construindo software com atenção a produto, clareza arquitetural e confiabilidade operacional.</p>
         <div class="hstats" role="list">
-          <div class="stat" role="listitem"><span class="sv">4+</span><span class="sl" id="hero-stat-areas">Areas</span></div>
-          <div class="stat" role="listitem"><span class="sv">14</span><span class="sl" id="hero-stat-repos">Repos</span></div>
-          <div class="stat" role="listitem"><span class="sv">4</span><span class="sl" id="hero-stat-certs">Certs</span></div>
+          <div class="stat" role="listitem"><span class="sv">4+</span><span class="sl" id="hero-stat-areas">Áreas</span></div>
+          <div class="stat" role="listitem"><span class="sv">14</span><span class="sl" id="hero-stat-repos">Repositórios</span></div>
+          <div class="stat" role="listitem"><span class="sv">4</span><span class="sl" id="hero-stat-certs">Certificações</span></div>
         </div>
       </div>
       <div class="hacts">
         <a href="#projects" class="btnp" id="cta-projects">Ver projetos</a>
         <a href="#contact" class="btng" id="cta-contact"><span class="garr" aria-hidden="true"></span><span id="cta-contact-text">Falar comigo</span></a>
-        <a href="./static/docs/CV_Carlos_Gabriel_03-2026.pdf" class="btng" id="cta-resume" download><span class="garr" aria-hidden="true"></span><span id="cta-resume-text">Baixar curriculo</span></a>
       </div>
     </div>
     <div class="hscroll" aria-hidden="true">
-      <span class="slbl" id="hero-scroll">scroll</span>
+      <span class="slbl" id="hero-scroll">rolar</span>
       <div class="sln"></div>
     </div>
   </section>
@@ -157,11 +182,11 @@
     <div class="wrap">
       <div class="eye rv"><span class="en">01</span><div class="el"></div><span class="et" id="about-eye">Sobre</span></div>
       <div class="agrid">
-        <h2 class="ah rv" id="abouth">Tecnica solida.<br>Visao de <em>produto</em>.</h2>
+        <h2 class="ah rv" id="abouth">Técnica sólida.<br>Visão de <em>produto</em>.</h2>
         <div class="abody rv d2">
-          <p id="about-p1">Tenho 18 anos, moro em Sao Paulo (SP) e estou construindo minha carreira com intencao. Nao sou o desenvolvedor que so escreve codigo &mdash; me interessa entender o sistema inteiro: a interface, o backend, a infraestrutura e como tudo se conecta para gerar valor real.</p>
-          <p id="about-p2">Na <strong>Xmart Solutions</strong>, atuo com rotina pratica em ambientes virtualizados, monitoramento com Zabbix e Grafana, ajustes em interfaces web e suporte a operacoes de infraestrutura. Um ambiente que me forca a pensar alem do codigo.</p>
-          <p id="about-p3">Curso <strong>Analise e Desenvolvimento de Sistemas na Impacta</strong> e mantenho projetos proprios &mdash; do frontend responsivo ao app mobile com persistencia local. Ingles intermediario, foco em documentacao tecnica.</p>
+          <p id="about-p1">Tenho 18 anos, moro em São Paulo (SP) e estou construindo minha carreira com intenção. Não sou o desenvolvedor que só escreve código &mdash; me interessa entender o sistema inteiro: a interface, o backend, a infraestrutura e como tudo se conecta para gerar valor real.</p>
+          <p id="about-p2">Na <strong>Xmart Solutions</strong>, atuo com rotina prática em ambientes virtualizados, monitoramento com Zabbix e Grafana, ajustes em interfaces web e suporte a operações de infraestrutura. Um ambiente que me força a pensar além do código.</p>
+          <p id="about-p3">Curso <strong>Análise e Desenvolvimento de Sistemas na Impacta</strong> e mantenho projetos próprios &mdash; do frontend responsivo ao app mobile com persistência local. Inglês intermediário, foco em documentação técnica.</p>
           <div class="tags" role="list">
             <span class="tag" role="listitem" id="tag-frontend">Frontend</span>
             <span class="tag" role="listitem" id="tag-backend">Backend</span>
@@ -179,7 +204,7 @@
 
   <section id="expertise">
     <div class="wrap">
-      <div class="eye rv"><span class="en">02</span><div class="el"></div><span class="et" id="expertise-eye">Stack &amp; Competencias</span></div>
+      <div class="eye rv"><span class="en">02</span><div class="el"></div><span class="et" id="expertise-eye">Stack &amp; Competências</span></div>
       <div class="egrid" role="list">
         <div class="ecard rv d1" role="listitem">
           <svg class="eico" viewBox="0 0 36 36" fill="none" aria-hidden="true">
@@ -253,22 +278,22 @@
 
   <section id="experience" aria-labelledby="xph">
     <div class="wrap">
-      <div class="eye rv"><span class="en">03</span><div class="el"></div><span class="et" id="experience-eye">Experiencia</span></div>
+      <div class="eye rv"><span class="en">03</span><div class="el"></div><span class="et" id="experience-eye">Experiência</span></div>
       <div class="xlayout">
         <div class="xmeta rvl">
           <div class="xco">Xmart Solutions</div>
           <div class="xper" id="experience-period">2024 &mdash; Presente</div>
-          <div class="xloc" id="experience-location">Sao Paulo, SP<br>Estagio · Dev de Sistemas</div>
+          <div class="xloc" id="experience-location">São Paulo, SP<br>Estágio · Dev de Sistemas</div>
         </div>
         <div class="rv d2">
-          <h3 class="xrole" id="xph">Estagiario de Desenvolvimento de Sistemas</h3>
+          <h3 class="xrole" id="xph">Estagiário de Desenvolvimento de Sistemas</h3>
           <ul class="xitems" id="experience-list">
-            <li>Suporte tecnico e troubleshooting com foco em resolucao rapida e estabilidade de ambiente</li>
-            <li>Apoio a administracao de ambientes virtualizados com Proxmox</li>
-            <li>Implementacao e evolucao de monitoramento com Zabbix e Grafana</li>
-            <li>Ajustes e melhorias em paginas e interfaces web em producao</li>
-            <li>Organizacao e gestao de credenciais com SysPass</li>
-            <li>Registros e evidencias de operacoes em AWS S3</li>
+            <li>Suporte técnico e troubleshooting com foco em resolução rápida e estabilidade de ambiente</li>
+            <li>Apoio à administração de ambientes virtualizados com Proxmox</li>
+            <li>Implementação e evolução de monitoramento com Zabbix e Grafana</li>
+            <li>Ajustes e melhorias em páginas e interfaces web em produção</li>
+            <li>Organização e gestão de credenciais com SysPass</li>
+            <li>Registros e evidências de operações em AWS S3</li>
           </ul>
           <div class="xtechs" role="list">
             <span class="tp2" role="listitem">Proxmox</span>
@@ -291,36 +316,36 @@
     <div class="wrap">
       <div class="eye rv"><span class="en">04</span><div class="el"></div><span class="et" id="projects-eye">Projetos</span></div>
       <div class="phdr rv">
-        <h2 id="prjh">Codigo com proposito,<br>entrega com criterio.</h2>
-        <p id="projects-description">Projetos que demonstram o que faco na pratica &mdash; do frontend ao backend e mobile.</p>
+        <h2 id="prjh">Código com propósito,<br>entrega com critério.</h2>
+        <p id="projects-description">Projetos que demonstram o que faço na prática &mdash; do frontend ao backend e mobile.</p>
       </div>
       <div class="pgrid" role="list">
         <a href="https://clarium.vercel.app/" target="_blank" rel="noopener noreferrer" class="pc rv d1" role="listitem">
-          <div class="pnum" id="project-1-label">01 · Producao</div>
+          <div class="pnum" id="project-1-label">01 · Produção</div>
           <h3 class="ptitle">Clarium Landing</h3>
-          <p class="pdesc" id="project-1-description">Landing multilingue com internacionalizacao via next-intl. Animacoes com Framer Motion e deploy em producao na Vercel para distribuicao do APK do projeto Clarium.</p>
+          <p class="pdesc" id="project-1-description">Landing multilíngue com internacionalização via next-intl. Animações com Framer Motion e deploy em produção na Vercel para distribuição do APK do projeto Clarium.</p>
           <div class="pstack"><span class="ptch">Next.js 14</span><span class="ptch">TypeScript</span><span class="ptch">Tailwind</span><span class="ptch">next-intl</span><span class="ptch">Framer Motion</span></div>
           <div class="plnk"><div class="parr" aria-hidden="true"></div><span id="project-1-link">clarium.vercel.app</span></div>
         </a>
         <a href="https://github.com/CarlossgLuz/controle-fatura" target="_blank" rel="noopener noreferrer" class="pc rv d2" role="listitem">
           <div class="pnum" id="project-2-label">02 · Mobile</div>
           <h3 class="ptitle">Controle Fatura</h3>
-          <p class="pdesc" id="project-2-description">App mobile para controle financeiro. Expo Router, TypeScript e persistencia local com SQLite &mdash; arquitetura offline-first sem dependencia de servidor.</p>
+          <p class="pdesc" id="project-2-description">App mobile para controle financeiro. Expo Router, TypeScript e persistência local com SQLite &mdash; arquitetura offline-first sem dependência de servidor.</p>
           <div class="pstack"><span class="ptch">React Native</span><span class="ptch">Expo</span><span class="ptch">TypeScript</span><span class="ptch">Expo Router</span><span class="ptch">SQLite</span></div>
-          <div class="plnk"><div class="parr" aria-hidden="true"></div><span id="project-2-link">Ver repositorio</span></div>
+          <div class="plnk"><div class="parr" aria-hidden="true"></div><span id="project-2-link">Ver repositório</span></div>
         </a>
         <a href="https://github.com/CarlossgLuz/crud_sistema_escolar_sqlite" target="_blank" rel="noopener noreferrer" class="pc rv d3" role="listitem">
           <div class="pnum" id="project-3-label">03 · Backend</div>
           <h3 class="ptitle">Sistema Escolar</h3>
-          <p class="pdesc" id="project-3-description">Sistema completo em Python com SQLite. Arquitetura em camadas, CRUD, validacoes de entrada e CLI interativo. Separacao clara de responsabilidades e codigo limpo.</p>
+          <p class="pdesc" id="project-3-description">Sistema completo em Python com SQLite. Arquitetura em camadas, CRUD, validações de entrada e CLI interativo. Separação clara de responsabilidades e código limpo.</p>
           <div class="pstack"><span class="ptch">Python</span><span class="ptch">SQLite</span><span class="ptch" id="project-3-stack">Camadas</span><span class="ptch">CLI</span></div>
-          <div class="plnk"><div class="parr" aria-hidden="true"></div><span id="project-3-link">Ver repositorio</span></div>
+          <div class="plnk"><div class="parr" aria-hidden="true"></div><span id="project-3-link">Ver repositório</span></div>
         </a>
         <a href="https://app.powerbi.com/view?r=eyJrIjoiYzBlMTFiN2YtZGZjMi00MzE4LWFiNDktZjZmNzg0ODU2YjQ4IiwidCI6ImIxMDUxYzRiLTNiOTQtNDFhYi05NDQxLWU3M2E3MjM0MmZkZCJ9" target="_blank" rel="noopener noreferrer" class="pc rv d4" role="listitem">
           <div class="pnum" id="project-4-label">04 · Dados</div>
           <h3 class="ptitle" id="project-4-title">Dashboard Interativo</h3>
-          <p class="pdesc" id="project-4-description">Painel em Power BI com modelagem em DAX, graficos dinamicos e filtros interativos. Foco em leitura rapida de indicadores para tomada de decisao.</p>
-          <div class="pstack"><span class="ptch">Power BI</span><span class="ptch">DAX</span><span class="ptch" id="project-4-stack">Visualizacao</span></div>
+          <p class="pdesc" id="project-4-description">Painel em Power BI com modelagem em DAX, gráficos dinâmicos e filtros interativos. Foco em leitura rápida de indicadores para tomada de decisão.</p>
+          <div class="pstack"><span class="ptch">Power BI</span><span class="ptch">DAX</span><span class="ptch" id="project-4-stack">Visualização</span></div>
           <div class="plnk"><div class="parr" aria-hidden="true"></div><span id="project-4-link">Ver dashboard</span></div>
         </a>
       </div>
@@ -329,33 +354,33 @@
 
   <div class="div"></div>
 
-  <section id="education" aria-label="Formacao e certificacoes">
+  <section id="education" aria-label="Formação e certificações">
     <div class="wrap">
-      <div class="eye rv"><span class="en">05</span><div class="el"></div><span class="et" id="education-eye">Formacao &amp; Certificacoes</span></div>
+      <div class="eye rv"><span class="en">05</span><div class="el"></div><span class="et" id="education-eye">Formação &amp; Certificações</span></div>
       <div class="elayout">
         <div>
-          <h2 class="eduh rv" id="education-heading">Formacao<span style="color:var(--accent)">.</span></h2>
+          <h2 class="eduh rv" id="education-heading">Formação<span style="color:var(--accent)">.</span></h2>
           <dl class="edulist rv d1">
             <div class="eduitem">
-              <div><dt class="edun" id="edu-ads-title">CST em Analise e Desenvolvimento de Sistemas</dt><dd class="edus">Impacta Tecnologia</dd></div>
+              <div><dt class="edun" id="edu-ads-title">CST em Análise e Desenvolvimento de Sistemas</dt><dd class="edus">Impacta Tecnologia</dd></div>
               <div class="edup" id="edu-ads-period">Em curso</div>
             </div>
             <div class="eduitem">
-              <div><dt class="edun" id="edu-ds-title">Tecnico em Desenvolvimento de Sistemas</dt><dd class="edus">SENAI Francisco Matarazzo · 1200h</dd></div>
+              <div><dt class="edun" id="edu-ds-title">Técnico em Desenvolvimento de Sistemas</dt><dd class="edus">SENAI Francisco Matarazzo · 1200h</dd></div>
               <div class="edup">2024&ndash;2026</div>
             </div>
             <div class="eduitem">
-              <div><dt class="edun" id="edu-internet-title">Tecnico em Informatica para Internet</dt><dd class="edus">Proz Educacao · 1200h</dd></div>
+              <div><dt class="edun" id="edu-internet-title">Técnico em Informática para Internet</dt><dd class="edus">Proz Educação · 1200h</dd></div>
               <div class="edup">2023&ndash;2024</div>
             </div>
             <div class="eduitem">
-              <div><dt class="edun" id="edu-highschool-title">Ensino Medio</dt><dd class="edus">E.E. Prof. Mercedes V. Giannocario</dd></div>
+              <div><dt class="edun" id="edu-highschool-title">Ensino Médio</dt><dd class="edus">E.E. Prof. Mercedes V. Giannocario</dd></div>
               <div class="edup">2022&ndash;2024</div>
             </div>
           </dl>
         </div>
         <div>
-          <h2 class="eduh rv" id="cert-heading">Certificacoes<span style="color:var(--accent)">.</span></h2>
+          <h2 class="eduh rv" id="cert-heading">Certificações<span style="color:var(--accent)">.</span></h2>
           <ul class="clist rv d1" role="list">
             <li class="citem" role="listitem">
               <div class="cbadge az" aria-hidden="true">
@@ -399,7 +424,7 @@
               <span class="garr" aria-hidden="true"></span><span id="cert-credly-text">Ver badges no Credly</span>
             </a>
             <a href="./static/docs/CV_Carlos_Gabriel_03-2026.pdf" class="btng" id="cert-resume-link" download>
-              <span class="garr" aria-hidden="true"></span><span id="cert-resume-text">Baixar curriculo</span>
+              <span class="garr" aria-hidden="true"></span><span id="cert-resume-text">Baixar currículo</span>
             </a>
           </div>
         </div>
@@ -413,10 +438,10 @@
     <div class="wrap">
       <span class="cpre rv" id="contact-pretitle">Entre em contato</span>
       <h2 class="ch rv d1" id="cth">Vamos conversar<span style="color:var(--accent)">.</span></h2>
-      <p class="csub rv d2" id="contact-description">Aberto a oportunidades de estagio, projetos e colaboracoes. Me fala o que voce tem em mente.</p>
+      <p class="csub rv d2" id="contact-description">Aberto a oportunidades de estágio, projetos e colaborações. Me fala o que você tem em mente.</p>
       <div class="cctas rv d3">
         <a href="mailto:carlosgabriel.contato2007@gmail.com" class="btnp" id="contact-email-cta">Mandar e-mail</a>
-        <a href="./static/docs/CV_Carlos_Gabriel_03-2026.pdf" class="btng" id="contact-resume-cta" download><span class="garr" aria-hidden="true"></span><span id="contact-resume-text">Baixar curriculo</span></a>
+        <a href="./static/docs/CV_Carlos_Gabriel_03-2026.pdf" class="btng" id="contact-resume-cta" download><span class="garr" aria-hidden="true"></span><span id="contact-resume-text">Baixar currículo</span></a>
       </div>
       <div class="clnks rv d4">
         <a href="https://www.linkedin.com/in/dev-carlosgabriel/" target="_blank" rel="noopener noreferrer" class="cl2" aria-label="LinkedIn">
@@ -431,21 +456,21 @@
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="5"/><path d="M12 13v8M8 17l4 4 4-4"/></svg>
           Credly
         </a>
-        <a href="./static/docs/CV_Carlos_Gabriel_03-2026.pdf" class="cl2" aria-label="Baixar curriculo" download id="contact-inline-resume">
+        <a href="./static/docs/CV_Carlos_Gabriel_03-2026.pdf" class="cl2" aria-label="Baixar currículo" download id="contact-inline-resume">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3v11"/><path d="m8 10 4 4 4-4"/><path d="M4 19h16"/></svg>
-          <span id="contact-inline-resume-text">Curriculo</span>
+          <span id="contact-inline-resume-text">Currículo</span>
         </a>
         <a href="tel:+5511967622665" class="cl2" aria-label="Telefone" id="contact-phone-link">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.14 1.19 2 2 0 012.11 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.16 6.16l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
           <span id="contact-phone-label">Telefone</span>
         </a>
       </div>
-      <p class="cnote rv d4" id="legal-note">Materiais oficiais, curriculo e links profissionais sao publicados apenas por este portfolio, GitHub, LinkedIn e Credly. O codigo e aberto, mas identidade, textos pessoais e branding nao devem ser reutilizados para clones ou fraude.</p>
+      <p class="cnote rv d4" id="legal-note">Materiais oficiais, currículo e links profissionais são publicados apenas por este portfólio, GitHub, LinkedIn e Credly. O código é aberto, mas identidade, textos pessoais e branding não devem ser reutilizados para clones ou fraude.</p>
     </div>
   </section>
 
   <footer role="contentinfo">
-    <p class="fc" id="footer-copy">&copy; 2026 Carlos Gabriel &middot; Sao Paulo, SP</p>
+    <p class="fc" id="footer-copy">&copy; 2026 Carlos Gabriel &middot; São Paulo, SP</p>
     <div class="fl" aria-label="Links externos">
       <a href="https://github.com/CarlossgLuz" target="_blank" rel="noopener noreferrer">GitHub</a>
       <a href="https://www.linkedin.com/in/dev-carlosgabriel/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
@@ -455,6 +480,7 @@
   </footer>
 
   <script src="./static/js/shared.js"></script>
+  <script src="./static/js/theme.js"></script>
   <script src="./static/js/i18n.js"></script>
   <script src="./static/js/cursor.js"></script>
   <script src="./static/js/intro.js"></script>

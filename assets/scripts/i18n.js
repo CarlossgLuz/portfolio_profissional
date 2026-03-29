@@ -578,7 +578,7 @@ function updateSchema(langPack) {
     name: "Carlos Gabriel",
     jobTitle: langPack.meta.title.split("|")[1].trim(),
     url: "https://carlosgabriel.netlify.app/",
-    image: "https://carlosgabriel.netlify.app/static/img/og-cover.svg",
+    image: "https://carlosgabriel.netlify.app/assets/images/og-cover.svg",
     email: "mailto:carlosgabriel.contato2007@gmail.com",
     telephone: "+55-11-96762-2665",
     sameAs: [

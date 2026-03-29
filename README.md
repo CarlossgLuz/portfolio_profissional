@@ -41,17 +41,17 @@ portfolio_profissional/
 ├── SECURITY.md
 ├── BRAND.md
 ├── README.md
-└── static/
-    ├── css/
+└── assets/
+    ├── styles/
     │   ├── base.css
     │   ├── components.css
     │   ├── sections.css
     │   └── responsive.css
-    ├── docs/
+    ├── documents/
     │   └── CV_Carlos_Gabriel_03-2026.pdf
-    ├── img/
+    ├── images/
     │   └── og-cover.svg
-    └── js/
+    └── scripts/
         ├── shared.js
         ├── i18n.js
         ├── cursor.js
@@ -64,18 +64,29 @@ portfolio_profissional/
 
 - `index.html`
   Estrutura principal do site, metadados SEO, schema `Person` e marcação do conteúdo.
-- `static/js/i18n.js`
+- `assets/scripts/i18n.js`
   Dicionários de idioma, persistência da linguagem, atualização de meta tags, canonical, schema e textos traduzidos.
-- `static/js/navigation.js`
+- `assets/scripts/navigation.js`
   Navegação, menu mobile, progresso de leitura e comportamento de ancoragem.
-- `static/js/intro.js`
+- `assets/scripts/intro.js`
   Intro de terminal com mensagens localizadas.
-- `static/js/reveal.js`
+- `assets/scripts/reveal.js`
   Revelação progressiva de seções ao entrar na viewport.
-- `static/docs/CV_Carlos_Gabriel_03-2026.pdf`
+- `assets/documents/CV_Carlos_Gabriel_03-2026.pdf`
   PDF público usado nos CTAs de currículo.
-- `static/img/og-cover.svg`
+- `assets/images/og-cover.svg`
   Imagem social usada por Open Graph e Twitter Cards.
+
+### Convenção de pastas
+
+- `assets/styles`
+  folhas de estilo do site.
+- `assets/scripts`
+  scripts de comportamento, tema e internacionalização.
+- `assets/images`
+  ícones e imagens públicas.
+- `assets/documents`
+  arquivos para download público, como currículo.
 
 ## Tema e interface
 
@@ -107,7 +118,7 @@ portfolio_profissional/
 O currículo está disponível em:
 
 ```text
-./static/docs/CV_Carlos_Gabriel_03-2026.pdf
+./assets/documents/CV_Carlos_Gabriel_03-2026.pdf
 ```
 
 O site oferece acesso em:
@@ -142,7 +153,7 @@ Implementado:
 
 - preservar o layout e a direção visual existentes
 - evitar regressões nas animações e no comportamento mobile
-- manter a camada de idioma centralizada em `static/js/i18n.js`
+- manter a camada de idioma centralizada em `assets/scripts/i18n.js`
 - manter o controle de tema sincronizado com CSS e armazenamento local
 - revisar textos de interface sempre que houver novas seções ou CTAs
 - não espalhar textos duplicados fora da estrutura principal sem necessidade

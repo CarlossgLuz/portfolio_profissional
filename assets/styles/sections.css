@@ -100,6 +100,38 @@ h1.hn{font-size:clamp(3.8rem,11vw,9rem);font-weight:800;line-height:.95;letter-s
 .ci{font-family:var(--mono);font-size:.66rem;color:var(--dim)}
 .edu-actions{display:flex;flex-wrap:wrap;gap:1.1rem;align-items:center;margin-top:1.4rem}
 
+.events-intro{margin-bottom:3rem}
+.events-intro h2{font-size:clamp(2rem,4.5vw,3.5rem);font-weight:800;letter-spacing:-.035em;color:var(--bright);line-height:1.08;margin-bottom:1rem}
+.events-intro h2 em{font-style:italic;color:var(--accent);font-weight:700}
+.events-intro p{font-size:.95rem;color:var(--text);max-width:480px;line-height:1.78;font-weight:300}
+.evgrid{display:grid;grid-template-columns:repeat(7,1fr);gap:1px;background:var(--border);border:1px solid var(--border);border-radius:10px;overflow:hidden}
+.evcard{background:var(--surface);padding:2rem 1.4rem 1.6rem;display:flex;flex-direction:column;align-items:center;gap:.75rem;position:relative;overflow:hidden;transition:background .3s var(--ease)}
+.evcard::before{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:var(--accent);transform:scaleX(0);transform-origin:center;transition:transform .4s var(--ease)}
+.evcard:hover{background:var(--adim)}
+.evcard:hover::before{transform:scaleX(1)}
+.ev-logo{width:72px;height:72px;display:flex;align-items:center;justify-content:center;border-radius:18px;overflow:hidden;padding:0;background:transparent;border:none;box-shadow:none;position:relative;z-index:1;transition:transform .3s var(--ease)}
+.evcard:hover .ev-logo{transform:translateY(-2px)}
+.ev-oracle{background:rgba(246,82,1,.12);color:#F65201}
+.ev-aws{background:rgba(255,153,0,.12);color:#FF9900}
+.ev-gcloud{background:rgba(66,133,244,.12);color:#4285F4}
+.ev-gemini{background:rgba(138,92,246,.12);color:#8A5CF6}
+.ev-sant{background:rgba(236,0,0,.1);color:#EC0000}
+.ev-getnet{background:rgba(0,159,215,.12);color:#009FD7}
+.ev-totvs{background:rgba(0,180,100,.12);color:#00B464}
+.ev-logo img{display:block;width:100%;height:100%;object-fit:cover;filter:none}
+.ev-name{font-size:.82rem;font-weight:700;color:var(--bright);letter-spacing:-.01em;text-align:center;line-height:1.3;position:relative;z-index:1}
+.ev-label{font-family:var(--mono);font-size:.62rem;color:var(--dim);letter-spacing:.07em;text-transform:uppercase;text-align:center;position:relative;z-index:1;line-height:1.4}
+.ev-badge{font-family:var(--mono);font-size:.58rem;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);background:rgba(34,211,168,.08);border:1px solid rgba(34,211,168,.2);padding:.18rem .55rem;border-radius:999px;position:relative;z-index:1}
+.events-marquee{overflow:hidden;border-top:1px solid var(--border);padding:1.2rem 0;margin-top:2rem;position:relative}
+.events-marquee::before,.events-marquee::after{content:'';position:absolute;top:0;bottom:0;width:80px;z-index:1;pointer-events:none}
+.events-marquee::before{left:0;background:linear-gradient(90deg,var(--bg),transparent)}
+.events-marquee::after{right:0;background:linear-gradient(-90deg,var(--bg),transparent)}
+.marquee-track{display:flex;gap:2rem;width:max-content;animation:marquee 20s linear infinite}
+.marquee-track:hover{animation-play-state:paused}
+@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.marquee-item{font-family:var(--mono);font-size:.72rem;letter-spacing:.1em;color:var(--dim);text-transform:uppercase;white-space:nowrap;display:flex;align-items:center;gap:.6rem}
+.marquee-item::before{content:'·';color:var(--accent)}
+
 #contact .wrap{text-align:center}
 .cpre{font-family:var(--mono);font-size:.7rem;letter-spacing:.18em;color:var(--accent);text-transform:uppercase;display:block;margin-bottom:1.1rem}
 .ch{font-size:clamp(2.4rem,7vw,5.5rem);font-weight:800;letter-spacing:-.045em;color:var(--bright);line-height:1;margin-bottom:1.3rem}

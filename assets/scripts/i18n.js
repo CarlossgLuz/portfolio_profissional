@@ -27,6 +27,7 @@ const portfolioTranslations = {
       skills: "Competências",
       experience: "Experiência",
       projects: "Projetos",
+      events: "Eventos",
       contact: "Contato",
     },
     cta: {
@@ -155,6 +156,22 @@ const portfolioTranslations = {
         aiTitle: "Fundamentos de IA Generativa",
       },
     },
+    events: {
+      eye: "Eventos &amp; Comunidade",
+      heading: "Presença na <em>comunidade</em> tech.",
+      description: "Participação em eventos, palestras e iniciativas promovidas por grandes empresas do setor de tecnologia. Contato direto com tendências, cases e profissionais de referência.",
+      badge: "Participante",
+      items: [
+        { name: "Oracle", label: "Evento de Tecnologia", key: "oracle" },
+        { name: "AWS", label: "Community Day", key: "aws" },
+        { name: "Google Cloud", label: "Cloud Summit", key: "gcloud" },
+        { name: "Gemini", label: "AI Developer Event", key: "gemini" },
+        { name: "Santander", label: "Tech & Inovação", key: "sant" },
+        { name: "GetCode", label: "by Getnet", key: "getnet" },
+        { name: "TOTVS", label: "Evento de Tecnologia", key: "totvs" },
+      ],
+      marqueeItems: ["Oracle", "AWS", "Google Cloud", "Google Gemini", "Santander", "GetCode", "TOTVS"],
+    },
     contact: {
       pretitle: "Entre em contato",
       heading: 'Vamos conversar<span style="color:var(--accent)">.</span>',
@@ -207,6 +224,7 @@ const portfolioTranslations = {
       skills: "Skills",
       experience: "Experience",
       projects: "Projects",
+      events: "Events",
       contact: "Contact",
     },
     cta: {
@@ -329,6 +347,22 @@ const portfolioTranslations = {
         aiTitle: "Generative AI Fundamentals",
       },
     },
+    events: {
+      eye: "Events &amp; Community",
+      heading: "Active in the tech <em>community</em>.",
+      description: "Attendance at events, talks and initiatives promoted by major technology companies. Direct exposure to trends, real-world cases and industry professionals.",
+      badge: "Attendee",
+      items: [
+        { name: "Oracle", label: "Technology Event", key: "oracle" },
+        { name: "AWS", label: "Community Day", key: "aws" },
+        { name: "Google Cloud", label: "Cloud Summit", key: "gcloud" },
+        { name: "Gemini", label: "AI Developer Event", key: "gemini" },
+        { name: "Santander", label: "Tech & Innovation", key: "sant" },
+        { name: "GetCode", label: "by Getnet", key: "getnet" },
+        { name: "TOTVS", label: "Technology Event", key: "totvs" },
+      ],
+      marqueeItems: ["Oracle", "AWS", "Google Cloud", "Google Gemini", "Santander", "GetCode", "TOTVS"],
+    },
     contact: {
       pretitle: "Get in touch",
       heading: 'Let&apos;s talk<span style="color:var(--accent)">.</span>',
@@ -381,6 +415,7 @@ const portfolioTranslations = {
       skills: "Skills",
       experience: "Experiencia",
       projects: "Proyectos",
+      events: "Eventos",
       contact: "Contacto",
     },
     cta: {
@@ -503,6 +538,22 @@ const portfolioTranslations = {
         aiTitle: "Fundamentos de IA Generativa",
       },
     },
+    events: {
+      eye: "Eventos &amp; Comunidad",
+      heading: "Presencia en la <em>comunidad</em> tech.",
+      description: "Participación en eventos, charlas e iniciativas promovidas por grandes empresas del sector tecnológico. Contacto directo con tendencias, casos reales y profesionales de referencia.",
+      badge: "Participante",
+      items: [
+        { name: "Oracle", label: "Evento de Tecnología", key: "oracle" },
+        { name: "AWS", label: "Community Day", key: "aws" },
+        { name: "Google Cloud", label: "Cloud Summit", key: "gcloud" },
+        { name: "Gemini", label: "AI Developer Event", key: "gemini" },
+        { name: "Santander", label: "Tech e Innovación", key: "sant" },
+        { name: "GetCode", label: "by Getnet", key: "getnet" },
+        { name: "TOTVS", label: "Evento de Tecnología", key: "totvs" },
+      ],
+      marqueeItems: ["Oracle", "AWS", "Google Cloud", "Google Gemini", "Santander", "GetCode", "TOTVS"],
+    },
     contact: {
       pretitle: "Ponte en contacto",
       heading: 'Hablemos<span style="color:var(--accent)">.</span>',
@@ -550,6 +601,45 @@ function setList(id, items) {
   const node = $(id);
   if (!node || !Array.isArray(items)) return;
   node.innerHTML = items.map((item) => `<li>${item}</li>`).join("");
+}
+
+function getEventLogo(key) {
+  const logos = {
+    oracle: "./assets/images/events/oracle.png",
+    aws: "./assets/images/events/aws.png",
+    gcloud: "./assets/images/events/google-cloud.png",
+    gemini: "./assets/images/events/gemini.webp",
+    sant: "./assets/images/events/santander.png",
+    getnet: "./assets/images/events/getcode.png",
+    totvs: "./assets/images/events/totvs.png",
+  };
+
+  return logos[key] || "";
+}
+
+function buildEventsSection(events) {
+  const grid = $("events-grid");
+  if (grid && Array.isArray(events.items)) {
+    grid.innerHTML = events.items
+      .map(
+        (item) => `
+          <article class="evcard" role="listitem">
+            <div class="ev-logo ev-${item.key}">
+              <img src="${getEventLogo(item.key)}" alt="Logo ${item.name}" loading="lazy" decoding="async">
+            </div>
+            <div class="ev-name">${item.name}</div>
+            <div class="ev-label">${item.label}</div>
+            <div class="ev-badge">${events.badge}</div>
+          </article>`
+      )
+      .join("");
+  }
+
+  const track = $("marquee-track");
+  if (track && Array.isArray(events.marqueeItems)) {
+    const items = [...events.marqueeItems, ...events.marqueeItems];
+    track.innerHTML = items.map((item) => `<span class="marquee-item">${item}</span>`).join("");
+  }
 }
 
 function updateMeta(meta, lang) {
@@ -605,11 +695,13 @@ function applyTranslations(lang) {
   setText("nav-skills", pack.nav.skills);
   setText("nav-experience", pack.nav.experience);
   setText("nav-projects", pack.nav.projects);
+  setText("nav-events", pack.nav.events);
   setText("nav-contact", pack.nav.contact);
   setText("mob-nav-about", pack.nav.about);
   setText("mob-nav-skills", pack.nav.skills);
   setText("mob-nav-experience", pack.nav.experience);
   setText("mob-nav-projects", pack.nav.projects);
+  setText("mob-nav-events", pack.nav.events);
   setText("mob-nav-contact", pack.nav.contact);
   setText("mob-resume", pack.cta.resume);
 
@@ -682,6 +774,11 @@ function applyTranslations(lang) {
   setText("cert-credly-text", pack.cta.credly);
   setText("cert-resume-text", pack.cta.resume);
 
+  setHtml("events-eye", pack.events.eye);
+  setHtml("events-heading", pack.events.heading);
+  setText("events-description", pack.events.description);
+  buildEventsSection(pack.events);
+
   setText("contact-pretitle", pack.contact.pretitle);
   setHtml("cth", pack.contact.heading);
   setText("contact-description", pack.contact.description);
@@ -703,6 +800,24 @@ function applyTranslations(lang) {
   document.querySelector("footer .fl").setAttribute("aria-label", pack.aria.externalLinks);
   $("contact-inline-resume").setAttribute("aria-label", pack.aria.resume);
   $("contact-phone-link").setAttribute("aria-label", pack.aria.phone);
+
+  const dotLabels = {
+    hero: lang === "pt-BR" ? "Início" : lang === "en" ? "Home" : "Inicio",
+    about: pack.nav.about,
+    expertise: pack.nav.skills,
+    experience: pack.nav.experience,
+    projects: pack.nav.projects,
+    education: lang === "pt-BR" ? "Formação" : lang === "en" ? "Education" : "Formación",
+    events: pack.nav.events,
+    contact: pack.nav.contact,
+  };
+
+  document.querySelectorAll(".section-dot").forEach((dot) => {
+    const label = dotLabels[dot.dataset.section];
+    if (!label) return;
+    dot.setAttribute("title", label);
+    dot.setAttribute("aria-label", label);
+  });
 
   document.querySelectorAll(".lang-btn").forEach((button) => {
     const isActive = button.dataset.lang === lang;

@@ -1,6 +1,11 @@
 // Navigation, progress bar and anchor behavior extracted from the original inline script.
 const prog = $("prog");
 const nav = document.getElementById("mainnav");
+const ham = $("ham");
+const mob = $("mob");
+const sections = document.querySelectorAll("section[id]");
+const navLinks = document.querySelectorAll(".npill a");
+const sectionDots = document.querySelectorAll(".section-dot");
 
 window.addEventListener(
   "scroll",
@@ -14,8 +19,6 @@ window.addEventListener(
   { passive: true }
 );
 
-const ham = $("ham");
-const mob = $("mob");
 const links = mob.querySelectorAll("a[href^='#']");
 let isOpen = false;
 
@@ -54,6 +57,48 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     if (!target) return;
 
     event.preventDefault();
+    window.scrollTo({
+      top: target.getBoundingClientRect().top + window.scrollY - 70,
+      behavior: "smooth",
+    });
+  });
+});
+
+const sectionObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+
+      const id = entry.target.id;
+      navLinks.forEach((link) => {
+        link.classList.toggle("active", link.getAttribute("href") === `#${id}`);
+      });
+      sectionDots.forEach((dot) => {
+        dot.classList.toggle("active", dot.dataset.section === id);
+      });
+    });
+  },
+  { rootMargin: "-40% 0px -55% 0px" }
+);
+
+sections.forEach((section) => sectionObserver.observe(section));
+
+const heroObserver = new IntersectionObserver(
+  (entries) => {
+    const dots = document.querySelector(".section-dots");
+    if (dots) dots.classList.toggle("visible", !entries[0].isIntersecting);
+  },
+  { threshold: 0 }
+);
+
+const heroSection = $("hero");
+if (heroSection) heroObserver.observe(heroSection);
+
+sectionDots.forEach((dot) => {
+  dot.addEventListener("click", () => {
+    const target = document.getElementById(dot.dataset.section);
+    if (!target) return;
+
     window.scrollTo({
       top: target.getBoundingClientRect().top + window.scrollY - 70,
       behavior: "smooth",

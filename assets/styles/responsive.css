@@ -7,7 +7,9 @@
 @media(max-width:720px){.agrid{grid-template-columns:1fr;gap:2.2rem}.ah{max-width:14ch}}
 @media(max-width:700px){.xlayout{grid-template-columns:1fr;gap:2rem}.xmeta{position:static}}
 @media(max-width:680px){.elayout{grid-template-columns:1fr;gap:3rem}.eduitem{grid-template-columns:1fr}.edup{padding-top:0}}
+@media(max-width:1100px){.evgrid{grid-template-columns:repeat(4,1fr)}}
 @media(max-width:640px){.wrap{padding:0 1rem}.hsub{grid-template-columns:1fr;gap:1.6rem}.hstats{gap:1.4rem}.clnks{gap:1rem 1.25rem}footer{justify-content:center}}
+@media(max-width:640px){.evgrid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:600px){.pgrid{grid-template-columns:1fr}.pc{padding:1.45rem 1.2rem}}
 @media(max-width:560px){.cctas,.edu-actions{flex-direction:column;align-items:stretch}.cctas a,.edu-actions a{justify-content:center}.cl2{font-size:.66rem}}
 @media(max-width:520px){#mob{padding:6.5rem 1.25rem 2rem}.ma{font-size:clamp(1.7rem,10vw,2.6rem)}.meml{font-size:.68rem;text-align:center;overflow-wrap:anywhere}.mlang{flex-wrap:wrap;justify-content:center}.theme-toggle--mobile{width:100%;max-width:240px}}

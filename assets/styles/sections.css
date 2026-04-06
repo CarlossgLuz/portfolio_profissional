@@ -50,6 +50,8 @@ h1.hn{font-size:clamp(3.8rem,11vw,9rem);font-weight:800;line-height:.95;letter-s
 
 .xlayout{display:grid;grid-template-columns:250px 1fr;gap:clamp(2rem,5vw,5rem);align-items:start}
 .xmeta{position:sticky;top:calc(var(--nav) + 1.5rem)}
+.xbrand{width:72px;height:72px;display:flex;align-items:center;justify-content:center;margin-bottom:1.2rem;border-radius:18px;overflow:hidden;background:transparent}
+.xbrand__image{width:100%;height:100%;display:block;object-fit:cover}
 .xco{font-size:1.35rem;font-weight:800;color:var(--bright);letter-spacing:-.025em;margin-bottom:.3rem}
 .xper{font-family:var(--mono);font-size:.7rem;letter-spacing:.1em;color:var(--accent);text-transform:uppercase;margin-bottom:.7rem}
 .xloc{font-size:.8rem;color:var(--dim);line-height:1.6}

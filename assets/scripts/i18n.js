@@ -152,9 +152,6 @@ const portfolioTranslations = {
         internetTitle: "Técnico em Informática para Internet",
         highschoolTitle: "Ensino Médio",
       },
-      certs: {
-        aiTitle: "Fundamentos de IA Generativa",
-      },
     },
     events: {
       eye: "Eventos &amp; Comunidade",
@@ -343,9 +340,6 @@ const portfolioTranslations = {
         internetTitle: "Technical Course in Internet Computing",
         highschoolTitle: "High School",
       },
-      certs: {
-        aiTitle: "Generative AI Fundamentals",
-      },
     },
     events: {
       eye: "Events &amp; Community",
@@ -533,9 +527,6 @@ const portfolioTranslations = {
         dsTitle: "Técnico en Desarrollo de Sistemas",
         internetTitle: "Técnico en Informática para Internet",
         highschoolTitle: "Educación secundaria",
-      },
-      certs: {
-        aiTitle: "Fundamentos de IA Generativa",
       },
     },
     events: {
@@ -770,7 +761,6 @@ function applyTranslations(lang) {
   setText("edu-ds-title", pack.education.items.dsTitle);
   setText("edu-internet-title", pack.education.items.internetTitle);
   setText("edu-highschool-title", pack.education.items.highschoolTitle);
-  setText("cert-ai-title", pack.education.certs.aiTitle);
   setText("cert-credly-text", pack.cta.credly);
   setText("cert-resume-text", pack.cta.resume);
 

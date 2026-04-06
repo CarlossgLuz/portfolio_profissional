@@ -90,12 +90,8 @@ h1.hn{font-size:clamp(3.8rem,11vw,9rem);font-weight:800;line-height:.95;letter-s
 .clist{list-style:none;display:flex;flex-direction:column}
 .citem{padding:1.1rem 0;border-top:1px solid var(--border);display:flex;gap:.85rem;align-items:center}
 .citem:last-child{border-bottom:1px solid var(--border)}
-.cbadge{width:32px;height:32px;flex-shrink:0;border-radius:5px;display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:.63rem;font-weight:500}
-.cbadge__icon{width:18px;height:18px;display:block}
-.cbadge.az{background:rgba(0,120,212,.12);color:#4DA6FF}
-.cbadge.gc{background:rgba(234,67,53,.1);color:#F28B82}
-.cbadge.ai{background:rgba(66,133,244,.1);color:#7BAAF7}
-.cbadge.sc{background:rgba(34,211,168,.1);color:var(--accent)}
+.cbadge{width:42px;height:42px;flex-shrink:0;border-radius:8px;display:flex;align-items:center;justify-content:center;overflow:hidden;background:transparent;border:none}
+.cbadge__image{width:100%;height:100%;display:block;object-fit:cover}
 .cn{font-size:.87rem;font-weight:500;color:var(--bright);margin-bottom:.14rem}
 .ci{font-family:var(--mono);font-size:.66rem;color:var(--dim)}
 .edu-actions{display:flex;flex-wrap:wrap;gap:1.1rem;align-items:center;margin-top:1.4rem}

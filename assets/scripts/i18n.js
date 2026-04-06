@@ -42,7 +42,11 @@ const portfolioTranslations = {
       description:
         "Desenvolvedor com atuação em <strong>web, backend, mobile</strong> e <strong>infraestrutura</strong>. Estagiário na Xmart Solutions &mdash; construindo software com atenção a produto, clareza arquitetural e confiabilidade operacional.",
       scroll: "rolar",
-      stats: { areas: "Áreas", repos: "Repositórios", certs: "Certificações" },
+      stats: {
+        education: "Formações",
+        events: "Eventos tech",
+        certs: "Certificações",
+      },
     },
     about: {
       eye: "Sobre",
@@ -236,7 +240,11 @@ const portfolioTranslations = {
       description:
         "Developer working across <strong>web, backend, mobile</strong> and <strong>infrastructure</strong>. Intern at Xmart Solutions &mdash; building software with product awareness, architectural clarity and operational reliability.",
       scroll: "scroll",
-      stats: { areas: "Areas", repos: "Repos", certs: "Certs" },
+      stats: {
+        education: "Education",
+        events: "Tech events",
+        certs: "Certifications",
+      },
     },
     about: {
       eye: "About",
@@ -424,7 +432,11 @@ const portfolioTranslations = {
       description:
         "Desarrollador con actuacion en <strong>web, backend, mobile</strong> e <strong>infraestructura</strong>. Becario en Xmart Solutions &mdash; construyendo software con criterio de producto, claridad arquitectonica y confiabilidad operativa.",
       scroll: "scroll",
-      stats: { areas: "Areas", repos: "Repos", certs: "Certs" },
+      stats: {
+        education: "Formaciones",
+        events: "Eventos tech",
+        certs: "Certificaciones",
+      },
     },
     about: {
       eye: "Sobre",
@@ -628,8 +640,29 @@ function buildEventsSection(events) {
 
   const track = $("marquee-track");
   if (track && Array.isArray(events.marqueeItems)) {
-    const items = [...events.marqueeItems, ...events.marqueeItems];
-    track.innerHTML = items.map((item) => `<span class="marquee-item">${item}</span>`).join("");
+    const markup = events.marqueeItems.map((item) => `<span class="marquee-item">${item}</span>`).join("");
+    track.innerHTML = `
+      <div class="marquee-group">${markup}</div>
+      <div class="marquee-group" aria-hidden="true">${markup}</div>
+    `;
+
+    const updateMarqueeMetrics = () => {
+      const firstGroup = track.querySelector(".marquee-group");
+      if (!firstGroup) return;
+
+      const gap = parseFloat(getComputedStyle(track).gap || "0");
+      const distance = firstGroup.scrollWidth + gap;
+      const duration = Math.max(distance / 70, 18);
+
+      track.style.setProperty("--marquee-distance", `${distance}px`);
+      track.style.setProperty("--marquee-duration", `${duration}s`);
+    };
+
+    updateMarqueeMetrics();
+
+    if (track._marqueeObserver) track._marqueeObserver.disconnect();
+    track._marqueeObserver = new ResizeObserver(updateMarqueeMetrics);
+    track._marqueeObserver.observe(track);
   }
 }
 
@@ -698,8 +731,8 @@ function applyTranslations(lang) {
 
   setText("hero-badge", pack.hero.badge);
   setHtml("hero-description", pack.hero.description);
-  setText("hero-stat-areas", pack.hero.stats.areas);
-  setText("hero-stat-repos", pack.hero.stats.repos);
+  setText("hero-stat-education", pack.hero.stats.education);
+  setText("hero-stat-events", pack.hero.stats.events);
   setText("hero-stat-certs", pack.hero.stats.certs);
   setText("cta-projects", pack.cta.projects);
   setText("cta-contact-text", pack.cta.contact);

@@ -68,9 +68,9 @@ Reformulacao integral do portfolio estatico de Carlos Gabriel para refletir o ca
 - XML e JSON-LD: estruturas validas.
 - Navegador real: temas claro/escuro, `pt-BR`, `en`, `es`, intro, menu, foco, `Escape` e movimento reduzido verificados.
 - Responsividade: 320, 375, 430, 768, 1024, 1280, 1440 e 1920 px sem overflow ou texto cortado.
-- Lighthouse local: 100 em Performance, Acessibilidade, Boas Praticas e SEO.
+- Lighthouse local: 99-100 em Performance e 100 em Acessibilidade, Boas Praticas e SEO; CLS 0.
 - Console: nenhum erro de pagina detectado.
-- Links publicos confirmados: LinkedIn, GitHub, Credly, Clarium, codigo do Clarium, e-mail e telefone.
+- Links publicos confirmados: GitHub, Credly, Clarium e codigo do Clarium responderam; LinkedIn bloqueou a requisicao automatizada, mas a URL coincide com o curriculo e o PDF do perfil.
 - Limitacao: o servidor HTTP simples nao envia cabecalhos de cache; a politica de cache deve ser configurada na hospedagem.
 
 ## Rollback

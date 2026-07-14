@@ -1,17 +1,20 @@
 <svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="1200" height="630" fill="#050810"/>
-  <rect x="74" y="74" width="1052" height="482" rx="18" fill="#080D18" stroke="rgba(148,163,184,0.13)"/>
-  <circle cx="122" cy="122" r="7" fill="#22D3A8"/>
-  <text x="120" y="210" fill="#DCE8F5" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="92" font-weight="800">Carlos</text>
-  <text x="120" y="300" fill="#DCE8F5" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="92" font-weight="800">Gabriel<tspan fill="#22D3A8">.</tspan></text>
-  <text x="120" y="380" fill="#7E93B5" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="32" font-weight="400">
-    Web · Backend · Mobile · Infraestrutura
-  </text>
-  <text x="120" y="438" fill="#7E93B5" font-family="'JetBrains Mono', monospace" font-size="22" font-weight="400">
-    Estagiário na Xmart Solutions · São Paulo, BR
-  </text>
-  <rect x="120" y="490" width="332" height="44" rx="8" fill="rgba(34,211,168,0.08)" stroke="rgba(34,211,168,0.25)"/>
-  <text x="142" y="519" fill="#22D3A8" font-family="'JetBrains Mono', monospace" font-size="18" font-weight="500">
-    carlosgabriel.netlify.app
-  </text>
+  <rect width="1200" height="630" fill="#07110F"/>
+  <path d="M72 70H1128V560H72V70Z" fill="#0B1815" stroke="#28423A"/>
+  <path d="M768 70V560" stroke="#28423A"/>
+  <circle cx="116" cy="116" r="7" fill="#38D69F"/>
+  <text x="112" y="220" fill="#F2F7F4" font-family="Arial, sans-serif" font-size="96" font-weight="700">Carlos</text>
+  <text x="112" y="312" fill="#F2F7F4" font-family="Arial, sans-serif" font-size="96" font-weight="700">Gabriel<tspan fill="#38D69F">.</tspan></text>
+  <text x="112" y="390" fill="#B8C8C2" font-family="Arial, sans-serif" font-size="29" font-weight="600">Analista de Desenvolvimento de Sistemas Jr.</text>
+  <text x="112" y="438" fill="#B8C8C2" font-family="Arial, sans-serif" font-size="29" font-weight="600">Desenvolvedor Full Stack Jr.</text>
+  <text x="112" y="510" fill="#779087" font-family="monospace" font-size="19">São Paulo · produto · código · operação</text>
+  <path d="M825 164H1065V238H825V164Z" fill="#07110F" stroke="#28423A"/>
+  <path d="M825 280H1065V354H825V280Z" fill="#07110F" stroke="#28423A"/>
+  <path d="M825 396H1065V470H825V396Z" fill="#07110F" stroke="#28423A"/>
+  <text x="850" y="196" fill="#F2C94C" font-family="monospace" font-size="14">01</text>
+  <text x="850" y="220" fill="#F2F7F4" font-family="Arial, sans-serif" font-size="18" font-weight="600">Desenvolvimento</text>
+  <text x="850" y="312" fill="#F2C94C" font-family="monospace" font-size="14">02</text>
+  <text x="850" y="336" fill="#F2F7F4" font-family="Arial, sans-serif" font-size="18" font-weight="600">Produto &amp; UX/UI</text>
+  <text x="850" y="428" fill="#F2C94C" font-family="monospace" font-size="14">03</text>
+  <text x="850" y="452" fill="#F2F7F4" font-family="Arial, sans-serif" font-size="18" font-weight="600">Infra &amp; AppSec</text>
 </svg>

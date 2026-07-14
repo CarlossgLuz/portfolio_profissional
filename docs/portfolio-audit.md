@@ -61,6 +61,18 @@ Reformulacao integral do portfolio estatico de Carlos Gabriel para refletir o ca
 - Larguras 320, 375, 430, 768, 1024, 1280, 1440 e ultrawide.
 - Verificacao de overflow, console, links, downloads, navegacao por teclado e menu mobile.
 
+## Resultado da validacao
+
+- `html-validate`: sem erros.
+- `node --check`: sete scripts validos.
+- XML e JSON-LD: estruturas validas.
+- Navegador real: temas claro/escuro, `pt-BR`, `en`, `es`, intro, menu, foco, `Escape` e movimento reduzido verificados.
+- Responsividade: 320, 375, 430, 768, 1024, 1280, 1440 e 1920 px sem overflow ou texto cortado.
+- Lighthouse local: 100 em Performance, Acessibilidade, Boas Praticas e SEO.
+- Console: nenhum erro de pagina detectado.
+- Links publicos confirmados: LinkedIn, GitHub, Credly, Clarium, codigo do Clarium, e-mail e telefone.
+- Limitacao: o servidor HTTP simples nao envia cabecalhos de cache; a politica de cache deve ser configurada na hospedagem.
+
 ## Rollback
 
 Cada unidade sera registrada em commit Conventional Commit independente. O rollback pode ser feito por `git revert <hash>` apos revisao, sem reescrever o historico.

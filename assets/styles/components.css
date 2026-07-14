@@ -9,14 +9,14 @@
 .nlogo > span { display: grid; width: 34px; height: 34px; place-items: center; border: 1px solid var(--border-strong); color: var(--accent); font-family: var(--mono); font-size: .67rem; }
 .nlogo strong { font-size: .82rem; font-weight: 600; }
 .npill { display: flex; align-items: center; gap: 1.65rem; margin-inline: auto; list-style: none; }
-.npill a, .nav-resume { position: relative; color: var(--muted); font-size: .76rem; font-weight: 600; text-decoration: none; transition: color 160ms ease; }
+.npill a, .nav-resume { position: relative; display: inline-flex; min-height: 36px; align-items: center; color: var(--muted); font-size: .76rem; font-weight: 600; text-decoration: none; transition: color 160ms ease; }
 .npill a::after { content: ""; position: absolute; right: 0; bottom: -.5rem; left: 0; height: 1px; background: var(--accent); transform: scaleX(0); transform-origin: left; transition: transform 180ms var(--ease-out); }
 .npill a:hover, .npill a.active, .nav-resume:hover { color: var(--bright); }
 .npill a.active::after { transform: scaleX(1); }
 .nav-actions { display: flex; align-items: center; gap: .65rem; }
 .nav-resume { padding: .55rem .8rem; border: 1px solid var(--border-strong); color: var(--bright); }
 .lang-switcher { display: flex; align-items: center; gap: .15rem; padding: .2rem; border: 1px solid var(--border); background: var(--bg-raised); }
-.lang-btn { min-width: 30px; min-height: 30px; padding: 0; border: 0; background: transparent; color: var(--muted); font-family: var(--mono); font-size: .58rem; cursor: pointer; }
+.lang-btn { min-width: 36px; min-height: 36px; padding: 0; border: 0; background: transparent; color: var(--muted); font-family: var(--mono); font-size: .58rem; cursor: pointer; }
 .lang-btn.is-active { background: var(--surface-strong); color: var(--bright); }
 .icon-control { display: grid; width: 38px; height: 38px; padding: 0; place-items: center; border: 1px solid var(--border); background: var(--bg-raised); cursor: pointer; }
 .theme-toggle__icon { position: relative; width: 14px; height: 14px; border: 1.5px solid var(--bright); border-radius: 50%; }
@@ -43,8 +43,8 @@
 
 .section-dots { position: fixed; z-index: 80; top: 50%; right: max(1rem, calc((100vw - var(--content)) / 2 - 3rem)); display: flex; flex-direction: column; gap: .65rem; opacity: 0; pointer-events: none; transform: translateY(-50%); transition: opacity 180ms ease; }
 .section-dots.visible { opacity: 1; pointer-events: auto; }
-.section-dot { width: 18px; height: 18px; padding: 0; border: 0; background: transparent; cursor: pointer; }
-.section-dot::before { content: ""; display: block; width: 4px; height: 4px; margin: 7px; border-radius: 50%; background: var(--muted); transition: transform 160ms var(--ease-out), background-color 160ms ease; }
+.section-dot { width: 32px; height: 32px; padding: 0; border: 0; background: transparent; cursor: pointer; }
+.section-dot::before { content: ""; display: block; width: 4px; height: 4px; margin: 14px; border-radius: 50%; background: var(--muted); transition: transform 160ms var(--ease-out), background-color 160ms ease; }
 .section-dot.active::before { background: var(--signal); transform: scale(1.8); }
 
 .mobile-menu { position: fixed; z-index: 90; inset: 0; display: grid; grid-template-rows: 1fr auto; padding: calc(var(--header-height) + 2rem) var(--gutter) 2rem; background: var(--bg); opacity: 0; pointer-events: none; transform: translateY(-12px); transition: opacity 200ms ease, transform 220ms var(--ease-out); }
@@ -65,7 +65,7 @@
 .window-dots span:nth-child(2) { background: var(--signal); }
 .window-dots span:nth-child(3) { background: var(--accent); }
 .tb-ttl { color: var(--muted); font-family: var(--mono); font-size: .65rem; }
-.intro-skip { margin-left: auto; padding: .35rem .55rem; border: 0; background: transparent; color: var(--muted); font-family: var(--mono); font-size: .62rem; cursor: pointer; }
+.intro-skip { min-height: 36px; margin-left: auto; padding: .35rem .55rem; border: 0; background: transparent; color: var(--muted); font-family: var(--mono); font-size: .62rem; cursor: pointer; }
 .intro-skip:hover { color: var(--bright); }
 .tbody { min-height: 180px; padding: 1.5rem; color: var(--text); font-family: var(--mono); font-size: clamp(.7rem, 2vw, .82rem); line-height: 1.9; }
 .terminal-command { color: var(--bright); }

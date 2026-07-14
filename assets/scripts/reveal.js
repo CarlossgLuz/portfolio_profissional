@@ -1,14 +1,16 @@
-// IntersectionObserver reveal behavior preserved as a standalone module.
-const io = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("in");
-        io.unobserve(entry.target);
-      }
-    });
-  },
-  { threshold: 0.1, rootMargin: "0px 0px -30px 0px" }
-);
+(() => {
+  if (prefersReducedMotion.matches || !("IntersectionObserver" in window)) {
+    document.documentElement.classList.remove("motion-ok");
+    return;
+  }
 
-document.querySelectorAll(".rv, .rvl").forEach((element) => io.observe(element));
+  const elements = document.querySelectorAll(".rv, .rvl");
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add("in");
+      observer.unobserve(entry.target);
+    });
+  }, { threshold: .08, rootMargin: "0px 0px -24px" });
+  elements.forEach((element) => observer.observe(element));
+})();

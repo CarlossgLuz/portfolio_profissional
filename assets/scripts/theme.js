@@ -1,109 +1,52 @@
-// Theme controller handles persisted preference, system fallback and toggle UI sync.
 (() => {
   const storageKey = "portfolio-theme";
-  const themeColorMeta = document.querySelector('meta[name="theme-color"]');
+  const themeColor = document.querySelector('meta[name="theme-color"]');
   const systemPreference = window.matchMedia("(prefers-color-scheme: light)");
-  const labels = {
-    "pt-BR": {
-      dark: "Alternar para o tema escuro",
-      light: "Alternar para o tema claro",
-      currentDark: "Escuro",
-      currentLight: "Claro",
-    },
-    en: {
-      dark: "Switch to dark theme",
-      light: "Switch to light theme",
-      currentDark: "Dark",
-      currentLight: "Light",
-    },
-    es: {
-      dark: "Cambiar al tema oscuro",
-      light: "Cambiar al tema claro",
-      currentDark: "Oscuro",
-      currentLight: "Claro",
-    },
-  };
 
-  function getStoredTheme() {
+  function storedTheme() {
     try {
-      const stored = localStorage.getItem(storageKey);
-      return stored === "light" || stored === "dark" ? stored : null;
-    } catch (error) {
-      return null;
-    }
+      const value = localStorage.getItem(storageKey);
+      return value === "light" || value === "dark" ? value : null;
+    } catch (error) { return null; }
   }
 
-  function getPreferredTheme() {
-    return systemPreference.matches ? "light" : "dark";
+  function activeTheme() {
+    return document.documentElement.dataset.theme || storedTheme() || (systemPreference.matches ? "light" : "dark");
   }
 
-  function getTheme() {
-    return document.documentElement.getAttribute("data-theme") || getStoredTheme() || getPreferredTheme();
-  }
-
-  function getLabelPack() {
-    const lang = window.portfolioI18n?.current || document.documentElement.lang || "pt-BR";
-    return labels[lang] || labels["pt-BR"];
-  }
-
-  function updateMetaTheme(theme) {
-    if (themeColorMeta) {
-      themeColorMeta.setAttribute("content", theme === "light" ? "#f4f7fb" : "#050810");
-    }
-  }
-
-  function syncToggle(toggle, theme, copy) {
+  function sync(theme) {
+    const pack = window.portfolioI18n?.getPack();
     const isLight = theme === "light";
-    toggle.setAttribute("aria-pressed", String(!isLight));
-    toggle.setAttribute("aria-label", isLight ? copy.dark : copy.light);
-    toggle.setAttribute("title", isLight ? copy.currentLight : copy.currentDark);
-
-    const label = toggle.querySelector(".theme-toggle__label");
-    if (label) label.textContent = isLight ? copy.currentLight : copy.currentDark;
-  }
-
-  function syncUI(theme) {
-    const copy = getLabelPack();
-    document.querySelectorAll(".theme-toggle").forEach((toggle) => syncToggle(toggle, theme, copy));
+    document.documentElement.dataset.theme = theme;
     document.documentElement.style.colorScheme = theme;
-    updateMetaTheme(theme);
+    if (themeColor) themeColor.content = isLight ? "#f4f7f3" : "#07110f";
+
+    document.querySelectorAll(".theme-toggle").forEach((button) => {
+      const label = isLight ? pack?.theme?.light || "Claro" : pack?.theme?.dark || "Escuro";
+      const action = isLight ? pack?.theme?.toDark || "Alternar para o tema escuro" : pack?.theme?.toLight || "Alternar para o tema claro";
+      button.setAttribute("aria-pressed", String(!isLight));
+      button.setAttribute("aria-label", action);
+      button.setAttribute("title", label);
+      const text = button.querySelector(".theme-toggle__label");
+      if (text) text.textContent = label;
+    });
   }
 
-  function applyTheme(theme, persist = true) {
-    document.documentElement.setAttribute("data-theme", theme);
-
+  function apply(theme, persist = true) {
     if (persist) {
-      try {
-        localStorage.setItem(storageKey, theme);
-      } catch (error) {}
+      try { localStorage.setItem(storageKey, theme); } catch (error) {}
     }
-
-    syncUI(theme);
+    sync(theme);
   }
 
   document.addEventListener("click", (event) => {
-    const toggle = event.target.closest(".theme-toggle");
-    if (!toggle) return;
-
-    const nextTheme = getTheme() === "light" ? "dark" : "light";
-    applyTheme(nextTheme);
+    if (!event.target.closest(".theme-toggle")) return;
+    apply(activeTheme() === "light" ? "dark" : "light");
   });
 
-  if (typeof systemPreference.addEventListener === "function") {
-    systemPreference.addEventListener("change", () => {
-      if (getStoredTheme()) return;
-      applyTheme(getPreferredTheme(), false);
-    });
-  } else if (typeof systemPreference.addListener === "function") {
-    systemPreference.addListener(() => {
-      if (getStoredTheme()) return;
-      applyTheme(getPreferredTheme(), false);
-    });
-  }
-
-  window.addEventListener("portfolio:languagechange", () => {
-    syncUI(getTheme());
+  systemPreference.addEventListener?.("change", () => {
+    if (!storedTheme()) apply(systemPreference.matches ? "light" : "dark", false);
   });
-
-  applyTheme(getTheme(), false);
+  window.addEventListener("portfolio:languagechange", () => sync(activeTheme()));
+  sync(activeTheme());
 })();

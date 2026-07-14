@@ -1,73 +1,74 @@
-// Terminal intro keeps the original timing while reading the active locale strings.
-(async () => {
+(() => {
   const intro = $("intro");
-  const cmdEl = $("tcmd");
-  const carEl = $("tcar");
-  const outEl = $("tout");
-  const pack = window.portfolioI18n.getPack();
-  document.body.style.overflow = "hidden";
+  const command = $("tcmd");
+  const output = $("tout");
+  const caret = $("tcar");
+  const skip = $("intro-skip");
+  if (!intro || !command || !output || !skip) return;
 
-  await wait(160);
-  intro.classList.add("active");
-  await wait(400);
+  const visitKey = "portfolio-intro-seen";
+  let seen = false;
+  try { seen = sessionStorage.getItem(visitKey) === "true"; } catch (error) {}
+  if (seen || prefersReducedMotion.matches) return;
 
-  const cmd = pack.intro.command;
-  for (const ch of cmd) {
-    cmdEl.textContent += ch;
-    await wait(32 + Math.random() * 18);
+  let cancelled = false;
+  const previousFocus = document.activeElement;
+
+  function rememberVisit() {
+    try { sessionStorage.setItem(visitKey, "true"); } catch (error) {}
   }
 
-  carEl.style.display = "none";
-  await wait(200);
-
-  function addLine(html) {
-    const node = document.createElement("div");
-    node.className = "to";
-    node.innerHTML = html;
-    outEl.appendChild(node);
+  async function closeIntro() {
+    if (cancelled) return;
+    cancelled = true;
+    rememberVisit();
+    intro.classList.add("exit");
+    await wait(180);
+    intro.hidden = true;
+    intro.classList.remove("active", "exit");
+    document.body.classList.remove("menu-open");
+    previousFocus?.focus?.();
   }
 
-  addLine(`<span style="color:var(--dim)">  ${pack.intro.line1}</span>`);
-  await wait(130);
-  addLine(`<span style="color:var(--dim)">  ${pack.intro.line2}</span>`);
-  await wait(110);
-
-  const row = document.createElement("div");
-  row.style.cssText = "display:flex;align-items:center;gap:.8rem;margin:.15rem 0";
-  row.innerHTML = '<div class="ttrack"><div class="tfill" id="tfill"></div></div><span class="tpct" id="tpct">0%</span>';
-  outEl.appendChild(row);
-
-  const fill = $("tfill");
-  const pct = $("tpct");
-  let value = 0;
-
-  await new Promise((resolve) => {
-    const interval = setInterval(() => {
-      value = Math.min(100, value + Math.random() * 10 + 3);
-      fill.style.width = `${value}%`;
-      pct.textContent = `${Math.floor(value)}%`;
-
-      if (value >= 100) {
-        clearInterval(interval);
-        resolve();
-      }
-    }, 42);
+  skip.addEventListener("click", closeIntro);
+  intro.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") closeIntro();
+    if (event.key === "Tab") {
+      event.preventDefault();
+      skip.focus();
+    }
   });
 
-  await wait(100);
-  addLine(`<span style="color:#28CA41">  &#10004; ${pack.intro.resolved}</span>`);
-  await wait(80);
-  addLine(`<span style="color:var(--dim)">  ${pack.intro.stack}</span>`);
-  await wait(80);
-  addLine(`<span style="color:var(--dim)">  ${pack.intro.location}</span>`);
-  await wait(80);
-  addLine(`  ${pack.intro.statusLabel} <span style="color:#28CA41">${pack.intro.statusValue}</span>`);
-  await wait(130);
-  addLine(`<span style="color:var(--accent);font-weight:500">  &#9658; ${pack.intro.ready}</span>`);
-  await wait(650);
+  (async () => {
+    const copy = window.portfolioI18n.getPack().intro;
+    intro.hidden = false;
+    document.body.classList.add("menu-open");
+    requestAnimationFrame(() => intro.classList.add("active"));
+    skip.focus();
+    await wait(120);
 
-  intro.classList.add("exit");
-  await wait(700);
-  intro.style.display = "none";
-  document.body.style.overflow = "";
+    for (const character of copy.command) {
+      if (cancelled) return;
+      command.textContent += character;
+      await wait(13);
+    }
+    if (caret) caret.hidden = true;
+
+    for (const line of [copy.line1, copy.line2]) {
+      if (cancelled) return;
+      const row = document.createElement("div");
+      row.className = "to";
+      row.textContent = `> ${line}`;
+      output.appendChild(row);
+      await wait(110);
+    }
+
+    if (cancelled) return;
+    const ready = document.createElement("div");
+    ready.className = "to ready";
+    ready.textContent = `✓ ${copy.ready}`;
+    output.appendChild(ready);
+    await wait(260);
+    closeIntro();
+  })();
 })();

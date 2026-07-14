@@ -1,109 +1,93 @@
-// Navigation, progress bar and anchor behavior extracted from the original inline script.
-const prog = $("prog");
-const nav = document.getElementById("mainnav");
-const ham = $("ham");
-const mob = $("mob");
-const sections = document.querySelectorAll("section[id]");
-const navLinks = document.querySelectorAll(".npill a");
-const sectionDots = document.querySelectorAll(".section-dot");
+(() => {
+  const progress = $("prog");
+  const header = $("mainnav");
+  const menuButton = $("ham");
+  const menu = $("mob");
+  const sections = [...document.querySelectorAll("main section[id]")];
+  const navLinks = [...document.querySelectorAll('.npill a[href^="#"]')];
+  const sectionDots = [...document.querySelectorAll(".section-dot")];
+  let menuOpen = false;
+  let previousFocus = null;
 
-window.addEventListener(
-  "scroll",
-  () => {
-    const top = document.documentElement.scrollTop;
-    const height = document.documentElement.scrollHeight - window.innerHeight;
-    const progress = height > 0 ? (top / height) * 100 : 0;
-    prog.style.width = `${progress}%`;
-    nav.classList.toggle("scrolled", window.scrollY > 50);
-  },
-  { passive: true }
-);
-
-const links = mob.querySelectorAll("a[href^='#']");
-let isOpen = false;
-
-function setMenu(state) {
-  isOpen = state;
-  ham.classList.toggle("open", isOpen);
-  mob.classList.toggle("open", isOpen);
-  ham.setAttribute("aria-expanded", String(isOpen));
-  document.body.style.overflow = isOpen ? "hidden" : "";
-
-  if (isOpen) {
-    setTimeout(() => {
-      const firstFocusable = mob.querySelector("button, a");
-      if (firstFocusable) firstFocusable.focus();
-    }, 50);
+  function updateScrollState() {
+    const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+    const value = scrollable > 0 ? Math.min(100, Math.max(0, (window.scrollY / scrollable) * 100)) : 0;
+    if (progress) {
+      progress.value = value;
+    }
+    header?.classList.toggle("scrolled", window.scrollY > 24);
   }
-}
 
-ham.addEventListener("click", () => setMenu(!isOpen));
-links.forEach((link) => link.addEventListener("click", () => setMenu(false)));
-document.addEventListener("keydown", (event) => {
-  if (event.key === "Escape" && isOpen) {
-    setMenu(false);
+  function focusableMenuItems() {
+    return [...menu.querySelectorAll('a[href], button:not([disabled])')];
   }
-});
 
-window.addEventListener("resize", () => {
-  if (window.innerWidth > 820 && isOpen) {
-    setMenu(false);
+  function setMenu(open) {
+    if (!menu || !menuButton) return;
+    menuOpen = open;
+    menuButton.classList.toggle("open", open);
+    menuButton.setAttribute("aria-expanded", String(open));
+    const copy = window.portfolioI18n.getPack().a11y;
+    menuButton.setAttribute("aria-label", open ? copy.closeMenu : copy.openMenu);
+    menu.classList.toggle("open", open);
+    menu.toggleAttribute("inert", !open);
+    document.body.classList.toggle("menu-open", open);
+
+    if (open) {
+      previousFocus = document.activeElement;
+      requestAnimationFrame(() => focusableMenuItems()[0]?.focus());
+    } else {
+      previousFocus?.focus?.();
+    }
   }
-});
 
-document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-  anchor.addEventListener("click", (event) => {
-    const target = document.querySelector(anchor.getAttribute("href"));
-    if (!target) return;
+  menuButton?.addEventListener("click", () => setMenu(!menuOpen));
+  menu?.querySelectorAll('a[href^="#"]').forEach((link) => link.addEventListener("click", () => setMenu(false)));
 
-    event.preventDefault();
-    window.scrollTo({
-      top: target.getBoundingClientRect().top + window.scrollY - 70,
-      behavior: "smooth",
+  document.addEventListener("keydown", (event) => {
+    if (!menuOpen) return;
+    if (event.key === "Escape") {
+      setMenu(false);
+      return;
+    }
+    if (event.key !== "Tab") return;
+    const items = focusableMenuItems();
+    const first = items[0];
+    const last = items.at(-1);
+    if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+    if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
+  });
+
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 940 && menuOpen) setMenu(false);
+  });
+  window.addEventListener("scroll", updateScrollState, { passive: true });
+  updateScrollState();
+
+  document.querySelectorAll('a[href^="#"], .section-dot').forEach((control) => {
+    control.addEventListener("click", (event) => {
+      const id = control.classList.contains("section-dot") ? control.dataset.section : control.getAttribute("href")?.slice(1);
+      const target = id ? document.getElementById(id) : null;
+      if (!target) return;
+      event.preventDefault();
+      target.scrollIntoView({ behavior: prefersReducedMotion.matches ? "auto" : "smooth", block: "start" });
     });
   });
-});
 
-const sectionObserver = new IntersectionObserver(
-  (entries) => {
+  const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (!entry.isIntersecting) return;
-
-      const id = entry.target.id;
-      navLinks.forEach((link) => {
-        link.classList.toggle("active", link.getAttribute("href") === `#${id}`);
-      });
-      sectionDots.forEach((dot) => {
-        dot.classList.toggle("active", dot.dataset.section === id);
-      });
+      navLinks.forEach((link) => link.classList.toggle("active", link.hash === `#${entry.target.id}`));
+      sectionDots.forEach((dot) => dot.classList.toggle("active", dot.dataset.section === entry.target.id));
     });
-  },
-  { rootMargin: "-40% 0px -55% 0px" }
-);
+  }, { rootMargin: "-42% 0px -52% 0px" });
+  sections.forEach((section) => observer.observe(section));
 
-sections.forEach((section) => sectionObserver.observe(section));
+  const hero = $("hero");
+  const dots = document.querySelector(".section-dots");
+  if (hero && dots) new IntersectionObserver(([entry]) => dots.classList.toggle("visible", !entry.isIntersecting), { threshold: .05 }).observe(hero);
 
-const heroObserver = new IntersectionObserver(
-  (entries) => {
-    const dots = document.querySelector(".section-dots");
-    if (dots) dots.classList.toggle("visible", !entries[0].isIntersecting);
-  },
-  { threshold: 0 }
-);
-
-const heroSection = $("hero");
-if (heroSection) heroObserver.observe(heroSection);
-
-sectionDots.forEach((dot) => {
-  dot.addEventListener("click", () => {
-    const target = document.getElementById(dot.dataset.section);
-    if (!target) return;
-
-    window.scrollTo({
-      top: target.getBoundingClientRect().top + window.scrollY - 70,
-      behavior: "smooth",
-    });
+  window.addEventListener("portfolio:languagechange", () => {
+    if (menuButton && !menuOpen) menuButton.setAttribute("aria-label", window.portfolioI18n.getPack().a11y.openMenu);
   });
-});
-
-nav.classList.toggle("scrolled", window.scrollY > 50);
+})();

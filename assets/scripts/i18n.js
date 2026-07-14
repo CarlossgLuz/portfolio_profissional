@@ -1,891 +1,236 @@
-// Centralized static translations for the single-page portfolio.
+// Centralized copy, metadata and locale-specific document links.
 const portfolioTranslations = {
   "pt-BR": {
     meta: {
-      title: "Carlos Gabriel | Desenvolvedor de Sistemas, Web, Backend e Infra",
-      description:
-        "Portfólio de Carlos Gabriel com atuação em web, backend, mobile e infraestrutura. Estagiário na Xmart Solutions em São Paulo.",
-      ogTitle: "Carlos Gabriel | Desenvolvedor de Sistemas, Web, Backend e Infra",
-      ogDescription: "Web · Backend · Mobile · Infra & Cloud",
-      ogLocale: "pt_BR",
-      ogImageAlt: "Portfólio de Carlos Gabriel com foco em web, backend, mobile e infraestrutura.",
+      title: "Carlos Gabriel | Analista de Desenvolvimento de Sistemas Jr.",
+      description: "Portfólio de Carlos Gabriel, Analista de Desenvolvimento de Sistemas Jr. e Desenvolvedor Full Stack Jr. em São Paulo.",
+      socialDescription: "Desenvolvimento full stack, produto, infraestrutura, observabilidade e AppSec.",
+      locale: "pt_BR",
+      imageAlt: "Carlos Gabriel, Analista de Desenvolvimento de Sistemas Jr.",
+      jobTitle: "Analista de Desenvolvimento de Sistemas Jr."
     },
-    aria: {
-      progress: "Progresso de leitura",
-      loadingPortfolio: "Carregando portfólio",
-      menu: "Menu",
-      primaryNav: "Principal",
-      openMenu: "Abrir menu",
-      presentation: "Apresentação",
-      externalLinks: "Links externos",
-      languageSelector: "Seleção de idioma",
-      phone: "Telefone",
-      resume: "Baixar currículo",
-    },
-    nav: {
-      about: "Sobre",
-      skills: "Competências",
-      experience: "Experiência",
-      projects: "Projetos",
-      events: "Eventos",
-      contact: "Contato",
-    },
-    cta: {
-      projects: "Ver projetos",
-      contact: "Falar comigo",
-      resume: "Baixar currículo",
-      email: "Mandar e-mail",
-      credly: "Ver badges no Credly",
-    },
-    hero: {
-      badge: "Desenvolvedor · São Paulo, SP",
-      description:
-        "Desenvolvedor com atuação em <strong>web, backend, mobile</strong> e <strong>infraestrutura</strong>. Estagiário na Xmart Solutions &mdash; construindo software com atenção a produto, clareza arquitetural e confiabilidade operacional.",
-      scroll: "rolar",
-      stats: {
-        education: "Formações",
-        events: "Eventos tech",
-        certs: "Certificações",
-      },
-    },
-    about: {
-      eye: "Sobre",
-      heading: "Técnica sólida.<br>Visão de <em>produto</em>.",
-      p1: "Tenho 18 anos, moro em São Paulo (SP) e estou construindo minha carreira com intenção. Não sou o desenvolvedor que só escreve código &mdash; me interessa entender o sistema inteiro: a interface, o backend, a infraestrutura e como tudo se conecta para gerar valor real.",
-      p2: "Na <strong>Xmart Solutions</strong>, atuo com rotina prática em ambientes virtualizados, monitoramento com Zabbix e Grafana, ajustes em interfaces web e suporte a operações de infraestrutura. Um ambiente que me força a pensar além do código.",
-      p3: "Curso <strong>Análise e Desenvolvimento de Sistemas na Impacta</strong> e mantenho projetos próprios &mdash; do frontend responsivo ao app mobile com persistência local. Inglês intermediário, foco em documentação técnica.",
-      tags: {
-        frontend: "Frontend",
-        backend: "Backend",
-        mobile: "Mobile",
-        infra: "Infra & Cloud",
-        observability: "Observabilidade",
-        ux: "UX / UI",
-      },
-    },
-    expertise: {
-      eye: "Stack &amp; Competências",
-      cards: {
-        frontend: {
-          title: "Frontend &amp; Web",
-          items: [
-            "Next.js 14 · React",
-            "TypeScript · JavaScript",
-            "Tailwind CSS · HTML / CSS",
-            "Framer Motion · next-intl",
-            "UI/UX · Responsividade",
-          ],
-        },
-        backend: {
-          title: "Backend &amp; Dados",
-          items: [
-            "Python · FastAPI",
-            "SQL · SQLite · MySQL",
-            "Arquitetura em camadas",
-            "REST APIs · CLI",
-            "Power BI · DAX",
-          ],
-        },
-        mobile: {
-          title: "Mobile",
-          items: ["React Native · Expo", "TypeScript", "Expo Router", "SQLite local", "Interfaces nativas"],
-        },
-        infra: {
-          title: "Infra &amp; Cloud",
-          items: ["Proxmox · Linux", "Zabbix · Grafana", "AWS S3 · Azure · GCP", "SysPass · Git", "Troubleshooting"],
-        },
-      },
+    a11y: { skip: "Pular para o conteúdo", progress: "Progresso de leitura", menu: "Menu", primaryNav: "Navegação principal", openMenu: "Abrir menu", closeMenu: "Fechar menu", language: "Seleção de idioma", sectionNav: "Navegação por seções", professionalLinks: "Links profissionais" },
+    nav: { home: "Início", projects: "Projetos", experience: "Experiência", skills: "Competências", about: "Sobre", education: "Formação", contact: "Contato" },
+    theme: { dark: "Escuro", light: "Claro", toDark: "Alternar para o tema escuro", toLight: "Alternar para o tema claro" },
+    cta: { projects: "Ver projetos", resume: "Baixar currículo", resumeShort: "Currículo", email: "E-mail" },
+    intro: { label: "Abrindo portfólio", skip: "Pular", command: "open carlos-gabriel --profile=full-stack", line1: "perfil: analista de desenvolvimento jr.", line2: "escopo: produto · código · operação", ready: "portfólio pronto" },
+    hero: { label: "Apresentação", availability: "Disponível para oportunidades júnior", role: "Analista de Desenvolvimento de Sistemas Jr. <span aria-hidden=\"true\">/</span> Desenvolvedor Full Stack Jr.", summary: "Desenvolvo produtos e sistemas web conectando interface, backend, dados e operação. Minha experiência também passa por UX/UI, Linux, observabilidade e segurança de aplicações.", detailsLabel: "Informações profissionais", location: "São Paulo, SP", workMode: "Presencial · híbrido · remoto" },
+    projects: {
+      label: "Projetos selecionados", title: "Entregas que mostram<br>como eu <em>trabalho</em>.", intro: "Do sistema de gestão full stack ao aplicativo mobile local-first: contexto, participação e estado real de cada entrega.",
+      problem: "Contexto", role: "Minha participação", delivery: "Entrega", product: "Produto", web: "Presença web", stack: "Tecnologias do projeto", viewLive: "Abrir projeto <span aria-hidden=\"true\">↗</span>", viewCode: "Ver código <span aria-hidden=\"true\">↗</span>",
+      toca: { status: "Em homologação", type: "Sistema de gestão · projeto freelance", summary: "Sistema para centralizar a operação de uma clínica de podologia, da agenda e prontuários ao estoque, financeiro e relatórios.", context: "Informações operacionais distribuídas entre diferentes rotinas.", role: "Concepção, arquitetura e desenvolvimento full stack.", delivery: "Cadastros centrais, agenda inicial, autenticação, RBAC, auditoria e validações client/server.", privacy: "Ambiente privado de homologação. O link não é publicado para proteger dados e acessos do cliente." },
+      clarium: { status: "Aplicação publicada", type: "Finanças pessoais · projeto autoral", summary: "Aplicativo local-first para registrar receitas, gastos, compras no cartão, planejamento mensal e indicadores sem depender de servidor.", product: "Experiência mobile com dados locais e navegação estruturada.", web: "Landing multilíngue publicada para apresentar recursos e distribuir o APK.", previewLabel: "Abrir aplicação publicada do Clarium", imageAlt: "Página do Clarium com telas do aplicativo de finanças pessoais" }
     },
     experience: {
-      eye: "Experiência",
-      period: "2024 &mdash; Presente",
-      location: "São Paulo, SP<br>Estágio · Dev de Sistemas",
-      role: "Estagiário de Desenvolvimento de Sistemas",
-      items: [
-        "Suporte técnico e troubleshooting com foco em resolução rápida e estabilidade de ambiente",
-        "Apoio à administração de ambientes virtualizados com Proxmox",
-        "Implementação e evolução de monitoramento com Zabbix e Grafana",
-        "Ajustes e melhorias em páginas e interfaces web em produção",
-        "Organização e gestão de credenciais com SysPass",
-        "Registros e evidências de operações em AWS S3",
-      ],
+      label: "Experiência profissional", title: "Evolução com contexto<br>de <em>produto e operação</em>.", companyPeriod: "dez 2025 — atual", location: "Santo André, SP", progression: "Progressão de estágio para Analista Jr. em junho de 2026.",
+      current: { period: "jun 2026 — atual", role: "Analista de Desenvolvimento de Sistemas Jr.", mode: "Presencial", summary: "Atuação na evolução de plataforma SaaS, interfaces web e sistemas internos, conectando desenvolvimento a infraestrutura, observabilidade e AppSec.", items: ["Desenvolvimento e manutenção com Python, JavaScript/TypeScript e React.", "Redesenho da interface do XGuardian e desenvolvimento de sua página institucional.", "Administração de servidores Linux, troubleshooting e virtualização com Proxmox.", "Monitoramento com Zabbix, Grafana e Prometheus.", "Apoio a práticas de AppSec e Supply Chain Security com Sonatype Nexus e XGuardian."] },
+      intern: { period: "dez 2025 — jun 2026", role: "Estagiário de Desenvolvimento de Sistemas", mode: "Presencial", summary: "Experiência inicial abrangendo desenvolvimento web, suporte técnico, infraestrutura, observabilidade, segurança de aplicações e documentação.", items: ["Recuperação de notebooks e ativos legados e organização do ambiente de servidores.", "Apoio à administração do Proxmox e troubleshooting de estações e serviços.", "Implementação e acompanhamento de monitoramento com Zabbix e Grafana.", "Implantação interna do SysPass e produção de documentação e registros técnicos."] }
     },
-    projects: {
-      eye: "Projetos",
-      heading: "Código com propósito,<br>entrega com critério.",
-      description: "Projetos que demonstram o que faço na prática &mdash; do frontend ao backend e mobile.",
-      cards: {
-        one: {
-          label: "01 · Produção",
-          description:
-            "Landing multilíngue com internacionalização via next-intl. Animações com Framer Motion e deploy em produção na Vercel para distribuição do APK do projeto Clarium.",
-          link: "clarium.vercel.app",
-        },
-        two: {
-          label: "02 · Mobile",
-          description:
-            "App mobile para controle financeiro. Expo Router, TypeScript e persistência local com SQLite &mdash; arquitetura offline-first sem dependência de servidor.",
-          link: "Ver repositório",
-        },
-        three: {
-          label: "03 · Backend",
-          description:
-            "Sistema completo em Python com SQLite. Arquitetura em camadas, CRUD, validações de entrada e CLI interativo. Separação clara de responsabilidades e código limpo.",
-          stack: "Camadas",
-          link: "Ver repositório",
-        },
-        four: {
-          label: "04 · Dados",
-          title: "Dashboard Interativo",
-          description:
-            "Painel em Power BI com modelagem em DAX, gráficos dinâmicos e filtros interativos. Foco em leitura rápida de indicadores para tomada de decisão.",
-          stack: "Visualização",
-          link: "Ver dashboard",
-        },
-      },
+    expertise: {
+      label: "Competências", title: "Uma base generalista,<br>organizada por <em>entrega</em>.", intro: "Tecnologias e práticas presentes nas experiências, projetos e formação profissional.",
+      development: { title: "Desenvolvimento", description: "Interfaces, aplicações web, APIs e desenvolvimento mobile." },
+      data: { title: "Dados e aplicações", description: "Persistência, autenticação e controle de acesso em produtos.", auth: "Autenticação · RBAC", audit: "Logs de auditoria" },
+      operations: { title: "Operações e confiabilidade", description: "Ambientes, deploy, monitoramento e troubleshooting.", docker: "Docker básico" },
+      product: { title: "Engenharia e produto", description: "Qualidade de entrega, experiência e evolução sustentável.", tests: "Testes de software", docs: "Documentação técnica" }
     },
+    about: { label: "Sobre", title: "Código é uma parte.<br>O <em>sistema inteiro</em> importa.", lead: "Sou Analista de Desenvolvimento de Sistemas Jr. com perfil generalista e experiência prática na evolução de produto SaaS, interfaces web e sistemas internos.", p1: "Gosto de entender como interface, backend, dados e infraestrutura se conectam. Essa visão orienta meu trabalho do protótipo e da implementação até a documentação, o monitoramento e a operação.", p2: "Minha trajetória combina formação em desenvolvimento de sistemas, projetos full stack e mobile e uma rotina profissional que também envolve Linux, observabilidade e segurança de aplicações.", quote: "Busco construir soluções claras para quem usa, sustentáveis para quem mantém e observáveis para quem opera." },
     education: {
-      sectionLabel: "Formação e certificações",
-      eye: "Formação &amp; Certificações",
-      heading: 'Formação<span style="color:var(--accent)">.</span>',
-      certHeading: 'Certificações<span style="color:var(--accent)">.</span>',
-      items: {
-        adsTitle: "CST em Análise e Desenvolvimento de Sistemas",
-        adsPeriod: "Em curso",
-        dsTitle: "Técnico em Desenvolvimento de Sistemas",
-        internetTitle: "Técnico em Informática para Internet",
-        highschoolTitle: "Ensino Médio",
-      },
+      label: "Formação e credenciais", title: "Base técnica em<br><em>evolução contínua</em>.", academic: "Formação acadêmica", certifications: "Certificações", inProgress: "Em andamento", completed: "Concluído",
+      unicid: { course: "Tecnologia em Análise e Desenvolvimento de Sistemas", period: "jun 2026 — previsão jun 2027" },
+      senai: { course: "Técnico em Desenvolvimento de Sistemas", period: "jul 2024 — jun 2026" },
+      proz: { course: "Técnico em Informática para Internet", period: "jan 2023 — dez 2024" },
+      sfpc: { date: "CertiProf · out 2024 — out 2027" }, credly: "Ver perfil no Credly <span aria-hidden=\"true\">↗</span>", languages: "Idiomas", english: "Inglês intermediário", englishDetail: "B2 autodeclarado, em aperfeiçoamento com aulas particulares."
     },
-    events: {
-      eye: "Eventos &amp; Comunidade",
-      heading: "Presença na <em>comunidade</em> tech.",
-      description: "Participação em eventos, palestras e iniciativas promovidas por grandes empresas do setor de tecnologia. Contato direto com tendências, cases e profissionais de referência.",
-      badge: "Participante",
-      items: [
-        { name: "Oracle", label: "Evento de Tecnologia", key: "oracle" },
-        { name: "AWS", label: "Community Day", key: "aws" },
-        { name: "Google Cloud", label: "Cloud Summit", key: "gcloud" },
-        { name: "Gemini", label: "AI Developer Event", key: "gemini" },
-        { name: "Santander", label: "Tech & Inovação", key: "sant" },
-        { name: "GetCode", label: "by Getnet", key: "getnet" },
-        { name: "TOTVS", label: "Evento de Tecnologia", key: "totvs" },
-      ],
-      marqueeItems: ["Oracle", "AWS", "Google Cloud", "Google Gemini", "Santander", "GetCode", "TOTVS"],
-    },
-    contact: {
-      pretitle: "Entre em contato",
-      heading: 'Vamos conversar<span style="color:var(--accent)">.</span>',
-      description: "Aberto a oportunidades de estágio, projetos e colaborações. Me fala o que você tem em mente.",
-      inlineResume: "Currículo",
-      phoneLabel: "Telefone",
-    },
-    legal: {
-      note: "Portfólio oficial, currículo e links profissionais centralizados aqui, no GitHub, LinkedIn e Credly. O código é aberto, mas identidade visual e textos autorais seguem como parte deste trabalho.",
-    },
-    footer: {
-      copy: "&copy; 2026 Carlos Gabriel &middot; São Paulo, SP",
-    },
-    intro: {
-      command: 'node portfolio --init --author="carlos_gabriel"',
-      line1: "Inicializando ambiente de build...",
-      line2: "Carregando: react · next · typescript · tailwind",
-      resolved: "Dependências resolvidas",
-      stack: "Stack: web · backend · mobile · infra e nuvem",
-      location: "Localização: São Paulo — Brasil",
-      statusLabel: "Status:",
-      statusValue: "disponível para oportunidades",
-      ready: "carlos_gabriel.portfolio() — pronto",
-    },
+    contact: { label: "Contato", title: "Procurando um profissional<br>júnior que pensa <em>além da tela</em>?", description: "Estou disponível para oportunidades em desenvolvimento de sistemas, full stack e software, em São Paulo ou remotamente.", phone: "Telefone", location: "São Paulo, SP · presencial, híbrido ou remoto" },
+    footer: { copy: "© 2026 Carlos Gabriel Gomes Luz", top: "Voltar ao topo" }
   },
+
   en: {
-    meta: {
-      title: "Carlos Gabriel | Systems Developer, Web, Backend and Infra",
-      description:
-        "Carlos Gabriel's portfolio focused on web, backend, mobile and infrastructure. Systems Development intern at Xmart Solutions in São Paulo.",
-      ogTitle: "Carlos Gabriel | Systems Developer, Web, Backend and Infra",
-      ogDescription: "Web · Backend · Mobile · Infra & Cloud",
-      ogLocale: "en_US",
-      ogImageAlt: "Carlos Gabriel portfolio focused on web, backend, mobile and infrastructure.",
-    },
-    aria: {
-      progress: "Reading progress",
-      loadingPortfolio: "Loading portfolio",
-      menu: "Menu",
-      primaryNav: "Primary navigation",
-      openMenu: "Open menu",
-      presentation: "Presentation",
-      externalLinks: "External links",
-      languageSelector: "Language selector",
-      phone: "Phone",
-      resume: "Download resume",
-    },
-    nav: {
-      about: "About",
-      skills: "Skills",
-      experience: "Experience",
-      projects: "Projects",
-      events: "Events",
-      contact: "Contact",
-    },
-    cta: {
-      projects: "View projects",
-      contact: "Contact me",
-      resume: "Download resume",
-      email: "Send email",
-      credly: "View Credly badges",
-    },
-    hero: {
-      badge: "Developer · São Paulo, SP",
-      description:
-        "Developer working across <strong>web, backend, mobile</strong> and <strong>infrastructure</strong>. Intern at Xmart Solutions &mdash; building software with product awareness, architectural clarity and operational reliability.",
-      scroll: "scroll",
-      stats: {
-        education: "Education",
-        events: "Tech events",
-        certs: "Certifications",
-      },
-    },
-    about: {
-      eye: "About",
-      heading: "Solid technical base.<br><em>Product</em> mindset.",
-      p1: "I am 18 years old, based in São Paulo (SP), and building my career with intent. I am not the kind of developer who only writes code &mdash; I care about understanding the whole system: interface, backend, infrastructure and how everything connects to create real value.",
-      p2: "At <strong>Xmart Solutions</strong>, I work hands-on with virtualized environments, monitoring with Zabbix and Grafana, web interface adjustments and infrastructure support. It is an environment that pushes me to think beyond code.",
-      p3: "I study <strong>Systems Analysis and Development at Impacta</strong> and maintain my own projects &mdash; from responsive frontend work to a mobile app with local persistence. Intermediate English, focused on technical documentation.",
-      tags: {
-        frontend: "Frontend",
-        backend: "Backend",
-        mobile: "Mobile",
-        infra: "Infra & Cloud",
-        observability: "Observability",
-        ux: "UX / UI",
-      },
-    },
-    expertise: {
-      eye: "Stack &amp; Capabilities",
-      cards: {
-        frontend: {
-          title: "Frontend &amp; Web",
-          items: [
-            "Next.js 14 · React",
-            "TypeScript · JavaScript",
-            "Tailwind CSS · HTML / CSS",
-            "Framer Motion · next-intl",
-            "UI/UX · Responsiveness",
-          ],
-        },
-        backend: {
-          title: "Backend &amp; Data",
-          items: ["Python · FastAPI", "SQL · SQLite · MySQL", "Layered architecture", "REST APIs · CLI", "Power BI · DAX"],
-        },
-        mobile: {
-          title: "Mobile",
-          items: ["React Native · Expo", "TypeScript", "Expo Router", "Local SQLite", "Native interfaces"],
-        },
-        infra: {
-          title: "Infra &amp; Cloud",
-          items: ["Proxmox · Linux", "Zabbix · Grafana", "AWS S3 · Azure · GCP", "SysPass · Git", "Troubleshooting"],
-        },
-      },
+    meta: { title: "Carlos Gabriel | Junior Systems Development Analyst", description: "Carlos Gabriel's portfolio — Junior Systems Development Analyst and Junior Full-Stack Developer based in São Paulo, Brazil.", socialDescription: "Full-stack development, product, infrastructure, observability, and AppSec.", locale: "en_US", imageAlt: "Carlos Gabriel, Junior Systems Development Analyst", jobTitle: "Junior Systems Development Analyst" },
+    a11y: { skip: "Skip to content", progress: "Reading progress", menu: "Menu", primaryNav: "Primary navigation", openMenu: "Open menu", closeMenu: "Close menu", language: "Language selector", sectionNav: "Section navigation", professionalLinks: "Professional links" },
+    nav: { home: "Home", projects: "Projects", experience: "Experience", skills: "Skills", about: "About", education: "Education", contact: "Contact" },
+    theme: { dark: "Dark", light: "Light", toDark: "Switch to dark theme", toLight: "Switch to light theme" },
+    cta: { projects: "View projects", resume: "Download resume", resumeShort: "Resume", email: "Email" },
+    intro: { label: "Opening portfolio", skip: "Skip", command: "open carlos-gabriel --profile=full-stack", line1: "profile: junior systems development analyst", line2: "scope: product · code · operations", ready: "portfolio ready" },
+    hero: { label: "Introduction", availability: "Open to junior opportunities", role: "Junior Systems Development Analyst <span aria-hidden=\"true\">/</span> Junior Full-Stack Developer", summary: "I build web products and systems by connecting interfaces, backend, data, and operations. My experience also spans UX/UI, Linux, observability, and application security.", detailsLabel: "Professional details", location: "São Paulo, Brazil", workMode: "On-site · hybrid · remote" },
+    projects: {
+      label: "Selected projects", title: "Work that shows<br>how I <em>build</em>.", intro: "From a full-stack management system to a local-first mobile app: context, ownership, and the actual stage of each delivery.",
+      problem: "Context", role: "My role", delivery: "Delivery", product: "Product", web: "Web presence", stack: "Project technologies", viewLive: "Open project <span aria-hidden=\"true\">↗</span>", viewCode: "View source <span aria-hidden=\"true\">↗</span>",
+      toca: { status: "Staging", type: "Management system · freelance project", summary: "A system designed to centralize a podiatry clinic's operations, from scheduling and medical records to inventory, finance, and reporting.", context: "Operational information spread across different workflows.", role: "Product definition, architecture, and full-stack development.", delivery: "Core records, initial scheduling, authentication, RBAC, audit logging, and client/server validation.", privacy: "Private staging environment. Its link is not published to protect client data and access." },
+      clarium: { status: "Published application", type: "Personal finance · independent project", summary: "A local-first app for tracking income, expenses, card purchases, monthly plans, and insights without relying on a server.", product: "A mobile experience with local data and structured navigation.", web: "A published multilingual landing page that presents the features and distributes the APK.", previewLabel: "Open the published Clarium application", imageAlt: "Clarium page showing screens from the personal finance app" }
     },
     experience: {
-      eye: "Experience",
-      period: "2024 &mdash; Present",
-      location: "São Paulo, SP<br>Internship · Systems Dev",
-      role: "Systems Development Intern",
-      items: [
-        "Technical support and troubleshooting focused on fast resolution and environment stability",
-        "Support for administering virtualized environments with Proxmox",
-        "Implementation and evolution of monitoring with Zabbix and Grafana",
-        "Adjustments and improvements to web pages and interfaces in production",
-        "Credential organization and management with SysPass",
-        "Records and operational evidence stored in AWS S3",
-      ],
+      label: "Professional experience", title: "Growth across<br><em>product and operations</em>.", companyPeriod: "Dec 2025 — present", location: "Santo André, SP, Brazil", progression: "Promoted from intern to Junior Analyst in June 2026.",
+      current: { period: "Jun 2026 — present", role: "Junior Systems Development Analyst", mode: "On-site", summary: "Working on a SaaS platform, web interfaces, and internal systems while connecting development with infrastructure, observability, and AppSec.", items: ["Develop and maintain solutions with Python, JavaScript/TypeScript, and React.", "Redesigned the XGuardian interface and built its institutional website.", "Administer Linux servers, troubleshoot environments, and support Proxmox virtualization.", "Monitor environments with Zabbix, Grafana, and Prometheus.", "Support AppSec and Supply Chain Security practices with Sonatype Nexus and XGuardian."] },
+      intern: { period: "Dec 2025 — Jun 2026", role: "Systems Development Intern", mode: "On-site", summary: "Early experience spanning web development, technical support, infrastructure, observability, application security, and documentation.", items: ["Recovered legacy laptops and assets and organized the server environment.", "Supported Proxmox administration and troubleshooting for workstations and services.", "Implemented and monitored Zabbix and Grafana.", "Deployed SysPass internally and produced technical documentation and records."] }
     },
-    projects: {
-      eye: "Projects",
-      heading: "Purposeful code,<br>careful delivery.",
-      description: "Projects that show what I do in practice &mdash; from frontend to backend and mobile.",
-      cards: {
-        one: {
-          label: "01 · Production",
-          description:
-            "Multilingual landing page with internationalization via next-intl. Framer Motion animations and production deployment on Vercel to distribute the Clarium APK.",
-          link: "clarium.vercel.app",
-        },
-        two: {
-          label: "02 · Mobile",
-          description:
-            "Mobile app for financial control. Expo Router, TypeScript and local persistence with SQLite &mdash; an offline-first architecture with no server dependency.",
-          link: "View repository",
-        },
-        three: {
-          label: "03 · Backend",
-          description:
-            "Complete Python and SQLite system. Layered architecture, CRUD, input validation and interactive CLI. Clear separation of responsibilities and clean code.",
-          stack: "Layers",
-          link: "View repository",
-        },
-        four: {
-          label: "04 · Data",
-          title: "Interactive Dashboard",
-          description:
-            "Power BI dashboard with DAX modeling, dynamic charts and interactive filters. Focused on fast indicator reading for decision-making.",
-          stack: "Visualization",
-          link: "View dashboard",
-        },
-      },
+    expertise: {
+      label: "Skills", title: "A generalist foundation,<br>organized around <em>delivery</em>.", intro: "Technologies and practices supported by my experience, projects, and education.",
+      development: { title: "Development", description: "Interfaces, web applications, APIs, and mobile development." },
+      data: { title: "Data and applications", description: "Persistence, authentication, and access control in products.", auth: "Authentication · RBAC", audit: "Audit logging" },
+      operations: { title: "Operations and reliability", description: "Environments, deployment, monitoring, and troubleshooting.", docker: "Basic Docker" },
+      product: { title: "Engineering and product", description: "Delivery quality, user experience, and sustainable evolution.", tests: "Software testing", docs: "Technical documentation" }
     },
+    about: { label: "About", title: "Code is one part.<br>The <em>whole system</em> matters.", lead: "I am a Junior Systems Development Analyst with a generalist profile and hands-on experience evolving a SaaS product, web interfaces, and internal systems.", p1: "I like understanding how interfaces, backend, data, and infrastructure connect. This perspective guides my work from prototyping and implementation through documentation, monitoring, and operations.", p2: "My background combines formal systems development training, full-stack and mobile projects, and a professional routine that also includes Linux, observability, and application security.", quote: "I aim to build solutions that are clear to use, sustainable to maintain, and observable to operate." },
     education: {
-      sectionLabel: "Education and certifications",
-      eye: "Education &amp; Certifications",
-      heading: 'Education<span style="color:var(--accent)">.</span>',
-      certHeading: 'Certifications<span style="color:var(--accent)">.</span>',
-      items: {
-        adsTitle: "Systems Analysis and Development Degree",
-        adsPeriod: "In progress",
-        dsTitle: "Technical Course in Systems Development",
-        internetTitle: "Technical Course in Internet Computing",
-        highschoolTitle: "High School",
-      },
+      label: "Education and credentials", title: "A technical foundation<br>in <em>continuous development</em>.", academic: "Education", certifications: "Certifications", inProgress: "In progress", completed: "Completed",
+      unicid: { course: "Associate Degree in Systems Analysis and Development", period: "Jun 2026 — expected Jun 2027" },
+      senai: { course: "Technical Diploma in Systems Development", period: "Jul 2024 — Jun 2026" },
+      proz: { course: "Technical Diploma in Internet Computing", period: "Jan 2023 — Dec 2024" },
+      sfpc: { date: "CertiProf · Oct 2024 — Oct 2027" }, credly: "View Credly profile <span aria-hidden=\"true\">↗</span>", languages: "Languages", english: "Intermediate English", englishDetail: "Self-reported B2, currently improving through private lessons."
     },
-    events: {
-      eye: "Events &amp; Community",
-      heading: "Active in the tech <em>community</em>.",
-      description: "Attendance at events, talks and initiatives promoted by major technology companies. Direct exposure to trends, real-world cases and industry professionals.",
-      badge: "Attendee",
-      items: [
-        { name: "Oracle", label: "Technology Event", key: "oracle" },
-        { name: "AWS", label: "Community Day", key: "aws" },
-        { name: "Google Cloud", label: "Cloud Summit", key: "gcloud" },
-        { name: "Gemini", label: "AI Developer Event", key: "gemini" },
-        { name: "Santander", label: "Tech & Innovation", key: "sant" },
-        { name: "GetCode", label: "by Getnet", key: "getnet" },
-        { name: "TOTVS", label: "Technology Event", key: "totvs" },
-      ],
-      marqueeItems: ["Oracle", "AWS", "Google Cloud", "Google Gemini", "Santander", "GetCode", "TOTVS"],
-    },
-    contact: {
-      pretitle: "Get in touch",
-      heading: 'Let&apos;s talk<span style="color:var(--accent)">.</span>',
-      description: "Open to internship opportunities, projects and collaborations. Tell me what you have in mind.",
-      inlineResume: "Resume",
-      phoneLabel: "Phone",
-    },
-    legal: {
-      note: "Official portfolio, resume and professional links are centralized here, on GitHub, LinkedIn and Credly. The code is open, while visual identity and authored copy remain part of this work.",
-    },
-    footer: {
-      copy: "&copy; 2026 Carlos Gabriel &middot; São Paulo, SP",
-    },
-    intro: {
-      command: 'node portfolio --init --author="carlos_gabriel"',
-      line1: "Initializing build environment...",
-      line2: "Loading: react · next · typescript · tailwind",
-      resolved: "Dependencies resolved",
-      stack: "Stack: web · backend · mobile · infra & cloud",
-      location: "Location: São Paulo — Brazil",
-      statusLabel: "Status:",
-      statusValue: "available for opportunities",
-      ready: "carlos_gabriel.portfolio() — ready",
-    },
+    contact: { label: "Contact", title: "Looking for a junior<br>who thinks <em>beyond the screen</em>?", description: "I am open to systems development, full-stack, and software opportunities in São Paulo or remotely.", phone: "Phone", location: "São Paulo, Brazil · on-site, hybrid, or remote" },
+    footer: { copy: "© 2026 Carlos Gabriel Gomes Luz", top: "Back to top" }
   },
+
   es: {
-    meta: {
-      title: "Carlos Gabriel | Desarrollador de Sistemas, Web, Backend e Infra",
-      description:
-        "Portafolio de Carlos Gabriel con enfoque en web, backend, mobile e infraestructura. Becario de Desarrollo de Sistemas en Xmart Solutions en São Paulo.",
-      ogTitle: "Carlos Gabriel | Desarrollador de Sistemas, Web, Backend e Infra",
-      ogDescription: "Web · Backend · Mobile · Infra & Cloud",
-      ogLocale: "es_ES",
-      ogImageAlt: "Portafolio de Carlos Gabriel enfocado en web, backend, mobile e infraestructura.",
-    },
-    aria: {
-      progress: "Progreso de lectura",
-      loadingPortfolio: "Cargando portafolio",
-      menu: "Menu",
-      primaryNav: "Navegación principal",
-      openMenu: "Abrir menú",
-      presentation: "Presentación",
-      externalLinks: "Enlaces externos",
-      languageSelector: "Selector de idioma",
-      phone: "Teléfono",
-      resume: "Descargar CV",
-    },
-    nav: {
-      about: "Sobre",
-      skills: "Skills",
-      experience: "Experiencia",
-      projects: "Proyectos",
-      events: "Eventos",
-      contact: "Contacto",
-    },
-    cta: {
-      projects: "Ver proyectos",
-      contact: "Hablar conmigo",
-      resume: "Descargar CV",
-      email: "Enviar correo",
-      credly: "Ver badges en Credly",
-    },
-    hero: {
-      badge: "Desarrollador · São Paulo, SP",
-      description:
-        "Desarrollador con actuacion en <strong>web, backend, mobile</strong> e <strong>infraestructura</strong>. Becario en Xmart Solutions &mdash; construyendo software con criterio de producto, claridad arquitectonica y confiabilidad operativa.",
-      scroll: "scroll",
-      stats: {
-        education: "Formaciones",
-        events: "Eventos tech",
-        certs: "Certificaciones",
-      },
-    },
-    about: {
-      eye: "Sobre",
-      heading: "Base tecnica solida.<br>Vision de <em>producto</em>.",
-      p1: "Tengo 18 años, vivo en São Paulo (SP) y estoy construyendo mi carrera con intención. No soy el desarrollador que solo escribe código &mdash; me interesa entender el sistema completo: la interfaz, el backend, la infraestructura y cómo todo se conecta para generar valor real.",
-      p2: "En <strong>Xmart Solutions</strong>, trabajo de forma práctica con entornos virtualizados, monitoreo con Zabbix y Grafana, ajustes en interfaces web y soporte a operaciones de infraestructura. Es un entorno que me obliga a pensar más allá del código.",
-      p3: "Estudio <strong>Análisis y Desarrollo de Sistemas en Impacta</strong> y mantengo proyectos propios &mdash; desde frontend responsivo hasta una app mobile con persistencia local. Inglés intermedio, con foco en documentación técnica.",
-      tags: {
-        frontend: "Frontend",
-        backend: "Backend",
-        mobile: "Mobile",
-        infra: "Infra & Cloud",
-        observability: "Observabilidad",
-        ux: "UX / UI",
-      },
-    },
-    expertise: {
-      eye: "Stack &amp; Competencias",
-      cards: {
-        frontend: {
-          title: "Frontend &amp; Web",
-          items: [
-            "Next.js 14 · React",
-            "TypeScript · JavaScript",
-            "Tailwind CSS · HTML / CSS",
-            "Framer Motion · next-intl",
-            "UI/UX · Responsividad",
-          ],
-        },
-        backend: {
-          title: "Backend &amp; Datos",
-          items: ["Python · FastAPI", "SQL · SQLite · MySQL", "Arquitectura en capas", "REST APIs · CLI", "Power BI · DAX"],
-        },
-        mobile: {
-          title: "Mobile",
-          items: ["React Native · Expo", "TypeScript", "Expo Router", "SQLite local", "Interfaces nativas"],
-        },
-        infra: {
-          title: "Infra &amp; Cloud",
-          items: ["Proxmox · Linux", "Zabbix · Grafana", "AWS S3 · Azure · GCP", "SysPass · Git", "Troubleshooting"],
-        },
-      },
+    meta: { title: "Carlos Gabriel | Analista Jr. de Desarrollo de Sistemas", description: "Portafolio de Carlos Gabriel, Analista Jr. de Desarrollo de Sistemas y Desarrollador Full Stack Jr. en São Paulo.", socialDescription: "Desarrollo full stack, producto, infraestructura, observabilidad y AppSec.", locale: "es_ES", imageAlt: "Carlos Gabriel, Analista Jr. de Desarrollo de Sistemas", jobTitle: "Analista Jr. de Desarrollo de Sistemas" },
+    a11y: { skip: "Saltar al contenido", progress: "Progreso de lectura", menu: "Menú", primaryNav: "Navegación principal", openMenu: "Abrir menú", closeMenu: "Cerrar menú", language: "Selector de idioma", sectionNav: "Navegación por secciones", professionalLinks: "Enlaces profesionales" },
+    nav: { home: "Inicio", projects: "Proyectos", experience: "Experiencia", skills: "Competencias", about: "Sobre mí", education: "Formación", contact: "Contacto" },
+    theme: { dark: "Oscuro", light: "Claro", toDark: "Cambiar al tema oscuro", toLight: "Cambiar al tema claro" },
+    cta: { projects: "Ver proyectos", resume: "Descargar CV", resumeShort: "CV", email: "Correo" },
+    intro: { label: "Abriendo portafolio", skip: "Saltar", command: "open carlos-gabriel --profile=full-stack", line1: "perfil: analista jr. de desarrollo de sistemas", line2: "alcance: producto · código · operaciones", ready: "portafolio listo" },
+    hero: { label: "Presentación", availability: "Disponible para oportunidades júnior", role: "Analista Jr. de Desarrollo de Sistemas <span aria-hidden=\"true\">/</span> Desarrollador Full Stack Jr.", summary: "Desarrollo productos y sistemas web conectando interfaz, backend, datos y operaciones. Mi experiencia también abarca UX/UI, Linux, observabilidad y seguridad de aplicaciones.", detailsLabel: "Información profesional", location: "São Paulo, Brasil", workMode: "Presencial · híbrido · remoto" },
+    projects: {
+      label: "Proyectos seleccionados", title: "Entregas que muestran<br>cómo <em>trabajo</em>.", intro: "Desde un sistema de gestión full stack hasta una aplicación móvil local-first: contexto, participación y estado real de cada entrega.",
+      problem: "Contexto", role: "Mi participación", delivery: "Entrega", product: "Producto", web: "Presencia web", stack: "Tecnologías del proyecto", viewLive: "Abrir proyecto <span aria-hidden=\"true\">↗</span>", viewCode: "Ver código <span aria-hidden=\"true\">↗</span>",
+      toca: { status: "En homologación", type: "Sistema de gestión · proyecto freelance", summary: "Sistema para centralizar la operación de una clínica de podología, desde la agenda y las historias clínicas hasta el inventario, las finanzas y los informes.", context: "Información operativa distribuida entre diferentes rutinas.", role: "Concepción, arquitectura y desarrollo full stack.", delivery: "Registros centrales, agenda inicial, autenticación, RBAC, auditoría y validaciones cliente/servidor.", privacy: "Entorno privado de homologación. El enlace no se publica para proteger los datos y accesos del cliente." },
+      clarium: { status: "Aplicación publicada", type: "Finanzas personales · proyecto propio", summary: "Aplicación local-first para registrar ingresos, gastos, compras con tarjeta, planificación mensual e indicadores sin depender de un servidor.", product: "Experiencia móvil con datos locales y navegación estructurada.", web: "Landing multilingüe publicada para presentar los recursos y distribuir el APK.", previewLabel: "Abrir la aplicación publicada de Clarium", imageAlt: "Página de Clarium con pantallas de la aplicación de finanzas personales" }
     },
     experience: {
-      eye: "Experiencia",
-      period: "2024 &mdash; Actualidad",
-      location: "São Paulo, SP<br>Beca · Des. de Sistemas",
-      role: "Becario de Desarrollo de Sistemas",
-      items: [
-        "Soporte técnico y troubleshooting con foco en resolución rápida y estabilidad del entorno",
-        "Apoyo en la administración de entornos virtualizados con Proxmox",
-        "Implementación y evolución del monitoreo con Zabbix y Grafana",
-        "Ajustes y mejoras en páginas e interfaces web en producción",
-        "Organización y gestión de credenciales con SysPass",
-        "Registros y evidencias operativas en AWS S3",
-      ],
+      label: "Experiencia profesional", title: "Evolución con contexto<br>de <em>producto y operaciones</em>.", companyPeriod: "dic 2025 — actualidad", location: "Santo André, SP, Brasil", progression: "Promoción de becario a Analista Jr. en junio de 2026.",
+      current: { period: "jun 2026 — actualidad", role: "Analista Jr. de Desarrollo de Sistemas", mode: "Presencial", summary: "Trabajo en la evolución de una plataforma SaaS, interfaces web y sistemas internos, conectando desarrollo con infraestructura, observabilidad y AppSec.", items: ["Desarrollo y mantenimiento con Python, JavaScript/TypeScript y React.", "Rediseño de la interfaz de XGuardian y desarrollo de su sitio institucional.", "Administración de servidores Linux, troubleshooting y virtualización con Proxmox.", "Monitoreo con Zabbix, Grafana y Prometheus.", "Apoyo a prácticas de AppSec y Supply Chain Security con Sonatype Nexus y XGuardian."] },
+      intern: { period: "dic 2025 — jun 2026", role: "Becario de Desarrollo de Sistemas", mode: "Presencial", summary: "Experiencia inicial en desarrollo web, soporte técnico, infraestructura, observabilidad, seguridad de aplicaciones y documentación.", items: ["Recuperación de portátiles y activos antiguos y organización del entorno de servidores.", "Apoyo a la administración de Proxmox y troubleshooting de estaciones y servicios.", "Implementación y seguimiento del monitoreo con Zabbix y Grafana.", "Implantación interna de SysPass y elaboración de documentación y registros técnicos."] }
     },
-    projects: {
-      eye: "Proyectos",
-      heading: "Código con propósito,<br>entrega con criterio.",
-      description: "Proyectos que muestran lo que hago en la práctica &mdash; desde frontend hasta backend y mobile.",
-      cards: {
-        one: {
-          label: "01 · Producción",
-          description:
-            "Landing multilingüe con internacionalización via next-intl. Animaciones con Framer Motion y despliegue en producción en Vercel para distribuir el APK del proyecto Clarium.",
-          link: "clarium.vercel.app",
-        },
-        two: {
-          label: "02 · Mobile",
-          description:
-            "App mobile para control financiero. Expo Router, TypeScript y persistencia local con SQLite &mdash; arquitectura offline-first sin dependencia de servidor.",
-          link: "Ver repositorio",
-        },
-        three: {
-          label: "03 · Backend",
-          description:
-            "Sistema completo en Python con SQLite. Arquitectura en capas, CRUD, validaciones de entrada y CLI interactiva. Separación clara de responsabilidades y código limpio.",
-          stack: "Capas",
-          link: "Ver repositorio",
-        },
-        four: {
-          label: "04 · Datos",
-          title: "Dashboard Interactivo",
-          description:
-            "Panel en Power BI con modelado en DAX, gráficos dinámicos y filtros interactivos. Enfocado en lectura rápida de indicadores para toma de decisiones.",
-          stack: "Visualización",
-          link: "Ver dashboard",
-        },
-      },
+    expertise: {
+      label: "Competencias", title: "Una base generalista,<br>organizada por <em>entregas</em>.", intro: "Tecnologías y prácticas respaldadas por mi experiencia, proyectos y formación.",
+      development: { title: "Desarrollo", description: "Interfaces, aplicaciones web, APIs y desarrollo móvil." },
+      data: { title: "Datos y aplicaciones", description: "Persistencia, autenticación y control de acceso en productos.", auth: "Autenticación · RBAC", audit: "Registros de auditoría" },
+      operations: { title: "Operaciones y confiabilidad", description: "Entornos, despliegue, monitoreo y troubleshooting.", docker: "Docker básico" },
+      product: { title: "Ingeniería y producto", description: "Calidad de entrega, experiencia y evolución sostenible.", tests: "Pruebas de software", docs: "Documentación técnica" }
     },
+    about: { label: "Sobre mí", title: "El código es una parte.<br>Importa <em>todo el sistema</em>.", lead: "Soy Analista Jr. de Desarrollo de Sistemas con perfil generalista y experiencia práctica en la evolución de un producto SaaS, interfaces web y sistemas internos.", p1: "Me interesa comprender cómo se conectan la interfaz, el backend, los datos y la infraestructura. Esta visión orienta mi trabajo desde el prototipo y la implementación hasta la documentación, el monitoreo y la operación.", p2: "Mi trayectoria combina formación en desarrollo de sistemas, proyectos full stack y móviles y una rutina profesional que también incluye Linux, observabilidad y seguridad de aplicaciones.", quote: "Busco construir soluciones claras para quien las usa, sostenibles para quien las mantiene y observables para quien las opera." },
     education: {
-      sectionLabel: "Formación y certificaciones",
-      eye: "Formación &amp; Certificaciones",
-      heading: 'Formación<span style="color:var(--accent)">.</span>',
-      certHeading: 'Certificaciones<span style="color:var(--accent)">.</span>',
-      items: {
-        adsTitle: "Carrera en Análisis y Desarrollo de Sistemas",
-        adsPeriod: "En curso",
-        dsTitle: "Técnico en Desarrollo de Sistemas",
-        internetTitle: "Técnico en Informática para Internet",
-        highschoolTitle: "Educación secundaria",
-      },
+      label: "Formación y credenciales", title: "Base técnica en<br><em>evolución continua</em>.", academic: "Formación académica", certifications: "Certificaciones", inProgress: "En curso", completed: "Finalizado",
+      unicid: { course: "Tecnología en Análisis y Desarrollo de Sistemas", period: "jun 2026 — previsión jun 2027" },
+      senai: { course: "Técnico en Desarrollo de Sistemas", period: "jul 2024 — jun 2026" },
+      proz: { course: "Técnico en Informática para Internet", period: "ene 2023 — dic 2024" },
+      sfpc: { date: "CertiProf · oct 2024 — oct 2027" }, credly: "Ver perfil en Credly <span aria-hidden=\"true\">↗</span>", languages: "Idiomas", english: "Inglés intermedio", englishDetail: "B2 autodeclarado, actualmente en perfeccionamiento con clases particulares."
     },
-    events: {
-      eye: "Eventos &amp; Comunidad",
-      heading: "Presencia en la <em>comunidad</em> tech.",
-      description: "Participación en eventos, charlas e iniciativas promovidas por grandes empresas del sector tecnológico. Contacto directo con tendencias, casos reales y profesionales de referencia.",
-      badge: "Participante",
-      items: [
-        { name: "Oracle", label: "Evento de Tecnología", key: "oracle" },
-        { name: "AWS", label: "Community Day", key: "aws" },
-        { name: "Google Cloud", label: "Cloud Summit", key: "gcloud" },
-        { name: "Gemini", label: "AI Developer Event", key: "gemini" },
-        { name: "Santander", label: "Tech e Innovación", key: "sant" },
-        { name: "GetCode", label: "by Getnet", key: "getnet" },
-        { name: "TOTVS", label: "Evento de Tecnología", key: "totvs" },
-      ],
-      marqueeItems: ["Oracle", "AWS", "Google Cloud", "Google Gemini", "Santander", "GetCode", "TOTVS"],
-    },
-    contact: {
-      pretitle: "Ponte en contacto",
-      heading: 'Hablemos<span style="color:var(--accent)">.</span>',
-      description: "Abierto a oportunidades de beca, proyectos y colaboraciones. Cuéntame qué tienes en mente.",
-      inlineResume: "CV",
-      phoneLabel: "Teléfono",
-    },
-    legal: {
-      note: "Portafolio oficial, CV y enlaces profesionales centralizados aquí, en GitHub, LinkedIn y Credly. El código es abierto, mientras que la identidad visual y los textos de autor siguen siendo parte de este trabajo.",
-    },
-    footer: {
-      copy: "&copy; 2026 Carlos Gabriel &middot; São Paulo, SP",
-    },
-    intro: {
-      command: 'node portfolio --init --author="carlos_gabriel"',
-      line1: "Initializing build environment...",
-      line2: "Loading: react · next · typescript · tailwind",
-      resolved: "Dependencies resolved",
-      stack: "Stack: web · backend · mobile · infra & cloud",
-      location: "Location: São Paulo — Brazil",
-      statusLabel: "Status:",
-      statusValue: "available for opportunities",
-      ready: "carlos_gabriel.portfolio() — ready",
-    },
-  },
+    contact: { label: "Contacto", title: "¿Buscas un profesional júnior<br>que piensa <em>más allá de la pantalla</em>?", description: "Estoy disponible para oportunidades en desarrollo de sistemas, full stack y software, en São Paulo o en remoto.", phone: "Teléfono", location: "São Paulo, Brasil · presencial, híbrido o remoto" },
+    footer: { copy: "© 2026 Carlos Gabriel Gomes Luz", top: "Volver arriba" }
+  }
 };
 
-function localizedUrl(lang) {
-  return lang === "pt-BR"
-    ? "https://carlosgabriel.netlify.app/"
-    : `https://carlosgabriel.netlify.app/?lang=${lang}`;
+const supportedLocales = Object.keys(portfolioTranslations);
+const defaultLocale = "pt-BR";
+
+function getStoredLocale() {
+  try { return localStorage.getItem("portfolio-language"); } catch (error) { return null; }
 }
 
-function setText(id, value) {
-  const node = $(id);
-  if (node && typeof value === "string") node.textContent = value;
+function resolveLocale() {
+  const requested = new URLSearchParams(window.location.search).get("lang");
+  if (supportedLocales.includes(requested)) return requested;
+  const stored = getStoredLocale();
+  return supportedLocales.includes(stored) ? stored : defaultLocale;
 }
 
-function setHtml(id, value) {
-  const node = $(id);
-  if (node && typeof value === "string") node.innerHTML = value;
+function valueAt(object, path) {
+  return path.split(".").reduce((value, key) => value?.[key], object);
 }
 
-function setList(id, items) {
-  const node = $(id);
-  if (!node || !Array.isArray(items)) return;
-  node.innerHTML = items.map((item) => `<li>${item}</li>`).join("");
+function setMeta(selector, content) {
+  const element = document.querySelector(selector);
+  if (element && content) element.setAttribute("content", content);
 }
 
-function getEventLogo(key) {
-  const logos = {
-    oracle: "./assets/images/events/oracle.png",
-    aws: "./assets/images/events/aws.png",
-    gcloud: "./assets/images/events/google-cloud.png",
-    gemini: "./assets/images/events/gemini.webp",
-    sant: "./assets/images/events/santander.png",
-    getnet: "./assets/images/events/getcode.png",
-    totvs: "./assets/images/events/totvs.png",
-  };
+function updateMetadata(locale, pack) {
+  document.title = pack.meta.title;
+  setMeta('meta[name="description"]', pack.meta.description);
+  setMeta('meta[property="og:title"]', pack.meta.title);
+  setMeta('meta[property="og:description"]', pack.meta.socialDescription);
+  setMeta('meta[property="og:locale"]', pack.meta.locale);
+  setMeta('meta[property="og:image:alt"]', pack.meta.imageAlt);
+  setMeta('meta[name="twitter:title"]', pack.meta.title);
+  setMeta('meta[name="twitter:description"]', pack.meta.socialDescription);
+  setMeta('meta[name="twitter:image:alt"]', pack.meta.imageAlt);
 
-  return logos[key] || "";
-}
+  const baseUrl = "https://carlosgabriel.netlify.app/";
+  const localizedUrl = locale === defaultLocale ? baseUrl : `${baseUrl}?lang=${locale}`;
+  document.querySelector('link[rel="canonical"]')?.setAttribute("href", localizedUrl);
+  setMeta('meta[property="og:url"]', localizedUrl);
 
-function buildEventsSection(events) {
-  const grid = $("events-grid");
-  if (grid && Array.isArray(events.items)) {
-    grid.innerHTML = events.items
-      .map(
-        (item) => `
-          <article class="evcard" role="listitem">
-            <div class="ev-logo ev-${item.key}">
-              <img src="${getEventLogo(item.key)}" alt="Logo ${item.name}" loading="lazy" decoding="async">
-            </div>
-            <div class="ev-name">${item.name}</div>
-            <div class="ev-label">${item.label}</div>
-            <div class="ev-badge">${events.badge}</div>
-          </article>`
-      )
-      .join("");
-  }
-
-  const track = $("marquee-track");
-  if (track && Array.isArray(events.marqueeItems)) {
-    const markup = events.marqueeItems.map((item) => `<span class="marquee-item">${item}</span>`).join("");
-    track.innerHTML = `
-      <div class="marquee-group">${markup}</div>
-      <div class="marquee-group" aria-hidden="true">${markup}</div>
-    `;
-
-    const updateMarqueeMetrics = () => {
-      const firstGroup = track.querySelector(".marquee-group");
-      if (!firstGroup) return;
-
-      const gap = parseFloat(getComputedStyle(track).gap || "0");
-      const distance = firstGroup.scrollWidth + gap;
-      const duration = Math.max(distance / 70, 18);
-
-      track.style.setProperty("--marquee-distance", `${distance}px`);
-      track.style.setProperty("--marquee-duration", `${duration}s`);
-    };
-
-    updateMarqueeMetrics();
-
-    if (track._marqueeObserver) track._marqueeObserver.disconnect();
-    track._marqueeObserver = new ResizeObserver(updateMarqueeMetrics);
-    track._marqueeObserver.observe(track);
+  const schema = document.getElementById("person-schema");
+  if (schema) {
+    try {
+      const data = JSON.parse(schema.textContent);
+      data.jobTitle = pack.meta.jobTitle;
+      data.url = localizedUrl;
+      schema.textContent = JSON.stringify(data);
+    } catch (error) {}
   }
 }
 
-function updateMeta(meta, lang) {
-  const currentUrl = localizedUrl(lang);
-  document.title = meta.title;
-  document.documentElement.lang = lang;
-  document.querySelector('meta[name="description"]').setAttribute("content", meta.description);
-  document.querySelector('meta[property="og:title"]').setAttribute("content", meta.ogTitle);
-  document.querySelector('meta[property="og:description"]').setAttribute("content", meta.ogDescription);
-  document.querySelector('meta[property="og:locale"]').setAttribute("content", meta.ogLocale);
-  document.querySelector('meta[property="og:url"]').setAttribute("content", currentUrl);
-  document.querySelector('meta[property="og:image:alt"]').setAttribute("content", meta.ogImageAlt);
-  document.querySelector('meta[name="twitter:title"]').setAttribute("content", meta.ogTitle);
-  document.querySelector('meta[name="twitter:description"]').setAttribute("content", meta.ogDescription);
-  document.querySelector('meta[name="twitter:image:alt"]').setAttribute("content", meta.ogImageAlt);
-  document.querySelector('link[rel="canonical"]').setAttribute("href", currentUrl);
-}
+function translateDocument(locale) {
+  const pack = portfolioTranslations[locale] || portfolioTranslations[defaultLocale];
+  document.documentElement.lang = locale;
 
-function updateSchema(langPack) {
-  const schemaNode = $("person-schema");
-  if (!schemaNode) return;
-
-  const schema = {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    name: "Carlos Gabriel",
-    jobTitle: langPack.meta.title.split("|")[1].trim(),
-    url: "https://carlosgabriel.netlify.app/",
-    image: "https://carlosgabriel.netlify.app/assets/images/og-cover.svg",
-    email: "mailto:carlosgabriel.contato2007@gmail.com",
-    telephone: "+55-11-96762-2665",
-    sameAs: [
-      "https://github.com/CarlossgLuz",
-      "https://www.linkedin.com/in/dev-carlosgabriel/",
-      "https://www.credly.com/users/carlos-gabriel.3078ca93",
-    ],
-    address: {
-      "@type": "PostalAddress",
-      addressLocality: "São Paulo",
-      addressCountry: "BR",
-    },
-    alumniOf: ["Impacta Tecnologia", "SENAI Francisco Matarazzo", "Proz Educação"],
-    knowsAbout: ["Frontend", "Backend", "Mobile", "Infrastructure", "Cloud", "Observability"],
-  };
-
-  schemaNode.textContent = JSON.stringify(schema, null, 2);
-}
-
-function applyTranslations(lang) {
-  const pack = portfolioTranslations[lang] || portfolioTranslations["pt-BR"];
-
-  setText("nav-about", pack.nav.about);
-  setText("nav-skills", pack.nav.skills);
-  setText("nav-experience", pack.nav.experience);
-  setText("nav-projects", pack.nav.projects);
-  setText("nav-events", pack.nav.events);
-  setText("nav-contact", pack.nav.contact);
-  setText("mob-nav-about", pack.nav.about);
-  setText("mob-nav-skills", pack.nav.skills);
-  setText("mob-nav-experience", pack.nav.experience);
-  setText("mob-nav-projects", pack.nav.projects);
-  setText("mob-nav-events", pack.nav.events);
-  setText("mob-nav-contact", pack.nav.contact);
-  setText("mob-resume", pack.cta.resume);
-
-  setText("hero-badge", pack.hero.badge);
-  setHtml("hero-description", pack.hero.description);
-  setText("hero-stat-education", pack.hero.stats.education);
-  setText("hero-stat-events", pack.hero.stats.events);
-  setText("hero-stat-certs", pack.hero.stats.certs);
-  setText("cta-projects", pack.cta.projects);
-  setText("cta-contact-text", pack.cta.contact);
-  setText("hero-scroll", pack.hero.scroll);
-
-  setText("about-eye", pack.about.eye);
-  setHtml("abouth", pack.about.heading);
-  setHtml("about-p1", pack.about.p1);
-  setHtml("about-p2", pack.about.p2);
-  setHtml("about-p3", pack.about.p3);
-  setText("tag-frontend", pack.about.tags.frontend);
-  setText("tag-backend", pack.about.tags.backend);
-  setText("tag-mobile", pack.about.tags.mobile);
-  setText("tag-infra", pack.about.tags.infra);
-  setText("tag-observability", pack.about.tags.observability);
-  setText("tag-ux", pack.about.tags.ux);
-
-  setHtml("expertise-eye", pack.expertise.eye);
-  setHtml("exp-front-title", pack.expertise.cards.frontend.title);
-  setHtml("exp-back-title", pack.expertise.cards.backend.title);
-  setHtml("exp-mobile-title", pack.expertise.cards.mobile.title);
-  setHtml("exp-infra-title", pack.expertise.cards.infra.title);
-  setList("exp-front-list", pack.expertise.cards.frontend.items);
-  setList("exp-back-list", pack.expertise.cards.backend.items);
-  setList("exp-mobile-list", pack.expertise.cards.mobile.items);
-  setList("exp-infra-list", pack.expertise.cards.infra.items);
-
-  setText("experience-eye", pack.experience.eye);
-  setHtml("experience-period", pack.experience.period);
-  setHtml("experience-location", pack.experience.location);
-  setText("xph", pack.experience.role);
-  setList("experience-list", pack.experience.items);
-
-  setText("projects-eye", pack.projects.eye);
-  setHtml("prjh", pack.projects.heading);
-  setHtml("projects-description", pack.projects.description);
-  setText("project-1-label", pack.projects.cards.one.label);
-  setHtml("project-1-description", pack.projects.cards.one.description);
-  setText("project-1-link", pack.projects.cards.one.link);
-  setText("project-2-label", pack.projects.cards.two.label);
-  setHtml("project-2-description", pack.projects.cards.two.description);
-  setText("project-2-link", pack.projects.cards.two.link);
-  setText("project-3-label", pack.projects.cards.three.label);
-  setHtml("project-3-description", pack.projects.cards.three.description);
-  setText("project-3-stack", pack.projects.cards.three.stack);
-  setText("project-3-link", pack.projects.cards.three.link);
-  setText("project-4-label", pack.projects.cards.four.label);
-  setText("project-4-title", pack.projects.cards.four.title);
-  setHtml("project-4-description", pack.projects.cards.four.description);
-  setText("project-4-stack", pack.projects.cards.four.stack);
-  setText("project-4-link", pack.projects.cards.four.link);
-
-  document.getElementById("education").setAttribute("aria-label", pack.education.sectionLabel);
-  setHtml("education-eye", pack.education.eye);
-  setHtml("education-heading", pack.education.heading);
-  setHtml("cert-heading", pack.education.certHeading);
-  setText("edu-ads-title", pack.education.items.adsTitle);
-  setText("edu-ads-period", pack.education.items.adsPeriod);
-  setText("edu-ds-title", pack.education.items.dsTitle);
-  setText("edu-internet-title", pack.education.items.internetTitle);
-  setText("edu-highschool-title", pack.education.items.highschoolTitle);
-  setText("cert-credly-text", pack.cta.credly);
-  setText("cert-resume-text", pack.cta.resume);
-
-  setHtml("events-eye", pack.events.eye);
-  setHtml("events-heading", pack.events.heading);
-  setText("events-description", pack.events.description);
-  buildEventsSection(pack.events);
-
-  setText("contact-pretitle", pack.contact.pretitle);
-  setHtml("cth", pack.contact.heading);
-  setText("contact-description", pack.contact.description);
-  setText("contact-email-cta", pack.cta.email);
-  setText("contact-resume-text", pack.cta.resume);
-  setText("contact-inline-resume-text", pack.contact.inlineResume);
-  setText("contact-phone-label", pack.contact.phoneLabel);
-  setText("legal-note", pack.legal.note);
-  setHtml("footer-copy", pack.footer.copy);
-
-  $("prog").setAttribute("aria-label", pack.aria.progress);
-  $("intro").setAttribute("aria-label", pack.aria.loadingPortfolio);
-  $("mob").setAttribute("aria-label", pack.aria.menu);
-  $("mainnav").setAttribute("aria-label", pack.aria.primaryNav);
-  $("ham").setAttribute("aria-label", pack.aria.openMenu);
-  $("hero").setAttribute("aria-label", pack.aria.presentation);
-  document.querySelector(".lang-switcher").setAttribute("aria-label", pack.aria.languageSelector);
-  document.querySelector(".mlang").setAttribute("aria-label", pack.aria.languageSelector);
-  document.querySelector("footer .fl").setAttribute("aria-label", pack.aria.externalLinks);
-  $("contact-inline-resume").setAttribute("aria-label", pack.aria.resume);
-  $("contact-phone-link").setAttribute("aria-label", pack.aria.phone);
-
-  const dotLabels = {
-    hero: lang === "pt-BR" ? "Início" : lang === "en" ? "Home" : "Inicio",
-    about: pack.nav.about,
-    expertise: pack.nav.skills,
-    experience: pack.nav.experience,
-    projects: pack.nav.projects,
-    education: lang === "pt-BR" ? "Formação" : lang === "en" ? "Education" : "Formación",
-    events: pack.nav.events,
-    contact: pack.nav.contact,
-  };
-
-  document.querySelectorAll(".section-dot").forEach((dot) => {
-    const label = dotLabels[dot.dataset.section];
-    if (!label) return;
-    dot.setAttribute("title", label);
-    dot.setAttribute("aria-label", label);
+  document.querySelectorAll("[data-i18n]").forEach((element) => {
+    const value = valueAt(pack, element.dataset.i18n);
+    if (typeof value === "string") element.innerHTML = value;
   });
 
+  document.querySelectorAll("[data-i18n-list]").forEach((element) => {
+    const items = valueAt(pack, element.dataset.i18nList);
+    if (Array.isArray(items)) element.replaceChildren(...items.map((item) => Object.assign(document.createElement("li"), { textContent: item })));
+  });
+
+  document.querySelectorAll("[data-i18n-aria-label]").forEach((element) => {
+    const value = valueAt(pack, element.dataset.i18nAriaLabel);
+    if (typeof value === "string") element.setAttribute("aria-label", value);
+  });
+
+  document.querySelectorAll("[data-i18n-alt]").forEach((element) => {
+    const value = valueAt(pack, element.dataset.i18nAlt);
+    if (typeof value === "string") element.setAttribute("alt", value);
+  });
+
+  const resumeFile = locale === defaultLocale ? "CV_Carlos_Gabriel_PtBR.pdf" : "CV_Carlos_Gabriel_EN.pdf";
+  document.querySelectorAll(".resume-link").forEach((link) => link.setAttribute("href", `./assets/documents/${resumeFile}`));
   document.querySelectorAll(".lang-btn").forEach((button) => {
-    const isActive = button.dataset.lang === lang;
-    button.classList.toggle("is-active", isActive);
-    button.setAttribute("aria-pressed", String(isActive));
+    const active = button.dataset.lang === locale;
+    button.classList.toggle("is-active", active);
+    button.setAttribute("aria-pressed", String(active));
   });
 
-  updateMeta(pack.meta, lang);
-  updateSchema(pack);
-
-  localStorage.setItem("portfolio-language", lang);
-  const url = new URL(window.location.href);
-  if (lang === "pt-BR") {
-    url.searchParams.delete("lang");
-  } else {
-    url.searchParams.set("lang", lang);
-  }
-  history.replaceState({}, "", url);
-
-  window.portfolioI18n.current = lang;
-  window.dispatchEvent(new CustomEvent("portfolio:languagechange", { detail: { lang, pack } }));
+  updateMetadata(locale, pack);
+  window.portfolioI18n.current = locale;
+  window.dispatchEvent(new CustomEvent("portfolio:languagechange", { detail: { locale } }));
 }
 
-function detectLanguage() {
-  const urlLang = new URLSearchParams(window.location.search).get("lang");
-  if (urlLang && portfolioTranslations[urlLang]) return urlLang;
+function selectLocale(locale, updateUrl = true) {
+  if (!supportedLocales.includes(locale)) return;
+  try { localStorage.setItem("portfolio-language", locale); } catch (error) {}
 
-  const storedLang = localStorage.getItem("portfolio-language");
-  if (storedLang && portfolioTranslations[storedLang]) return storedLang;
-
-  return "pt-BR";
+  if (updateUrl) {
+    const url = new URL(window.location.href);
+    if (locale === defaultLocale) url.searchParams.delete("lang");
+    else url.searchParams.set("lang", locale);
+    history.replaceState({}, "", `${url.pathname}${url.search}${url.hash}`);
+  }
+  translateDocument(locale);
 }
 
 window.portfolioI18n = {
-  translations: portfolioTranslations,
-  current: "pt-BR",
-  apply: applyTranslations,
-  detect: detectLanguage,
-  getPack() {
-    return portfolioTranslations[this.current] || portfolioTranslations["pt-BR"];
-  },
+  current: resolveLocale(),
+  getPack: () => portfolioTranslations[window.portfolioI18n.current] || portfolioTranslations[defaultLocale],
+  select: selectLocale
 };
 
-document.querySelectorAll(".lang-btn").forEach((button) => {
-  button.addEventListener("click", () => applyTranslations(button.dataset.lang));
+document.addEventListener("click", (event) => {
+  const button = event.target.closest(".lang-btn");
+  if (button) selectLocale(button.dataset.lang);
 });
 
-applyTranslations(detectLanguage());
+translateDocument(window.portfolioI18n.current);

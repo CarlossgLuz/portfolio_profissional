@@ -83,8 +83,9 @@
 
 #cd, #cr { display: none; position: fixed; z-index: 999; top: 0; left: 0; border-radius: 50%; pointer-events: none; transform: translate(-50%, -50%); }
 #cd { width: 4px; height: 4px; background: var(--bright); }
-#cr { width: 26px; height: 26px; border: 1px solid color-mix(in srgb, var(--accent), transparent 35%); transition: width 160ms var(--ease-out), height 160ms var(--ease-out), background-color 160ms ease; }
-.cbig #cr { width: 40px; height: 40px; background: color-mix(in srgb, var(--accent), transparent 88%); }
+#cr { width: 40px; height: 40px; }
+#cr::after { content: ""; position: absolute; inset: 0; border: 1px solid color-mix(in srgb, var(--accent), transparent 35%); border-radius: 50%; transform: scale(.65); transition: transform 160ms var(--ease-out), background-color 160ms ease; }
+.cbig #cr::after { background: color-mix(in srgb, var(--accent), transparent 88%); transform: scale(1); }
 @media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) { body.cursor-ready, body.cursor-ready a, body.cursor-ready button { cursor: none; } body.cursor-ready #cd, body.cursor-ready #cr { display: block; } .button:active, .icon-control:active, .lang-btn:active, .ham:active { transform: scale(.97); } }
 
 .site-footer { padding-block: 1.5rem; border-top: 1px solid var(--border); }

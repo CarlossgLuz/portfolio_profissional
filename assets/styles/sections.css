@@ -54,7 +54,7 @@
 .project__privacy { margin-top: 1.25rem; color: var(--muted); font-size: .7rem; line-height: 1.6; }
 .project__links { display: flex; align-items: center; gap: 1.25rem; margin-top: 1.8rem; }
 .project__media { position: relative; min-height: 100%; overflow: hidden; border-right: 1px solid var(--border); background: #020b08; }
-.project__media img { width: 100%; height: 100%; object-fit: contain; object-position: center; filter: saturate(.82) contrast(1.04); transition: transform 500ms var(--ease-out), filter 250ms ease; }
+.project__media img { width: 100%; height: 100%; object-fit: contain; object-position: center; filter: saturate(.9) contrast(1.04); transition: transform 220ms var(--ease-out); }
 .project__media::after { content: ""; position: absolute; inset: 0; border: 1px solid transparent; transition: border-color 180ms ease; }
 
 .project-blueprint { position: relative; min-height: 100%; padding: clamp(1.5rem, 4vw, 3rem); border-left: 1px solid var(--border); background: #0c1716; overflow: hidden; }
@@ -144,7 +144,6 @@
 .contact__actions > p { margin-top: 1rem; color: rgba(6, 32, 24, .7); font-family: var(--mono); font-size: .58rem; }
 
 @media (hover: hover) and (pointer: fine) {
-  .project__media:hover img { transform: scale(1.025); filter: saturate(1) contrast(1); }
+  .project__media:hover img { transform: scale(1.015); }
   .project__media:hover::after { border-color: var(--accent); }
-  .capability:hover { background: color-mix(in srgb, var(--surface), transparent 45%); }
 }

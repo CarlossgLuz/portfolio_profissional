@@ -70,7 +70,8 @@
       const target = id ? document.getElementById(id) : null;
       if (!target) return;
       event.preventDefault();
-      target.scrollIntoView({ behavior: prefersReducedMotion.matches ? "auto" : "smooth", block: "start" });
+      const keyboardInitiated = event.detail === 0;
+      target.scrollIntoView({ behavior: prefersReducedMotion.matches || keyboardInitiated ? "auto" : "smooth", block: "start" });
     });
   });
 

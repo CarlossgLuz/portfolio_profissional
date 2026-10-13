@@ -1,0 +1,15 @@
+{
+  "name": "carlos-gabriel-portfolio",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Carlos Gabriel — AppSec, DevSecOps and software engineering portfolio",
+  "scripts": {
+    "build": "node scripts/build.cjs",
+    "test": "node --test tests/browser.cjs",
+    "check": "node scripts/check.cjs"
+  },
+  "devDependencies": {
+    "playwright": "1.51.1",
+    "@axe-core/playwright": "4.10.2"
+  }
+}

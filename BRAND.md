@@ -9,6 +9,10 @@ That does not authorize third parties to:
 - redistribute the resume as if it belonged to another person
 - clone this portfolio for phishing, impersonation or fake recruiting flows
 
+## Visual identity
+
+Official CG mark: black, white and yellow `#FFDE59`. Professional focus: AppSec, DevSecOps and software engineering. Original logo geometry is preserved; variants are display derivatives.
+
 ## Official References
 
 - Portfolio: `https://carlosgabriel.netlify.app/`

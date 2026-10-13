@@ -3,32 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Carlos Gabriel | Analista de Desenvolvimento de Sistemas Jr.</title>
-  <meta name="description" content="Portfólio de Carlos Gabriel, Analista de Desenvolvimento de Sistemas Jr. e Desenvolvedor Full Stack Jr. em São Paulo.">
+  <title>Carlos Gabriel | AppSec &amp; DevSecOps</title>
+  <meta name="description" content="Portfólio de Carlos Gabriel. AppSec, DevSecOps, automação de QA e engenharia de software.">
   <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
   <meta name="author" content="Carlos Gabriel Gomes Luz">
-  <meta name="theme-color" content="#07110f">
-  <meta property="og:title" content="Carlos Gabriel | Analista de Desenvolvimento de Sistemas Jr.">
-  <meta property="og:description" content="Desenvolvimento full stack, produto, infraestrutura, observabilidade e AppSec.">
+  <meta name="theme-color" content="#080808">
+  <meta property="og:title" content="Carlos Gabriel | AppSec &amp; DevSecOps">
+  <meta property="og:description" content="AppSec, DevSecOps, automação de QA e engenharia de software.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://carlosgabriel.netlify.app/">
   <meta property="og:site_name" content="Carlos Gabriel — Portfólio">
   <meta property="og:locale" content="pt_BR">
   <meta property="og:locale:alternate" content="en_US">
   <meta property="og:locale:alternate" content="es_ES">
-  <meta property="og:image" content="https://carlosgabriel.netlify.app/assets/images/og-cover.svg">
-  <meta property="og:image:alt" content="Carlos Gabriel, Analista de Desenvolvimento de Sistemas Jr.">
+  <meta property="og:image" content="https://carlosgabriel.netlify.app/assets/images/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Carlos Gabriel — AppSec &amp; DevSecOps">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Carlos Gabriel | Analista de Desenvolvimento de Sistemas Jr.">
-  <meta name="twitter:description" content="Desenvolvimento full stack, produto, infraestrutura, observabilidade e AppSec.">
-  <meta name="twitter:image" content="https://carlosgabriel.netlify.app/assets/images/og-cover.svg">
-  <meta name="twitter:image:alt" content="Carlos Gabriel, Analista de Desenvolvimento de Sistemas Jr.">
+  <meta name="twitter:title" content="Carlos Gabriel | AppSec &amp; DevSecOps">
+  <meta name="twitter:description" content="AppSec, DevSecOps, automação de QA e engenharia de software.">
+  <meta name="twitter:image" content="https://carlosgabriel.netlify.app/assets/images/og-cover.png">
+  <meta name="twitter:image:alt" content="Carlos Gabriel — AppSec &amp; DevSecOps">
   <script>
     (function () {
       var key = "portfolio-theme";
       var stored = null;
       try { stored = localStorage.getItem(key); } catch (error) {}
-      var system = window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+      var system = "dark";
       var theme = stored === "light" || stored === "dark" ? stored : system;
       document.documentElement.setAttribute("data-theme", theme);
       document.documentElement.style.colorScheme = theme;
@@ -48,6 +50,7 @@
   <link rel="stylesheet" href="./assets/styles/components.css">
   <link rel="stylesheet" href="./assets/styles/sections.css">
   <link rel="stylesheet" href="./assets/styles/responsive.css">
+  <link rel="stylesheet" href="./assets/styles/brand.css">
   <script id="person-schema" type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -56,7 +59,7 @@
       "alternateName": "Carlos Gabriel",
       "jobTitle": "Analista de Desenvolvimento de Sistemas Jr.",
       "url": "https://carlosgabriel.netlify.app/",
-      "image": "https://carlosgabriel.netlify.app/assets/images/og-cover.svg",
+      "image": "https://carlosgabriel.netlify.app/assets/images/og-cover.png",
       "email": "mailto:carlosgabriel.contato2007@gmail.com",
       "address": {
         "@type": "PostalAddress",
@@ -139,7 +142,7 @@
 
   <header class="site-header" id="mainnav">
     <nav class="site-nav" data-i18n-aria-label="a11y.primaryNav" aria-label="Navegação principal">
-      <a href="#hero" class="nlogo" aria-label="CG — Carlos Gabriel"><span>CG</span><strong>Carlos Gabriel</strong></a>
+      <a href="#hero" class="nlogo" data-i18n-aria-label="a11y.brandHome" aria-label="Carlos Gabriel — início"><img src="./assets/images/logo-mark.svg" width="52" height="40" alt=""><strong>Carlos Gabriel<span class="brand-caption">AppSec &amp; DevSecOps</span></strong></a>
       <ul class="npill">
         <li><a href="#projects" data-i18n="nav.projects">Projetos</a></li>
         <li><a href="#experience" data-i18n="nav.experience">Experiência</a></li>
@@ -167,10 +170,10 @@
     <section id="hero" class="hero" data-i18n-aria-label="hero.label" aria-label="Apresentação">
       <div class="hero__inner wrap">
         <div class="hero__content">
-          <p class="eyebrow hero__eyebrow"><span class="status-dot" aria-hidden="true"></span><span data-i18n="hero.availability">Disponível para oportunidades júnior</span></p>
+          <p class="eyebrow hero__eyebrow"><span class="status-dot" aria-hidden="true"></span><span data-i18n="hero.availability">Em busca de oportunidades em AppSec</span></p>
           <h1>Carlos<br>Gabriel<span aria-hidden="true">.</span></h1>
-          <p class="hero__role" data-i18n="hero.role">Analista de Desenvolvimento de Sistemas Jr. <span aria-hidden="true">/</span> Desenvolvedor Full Stack Jr.</p>
-          <p class="hero__summary" data-i18n="hero.summary">Desenvolvo produtos e sistemas web conectando interface, backend, dados e operação. Minha experiência também passa por UX/UI, Linux, observabilidade e segurança de aplicações.</p>
+          <p class="hero__role" data-i18n="hero.role">AppSec / DevSecOps / Engenharia de Software</p>
+          <p class="hero__summary" data-i18n="hero.summary">Conecto código, segurança e operação. Sou Analista de Desenvolvimento Jr., com experiência prática em AppSec e em trajetória de especialização em segurança de aplicações.</p>
           <ul class="hero__meta" data-i18n-aria-label="hero.detailsLabel" aria-label="Informações profissionais">
             <li data-i18n="hero.location">São Paulo, SP</li>
             <li data-i18n="hero.workMode">Presencial · híbrido · remoto</li>
@@ -187,31 +190,50 @@
           </nav>
         </div>
 
-        <div class="hero-system" aria-hidden="true">
-          <div class="hero-system__header"><span>carlos.systems</span><span>2026</span></div>
-          <div class="system-map">
-            <div class="system-node system-node--product"><small>01</small><strong>Produto</strong><span>UX / UI</span></div>
-            <div class="system-node system-node--code"><small>02</small><strong>Desenvolvimento</strong><span>Full stack</span></div>
-            <div class="system-node system-node--ops"><small>03</small><strong>Operação</strong><span>Linux / Cloud</span></div>
-            <div class="system-node system-node--quality"><small>04</small><strong>Confiabilidade</strong><span>Observabilidade / AppSec</span></div>
-            <div class="system-core"><span>CG</span></div>
-          </div>
-          <div class="hero-system__footer"><span>build</span><strong>produto → código → operação</strong></div>
+        <div class="brand-stage" aria-hidden="true">
+          <div class="stage-grid"></div><div class="stage-glow"></div>
+          <canvas id="brand-canvas"></canvas>
+          <div class="stage-orbit stage-orbit--one"></div><div class="stage-orbit stage-orbit--two"></div>
+          <img data-themed-logo class="brand-mark" src="./assets/images/logo-mark.svg" width="500" height="380" alt="">
+          <span class="stage-label stage-label--top">CG / SECURITY BY DESIGN</span>
+          <span class="stage-label stage-label--bottom">CODE · CONTEXT · SECURITY</span>
+          <span class="stage-coordinate">23°33′ S<br>46°38′ W</span>
+          <div class="stage-cross stage-cross--a">+</div><div class="stage-cross stage-cross--b">+</div>
         </div>
       </div>
     </section>
 
+    <div class="hero-foot wrap"><a class="scroll-cue" href="#projects"><span class="scroll-arrow" aria-hidden="true">↓</span><span data-i18n="visual.scroll">Explore o trabalho</span></a><span class="hero-foot__index">PORTFOLIO / 2026</span><button id="motion-toggle" type="button" aria-pressed="false" data-i18n="visual.motion">Pausar efeitos</button></div>
+    <div class="signal-band" aria-hidden="true"><div>APPLICATION SECURITY <span>✳</span> SOFTWARE ENGINEERING <span>✳</span> AI GOVERNANCE <span>✳</span> APPLICATION SECURITY <span>✳</span> SOFTWARE ENGINEERING <span>✳</span> AI GOVERNANCE <span>✳</span></div></div>
     <section id="projects" class="section projects" aria-labelledby="projects-title">
       <div class="wrap">
         <div class="section-heading rv">
           <p class="eyebrow"><span>01</span><span data-i18n="projects.label">Projetos selecionados</span></p>
-          <h2 id="projects-title" data-i18n="projects.title">Entregas que mostram<br>como eu <em>trabalho</em>.</h2>
-          <p data-i18n="projects.intro">Do sistema de gestão full stack ao aplicativo mobile local-first: contexto, participação e estado real de cada entrega.</p>
+          <h2 id="projects-title" data-i18n="projects.title">Da intenção<br>à <em>engenharia</em>.</h2>
+          <p data-i18n="projects.intro">Segurança de aplicações, automação de QA e governança de IA. Trabalho aplicado, contexto real e participação transparente.</p>
         </div>
 
-        <article class="project project--clinic rv">
+<article class="project featured-work work--xguardian rv">
+ <div class="project__content"><div class="project__topline"><span class="project__index">01 / SELECTED WORK</span><span class="status" data-i18n="projects.xguardian.status">Atuação profissional</span></div>
+ <p class="project__type" data-i18n="projects.xguardian.type">AppSec & ASPM · experiência profissional</p><h3>XGuardian</h3>
+ <p class="project__lead" data-i18n="projects.xguardian.summary">Evolução de interfaces, relatórios e dashboards de uma plataforma de segurança de aplicações. Um trabalho de equipe, com foco em clareza, contexto e usabilidade.</p>
+ <dl class="project__facts"><div><dt data-i18n="projects.delivery">Entrega</dt><dd data-i18n="projects.xguardian.delivery">Relatórios de segurança, filtros, métricas e participação em controles de acesso.</dd></div></dl>
+ <ul class="tech-list"><li>ASPM</li><li>SAST / SCA / DAST</li><li>SBOM</li><li>RBAC</li></ul><div class="project__links"></div></div>
+ <div class="work-art" aria-hidden="true"><div class="art-grid"></div><div class="security-shield"><svg viewBox="0 0 200 220"><path d="M100 12 180 45v67c0 48-43 79-80 98-37-19-80-50-80-98V45Z"/><path class="shield-inner" d="m100 42 54 22v48c0 29-27 53-54 68-27-15-54-39-54-68V64Z"/><path class="shield-check" d="m67 107 23 23 43-45"/></svg></div><span class="art-code">XG / APPLICATION SECURITY</span><div class="art-tags"><span>SAST</span><span>SCA</span><span>DAST</span><span>SBOM</span></div></div></article><article class="project featured-work work--qa rv">
+ <div class="project__content"><div class="project__topline"><span class="project__index">02 / SELECTED WORK</span><span class="status" data-i18n="projects.qa.status">Em desenvolvimento</span></div>
+ <p class="project__type" data-i18n="projects.qa.type">Automação · iniciativa interna</p><h3>QA Automation</h3>
+ <p class="project__lead" data-i18n="projects.qa.summary">QA automatizado para apoiar validações pré e pós-release. Integrações diretas e APIs para testar funcionalidades, permissões, pipelines e fluxos da plataforma.</p>
+ <dl class="project__facts"><div><dt data-i18n="projects.delivery">Entrega</dt><dd data-i18n="projects.qa.delivery">Execuções customizáveis, registro de evidências e rastreabilidade das validações.</dd></div></dl>
+ <ul class="tech-list"><li>Python</li><li>APIs</li><li data-i18n="tags.integrations">Integrações</li><li data-i18n="tags.audit">Auditoria</li></ul><div class="project__links"></div></div>
+ <div class="work-art" aria-hidden="true"><div class="art-grid"></div><div class="pipeline-visual"><div class="pipeline-head">QA / RELEASE VALIDATION<span>●</span></div><div class="pipeline-row"><b>01</b><span>AUTH / RBAC</span><i></i></div><div class="pipeline-row"><b>02</b><span>API / FEATURES</span><i></i></div><div class="pipeline-row"><b>03</b><span>INTEGRATIONS</span><i></i></div><div class="pipeline-row"><b>04</b><span>EVIDENCE / LOGS</span><i></i></div><div class="pipeline-end"><span>→</span> TRACEABLE BY DESIGN</div></div></div></article><article class="project featured-work work--vaultin rv">
+ <div class="project__content"><div class="project__topline"><span class="project__index">03 / SELECTED WORK</span><span class="status" data-i18n="projects.vaultin.status">Código aberto</span></div>
+ <p class="project__type" data-i18n="projects.vaultin.type">Governança de IA · projeto autoral</p><h3>Vaultin</h3>
+ <p class="project__lead" data-i18n="projects.vaultin.summary">Organização de agentes, skills, regras e conhecimento técnico. Fluxos assistidos por IA com versionamento, roteamento de modelos e foco na previsibilidade das execuções.</p>
+ <dl class="project__facts"><div><dt data-i18n="projects.delivery">Entrega</dt><dd data-i18n="projects.vaultin.delivery">Centralização de contexto e configurações para apoiar execuções controladas.</dd></div></dl>
+ <ul class="tech-list"><li data-i18n="tags.agents">Agentes</li><li>Skills</li><li>MCP</li><li data-i18n="tags.governance">Governança</li></ul><div class="project__links"><a href="https://github.com/CarlossgLuz/Open-Vaultin" class="text-link" target="_blank" rel="noopener noreferrer" data-i18n="projects.viewCode">Ver código ↗</a></div></div>
+ <div class="work-art" aria-hidden="true"><div class="art-grid"></div><div class="vault-orbit"><div class="vault-ring"></div><div class="vault-ring vault-ring--two"></div><div class="vault-core">V<span>VAULTIN</span></div><span class="vault-node vault-node--a">AGENTS</span><span class="vault-node vault-node--b">SKILLS</span><span class="vault-node vault-node--c">CONTEXT</span></div><span class="art-code">AI / GOVERNED EXECUTION</span></div></article><div class="support-heading rv"><h3 data-i18n="visual.support">Outras entregas</h3><p data-i18n="visual.supportDesc">Produtos que consolidam minha base em desenvolvimento.</p></div>        <article class="project project--clinic rv">
           <div class="project__content">
-            <div class="project__topline"><span class="project__index">01</span><span class="status status--staging" data-i18n="projects.toca.status">Em homologação</span></div>
+            <div class="project__topline"><span class="project__index">04</span><span class="status status--staging" data-i18n="projects.toca.status">Em homologação</span></div>
             <p class="project__type" data-i18n="projects.toca.type">Sistema de gestão · projeto freelance</p>
             <h3>Toca dos Pés</h3>
             <p class="project__lead" data-i18n="projects.toca.summary">Sistema para centralizar a operação de uma clínica de podologia, da agenda e prontuários ao estoque, financeiro e relatórios.</p>
@@ -240,7 +262,7 @@
             <img src="./assets/images/projects/clarium-preview.webp" width="720" height="450" decoding="async" data-i18n-alt="projects.clarium.imageAlt" alt="Página do Clarium com telas do aplicativo de finanças pessoais">
           </a>
           <div class="project__content">
-            <div class="project__topline"><span class="project__index">02</span><span class="status status--live" data-i18n="projects.clarium.status">Aplicação publicada</span></div>
+            <div class="project__topline"><span class="project__index">05</span><span class="status status--live" data-i18n="projects.clarium.status">Aplicação publicada</span></div>
             <p class="project__type" data-i18n="projects.clarium.type">Finanças pessoais · projeto autoral</p>
             <h3>Clarium</h3>
             <p class="project__lead" data-i18n="projects.clarium.summary">Aplicativo local-first para registrar receitas, gastos, compras no cartão, planejamento mensal e indicadores sem depender de servidor.</p>
@@ -260,6 +282,10 @@
       </div>
     </section>
 
+    <section class="motion-interlude" aria-labelledby="motion-title">
+      <video class="motion-film" muted loop playsinline preload="none" poster="./assets/images/motion-poster.webp" aria-hidden="true" tabindex="-1"><source data-src="./assets/video/brand-motion.webm" type="video/webm"><source data-src="./assets/video/brand-motion.mp4" type="video/mp4"></video>
+      <div class="motion-interlude__shade"></div><div class="wrap motion-interlude__copy rv"><p class="eyebrow" data-i18n="visual.filmLabel">Identidade em movimento</p><h2 id="motion-title" data-i18n="visual.film">Código em movimento. Segurança em cada camada.</h2><p data-i18n="visual.filmDesc">Desenvolvimento, AppSec e automação: três perspectivas sobre o mesmo sistema.</p></div>
+    </section>
     <section id="experience" class="section experience" aria-labelledby="experience-title">
       <div class="wrap">
         <div class="section-heading rv">
@@ -276,14 +302,8 @@
             <article class="timeline-item rv">
               <div class="timeline-item__marker" aria-hidden="true"></div>
               <div class="timeline-item__header"><div><p data-i18n="experience.current.period">jun 2026 — atual</p><h3 data-i18n="experience.current.role">Analista de Desenvolvimento de Sistemas Jr.</h3></div><span data-i18n="experience.current.mode">Presencial</span></div>
-              <p class="timeline-item__summary" data-i18n="experience.current.summary">Atuação na evolução de plataforma SaaS, interfaces web e sistemas internos, conectando desenvolvimento a infraestrutura, observabilidade e AppSec.</p>
-              <ul data-i18n-list="experience.current.items">
-                <li>Desenvolvimento e manutenção com Python, JavaScript/TypeScript e React.</li>
-                <li>Redesenho da interface do XGuardian e desenvolvimento de sua página institucional.</li>
-                <li>Administração de servidores Linux, troubleshooting e virtualização com Proxmox.</li>
-                <li>Monitoramento com Zabbix, Grafana e Prometheus.</li>
-                <li>Apoio a práticas de AppSec e Supply Chain Security com Sonatype Nexus e XGuardian.</li>
-              </ul>
+              <p class="timeline-item__summary" data-i18n="experience.current.summary">Evolução do XGuardian e apoio ao ecossistema de segurança de aplicações, com trabalho em produto, análise de vulnerabilidades e automação.</p>
+              <ul data-i18n-list="experience.current.items"><li>Evolução de interfaces, dashboards e relatórios de SAST, SCA, DAST, Container Security e SBOM no XGuardian.</li><li>Investigação e contextualização de vulnerabilidades com OWASP, CVE/CWE, NVD, CVSS e informações de EOL.</li><li>Participação no levantamento e desenvolvimento de controles RBAC, perfis e permissões de APIs.</li><li>Desenvolvimento de QA automatizado para validar funcionalidades, integrações e permissões antes e após releases.</li><li>Apoio técnico ao ecossistema Sonatype e participação em reuniões técnicas em inglês.</li></ul>
               <ul class="tech-list"><li>Python</li><li>TypeScript</li><li>React</li><li>Linux</li><li>Proxmox</li><li>Zabbix</li><li>Grafana</li><li>Prometheus</li><li>AppSec</li></ul>
             </article>
             <article class="timeline-item rv">
@@ -307,14 +327,14 @@
       <div class="wrap">
         <div class="section-heading rv">
           <p class="eyebrow"><span>03</span><span data-i18n="expertise.label">Competências</span></p>
-          <h2 id="expertise-title" data-i18n="expertise.title">Uma base generalista,<br>organizada por <em>entrega</em>.</h2>
+          <h2 id="expertise-title" data-i18n="expertise.title">Segurança no foco.<br><em>Engenharia na base.</em></h2>
           <p data-i18n="expertise.intro">Tecnologias e práticas presentes nas experiências, projetos e formação profissional.</p>
         </div>
         <div class="capability-list">
-          <article class="capability rv"><span class="capability__number">01</span><div><h3 data-i18n="expertise.development.title">Desenvolvimento</h3><p data-i18n="expertise.development.description">Interfaces, aplicações web, APIs e desenvolvimento mobile.</p></div><ul><li>TypeScript · JavaScript</li><li>React · Next.js</li><li>React Native · Expo</li><li>Python · Node.js</li><li>HTML · CSS · Tailwind CSS</li></ul></article>
-          <article class="capability rv"><span class="capability__number">02</span><div><h3 data-i18n="expertise.data.title">Dados e aplicações</h3><p data-i18n="expertise.data.description">Persistência, autenticação e controle de acesso em produtos.</p></div><ul><li>SQL · PostgreSQL · SQLite</li><li>Supabase · Prisma</li><li>REST APIs</li><li data-i18n="expertise.data.auth">Autenticação · RBAC</li><li data-i18n="expertise.data.audit">Logs de auditoria</li></ul></article>
-          <article class="capability rv"><span class="capability__number">03</span><div><h3 data-i18n="expertise.operations.title">Operações e confiabilidade</h3><p data-i18n="expertise.operations.description">Ambientes, deploy, monitoramento e troubleshooting.</p></div><ul><li>Linux · Proxmox</li><li>Vercel · Azure · AWS</li><li data-i18n="expertise.operations.docker">Docker básico</li><li>Zabbix · Grafana</li><li>Prometheus</li></ul></article>
-          <article class="capability rv"><span class="capability__number">04</span><div><h3 data-i18n="expertise.product.title">Engenharia e produto</h3><p data-i18n="expertise.product.description">Qualidade de entrega, experiência e evolução sustentável.</p></div><ul><li>UX/UI · Responsividade</li><li data-i18n="expertise.product.tests">Testes de software</li><li>Git · GitHub</li><li data-i18n="expertise.product.docs">Documentação técnica</li><li>AppSec · Sonatype Nexus</li></ul></article>
+          <article class="capability rv"><span class="capability__number">01</span><div><h3 data-i18n="expertise.development.title">Segurança de aplicações</h3><p data-i18n="expertise.development.description">Contextualização de vulnerabilidades e segurança no ciclo de desenvolvimento.</p></div><ul><li>ASPM · SAST · SCA · DAST</li><li>SBOM · Supply Chain Security</li><li>OWASP · CVE/CWE · CVSS</li><li>Sonatype · Xygeni</li><li>RBAC · Secure SDLC</li></ul></article>
+          <article class="capability rv"><span class="capability__number">02</span><div><h3 data-i18n="expertise.data.title">Automação & IA</h3><p data-i18n="expertise.data.description">QA, agentes e integrações com governança e rastreabilidade.</p></div><ul><li>QA · APIs · MCP</li><li>Agentes · Skills · LLMs</li><li>Governança · Rastreabilidade</li><li>GitHub Actions · GitLab CI/CD</li></ul></article>
+          <article class="capability rv"><span class="capability__number">03</span><div><h3 data-i18n="expertise.operations.title">Desenvolvimento</h3><p data-i18n="expertise.operations.description">Interfaces, APIs, dados e produtos que funcionam juntos.</p></div><ul><li>Python · TypeScript · JavaScript</li><li>React · Next.js</li><li>APIs REST · SQL</li><li>Git · GitHub</li></ul></article>
+          <article class="capability rv"><span class="capability__number">04</span><div><h3 data-i18n="expertise.product.title">Operação & observabilidade</h3><p data-i18n="expertise.product.description">Entender o ambiente e investigar o comportamento dos sistemas.</p></div><ul><li>Linux · Docker · Proxmox</li><li>AWS · Azure</li><li>Zabbix · Grafana · Prometheus</li><li>Troubleshooting · Documentação</li></ul></article>
         </div>
       </div>
     </section>
@@ -326,12 +346,12 @@
           <h2 id="about-title" data-i18n="about.title">Código é uma parte.<br>O <em>sistema inteiro</em> importa.</h2>
         </div>
         <div class="about__body rv">
-          <p class="about__lead" data-i18n="about.lead">Sou Analista de Desenvolvimento de Sistemas Jr. com perfil generalista e experiência prática na evolução de produto SaaS, interfaces web e sistemas internos.</p>
+          <p class="about__lead" data-i18n="about.lead">Minha base é desenvolvimento. Meu foco é segurança de aplicações.</p>
           <div class="about__columns">
-            <p data-i18n="about.p1">Gosto de entender como interface, backend, dados e infraestrutura se conectam. Essa visão orienta meu trabalho do protótipo e da implementação até a documentação, o monitoramento e a operação.</p>
-            <p data-i18n="about.p2">Minha trajetória combina formação em desenvolvimento de sistemas, projetos full stack e mobile e uma rotina profissional que também envolve Linux, observabilidade e segurança de aplicações.</p>
+            <p data-i18n="about.p1">Na Xmart Solutions, participo da evolução do XGuardian, uma plataforma de AppSec e ASPM. Trabalho em interfaces, relatórios, métricas e fluxos que ajudam a contextualizar vulnerabilidades e tornar a segurança mais acessível a quem desenvolve.</p>
+            <p data-i18n="about.p2">Essa experiência se conecta à automação de QA, às integrações por APIs e MCP e à governança de agentes de IA. Linux, infraestrutura e observabilidade completam minha visão sobre como o software funciona, falha e pode melhorar.</p>
           </div>
-          <blockquote data-i18n="about.quote">Busco construir soluções claras para quem usa, sustentáveis para quem mantém e observáveis para quem opera.</blockquote>
+          <blockquote data-i18n="about.quote">Entender o sistema. Investigar o risco. Construir com responsabilidade.</blockquote>
         </div>
       </div>
     </section>
@@ -345,7 +365,7 @@
         <div class="credentials-grid">
           <div class="credential-group rv">
             <h3 data-i18n="education.academic">Formação acadêmica</h3>
-            <article class="credential credential--current"><div><span data-i18n="education.inProgress">Em andamento</span><h4 data-i18n="education.unicid.course">Tecnologia em Análise e Desenvolvimento de Sistemas</h4><p>Universidade Cidade de São Paulo (UNICID)</p></div><time data-i18n="education.unicid.period">jun 2026 — previsão jun 2027</time></article>
+            <article class="credential credential--current"><div><span data-i18n="education.inProgress">Em andamento</span><h4 data-i18n="education.unicid.course">Tecnologia em Análise e Desenvolvimento de Sistemas</h4><p>Universidade Cidade de São Paulo (UNICID)</p></div><time data-i18n="education.unicid.period">jun 2026 — previsão dez 2027</time></article>
             <article class="credential"><div><span data-i18n="education.completed">Concluído</span><h4 data-i18n="education.senai.course">Técnico em Desenvolvimento de Sistemas</h4><p>SENAI São Paulo</p></div><time data-i18n="education.senai.period">jul 2024 — jun 2026</time></article>
             <article class="credential"><div><span data-i18n="education.completed">Concluído</span><h4 data-i18n="education.proz.course">Técnico em Informática para Internet</h4><p>Proz Educação</p></div><time data-i18n="education.proz.period">jan 2023 — dez 2024</time></article>
           </div>
@@ -356,7 +376,7 @@
             <a href="https://www.credly.com/users/carlos-gabriel.3078ca93" class="text-link" target="_blank" rel="noopener noreferrer" data-i18n="education.credly">Ver perfil no Credly <span aria-hidden="true">↗</span></a>
           </div>
           <div class="language-band rv">
-            <div><span data-i18n="education.languages">Idiomas</span><h3 data-i18n="education.english">Inglês intermediário</h3></div><p data-i18n="education.englishDetail">B2 autodeclarado, em aperfeiçoamento com aulas particulares.</p>
+            <div><span data-i18n="education.languages">Idiomas</span><h3 data-i18n="education.english">Inglês · B2</h3></div><p data-i18n="education.englishDetail">Intermediário superior, com uso em documentação e reuniões técnicas internacionais. Em aperfeiçoamento com aulas particulares.</p>
           </div>
         </div>
       </div>
@@ -366,7 +386,7 @@
       <div class="wrap contact__inner">
         <p class="eyebrow rv"><span>06</span><span data-i18n="contact.label">Contato</span></p>
         <div class="contact__layout">
-          <div class="rv"><h2 id="contact-title" data-i18n="contact.title">Procurando um profissional<br>júnior que pensa <em>além da tela</em>?</h2><p data-i18n="contact.description">Estou disponível para oportunidades em desenvolvimento de sistemas, full stack e software, em São Paulo ou remotamente.</p></div>
+          <div class="rv"><h2 id="contact-title" data-i18n="contact.title">Vamos construir<br>com <em>segurança</em>.</h2><p data-i18n="contact.description">Busco oportunidades júnior em AppSec e DevSecOps, conectando minha experiência em desenvolvimento, automação e operação.</p></div>
           <div class="contact__actions rv">
             <a href="mailto:carlosgabriel.contato2007@gmail.com" class="contact-email">carlosgabriel.contato2007@gmail.com <span aria-hidden="true">↗</span></a>
             <a href="./assets/documents/CV_Carlos_Gabriel_PtBR.pdf" class="button button--primary resume-link" download data-i18n="cta.resume">Baixar currículo</a>
@@ -393,5 +413,6 @@
   <script src="./assets/scripts/intro.js" defer></script>
   <script src="./assets/scripts/navigation.js" defer></script>
   <script src="./assets/scripts/reveal.js" defer></script>
+  <script src="./assets/scripts/motion.js" defer></script>
 </body>
 </html>

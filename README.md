@@ -1,139 +1,44 @@
-# Carlos Gabriel - Portfolio Profissional
+# Carlos Gabriel — Portfolio
 
-Portfolio estatico, responsivo e multilingue de Carlos Gabriel Gomes Luz, Analista de Desenvolvimento de Sistemas Jr. e Desenvolvedor Full Stack Jr.
+Professional portfolio focused on Application Security, DevSecOps and software engineering. Original CG black/white/yellow identity, procedural geometric motion, an original six-second brand film, and selected work: XGuardian, QA Automation, Vaultin, Toca dos Pés and Clarium.
 
-## Visao geral
+## Development
 
-- HTML, CSS e JavaScript nativos, sem build step
-- idiomas `pt-BR`, `en` e `es`
-- curriculos em portugues e ingles selecionados automaticamente por idioma
-- temas claro e escuro com persistencia local
-- introducao de terminal curta, exibida uma vez por sessao e com opcao de pular
-- navegacao por teclado, menu mobile com controle de foco e suporte a `Escape`
-- animacoes progressivas com `prefers-reduced-motion`
-- SEO com canonical, hreflang, Open Graph, Twitter Cards, sitemap e JSON-LD
-
-## Executar localmente
+The site uses native HTML, CSS and JavaScript. No browser framework or production package dependency.
 
 ```bash
-cd /home/carlosz/site_portfolio/portfolio_profissional
 python3 -m http.server 4173
 ```
 
-Acesse `http://localhost:4173`.
+PT-BR, EN and ES are available through `?lang=` and the language switch. The editorial default is dark; users can persist a light theme. Current Portuguese and English resumes are in `assets/documents`.
 
-Variantes de idioma:
-
-```text
-http://localhost:4173/
-http://localhost:4173/?lang=en
-http://localhost:4173/?lang=es
-```
-
-## Estrutura
-
-```text
-portfolio_profissional/
-|-- index.html
-|-- robots.txt
-|-- sitemap.xml
-|-- README.md
-|-- BRAND.md
-|-- NOTICE
-|-- SECURITY.md
-|-- docs/
-|   `-- portfolio-audit.md
-`-- assets/
-    |-- documents/
-    |   |-- CV_Carlos_Gabriel_PtBR.pdf
-    |   `-- CV_Carlos_Gabriel_EN.pdf
-    |-- images/
-    |   |-- brands/
-    |   |-- certifications/
-    |   `-- projects/
-    |-- scripts/
-    |   |-- shared.js
-    |   |-- theme.js
-    |   |-- i18n.js
-    |   |-- cursor.js
-    |   |-- intro.js
-    |   |-- navigation.js
-    |   `-- reveal.js
-    `-- styles/
-        |-- base.css
-        |-- components.css
-        |-- sections.css
-        `-- responsive.css
-```
-
-## Conteudo e fontes
-
-O conteudo profissional segue a hierarquia registrada em [`docs/portfolio-audit.md`](docs/portfolio-audit.md): curriculo atualizado, PDF do LinkedIn, perfil publico do LinkedIn, GitHub e, por ultimo, o portfolio anterior.
-
-Informacoes nao confirmadas nao devem ser adicionadas. Ambientes privados, dados de clientes, metricas sem evidencia e links internos nao pertencem ao site publico.
-
-## Internacionalizacao
-
-Todo texto traduzivel, metadado localizado e atributo de acessibilidade esta centralizado em `assets/scripts/i18n.js`.
-
-- `pt-BR` usa `CV_Carlos_Gabriel_PtBR.pdf`
-- `en` e `es` usam `CV_Carlos_Gabriel_EN.pdf`
-- a preferencia e persistida em `localStorage`
-- `?lang=` tem prioridade sobre a preferencia armazenada
-- nomes proprios, marcas e tecnologias permanecem inalterados
-
-## Temas e motion
-
-- o tema respeita a preferencia do sistema na primeira visita
-- a escolha manual e persistida em `localStorage`
-- a intro e ignorada em `prefers-reduced-motion` e apos a primeira exibicao da sessao
-- o cursor personalizado so e ativado com `hover: hover`, `pointer: fine` e movimento completo
-- o conteudo permanece visivel sem JavaScript ou sem `IntersectionObserver`
-
-## SEO
-
-O dominio canonico configurado e `https://carlosgabriel.netlify.app/`.
-
-Ao alterar dominio, cargo, curriculo ou identidade publica, revise em conjunto:
-
-- `index.html`
-- `assets/scripts/i18n.js`
-- `assets/images/og-cover.svg`
-- `sitemap.xml`
-- `robots.txt`
-- `BRAND.md`
-
-## Validacao
-
-Comandos usados durante a reformulacao:
+## Verification
 
 ```bash
-npx html-validate index.html
-node --check assets/scripts/shared.js
-node --check assets/scripts/theme.js
-node --check assets/scripts/i18n.js
-node --check assets/scripts/cursor.js
-node --check assets/scripts/intro.js
-node --check assets/scripts/navigation.js
-node --check assets/scripts/reveal.js
-xmllint --noout sitemap.xml assets/images/og-cover.svg assets/images/favicon.svg
-git diff --check
+npm ci
+npx playwright install chromium
+npm run check
+npm test
+npm run build
 ```
 
-A revisao visual cobre 320, 375, 430, 768, 1024, 1280, 1440 e 1920 px, nos temas claro e escuro, nos tres idiomas e com movimento reduzido.
+`npm test` runs browser checks for professional copy, localized project content, PDF downloads, responsive widths from 320 to 1920 px, menu/Escape/focus, themes, reduced motion, contact contrast, automated WCAG A/AA checks, film playback and the global effect pause. Python 3 is required for the local test server. `CHROMIUM_EXECUTABLE` can point to an existing compatible browser.
 
-## Publicacao
+The build exports only the public site and assets to `dist/`. Netlify uses `netlify.toml`; docs, tests, source generators and installed packages are not published.
 
-O projeto nao exige compilacao. Em uma hospedagem estatica, publique a raiz do repositorio como diretorio do site.
+## Motion and accessibility
 
-Antes de publicar:
+- Native scroll and progressive scroll-linked effects; no scroll interception.
+- Global pause persists locally and stops canvas, decorative CSS, video and the custom cursor.
+- `prefers-reduced-motion` renders static scenes and a video poster without downloading the film.
+- Film has WebM and MP4 sources, is muted and inline, and loads only near its visible section.
+- Canvas/video stop when off screen or the tab is hidden; canvas has a capped pixel ratio and frame rate.
+- Keyboard navigation, mobile focus trapping, visible focus and no-JavaScript readable content.
 
-1. execute as validacoes acima;
-2. abra o site por servidor HTTP local;
-3. teste links, downloads, temas e idiomas;
-4. confirme `robots.txt`, `sitemap.xml` e o dominio canonico;
-5. publique somente commits revisados.
+## Content and sources
 
-## Licenca e identidade
+Current attached PT/EN resumes are the primary professional source. Public content does not include private endpoints, customer data, unverifiable metrics or unreleased venture details. Visual project art is illustrative, not a product screenshot or live scan report.
 
-O codigo esta sob a licenca MIT. A licenca nao autoriza personificacao, phishing ou reutilizacao enganosa da identidade, curriculos e links profissionais. Consulte `NOTICE`, `SECURITY.md` e `BRAND.md`.
+See `docs/appsec-brand-refresh.md` for the design references and validation record. The original logo is preserved in `assets/images/logo-official.svg` and `.png`; cropped transparent/light variants are derived from the original vector geometry. Space Grotesk is self-hosted under the SIL Open Font License included in `assets/fonts/OFL.txt`.
+
+Code license: MIT. Personal identity and documents: see `NOTICE` and `BRAND.md`.

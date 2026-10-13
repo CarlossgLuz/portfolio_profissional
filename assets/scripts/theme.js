@@ -11,7 +11,7 @@
   }
 
   function activeTheme() {
-    return document.documentElement.dataset.theme || storedTheme() || (systemPreference.matches ? "light" : "dark");
+    return document.documentElement.dataset.theme || storedTheme() || "dark";
   }
 
   function sync(theme) {
@@ -19,7 +19,8 @@
     const isLight = theme === "light";
     document.documentElement.dataset.theme = theme;
     document.documentElement.style.colorScheme = theme;
-    if (themeColor) themeColor.content = isLight ? "#f4f7f3" : "#07110f";
+    document.querySelectorAll("[data-themed-logo]").forEach(img => {img.src = isLight ? "./assets/images/logo-mark-light.svg" : "./assets/images/logo-mark.svg";});
+    if (themeColor) themeColor.content = isLight ? "#f4f2ec" : "#080808";
 
     document.querySelectorAll(".theme-toggle").forEach((button) => {
       const label = isLight ? pack?.theme?.light || "Claro" : pack?.theme?.dark || "Escuro";
@@ -44,9 +45,6 @@
     apply(activeTheme() === "light" ? "dark" : "light");
   });
 
-  systemPreference.addEventListener?.("change", () => {
-    if (!storedTheme()) apply(systemPreference.matches ? "light" : "dark", false);
-  });
   window.addEventListener("portfolio:languagechange", () => sync(activeTheme()));
   sync(activeTheme());
 })();

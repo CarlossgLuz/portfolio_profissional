@@ -1,124 +1,694 @@
-// Centralized copy, metadata and locale-specific document links.
+// Professional copy, metadata, and locale-specific documents.
 const portfolioTranslations = {
   "pt-BR": {
-    meta: {
-      title: "Carlos Gabriel | Analista de Desenvolvimento de Sistemas Jr.",
-      description: "Portfólio de Carlos Gabriel, Analista de Desenvolvimento de Sistemas Jr. e Desenvolvedor Full Stack Jr. em São Paulo.",
-      socialDescription: "Desenvolvimento full stack, produto, infraestrutura, observabilidade e AppSec.",
-      locale: "pt_BR",
-      imageAlt: "Carlos Gabriel, Analista de Desenvolvimento de Sistemas Jr.",
-      jobTitle: "Analista de Desenvolvimento de Sistemas Jr."
+    "meta": {
+      "title": "Carlos Gabriel | AppSec & DevSecOps",
+      "description": "Conecto código, segurança e operação. Sou Analista de Desenvolvimento Jr., com experiência prática em AppSec e em trajetória de especialização em segurança de aplicações.",
+      "socialDescription": "Conecto código, segurança e operação. Sou Analista de Desenvolvimento Jr., com experiência prática em AppSec e em trajetória de especialização em segurança de aplicações.",
+      "locale": "pt_BR",
+      "imageAlt": "Carlos Gabriel — AppSec & DevSecOps",
+      "jobTitle": "Analista de Desenvolvimento de Sistemas Jr."
     },
-    a11y: { skip: "Pular para o conteúdo", progress: "Progresso de leitura", menu: "Menu", primaryNav: "Navegação principal", openMenu: "Abrir menu", closeMenu: "Fechar menu", language: "Seleção de idioma", sectionNav: "Navegação por seções", professionalLinks: "Links profissionais" },
-    nav: { home: "Início", projects: "Projetos", experience: "Experiência", skills: "Competências", about: "Sobre", education: "Formação", contact: "Contato" },
-    theme: { dark: "Escuro", light: "Claro", toDark: "Alternar para o tema escuro", toLight: "Alternar para o tema claro" },
-    cta: { projects: "Ver projetos", resume: "Baixar currículo", resumeShort: "Currículo", email: "E-mail" },
-    intro: { label: "Abrindo portfólio", skip: "Pular", command: "open carlos-gabriel --profile=full-stack", line1: "perfil: analista de desenvolvimento jr.", line2: "escopo: produto · código · operação", ready: "portfólio pronto" },
-    hero: { label: "Apresentação", availability: "Disponível para oportunidades júnior", role: "Analista de Desenvolvimento de Sistemas Jr. <span aria-hidden=\"true\">/</span> Desenvolvedor Full Stack Jr.", summary: "Desenvolvo produtos e sistemas web conectando interface, backend, dados e operação. Minha experiência também passa por UX/UI, Linux, observabilidade e segurança de aplicações.", detailsLabel: "Informações profissionais", location: "São Paulo, SP", workMode: "Presencial · híbrido · remoto" },
-    projects: {
-      label: "Projetos selecionados", title: "Entregas que mostram<br>como eu <em>trabalho</em>.", intro: "Do sistema de gestão full stack ao aplicativo mobile local-first: contexto, participação e estado real de cada entrega.",
-      problem: "Contexto", role: "Minha participação", delivery: "Entrega", product: "Produto", web: "Presença web", stack: "Tecnologias do projeto", viewLive: "Abrir projeto <span aria-hidden=\"true\">↗</span>", viewCode: "Ver código <span aria-hidden=\"true\">↗</span>",
-      toca: { status: "Em homologação", type: "Sistema de gestão · projeto freelance", summary: "Sistema para centralizar a operação de uma clínica de podologia, da agenda e prontuários ao estoque, financeiro e relatórios.", context: "Informações operacionais distribuídas entre diferentes rotinas.", role: "Concepção, arquitetura e desenvolvimento full stack.", delivery: "Cadastros centrais, agenda inicial, autenticação, RBAC, auditoria e validações client/server.", privacy: "Ambiente privado de homologação. O link não é publicado para proteger dados e acessos do cliente." },
-      clarium: { status: "Aplicação publicada", type: "Finanças pessoais · projeto autoral", summary: "Aplicativo local-first para registrar receitas, gastos, compras no cartão, planejamento mensal e indicadores sem depender de servidor.", product: "Experiência mobile com dados locais e navegação estruturada.", web: "Landing multilíngue publicada para apresentar recursos e distribuir o APK.", previewLabel: "Abrir aplicação publicada do Clarium", imageAlt: "Página do Clarium com telas do aplicativo de finanças pessoais" }
+    "a11y": {
+      "skip": "Pular para o conteúdo",
+      "progress": "Progresso de leitura",
+      "menu": "Menu",
+      "primaryNav": "Navegação principal",
+      "openMenu": "Abrir menu",
+      "closeMenu": "Fechar menu",
+      "language": "Seleção de idioma",
+      "sectionNav": "Navegação por seções",
+      "professionalLinks": "Links profissionais",
+      "brandHome": "Carlos Gabriel — início"
     },
-    experience: {
-      label: "Experiência profissional", title: "Evolução com contexto<br>de <em>produto e operação</em>.", companyPeriod: "dez 2025 — atual", location: "Santo André, SP", progression: "Progressão de estágio para Analista Jr. em junho de 2026.",
-      current: { period: "jun 2026 — atual", role: "Analista de Desenvolvimento de Sistemas Jr.", mode: "Presencial", summary: "Atuação na evolução de plataforma SaaS, interfaces web e sistemas internos, conectando desenvolvimento a infraestrutura, observabilidade e AppSec.", items: ["Desenvolvimento e manutenção com Python, JavaScript/TypeScript e React.", "Redesenho da interface do XGuardian e desenvolvimento de sua página institucional.", "Administração de servidores Linux, troubleshooting e virtualização com Proxmox.", "Monitoramento com Zabbix, Grafana e Prometheus.", "Apoio a práticas de AppSec e Supply Chain Security com Sonatype Nexus e XGuardian."] },
-      intern: { period: "dez 2025 — jun 2026", role: "Estagiário de Desenvolvimento de Sistemas", mode: "Presencial", summary: "Experiência inicial abrangendo desenvolvimento web, suporte técnico, infraestrutura, observabilidade, segurança de aplicações e documentação.", items: ["Recuperação de notebooks e ativos legados e organização do ambiente de servidores.", "Apoio à administração do Proxmox e troubleshooting de estações e serviços.", "Implementação e acompanhamento de monitoramento com Zabbix e Grafana.", "Implantação interna do SysPass e produção de documentação e registros técnicos."] }
+    "nav": {
+      "home": "Início",
+      "projects": "Projetos",
+      "experience": "Experiência",
+      "skills": "Competências",
+      "about": "Sobre",
+      "education": "Formação",
+      "contact": "Contato"
     },
-    expertise: {
-      label: "Competências", title: "Uma base generalista,<br>organizada por <em>entrega</em>.", intro: "Tecnologias e práticas presentes nas experiências, projetos e formação profissional.",
-      development: { title: "Desenvolvimento", description: "Interfaces, aplicações web, APIs e desenvolvimento mobile." },
-      data: { title: "Dados e aplicações", description: "Persistência, autenticação e controle de acesso em produtos.", auth: "Autenticação · RBAC", audit: "Logs de auditoria" },
-      operations: { title: "Operações e confiabilidade", description: "Ambientes, deploy, monitoramento e troubleshooting.", docker: "Docker básico" },
-      product: { title: "Engenharia e produto", description: "Qualidade de entrega, experiência e evolução sustentável.", tests: "Testes de software", docs: "Documentação técnica" }
+    "theme": {
+      "dark": "Escuro",
+      "light": "Claro",
+      "toDark": "Alternar para o tema escuro",
+      "toLight": "Alternar para o tema claro"
     },
-    about: { label: "Sobre", title: "Código é uma parte.<br>O <em>sistema inteiro</em> importa.", lead: "Sou Analista de Desenvolvimento de Sistemas Jr. com perfil generalista e experiência prática na evolução de produto SaaS, interfaces web e sistemas internos.", p1: "Gosto de entender como interface, backend, dados e infraestrutura se conectam. Essa visão orienta meu trabalho do protótipo e da implementação até a documentação, o monitoramento e a operação.", p2: "Minha trajetória combina formação em desenvolvimento de sistemas, projetos full stack e mobile e uma rotina profissional que também envolve Linux, observabilidade e segurança de aplicações.", quote: "Busco construir soluções claras para quem usa, sustentáveis para quem mantém e observáveis para quem opera." },
-    education: {
-      label: "Formação e credenciais", title: "Base técnica em<br><em>evolução contínua</em>.", academic: "Formação acadêmica", certifications: "Certificações", inProgress: "Em andamento", completed: "Concluído",
-      unicid: { course: "Tecnologia em Análise e Desenvolvimento de Sistemas", period: "jun 2026 — previsão jun 2027" },
-      senai: { course: "Técnico em Desenvolvimento de Sistemas", period: "jul 2024 — jun 2026" },
-      proz: { course: "Técnico em Informática para Internet", period: "jan 2023 — dez 2024" },
-      sfpc: { date: "CertiProf · out 2024 — out 2027" }, credly: "Ver perfil no Credly <span aria-hidden=\"true\">↗</span>", languages: "Idiomas", english: "Inglês intermediário", englishDetail: "B2 autodeclarado, em aperfeiçoamento com aulas particulares."
+    "cta": {
+      "projects": "Ver projetos",
+      "resume": "Baixar currículo",
+      "resumeShort": "Currículo",
+      "email": "E-mail"
     },
-    contact: { label: "Contato", title: "Procurando um profissional<br>júnior que pensa <em>além da tela</em>?", description: "Estou disponível para oportunidades em desenvolvimento de sistemas, full stack e software, em São Paulo ou remotamente.", phone: "Telefone", location: "São Paulo, SP · presencial, híbrido ou remoto" },
-    footer: { copy: "© 2026 Carlos Gabriel Gomes Luz", top: "Voltar ao topo" }
+    "intro": {
+      "label": "Abrindo portfólio",
+      "skip": "Pular",
+      "command": "open carlos-gabriel --profile=appsec",
+      "line1": "perfil: analista de desenvolvimento jr.",
+      "line2": "AppSec · DevSecOps · Software Engineering",
+      "ready": "portfólio pronto"
+    },
+    "hero": {
+      "label": "Apresentação",
+      "availability": "Em busca de oportunidades em AppSec",
+      "role": "AppSec / DevSecOps / Engenharia de Software",
+      "summary": "Conecto código, segurança e operação. Sou Analista de Desenvolvimento Jr., com experiência prática em AppSec e em trajetória de especialização em segurança de aplicações.",
+      "detailsLabel": "Informações profissionais",
+      "location": "São Paulo, SP",
+      "workMode": "Presencial · híbrido · remoto"
+    },
+    "projects": {
+      "label": "Projetos selecionados",
+      "title": "Da intenção<br>à <em>engenharia</em>.",
+      "intro": "Segurança de aplicações, automação de QA e governança de IA. Trabalho aplicado, contexto real e participação transparente.",
+      "problem": "Contexto",
+      "role": "Minha participação",
+      "delivery": "Entrega",
+      "product": "Produto",
+      "web": "Presença web",
+      "stack": "Tecnologias do projeto",
+      "viewLive": "Abrir projeto <span aria-hidden=\"true\">↗</span>",
+      "viewCode": "Ver código <span aria-hidden=\"true\">↗</span>",
+      "toca": {
+        "status": "Em homologação",
+        "type": "Sistema de gestão · projeto freelance",
+        "summary": "Sistema para centralizar a operação de uma clínica de podologia, da agenda e prontuários ao estoque, financeiro e relatórios.",
+        "context": "Informações operacionais distribuídas entre diferentes rotinas.",
+        "role": "Concepção, arquitetura e desenvolvimento full stack.",
+        "delivery": "Cadastros centrais, agenda inicial, autenticação, RBAC, auditoria e validações client/server.",
+        "privacy": "Ambiente privado de homologação. O link não é publicado para proteger dados e acessos do cliente."
+      },
+      "clarium": {
+        "status": "Aplicação publicada",
+        "type": "Finanças pessoais · projeto autoral",
+        "summary": "Aplicativo local-first para registrar receitas, gastos, compras no cartão, planejamento mensal e indicadores sem depender de servidor.",
+        "product": "Experiência mobile com dados locais e navegação estruturada.",
+        "web": "Landing multilíngue publicada para apresentar recursos e distribuir o APK.",
+        "previewLabel": "Abrir aplicação publicada do Clarium",
+        "imageAlt": "Página do Clarium com telas do aplicativo de finanças pessoais"
+      },
+      "xguardian": {
+        "type": "AppSec & ASPM · experiência profissional",
+        "summary": "Evolução de interfaces, relatórios e dashboards de uma plataforma de segurança de aplicações. Um trabalho de equipe, com foco em clareza, contexto e usabilidade.",
+        "delivery": "Relatórios de segurança, filtros, métricas e participação em controles de acesso.",
+        "status": "Atuação profissional"
+      },
+      "qa": {
+        "type": "Automação · iniciativa interna",
+        "summary": "QA automatizado para apoiar validações pré e pós-release. Integrações diretas e APIs para testar funcionalidades, permissões, pipelines e fluxos da plataforma.",
+        "delivery": "Execuções customizáveis, registro de evidências e rastreabilidade das validações.",
+        "status": "Em desenvolvimento"
+      },
+      "vaultin": {
+        "type": "Governança de IA · projeto autoral",
+        "summary": "Organização de agentes, skills, regras e conhecimento técnico. Fluxos assistidos por IA com versionamento, roteamento de modelos e foco na previsibilidade das execuções.",
+        "delivery": "Centralização de contexto e configurações para apoiar execuções controladas.",
+        "status": "Código aberto"
+      }
+    },
+    "experience": {
+      "label": "Experiência profissional",
+      "title": "Evolução com contexto<br>de <em>produto e operação</em>.",
+      "companyPeriod": "dez 2025 — atual",
+      "location": "Santo André, SP",
+      "progression": "Progressão de estágio para Analista Jr. em junho de 2026.",
+      "current": {
+        "period": "jun 2026 — atual",
+        "role": "Analista de Desenvolvimento de Sistemas Jr.",
+        "mode": "Presencial",
+        "summary": "Evolução do XGuardian e apoio ao ecossistema de segurança de aplicações, com trabalho em produto, análise de vulnerabilidades e automação.",
+        "items": [
+          "Evolução de interfaces, dashboards e relatórios de SAST, SCA, DAST, Container Security e SBOM no XGuardian.",
+          "Investigação e contextualização de vulnerabilidades com OWASP, CVE/CWE, NVD, CVSS e informações de EOL.",
+          "Participação no levantamento e desenvolvimento de controles RBAC, perfis e permissões de APIs.",
+          "Desenvolvimento de QA automatizado para validar funcionalidades, integrações e permissões antes e após releases.",
+          "Apoio técnico ao ecossistema Sonatype e participação em reuniões técnicas em inglês."
+        ]
+      },
+      "intern": {
+        "period": "dez 2025 — jun 2026",
+        "role": "Estagiário de Desenvolvimento de Sistemas",
+        "mode": "Presencial",
+        "summary": "Experiência inicial abrangendo desenvolvimento web, suporte técnico, infraestrutura, observabilidade, segurança de aplicações e documentação.",
+        "items": [
+          "Recuperação de notebooks e ativos legados e organização do ambiente de servidores.",
+          "Apoio à administração do Proxmox e troubleshooting de estações e serviços.",
+          "Implementação e acompanhamento de monitoramento com Zabbix e Grafana.",
+          "Implantação interna do SysPass e produção de documentação e registros técnicos."
+        ]
+      }
+    },
+    "expertise": {
+      "label": "Competências",
+      "title": "Segurança no foco.<br><em>Engenharia na base.</em>",
+      "intro": "Tecnologias e práticas presentes nas experiências, projetos e formação profissional.",
+      "development": {
+        "title": "Segurança de aplicações",
+        "description": "Contextualização de vulnerabilidades e segurança no ciclo de desenvolvimento."
+      },
+      "data": {
+        "title": "Automação & IA",
+        "description": "QA, agentes e integrações com governança e rastreabilidade.",
+        "auth": "Autenticação · RBAC",
+        "audit": "Logs de auditoria"
+      },
+      "operations": {
+        "title": "Desenvolvimento",
+        "description": "Interfaces, APIs, dados e produtos que funcionam juntos.",
+        "docker": "Docker básico"
+      },
+      "product": {
+        "title": "Operação & observabilidade",
+        "description": "Entender o ambiente e investigar o comportamento dos sistemas.",
+        "tests": "Testes de software",
+        "docs": "Documentação técnica"
+      }
+    },
+    "about": {
+      "label": "Sobre",
+      "title": "Código é uma parte.<br>O <em>sistema inteiro</em> importa.",
+      "lead": "Minha base é desenvolvimento. Meu foco é segurança de aplicações.",
+      "p1": "Na Xmart Solutions, participo da evolução do XGuardian, uma plataforma de AppSec e ASPM. Trabalho em interfaces, relatórios, métricas e fluxos que ajudam a contextualizar vulnerabilidades e tornar a segurança mais acessível a quem desenvolve.",
+      "p2": "Essa experiência se conecta à automação de QA, às integrações por APIs e MCP e à governança de agentes de IA. Linux, infraestrutura e observabilidade completam minha visão sobre como o software funciona, falha e pode melhorar.",
+      "quote": "Entender o sistema. Investigar o risco. Construir com responsabilidade."
+    },
+    "education": {
+      "label": "Formação e credenciais",
+      "title": "Base técnica em<br><em>evolução contínua</em>.",
+      "academic": "Formação acadêmica",
+      "certifications": "Certificações",
+      "inProgress": "Em andamento",
+      "completed": "Concluído",
+      "unicid": {
+        "course": "Tecnologia em Análise e Desenvolvimento de Sistemas",
+        "period": "jun 2026 — previsão dez 2027"
+      },
+      "senai": {
+        "course": "Técnico em Desenvolvimento de Sistemas",
+        "period": "jul 2024 — jun 2026"
+      },
+      "proz": {
+        "course": "Técnico em Informática para Internet",
+        "period": "jan 2023 — dez 2024"
+      },
+      "sfpc": {
+        "date": "CertiProf · out 2024 — out 2027"
+      },
+      "credly": "Ver perfil no Credly <span aria-hidden=\"true\">↗</span>",
+      "languages": "Idiomas",
+      "english": "Inglês · B2",
+      "englishDetail": "Intermediário superior, com uso em documentação e reuniões técnicas internacionais. Em aperfeiçoamento com aulas particulares."
+    },
+    "contact": {
+      "label": "Contato",
+      "title": "Vamos construir<br>com <em>segurança</em>.",
+      "description": "Busco oportunidades júnior em AppSec e DevSecOps, conectando minha experiência em desenvolvimento, automação e operação.",
+      "phone": "Telefone",
+      "location": "São Paulo, SP · presencial, híbrido ou remoto"
+    },
+    "footer": {
+      "copy": "© 2026 Carlos Gabriel Gomes Luz",
+      "top": "Voltar ao topo"
+    },
+    "visual": {
+      "scroll": "Explore o trabalho",
+      "motion": "Pausar efeitos",
+      "motionResume": "Ativar efeitos",
+      "reduced": "Movimento reduzido",
+      "film": "Código em movimento. Segurança em cada camada.",
+      "filmDesc": "Desenvolvimento, AppSec e automação: três perspectivas sobre o mesmo sistema.",
+      "filmLabel": "Identidade em movimento",
+      "support": "Outras entregas",
+      "supportDesc": "Produtos que consolidam minha base em desenvolvimento."
+    },
+    "tags": {
+      "integrations": "Integrações",
+      "audit": "Auditoria",
+      "agents": "Agentes",
+      "governance": "Governança"
+    }
   },
-
-  en: {
-    meta: { title: "Carlos Gabriel | Junior Systems Development Analyst", description: "Carlos Gabriel's portfolio — Junior Systems Development Analyst and Junior Full-Stack Developer based in São Paulo, Brazil.", socialDescription: "Full-stack development, product, infrastructure, observability, and AppSec.", locale: "en_US", imageAlt: "Carlos Gabriel, Junior Systems Development Analyst", jobTitle: "Junior Systems Development Analyst" },
-    a11y: { skip: "Skip to content", progress: "Reading progress", menu: "Menu", primaryNav: "Primary navigation", openMenu: "Open menu", closeMenu: "Close menu", language: "Language selector", sectionNav: "Section navigation", professionalLinks: "Professional links" },
-    nav: { home: "Home", projects: "Projects", experience: "Experience", skills: "Skills", about: "About", education: "Education", contact: "Contact" },
-    theme: { dark: "Dark", light: "Light", toDark: "Switch to dark theme", toLight: "Switch to light theme" },
-    cta: { projects: "View projects", resume: "Download resume", resumeShort: "Resume", email: "Email" },
-    intro: { label: "Opening portfolio", skip: "Skip", command: "open carlos-gabriel --profile=full-stack", line1: "profile: junior systems development analyst", line2: "scope: product · code · operations", ready: "portfolio ready" },
-    hero: { label: "Introduction", availability: "Open to junior opportunities", role: "Junior Systems Development Analyst <span aria-hidden=\"true\">/</span> Junior Full-Stack Developer", summary: "I build web products and systems by connecting interfaces, backend, data, and operations. My experience also spans UX/UI, Linux, observability, and application security.", detailsLabel: "Professional details", location: "São Paulo, Brazil", workMode: "On-site · hybrid · remote" },
-    projects: {
-      label: "Selected projects", title: "Work that shows<br>how I <em>build</em>.", intro: "From a full-stack management system to a local-first mobile app: context, ownership, and the actual stage of each delivery.",
-      problem: "Context", role: "My role", delivery: "Delivery", product: "Product", web: "Web presence", stack: "Project technologies", viewLive: "Open project <span aria-hidden=\"true\">↗</span>", viewCode: "View source <span aria-hidden=\"true\">↗</span>",
-      toca: { status: "Staging", type: "Management system · freelance project", summary: "A system designed to centralize a podiatry clinic's operations, from scheduling and medical records to inventory, finance, and reporting.", context: "Operational information spread across different workflows.", role: "Product definition, architecture, and full-stack development.", delivery: "Core records, initial scheduling, authentication, RBAC, audit logging, and client/server validation.", privacy: "Private staging environment. Its link is not published to protect client data and access." },
-      clarium: { status: "Published application", type: "Personal finance · independent project", summary: "A local-first app for tracking income, expenses, card purchases, monthly plans, and insights without relying on a server.", product: "A mobile experience with local data and structured navigation.", web: "A published multilingual landing page that presents the features and distributes the APK.", previewLabel: "Open the published Clarium application", imageAlt: "Clarium page showing screens from the personal finance app" }
+  "en": {
+    "meta": {
+      "title": "Carlos Gabriel | AppSec & DevSecOps",
+      "description": "I connect code, security, and operations. I am a Junior Development Analyst with hands-on AppSec experience, building a specialization in application security.",
+      "socialDescription": "I connect code, security, and operations. I am a Junior Development Analyst with hands-on AppSec experience, building a specialization in application security.",
+      "locale": "en_US",
+      "imageAlt": "Carlos Gabriel — AppSec & DevSecOps",
+      "jobTitle": "Junior Systems Development Analyst"
     },
-    experience: {
-      label: "Professional experience", title: "Growth across<br><em>product and operations</em>.", companyPeriod: "Dec 2025 — present", location: "Santo André, SP, Brazil", progression: "Promoted from intern to Junior Analyst in June 2026.",
-      current: { period: "Jun 2026 — present", role: "Junior Systems Development Analyst", mode: "On-site", summary: "Working on a SaaS platform, web interfaces, and internal systems while connecting development with infrastructure, observability, and AppSec.", items: ["Develop and maintain solutions with Python, JavaScript/TypeScript, and React.", "Redesigned the XGuardian interface and built its institutional website.", "Administer Linux servers, troubleshoot environments, and support Proxmox virtualization.", "Monitor environments with Zabbix, Grafana, and Prometheus.", "Support AppSec and Supply Chain Security practices with Sonatype Nexus and XGuardian."] },
-      intern: { period: "Dec 2025 — Jun 2026", role: "Systems Development Intern", mode: "On-site", summary: "Early experience spanning web development, technical support, infrastructure, observability, application security, and documentation.", items: ["Recovered legacy laptops and assets and organized the server environment.", "Supported Proxmox administration and troubleshooting for workstations and services.", "Implemented and monitored Zabbix and Grafana.", "Deployed SysPass internally and produced technical documentation and records."] }
+    "a11y": {
+      "skip": "Skip to content",
+      "progress": "Reading progress",
+      "menu": "Menu",
+      "primaryNav": "Primary navigation",
+      "openMenu": "Open menu",
+      "closeMenu": "Close menu",
+      "language": "Language selector",
+      "sectionNav": "Section navigation",
+      "professionalLinks": "Professional links",
+      "brandHome": "Carlos Gabriel — home"
     },
-    expertise: {
-      label: "Skills", title: "A generalist foundation,<br>organized around <em>delivery</em>.", intro: "Technologies and practices supported by my experience, projects, and education.",
-      development: { title: "Development", description: "Interfaces, web applications, APIs, and mobile development." },
-      data: { title: "Data and applications", description: "Persistence, authentication, and access control in products.", auth: "Authentication · RBAC", audit: "Audit logging" },
-      operations: { title: "Operations and reliability", description: "Environments, deployment, monitoring, and troubleshooting.", docker: "Basic Docker" },
-      product: { title: "Engineering and product", description: "Delivery quality, user experience, and sustainable evolution.", tests: "Software testing", docs: "Technical documentation" }
+    "nav": {
+      "home": "Home",
+      "projects": "Projects",
+      "experience": "Experience",
+      "skills": "Skills",
+      "about": "About",
+      "education": "Education",
+      "contact": "Contact"
     },
-    about: { label: "About", title: "Code is one part.<br>The <em>whole system</em> matters.", lead: "I am a Junior Systems Development Analyst with a generalist profile and hands-on experience evolving a SaaS product, web interfaces, and internal systems.", p1: "I like understanding how interfaces, backend, data, and infrastructure connect. This perspective guides my work from prototyping and implementation through documentation, monitoring, and operations.", p2: "My background combines formal systems development training, full-stack and mobile projects, and a professional routine that also includes Linux, observability, and application security.", quote: "I aim to build solutions that are clear to use, sustainable to maintain, and observable to operate." },
-    education: {
-      label: "Education and credentials", title: "A technical foundation<br>in <em>continuous development</em>.", academic: "Education", certifications: "Certifications", inProgress: "In progress", completed: "Completed",
-      unicid: { course: "Associate Degree in Systems Analysis and Development", period: "Jun 2026 — expected Jun 2027" },
-      senai: { course: "Technical Diploma in Systems Development", period: "Jul 2024 — Jun 2026" },
-      proz: { course: "Technical Diploma in Internet Computing", period: "Jan 2023 — Dec 2024" },
-      sfpc: { date: "CertiProf · Oct 2024 — Oct 2027" }, credly: "View Credly profile <span aria-hidden=\"true\">↗</span>", languages: "Languages", english: "Intermediate English", englishDetail: "Self-reported B2, currently improving through private lessons."
+    "theme": {
+      "dark": "Dark",
+      "light": "Light",
+      "toDark": "Switch to dark theme",
+      "toLight": "Switch to light theme"
     },
-    contact: { label: "Contact", title: "Looking for a junior<br>who thinks <em>beyond the screen</em>?", description: "I am open to systems development, full-stack, and software opportunities in São Paulo or remotely.", phone: "Phone", location: "São Paulo, Brazil · on-site, hybrid, or remote" },
-    footer: { copy: "© 2026 Carlos Gabriel Gomes Luz", top: "Back to top" }
+    "cta": {
+      "projects": "View projects",
+      "resume": "Download resume",
+      "resumeShort": "Resume",
+      "email": "Email"
+    },
+    "intro": {
+      "label": "Opening portfolio",
+      "skip": "Skip",
+      "command": "open carlos-gabriel --profile=appsec",
+      "line1": "profile: junior systems development analyst",
+      "line2": "AppSec · DevSecOps · Software Engineering",
+      "ready": "portfolio ready"
+    },
+    "hero": {
+      "label": "Introduction",
+      "availability": "Seeking junior AppSec opportunities",
+      "role": "AppSec / DevSecOps / Software Engineering",
+      "summary": "I connect code, security, and operations. I am a Junior Development Analyst with hands-on AppSec experience, building a specialization in application security.",
+      "detailsLabel": "Professional details",
+      "location": "São Paulo, Brazil",
+      "workMode": "On-site · hybrid · remote"
+    },
+    "projects": {
+      "label": "Selected projects",
+      "title": "From intention<br>to <em>engineering</em>.",
+      "intro": "Application security, QA automation, and AI governance. Applied work, real context, and clear contributions.",
+      "problem": "Context",
+      "role": "My role",
+      "delivery": "Delivery",
+      "product": "Product",
+      "web": "Web presence",
+      "stack": "Project technologies",
+      "viewLive": "Open project <span aria-hidden=\"true\">↗</span>",
+      "viewCode": "View source <span aria-hidden=\"true\">↗</span>",
+      "toca": {
+        "status": "Staging",
+        "type": "Management system · freelance project",
+        "summary": "A system designed to centralize a podiatry clinic's operations, from scheduling and medical records to inventory, finance, and reporting.",
+        "context": "Operational information spread across different workflows.",
+        "role": "Product definition, architecture, and full-stack development.",
+        "delivery": "Core records, initial scheduling, authentication, RBAC, audit logging, and client/server validation.",
+        "privacy": "Private staging environment. Its link is not published to protect client data and access."
+      },
+      "clarium": {
+        "status": "Published application",
+        "type": "Personal finance · independent project",
+        "summary": "A local-first app for tracking income, expenses, card purchases, monthly plans, and insights without relying on a server.",
+        "product": "A mobile experience with local data and structured navigation.",
+        "web": "A published multilingual landing page that presents the features and distributes the APK.",
+        "previewLabel": "Open the published Clarium application",
+        "imageAlt": "Clarium page showing screens from the personal finance app"
+      },
+      "xguardian": {
+        "type": "AppSec & ASPM · professional experience",
+        "summary": "Evolving interfaces, reports, and dashboards for an application security platform. A team effort focused on clarity, context, and usability.",
+        "delivery": "Security reports, filters, metrics, and contributions to access controls.",
+        "status": "Professional work"
+      },
+      "qa": {
+        "type": "Automation · internal initiative",
+        "summary": "Automated QA supporting pre- and post-release validation. Direct integrations and APIs to test platform features, permissions, pipelines, and workflows.",
+        "delivery": "Customizable executions, evidence collection, and traceable validations.",
+        "status": "In development"
+      },
+      "vaultin": {
+        "type": "AI governance · personal project",
+        "summary": "Organizing agents, skills, rules, and technical knowledge. AI-assisted workflows with version control, model routing, and a focus on predictable execution.",
+        "delivery": "Centralizing context and configuration to support controlled execution.",
+        "status": "Open source"
+      }
+    },
+    "experience": {
+      "label": "Professional experience",
+      "title": "Growth across<br><em>product and operations</em>.",
+      "companyPeriod": "Dec 2025 — present",
+      "location": "Santo André, SP, Brazil",
+      "progression": "Promoted from intern to Junior Analyst in June 2026.",
+      "current": {
+        "period": "Jun 2026 — present",
+        "role": "Junior Systems Development Analyst",
+        "mode": "On-site",
+        "summary": "Contributing to XGuardian and the application security ecosystem through product development, vulnerability analysis, and automation.",
+        "items": [
+          "Evolving XGuardian interfaces, dashboards, and SAST, SCA, DAST, Container Security, and SBOM reports.",
+          "Investigating and contextualizing vulnerabilities using OWASP, CVE/CWE, NVD, CVSS, and EOL information.",
+          "Contributing to RBAC controls, access profiles, and API permissions.",
+          "Developing automated QA to validate features, integrations, and permissions before and after releases.",
+          "Supporting the Sonatype ecosystem and joining technical meetings in English."
+        ]
+      },
+      "intern": {
+        "period": "Dec 2025 — Jun 2026",
+        "role": "Systems Development Intern",
+        "mode": "On-site",
+        "summary": "Early experience spanning web development, technical support, infrastructure, observability, application security, and documentation.",
+        "items": [
+          "Recovered legacy laptops and assets and organized the server environment.",
+          "Supported Proxmox administration and troubleshooting for workstations and services.",
+          "Implemented and monitored Zabbix and Grafana.",
+          "Deployed SysPass internally and produced technical documentation and records."
+        ]
+      }
+    },
+    "expertise": {
+      "label": "Skills",
+      "title": "Security in focus.<br><em>Engineering at the core.</em>",
+      "intro": "Technologies and practices supported by my experience, projects, and education.",
+      "development": {
+        "title": "Application security",
+        "description": "Vulnerability context and security throughout the development lifecycle."
+      },
+      "data": {
+        "title": "Automation & AI",
+        "description": "QA, agents, and integrations with governance and traceability.",
+        "auth": "Authentication · RBAC",
+        "audit": "Audit logging"
+      },
+      "operations": {
+        "title": "Development",
+        "description": "Interfaces, APIs, data, and products that work together.",
+        "docker": "Basic Docker"
+      },
+      "product": {
+        "title": "Operations & observability",
+        "description": "Understanding environments and investigating system behavior.",
+        "tests": "Software testing",
+        "docs": "Technical documentation"
+      }
+    },
+    "about": {
+      "label": "About",
+      "title": "Code is one part.<br>The <em>whole system</em> matters.",
+      "lead": "My foundation is development. My focus is application security.",
+      "p1": "At Xmart Solutions, I contribute to XGuardian, an AppSec and ASPM platform. I work on interfaces, reports, metrics, and workflows that put vulnerabilities in context and make security more accessible to developers.",
+      "p2": "That experience connects to QA automation, API and MCP integrations, and AI agent governance. Linux, infrastructure, and observability round out my view of how software works, fails, and improves.",
+      "quote": "Understand the system. Investigate the risk. Build responsibly."
+    },
+    "education": {
+      "label": "Education and credentials",
+      "title": "A technical foundation<br>in <em>continuous development</em>.",
+      "academic": "Education",
+      "certifications": "Certifications",
+      "inProgress": "In progress",
+      "completed": "Completed",
+      "unicid": {
+        "course": "Associate Degree in Systems Analysis and Development",
+        "period": "Jun 2026 — expected Dec 2027"
+      },
+      "senai": {
+        "course": "Technical Diploma in Systems Development",
+        "period": "Jul 2024 — Jun 2026"
+      },
+      "proz": {
+        "course": "Technical Diploma in Internet Computing",
+        "period": "Jan 2023 — Dec 2024"
+      },
+      "sfpc": {
+        "date": "CertiProf · Oct 2024 — Oct 2027"
+      },
+      "credly": "View Credly profile <span aria-hidden=\"true\">↗</span>",
+      "languages": "Languages",
+      "english": "English · B2",
+      "englishDetail": "Upper intermediate, used in technical documentation and international meetings. Improving through private lessons."
+    },
+    "contact": {
+      "label": "Contact",
+      "title": "Let’s build<br>with <em>security</em>.",
+      "description": "I am seeking junior AppSec and DevSecOps opportunities, bringing experience in development, automation, and operations.",
+      "phone": "Phone",
+      "location": "São Paulo, Brazil · on-site, hybrid, or remote"
+    },
+    "footer": {
+      "copy": "© 2026 Carlos Gabriel Gomes Luz",
+      "top": "Back to top"
+    },
+    "visual": {
+      "scroll": "Explore my work",
+      "motion": "Pause effects",
+      "motionResume": "Enable effects",
+      "reduced": "Reduced motion",
+      "film": "Code in motion. Security in every layer.",
+      "filmDesc": "Development, AppSec, and automation: three perspectives on the same system.",
+      "filmLabel": "Identity in motion",
+      "support": "Other work",
+      "supportDesc": "Products that strengthen my development foundation."
+    },
+    "tags": {
+      "integrations": "Integrations",
+      "audit": "Audit",
+      "agents": "Agents",
+      "governance": "Governance"
+    }
   },
-
-  es: {
-    meta: { title: "Carlos Gabriel | Analista Jr. de Desarrollo de Sistemas", description: "Portafolio de Carlos Gabriel, Analista Jr. de Desarrollo de Sistemas y Desarrollador Full Stack Jr. en São Paulo.", socialDescription: "Desarrollo full stack, producto, infraestructura, observabilidad y AppSec.", locale: "es_ES", imageAlt: "Carlos Gabriel, Analista Jr. de Desarrollo de Sistemas", jobTitle: "Analista Jr. de Desarrollo de Sistemas" },
-    a11y: { skip: "Saltar al contenido", progress: "Progreso de lectura", menu: "Menú", primaryNav: "Navegación principal", openMenu: "Abrir menú", closeMenu: "Cerrar menú", language: "Selector de idioma", sectionNav: "Navegación por secciones", professionalLinks: "Enlaces profesionales" },
-    nav: { home: "Inicio", projects: "Proyectos", experience: "Experiencia", skills: "Competencias", about: "Sobre mí", education: "Formación", contact: "Contacto" },
-    theme: { dark: "Oscuro", light: "Claro", toDark: "Cambiar al tema oscuro", toLight: "Cambiar al tema claro" },
-    cta: { projects: "Ver proyectos", resume: "Descargar CV", resumeShort: "CV", email: "Correo" },
-    intro: { label: "Abriendo portafolio", skip: "Saltar", command: "open carlos-gabriel --profile=full-stack", line1: "perfil: analista jr. de desarrollo de sistemas", line2: "alcance: producto · código · operaciones", ready: "portafolio listo" },
-    hero: { label: "Presentación", availability: "Disponible para oportunidades júnior", role: "Analista Jr. de Desarrollo de Sistemas <span aria-hidden=\"true\">/</span> Desarrollador Full Stack Jr.", summary: "Desarrollo productos y sistemas web conectando interfaz, backend, datos y operaciones. Mi experiencia también abarca UX/UI, Linux, observabilidad y seguridad de aplicaciones.", detailsLabel: "Información profesional", location: "São Paulo, Brasil", workMode: "Presencial · híbrido · remoto" },
-    projects: {
-      label: "Proyectos seleccionados", title: "Entregas que muestran<br>cómo <em>trabajo</em>.", intro: "Desde un sistema de gestión full stack hasta una aplicación móvil local-first: contexto, participación y estado real de cada entrega.",
-      problem: "Contexto", role: "Mi participación", delivery: "Entrega", product: "Producto", web: "Presencia web", stack: "Tecnologías del proyecto", viewLive: "Abrir proyecto <span aria-hidden=\"true\">↗</span>", viewCode: "Ver código <span aria-hidden=\"true\">↗</span>",
-      toca: { status: "En homologación", type: "Sistema de gestión · proyecto freelance", summary: "Sistema para centralizar la operación de una clínica de podología, desde la agenda y las historias clínicas hasta el inventario, las finanzas y los informes.", context: "Información operativa distribuida entre diferentes rutinas.", role: "Concepción, arquitectura y desarrollo full stack.", delivery: "Registros centrales, agenda inicial, autenticación, RBAC, auditoría y validaciones cliente/servidor.", privacy: "Entorno privado de homologación. El enlace no se publica para proteger los datos y accesos del cliente." },
-      clarium: { status: "Aplicación publicada", type: "Finanzas personales · proyecto propio", summary: "Aplicación local-first para registrar ingresos, gastos, compras con tarjeta, planificación mensual e indicadores sin depender de un servidor.", product: "Experiencia móvil con datos locales y navegación estructurada.", web: "Landing multilingüe publicada para presentar los recursos y distribuir el APK.", previewLabel: "Abrir la aplicación publicada de Clarium", imageAlt: "Página de Clarium con pantallas de la aplicación de finanzas personales" }
+  "es": {
+    "meta": {
+      "title": "Carlos Gabriel | AppSec & DevSecOps",
+      "description": "Conecto código, seguridad y operaciones. Soy Analista Jr. de Desarrollo con experiencia práctica en AppSec, en proceso de especialización en seguridad de aplicaciones.",
+      "socialDescription": "Conecto código, seguridad y operaciones. Soy Analista Jr. de Desarrollo con experiencia práctica en AppSec, en proceso de especialización en seguridad de aplicaciones.",
+      "locale": "es_ES",
+      "imageAlt": "Carlos Gabriel — AppSec & DevSecOps",
+      "jobTitle": "Analista Jr. de Desarrollo de Sistemas"
     },
-    experience: {
-      label: "Experiencia profesional", title: "Evolución con contexto<br>de <em>producto y operaciones</em>.", companyPeriod: "dic 2025 — actualidad", location: "Santo André, SP, Brasil", progression: "Promoción de becario a Analista Jr. en junio de 2026.",
-      current: { period: "jun 2026 — actualidad", role: "Analista Jr. de Desarrollo de Sistemas", mode: "Presencial", summary: "Trabajo en la evolución de una plataforma SaaS, interfaces web y sistemas internos, conectando desarrollo con infraestructura, observabilidad y AppSec.", items: ["Desarrollo y mantenimiento con Python, JavaScript/TypeScript y React.", "Rediseño de la interfaz de XGuardian y desarrollo de su sitio institucional.", "Administración de servidores Linux, troubleshooting y virtualización con Proxmox.", "Monitoreo con Zabbix, Grafana y Prometheus.", "Apoyo a prácticas de AppSec y Supply Chain Security con Sonatype Nexus y XGuardian."] },
-      intern: { period: "dic 2025 — jun 2026", role: "Becario de Desarrollo de Sistemas", mode: "Presencial", summary: "Experiencia inicial en desarrollo web, soporte técnico, infraestructura, observabilidad, seguridad de aplicaciones y documentación.", items: ["Recuperación de portátiles y activos antiguos y organización del entorno de servidores.", "Apoyo a la administración de Proxmox y troubleshooting de estaciones y servicios.", "Implementación y seguimiento del monitoreo con Zabbix y Grafana.", "Implantación interna de SysPass y elaboración de documentación y registros técnicos."] }
+    "a11y": {
+      "skip": "Saltar al contenido",
+      "progress": "Progreso de lectura",
+      "menu": "Menú",
+      "primaryNav": "Navegación principal",
+      "openMenu": "Abrir menú",
+      "closeMenu": "Cerrar menú",
+      "language": "Selector de idioma",
+      "sectionNav": "Navegación por secciones",
+      "professionalLinks": "Enlaces profesionales",
+      "brandHome": "Carlos Gabriel — inicio"
     },
-    expertise: {
-      label: "Competencias", title: "Una base generalista,<br>organizada por <em>entregas</em>.", intro: "Tecnologías y prácticas respaldadas por mi experiencia, proyectos y formación.",
-      development: { title: "Desarrollo", description: "Interfaces, aplicaciones web, APIs y desarrollo móvil." },
-      data: { title: "Datos y aplicaciones", description: "Persistencia, autenticación y control de acceso en productos.", auth: "Autenticación · RBAC", audit: "Registros de auditoría" },
-      operations: { title: "Operaciones y confiabilidad", description: "Entornos, despliegue, monitoreo y troubleshooting.", docker: "Docker básico" },
-      product: { title: "Ingeniería y producto", description: "Calidad de entrega, experiencia y evolución sostenible.", tests: "Pruebas de software", docs: "Documentación técnica" }
+    "nav": {
+      "home": "Inicio",
+      "projects": "Proyectos",
+      "experience": "Experiencia",
+      "skills": "Competencias",
+      "about": "Sobre mí",
+      "education": "Formación",
+      "contact": "Contacto"
     },
-    about: { label: "Sobre mí", title: "El código es una parte.<br>Importa <em>todo el sistema</em>.", lead: "Soy Analista Jr. de Desarrollo de Sistemas con perfil generalista y experiencia práctica en la evolución de un producto SaaS, interfaces web y sistemas internos.", p1: "Me interesa comprender cómo se conectan la interfaz, el backend, los datos y la infraestructura. Esta visión orienta mi trabajo desde el prototipo y la implementación hasta la documentación, el monitoreo y la operación.", p2: "Mi trayectoria combina formación en desarrollo de sistemas, proyectos full stack y móviles y una rutina profesional que también incluye Linux, observabilidad y seguridad de aplicaciones.", quote: "Busco construir soluciones claras para quien las usa, sostenibles para quien las mantiene y observables para quien las opera." },
-    education: {
-      label: "Formación y credenciales", title: "Base técnica en<br><em>evolución continua</em>.", academic: "Formación académica", certifications: "Certificaciones", inProgress: "En curso", completed: "Finalizado",
-      unicid: { course: "Tecnología en Análisis y Desarrollo de Sistemas", period: "jun 2026 — previsión jun 2027" },
-      senai: { course: "Técnico en Desarrollo de Sistemas", period: "jul 2024 — jun 2026" },
-      proz: { course: "Técnico en Informática para Internet", period: "ene 2023 — dic 2024" },
-      sfpc: { date: "CertiProf · oct 2024 — oct 2027" }, credly: "Ver perfil en Credly <span aria-hidden=\"true\">↗</span>", languages: "Idiomas", english: "Inglés intermedio", englishDetail: "B2 autodeclarado, actualmente en perfeccionamiento con clases particulares."
+    "theme": {
+      "dark": "Oscuro",
+      "light": "Claro",
+      "toDark": "Cambiar al tema oscuro",
+      "toLight": "Cambiar al tema claro"
     },
-    contact: { label: "Contacto", title: "¿Buscas un profesional júnior<br>que piensa <em>más allá de la pantalla</em>?", description: "Estoy disponible para oportunidades en desarrollo de sistemas, full stack y software, en São Paulo o en remoto.", phone: "Teléfono", location: "São Paulo, Brasil · presencial, híbrido o remoto" },
-    footer: { copy: "© 2026 Carlos Gabriel Gomes Luz", top: "Volver arriba" }
+    "cta": {
+      "projects": "Ver proyectos",
+      "resume": "Descargar CV",
+      "resumeShort": "CV",
+      "email": "Correo"
+    },
+    "intro": {
+      "label": "Abriendo portafolio",
+      "skip": "Saltar",
+      "command": "open carlos-gabriel --profile=appsec",
+      "line1": "perfil: analista jr. de desarrollo de sistemas",
+      "line2": "AppSec · DevSecOps · Software Engineering",
+      "ready": "portafolio listo"
+    },
+    "hero": {
+      "label": "Presentación",
+      "availability": "Busco oportunidades júnior en AppSec",
+      "role": "AppSec / DevSecOps / Ingeniería de Software",
+      "summary": "Conecto código, seguridad y operaciones. Soy Analista Jr. de Desarrollo con experiencia práctica en AppSec, en proceso de especialización en seguridad de aplicaciones.",
+      "detailsLabel": "Información profesional",
+      "location": "São Paulo, Brasil",
+      "workMode": "Presencial · híbrido · remoto"
+    },
+    "projects": {
+      "label": "Proyectos seleccionados",
+      "title": "De la intención<br>a la <em>ingeniería</em>.",
+      "intro": "Seguridad de aplicaciones, automatización de QA y gobernanza de IA. Trabajo aplicado, contexto real y participación clara.",
+      "problem": "Contexto",
+      "role": "Mi participación",
+      "delivery": "Entrega",
+      "product": "Producto",
+      "web": "Presencia web",
+      "stack": "Tecnologías del proyecto",
+      "viewLive": "Abrir proyecto <span aria-hidden=\"true\">↗</span>",
+      "viewCode": "Ver código <span aria-hidden=\"true\">↗</span>",
+      "toca": {
+        "status": "En homologación",
+        "type": "Sistema de gestión · proyecto freelance",
+        "summary": "Sistema para centralizar la operación de una clínica de podología, desde la agenda y las historias clínicas hasta el inventario, las finanzas y los informes.",
+        "context": "Información operativa distribuida entre diferentes rutinas.",
+        "role": "Concepción, arquitectura y desarrollo full stack.",
+        "delivery": "Registros centrales, agenda inicial, autenticación, RBAC, auditoría y validaciones cliente/servidor.",
+        "privacy": "Entorno privado de homologación. El enlace no se publica para proteger los datos y accesos del cliente."
+      },
+      "clarium": {
+        "status": "Aplicación publicada",
+        "type": "Finanzas personales · proyecto propio",
+        "summary": "Aplicación local-first para registrar ingresos, gastos, compras con tarjeta, planificación mensual e indicadores sin depender de un servidor.",
+        "product": "Experiencia móvil con datos locales y navegación estructurada.",
+        "web": "Landing multilingüe publicada para presentar los recursos y distribuir el APK.",
+        "previewLabel": "Abrir la aplicación publicada de Clarium",
+        "imageAlt": "Página de Clarium con pantallas de la aplicación de finanzas personales"
+      },
+      "xguardian": {
+        "type": "AppSec & ASPM · experiencia profesional",
+        "summary": "Evolución de interfaces, informes y dashboards de una plataforma de seguridad de aplicaciones. Trabajo en equipo, con foco en claridad, contexto y usabilidad.",
+        "delivery": "Informes de seguridad, filtros, métricas y participación en controles de acceso.",
+        "status": "Trabajo profesional"
+      },
+      "qa": {
+        "type": "Automatización · iniciativa interna",
+        "summary": "QA automatizado para apoyar validaciones antes y después de releases. Integraciones directas y API para probar funciones, permisos, pipelines y flujos de la plataforma.",
+        "delivery": "Ejecuciones personalizables, registro de evidencias y trazabilidad de validaciones.",
+        "status": "En desarrollo"
+      },
+      "vaultin": {
+        "type": "Gobernanza de IA · proyecto personal",
+        "summary": "Organización de agentes, skills, reglas y conocimiento técnico. Flujos asistidos por IA con versionado, enrutamiento de modelos y ejecuciones previsibles.",
+        "delivery": "Centralización de contexto y configuraciones para apoyar ejecuciones controladas.",
+        "status": "Código abierto"
+      }
+    },
+    "experience": {
+      "label": "Experiencia profesional",
+      "title": "Evolución con contexto<br>de <em>producto y operaciones</em>.",
+      "companyPeriod": "dic 2025 — actualidad",
+      "location": "Santo André, SP, Brasil",
+      "progression": "Promoción de becario a Analista Jr. en junio de 2026.",
+      "current": {
+        "period": "jun 2026 — actualidad",
+        "role": "Analista Jr. de Desarrollo de Sistemas",
+        "mode": "Presencial",
+        "summary": "Evolución de XGuardian y apoyo al ecosistema de seguridad de aplicaciones, con trabajo en producto, análisis de vulnerabilidades y automatización.",
+        "items": [
+          "Evolución de interfaces, dashboards e informes de SAST, SCA, DAST, Container Security y SBOM en XGuardian.",
+          "Investigación y contextualización de vulnerabilidades con OWASP, CVE/CWE, NVD, CVSS e información de EOL.",
+          "Participación en controles RBAC, perfiles y permisos de API.",
+          "Desarrollo de QA automatizado para validar funciones, integraciones y permisos antes y después de releases.",
+          "Apoyo técnico al ecosistema Sonatype y reuniones técnicas en inglés."
+        ]
+      },
+      "intern": {
+        "period": "dic 2025 — jun 2026",
+        "role": "Becario de Desarrollo de Sistemas",
+        "mode": "Presencial",
+        "summary": "Experiencia inicial en desarrollo web, soporte técnico, infraestructura, observabilidad, seguridad de aplicaciones y documentación.",
+        "items": [
+          "Recuperación de portátiles y activos antiguos y organización del entorno de servidores.",
+          "Apoyo a la administración de Proxmox y troubleshooting de estaciones y servicios.",
+          "Implementación y seguimiento del monitoreo con Zabbix y Grafana.",
+          "Implantación interna de SysPass y elaboración de documentación y registros técnicos."
+        ]
+      }
+    },
+    "expertise": {
+      "label": "Competencias",
+      "title": "Seguridad en foco.<br><em>Ingeniería en la base.</em>",
+      "intro": "Tecnologías y prácticas respaldadas por mi experiencia, proyectos y formación.",
+      "development": {
+        "title": "Seguridad de aplicaciones",
+        "description": "Contextualización de vulnerabilidades y seguridad en el ciclo de desarrollo."
+      },
+      "data": {
+        "title": "Automatización & IA",
+        "description": "QA, agentes e integraciones con gobernanza y trazabilidad.",
+        "auth": "Autenticación · RBAC",
+        "audit": "Registros de auditoría"
+      },
+      "operations": {
+        "title": "Desarrollo",
+        "description": "Interfaces, API, datos y productos que funcionan juntos.",
+        "docker": "Docker básico"
+      },
+      "product": {
+        "title": "Operaciones & observabilidad",
+        "description": "Entender el entorno e investigar el comportamiento de los sistemas.",
+        "tests": "Pruebas de software",
+        "docs": "Documentación técnica"
+      }
+    },
+    "about": {
+      "label": "Sobre mí",
+      "title": "El código es una parte.<br>Importa <em>todo el sistema</em>.",
+      "lead": "Mi base es el desarrollo. Mi foco es la seguridad de aplicaciones.",
+      "p1": "En Xmart Solutions, participo en la evolución de XGuardian, una plataforma de AppSec y ASPM. Trabajo en interfaces, informes, métricas y flujos que contextualizan vulnerabilidades y acercan la seguridad a los desarrolladores.",
+      "p2": "Esta experiencia se conecta con automatización de QA, integraciones por API y MCP y gobernanza de agentes de IA. Linux, infraestructura y observabilidad completan mi visión de cómo funciona y mejora el software.",
+      "quote": "Entender el sistema. Investigar el riesgo. Construir con responsabilidad."
+    },
+    "education": {
+      "label": "Formación y credenciales",
+      "title": "Base técnica en<br><em>evolución continua</em>.",
+      "academic": "Formación académica",
+      "certifications": "Certificaciones",
+      "inProgress": "En curso",
+      "completed": "Finalizado",
+      "unicid": {
+        "course": "Tecnología en Análisis y Desarrollo de Sistemas",
+        "period": "jun 2026 — previsión dic 2027"
+      },
+      "senai": {
+        "course": "Técnico en Desarrollo de Sistemas",
+        "period": "jul 2024 — jun 2026"
+      },
+      "proz": {
+        "course": "Técnico en Informática para Internet",
+        "period": "ene 2023 — dic 2024"
+      },
+      "sfpc": {
+        "date": "CertiProf · oct 2024 — oct 2027"
+      },
+      "credly": "Ver perfil en Credly <span aria-hidden=\"true\">↗</span>",
+      "languages": "Idiomas",
+      "english": "Inglés · B2",
+      "englishDetail": "Intermedio alto, utilizado en documentación y reuniones técnicas internacionales. En mejora con clases particulares."
+    },
+    "contact": {
+      "label": "Contacto",
+      "title": "Construyamos<br>con <em>seguridad</em>.",
+      "description": "Busco oportunidades júnior en AppSec y DevSecOps, conectando mi experiencia en desarrollo, automatización y operaciones.",
+      "phone": "Teléfono",
+      "location": "São Paulo, Brasil · presencial, híbrido o remoto"
+    },
+    "footer": {
+      "copy": "© 2026 Carlos Gabriel Gomes Luz",
+      "top": "Volver arriba"
+    },
+    "visual": {
+      "scroll": "Explora mi trabajo",
+      "motion": "Pausar efectos",
+      "motionResume": "Activar efectos",
+      "reduced": "Movimiento reducido",
+      "film": "Código en movimiento. Seguridad en cada capa.",
+      "filmDesc": "Desarrollo, AppSec y automatización: tres perspectivas del mismo sistema.",
+      "filmLabel": "Identidad en movimiento",
+      "support": "Otros trabajos",
+      "supportDesc": "Productos que consolidan mi base en desarrollo."
+    },
+    "tags": {
+      "integrations": "Integraciones",
+      "audit": "Auditoría",
+      "agents": "Agentes",
+      "governance": "Gobernanza"
+    }
   }
 };
 

@@ -54,3 +54,46 @@ body{font-family:var(--sans);line-height:1.65}::selection{background:#ffde59;col
     @keyframes work-arrival{from{opacity:.4;transform:translateY(32px) scale(.96)}to{opacity:1;transform:none}}
   }
 }
+/* Responsive refinement: preserve the layout while improving mobile reading and touch. */
+.hero__meta{font-size:.68rem;line-height:1.7}
+.hero__social a{min-height:44px;font-size:.7rem}
+.project__type,.status,.project__index{font-size:.65rem;line-height:1.5}
+.project__lead{font-size:.95rem}
+.project__facts dt,.tech-list li,.capability li{font-size:.65rem}
+.project__facts dd{font-size:.8rem}
+.lang-btn{min-width:44px;min-height:44px}
+.mobile-menu__footer .lang-btn{min-width:44px;min-height:44px}
+.ma{min-height:44px;display:flex;align-items:center}
+.hero-foot{font-size:.63rem}
+@media(max-width:940px){
+ .hero__meta{font-size:.65rem;line-height:1.7}
+ .project__topline{align-items:flex-start;gap:.7rem}
+ .mobile-menu__footer{gap:.75rem;flex-wrap:wrap}
+}
+@media(min-width:681px) and (max-width:820px){
+ .hero__inner{grid-template-columns:1.1fr .9fr;align-items:center}
+ .hero h1{font-size:clamp(3.6rem,8.4vw,4.4rem)}
+ .brand-stage{min-height:290px}
+ .hero__role{font-size:.88rem;line-height:1.5}
+}
+@media(max-width:680px){
+ .hero__inner{padding-top:3.2rem}
+ .hero__role{line-height:1.5}
+ .hero__summary,.project__lead{font-size:.94rem;line-height:1.75}
+ .hero__meta{flex-direction:row;font-size:.65rem;gap:.65rem 1rem}
+ .hero__social{gap:1.3rem}
+ .hero__social a{font-size:.7rem;min-height:44px}
+ .project__type,.status,.project__index{font-size:.63rem}
+ .tech-list li,.capability li{font-size:.64rem;line-height:1.5}
+ .project__facts dt{font-size:.66rem}
+ .project__facts dd{font-size:.8rem;line-height:1.65}
+ .hero-foot{font-size:.6rem}
+ .contact__details a{min-height:44px;display:inline-flex;align-items:center;font-size:.72rem}
+}
+@media(max-width:360px){
+ .hero__inner{padding-top:2.8rem}
+ .hero h1{font-size:3.55rem}
+ .hero__role{font-size:.86rem}
+ .hero__actions .button{font-size:.7rem}
+ .hero__meta{font-size:.65rem}
+}

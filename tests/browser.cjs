@@ -116,3 +116,16 @@ test('legacy light preference cannot override dark-only presentation and copy st
   await page.close();
  }
 });
+test('small screens keep secondary information readable and links easy to tap',async()=>{
+ for(const width of [320,390,768]){
+  const page=await browser.newPage({viewport:{width,height:844},reducedMotion:'reduce'});
+  await page.goto('http://127.0.0.1:4173');
+  assert.ok(await page.locator('.hero__meta').evaluate(el=>parseFloat(getComputedStyle(el).fontSize)>=10),'hero metadata minimum 10px');
+  for(const link of await page.locator('.hero__social a').all())assert.ok((await link.boundingBox()).height>=44,'social link touch target minimum 44px');
+  await page.locator('#ham').click();
+  for(const link of await page.locator('#mob .lang-btn').all()){
+   const box=await link.boundingBox();assert.ok(box.width>=44&&box.height>=44,'language touch target minimum 44px');
+  }
+  await page.close();
+ }
+});

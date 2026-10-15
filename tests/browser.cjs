@@ -129,3 +129,22 @@ test('small screens keep secondary information readable and links easy to tap',a
   await page.close();
  }
 });
+test('signal banner joins identical groups at the loop seam without a gap',async()=>{
+ for(const width of [320,768,1440,2560]){
+  const page=await browser.newPage({viewport:{width,height:900}});
+  await page.addInitScript(()=>sessionStorage.setItem('portfolio-intro-seen','true'));
+  await page.goto('http://127.0.0.1:4173');
+  assert.equal(await page.locator('.signal-group').count(),2);
+  const result=await page.locator('.signal-track').evaluate(track=>{
+   const [a,b]=track.children;const animation=track.getAnimations()[0];
+   animation.pause();animation.currentTime=0;
+   const start=a.getBoundingClientRect().left;
+   const firstWidth=a.getBoundingClientRect().width;
+   const gap=b.getBoundingClientRect().left-a.getBoundingClientRect().right;
+   animation.currentTime=animation.effect.getTiming().duration-1;
+   return {gap,width:firstWidth,end:b.getBoundingClientRect().left,start,same:a.textContent===b.textContent};
+  });
+  assert.equal(result.same,true);assert.ok(Math.abs(result.gap)<.5);assert.ok(result.width>=width);
+  assert.ok(Math.abs(result.end-result.start)<1,'loop boundary aligned');await page.close();
+ }
+});

@@ -36,3 +36,16 @@ Read-only review identified a cursor pause gap, static social metadata omissions
 ## Operational notes
 
 The existing Netlify site id is 294d2a3f-d3ed-43fc-b2e8-72cabc2c3264, connected to the main branch. The already-established Netlify canonical domain is preserved pending confirmation that the custom domain's HTTPS and DNS are working. No DNS changes are part of this refresh.
+
+
+## Follow-up corrections — 14/10/2026 (São Paulo)
+
+The initial light-theme implementation and availability wording were removed at Carlos's request. The site is now dark-only with neutral professional copy. Responsive improvements address secondary text sizes, touch targets and intermediate widths. The signal marquee uses two equal groups with trailing spacing included in the cycle.
+
+The XGuardian case study now records Carlos's 2026 institutional rebuild, UI/UX, SEO and collaborative contribution to the internal platform redesign. The supplied white lion is used unchanged. Twelve user-supplied screenshots are published as lossless WebP with separate thumbnails; no before-and-after comparison is implied. The modal supports arrows, Home/End, Escape, native focus containment and focus return, with full-size links and a no-JavaScript fallback.
+
+Vaultin uses an original vector brain illustration. Toca dos Pés is explicitly freelance work. Clarium uses the original public app icon from https://github.com/CarlossgLuz/controle-fatura (`assets/images/icon.png`).
+
+The low-resolution film containing a flattened black logo was replaced with a supersampled 1920×1080 / 30 fps background. The official vector mark is exported to a transparent RGBA PNG and composed separately in the browser. Asset generators are in `scripts/`. This preserves image definition independently of video compression.
+
+Verification for this follow-up: 16 browser tests; 39 locale/viewport combinations including 320 px, intermediate breakpoints, 2560 px and mobile landscape; open-gallery WCAG A/AA checks in PT/EN/ES; visual inspection of project marks, the gallery and the motion section. The review found and fixed inherited figure margins that clipped gallery captions. The cursor now switches back to the native pointer while the modal is open.

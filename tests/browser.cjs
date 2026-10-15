@@ -201,3 +201,14 @@ test('gallery restores a visible native cursor while its modal is open',async()=
  assert.equal(await page.locator('body').evaluate(el=>el.classList.contains('cursor-ready')),false);
  await page.keyboard.press('Escape');await page.close();
 });
+test('motion section uses a transparent logo layer and a full-HD background',async()=>{
+ const page=await browser.newPage({viewport:{width:1440,height:1000}});await page.addInitScript(()=>sessionStorage.setItem('portfolio-intro-seen','true'));
+ await page.goto('http://127.0.0.1:4173');
+ assert.equal(await page.locator('.motion-emblem').count(),1);
+ await page.locator('.motion-interlude').scrollIntoViewIfNeeded();
+ await page.waitForFunction(()=>document.querySelector('.motion-film').readyState>=2);
+ assert.ok(await page.locator('.motion-film').evaluate(el=>el.videoWidth>=1920&&el.videoHeight>=1080));
+ const image=page.locator('.motion-emblem');await image.evaluate(el=>el.decode());
+ assert.equal(await image.evaluate(el=>{const c=document.createElement('canvas');c.width=el.naturalWidth;c.height=el.naturalHeight;const x=c.getContext('2d');x.drawImage(el,0,0);return x.getImageData(0,0,1,1).data[3];}),0);
+ await page.close();
+});

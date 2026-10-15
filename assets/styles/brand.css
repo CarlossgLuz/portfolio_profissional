@@ -110,3 +110,8 @@ body{font-family:var(--sans);line-height:1.65}::selection{background:#ffde59;col
 .project--clarium:hover .project-logo-frame{transform:perspective(900px) rotateY(4deg) rotateZ(0)}
 @media(min-width:681px){.project--clarium{grid-template-columns:minmax(0,1.06fr) minmax(0,1fr)}}
 @media(max-width:680px){.project-logo-frame{width:175px}.vault-brain{width:54px}.vault-core span{font-size:.52rem}}
+/* A native-size transparent mark stays sharp independently of the background film. */
+.motion-emblem{position:absolute;right:5%;top:50%;width:clamp(280px,35vw,590px);height:auto;transform:translateY(-50%) rotate(-7deg);filter:drop-shadow(0 22px 34px #0007);pointer-events:none}
+.motion-interlude__shade{z-index:1}
+.motion-interlude__copy{z-index:2}
+@media(max-width:680px){.motion-emblem{right:-11%;width:75%;max-width:400px;opacity:.6}.motion-film{object-position:70%}}

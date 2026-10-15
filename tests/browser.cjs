@@ -157,3 +157,47 @@ test('supporting projects identify freelance work and load the Clarium app mark'
   assert.match(await icon.getAttribute('src'),/clarium-icon/);await page.close();
  }
 });
+test('XGuardian gallery supports navigation, wrapping, Escape and focus restoration',async()=>{
+ const page=await browser.newPage({viewport:{width:1440,height:1000},reducedMotion:'reduce'});
+ await page.goto('http://127.0.0.1:4173');
+ const opener=page.locator('#xguardian-gallery-open');assert.equal(await opener.count(),1);
+ assert.equal(await page.locator('.work--xguardian a[href="https://www.xguardianplatform.io/"]').count(),1);
+ await opener.click();const dialog=page.getByRole('dialog',{name:/XGuardian/});assert.equal(await dialog.isVisible(),true);
+ assert.equal(await page.locator('#gallery-count').innerText(),'1 / 12');
+ await page.keyboard.press('ArrowLeft');assert.equal(await page.locator('#gallery-count').innerText(),'12 / 12');
+ await page.keyboard.press('ArrowRight');assert.equal(await page.locator('#gallery-count').innerText(),'1 / 12');
+ await page.locator('#gallery-next').click();assert.equal(await page.locator('#gallery-count').innerText(),'2 / 12');
+ await page.locator('[data-gallery-index="5"]').click();assert.equal(await page.locator('#gallery-count').innerText(),'6 / 12');
+ await page.waitForFunction(()=>{const i=document.getElementById('gallery-image');return i.complete&&i.naturalWidth===1920});
+ assert.equal(await page.locator('[data-gallery-index="5"]').getAttribute('aria-pressed'),'true');
+ await page.keyboard.press('Escape');assert.equal(await dialog.isVisible(),false);
+ assert.equal(await page.evaluate(()=>document.activeElement.id),'xguardian-gallery-open');
+ assert.equal(await page.locator('body').evaluate(el=>el.classList.contains('gallery-open')),false);await page.close();
+});
+test('XGuardian gallery retains a direct image link without JavaScript',async()=>{
+ const page=await browser.newPage({javaScriptEnabled:false});await page.goto('http://127.0.0.1:4173');
+ const link=page.locator('#xguardian-gallery-open');assert.equal(await link.count(),1);
+ const r=await page.request.get(new URL(await link.getAttribute('href'),page.url()).href);
+ assert.equal(r.status(),200);assert.match(r.headers()['content-type'],/image/);await page.close();
+});
+test('gallery has readable mobile controls and no serious WCAG issues',async()=>{
+ const AxeBuilder=require('@axe-core/playwright').default;
+ for(const [width,height,lang] of [[320,568,'pt-BR'],[390,844,'en'],[844,390,'es']]){
+  const context=await browser.newContext({viewport:{width,height},reducedMotion:'reduce'});const page=await context.newPage();
+  await page.goto('http://127.0.0.1:4173/?lang='+lang);await page.locator('#xguardian-gallery-open').click();
+  assert.ok(await page.locator('#project-gallery').evaluate(el=>el.getBoundingClientRect().width<=innerWidth));
+  assert.ok(await page.locator('.gallery-stage').evaluate(stage=>stage.querySelector('figcaption').getBoundingClientRect().bottom<=stage.getBoundingClientRect().bottom+1),'gallery caption remains within stage');
+  for(const id of ['gallery-close','gallery-next','gallery-previous']){
+   const box=await page.locator('#'+id).boundingBox();assert.ok(box.width>=44&&box.height>=44);
+  }
+  const result=await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21aa']).analyze();
+  assert.deepEqual(result.violations.map(v=>({id:v.id,nodes:v.nodes.map(n=>n.target)})),[]);
+  await page.keyboard.press('Escape');await context.close();
+ }
+});
+test('gallery restores a visible native cursor while its modal is open',async()=>{
+ const page=await browser.newPage();await page.addInitScript(()=>sessionStorage.setItem('portfolio-intro-seen','true'));
+ await page.goto('http://127.0.0.1:4173');await page.locator('#xguardian-gallery-open').click();
+ assert.equal(await page.locator('body').evaluate(el=>el.classList.contains('cursor-ready')),false);
+ await page.keyboard.press('Escape');await page.close();
+});

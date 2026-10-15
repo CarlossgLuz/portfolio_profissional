@@ -1,0 +1,48 @@
+/* Project marks and the 2026 delivery gallery share the existing dark identity. */
+.xguardian-mark{display:grid;place-items:center;width:46%;max-width:240px;aspect-ratio:1;filter:drop-shadow(0 20px 35px #0008);transform:perspective(900px) rotateY(-12deg) rotateZ(-4deg);transition:transform 700ms var(--ease-out)}
+.xguardian-mark img{width:76%;height:auto;filter:drop-shadow(0 0 28px #ffffff12)}
+.work--xguardian:hover .xguardian-mark{transform:perspective(900px) rotateY(5deg) rotateZ(0)}
+.work--xguardian .project__links{flex-wrap:wrap;gap:.9rem 1.2rem;margin-top:1.5rem}
+.project__record{font-size:.75rem;color:var(--muted);margin-top:1.2rem;max-width:52ch;line-height:1.7}
+body.gallery-open{overflow:hidden}
+.project-gallery{width:min(1440px,calc(100vw - 32px));height:min(960px,calc(100dvh - 32px));max-width:none;max-height:none;margin:auto;padding:0;border:1px solid #ffffff2a;border-radius:6px;background:#101010;color:var(--bright);box-shadow:0 30px 120px #000b;overflow:hidden}
+.project-gallery::backdrop{background:#050505e8;backdrop-filter:blur(8px)}
+.gallery-panel{height:100%;min-height:0;display:grid;grid-template-rows:auto minmax(0,1fr) auto auto}
+.gallery-header{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1rem 1.2rem;border-bottom:1px solid var(--border)}
+.gallery-header h2{font-size:1.1rem;font-weight:500;letter-spacing:-.02em;line-height:1.4}
+.gallery-header p{font-family:var(--mono);color:var(--muted);font-size:.7rem;margin-top:.25rem}
+.gallery-control{display:grid;place-items:center;width:44px;height:44px;flex:0 0 44px;padding:0;border:1px solid #ffffff30;border-radius:3px;background:#101010e8;color:#ffde59;font-size:1.5rem;line-height:1;cursor:pointer}
+.gallery-control:hover{background:#ffde59;color:#080808;border-color:#ffde59}
+.gallery-stage{position:relative;min-height:0;background:#080808;padding:1rem 0 0;overflow:hidden}
+.gallery-figure{margin:0;height:100%;display:grid;grid-template-rows:minmax(0,1fr) auto;min-height:0}
+.gallery-image-link{display:block;min-height:0;max-width:100%;height:100%;padding-inline:1rem}
+#gallery-image{display:block;width:100%;height:100%;object-fit:contain;object-position:center}
+.gallery-figure figcaption{padding:.75rem 4.5rem;text-align:center;min-height:44px;font-size:.78rem;line-height:1.5;color:var(--text)}
+.gallery-previous,.gallery-next{position:absolute;bottom:.4rem;z-index:1}
+.gallery-previous{left:1rem}.gallery-next{right:1rem}
+.gallery-thumbnails{display:flex;align-items:center;gap:.5rem;padding:.8rem 1rem;border-top:1px solid var(--border);overflow:auto;overscroll-behavior-x:contain;scrollbar-width:thin;scrollbar-color:#777 #161616}
+.gallery-thumb{flex:0 0 104px;min-height:56px;padding:3px;border:1px solid #ffffff24;border-radius:3px;background:#161616;cursor:pointer}
+.gallery-thumb img{display:block;width:100%;height:49px;object-fit:cover;border-radius:1px}
+.gallery-thumb[aria-pressed=true]{border-color:#ffde59;background:#ffde5922}
+.gallery-thumb:hover{border-color:#ffde59aa}
+.gallery-footer{padding:.5rem 1rem .8rem;text-align:right;font-size:.72rem}
+.gallery-footer a{min-height:44px;display:inline-flex;align-items:center;color:var(--text);text-underline-offset:4px}
+.gallery-footer a:hover{color:var(--accent)}
+.gallery-error{position:absolute;left:12%;right:12%;top:45%;padding:1rem;background:#101010ed;border:1px solid var(--border);color:var(--text);font-size:.85rem;text-align:center}
+@media(max-width:680px){
+ .xguardian-mark{width:42%;max-width:180px}
+ .project-gallery{width:calc(100vw - 16px);height:calc(100dvh - 16px);border-radius:4px}
+ .gallery-header{padding:.75rem;gap:.5rem}.gallery-header h2{font-size:.95rem}
+ .gallery-image-link{padding-inline:.4rem}
+ .gallery-stage{padding-top:.5rem}
+ .gallery-figure figcaption{font-size:.72rem;padding:.75rem 3.8rem;min-height:54px}
+ .gallery-previous{left:.5rem;bottom:.35rem}.gallery-next{right:.5rem;bottom:.35rem}
+ .gallery-thumbnails{gap:.4rem;padding:.6rem}.gallery-thumb{flex-basis:84px;min-height:48px}.gallery-thumb img{height:42px}
+ .gallery-footer{padding:0 .75rem .25rem;font-size:.68rem}
+}
+@media(max-height:500px){
+ .gallery-header{padding:.35rem .75rem}.gallery-header p{display:none}
+ .gallery-thumbnails{padding:.35rem .75rem}.gallery-thumb{flex-basis:75px;min-height:44px}.gallery-thumb img{height:35px}
+ .gallery-footer{padding:0 .75rem;font-size:.65rem}.gallery-footer a{min-height:36px}
+ .gallery-figure figcaption{padding-block:.6rem;font-size:.65rem;min-height:42px}
+}

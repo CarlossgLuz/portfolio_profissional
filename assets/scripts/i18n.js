@@ -83,9 +83,12 @@ const portfolioTranslations = {
       },
       "xguardian": {
         "type": "AppSec & ASPM · experiência profissional",
-        "summary": "Evolução de interfaces, relatórios e dashboards de uma plataforma de segurança de aplicações. Um trabalho de equipe, com foco em clareza, contexto e usabilidade.",
-        "delivery": "Relatórios de segurança, filtros, métricas e participação em controles de acesso.",
-        "status": "Atuação profissional"
+        "summary": "Refiz o site institucional do XGuardian em 2026, da landing page às páginas de conteúdo, com atenção a UI/UX, responsividade, SEO e consistência visual. Na plataforma interna, contribuí para o redesign completo e a evolução de interfaces, dashboards e relatórios, em colaboração com a equipe.",
+        "delivery": "Institucional completo, SEO técnico, redesign da plataforma e refinamento de fluxos de AppSec, com foco em clareza, usabilidade e qualidade das entregas.",
+        "status": "Atuação profissional",
+        "record": "Os prints disponíveis registram o institucional que refiz em 2026.",
+        "visit": "Visitar institucional <span aria-hidden=\"true\">↗</span>",
+        "view": "Ver imagens da entrega"
       },
       "qa": {
         "type": "Automação · iniciativa interna",
@@ -220,6 +223,29 @@ const portfolioTranslations = {
       "audit": "Auditoria",
       "agents": "Agentes",
       "governance": "Governança"
+    },
+    "gallery": {
+      "title": "XGuardian · Institucional 2026",
+      "close": "Fechar galeria",
+      "previous": "Imagem anterior",
+      "next": "Próxima imagem",
+      "openOriginal": "Abrir imagem em tamanho original",
+      "error": "Não foi possível carregar esta imagem. Use o link para abrir o arquivo original.",
+      "select": "Ver imagem",
+      "captions": [
+        "Página inicial · apresentação",
+        "Página inicial · contexto e operação",
+        "Página inicial · capacidades de AppSec",
+        "Página inicial · integrações",
+        "Página inicial · demonstração e chamada de contato",
+        "Quem somos",
+        "Parceiros",
+        "Roadmap",
+        "Blog · apresentação",
+        "Blog · artigos",
+        "Conheça a plataforma",
+        "Portal · tela de login"
+      ]
     }
   },
   "en": {
@@ -305,9 +331,12 @@ const portfolioTranslations = {
       },
       "xguardian": {
         "type": "AppSec & ASPM · professional experience",
-        "summary": "Evolving interfaces, reports, and dashboards for an application security platform. A team effort focused on clarity, context, and usability.",
-        "delivery": "Security reports, filters, metrics, and contributions to access controls.",
-        "status": "Professional work"
+        "summary": "I rebuilt the XGuardian corporate website in 2026, from the landing page to the content pages, focusing on UI/UX, responsiveness, SEO, and visual consistency. Within the internal platform, I contributed to the complete redesign and the evolution of interfaces, dashboards, and reports in collaboration with the team.",
+        "delivery": "Complete corporate website, technical SEO, platform redesign, and refined AppSec workflows, with a focus on clarity, usability, and delivery quality.",
+        "status": "Professional work",
+        "record": "The screenshots document the corporate website I rebuilt in 2026.",
+        "visit": "Visit website <span aria-hidden=\"true\">↗</span>",
+        "view": "View project images"
       },
       "qa": {
         "type": "Automation · internal initiative",
@@ -442,6 +471,29 @@ const portfolioTranslations = {
       "audit": "Audit",
       "agents": "Agents",
       "governance": "Governance"
+    },
+    "gallery": {
+      "title": "XGuardian · Website 2026",
+      "close": "Close gallery",
+      "previous": "Previous image",
+      "next": "Next image",
+      "openOriginal": "Open full-size image",
+      "error": "This image could not be loaded. Use the link to open the original file.",
+      "select": "View image",
+      "captions": [
+        "Homepage · introduction",
+        "Homepage · context and operations",
+        "Homepage · AppSec capabilities",
+        "Homepage · integrations",
+        "Homepage · demo and contact",
+        "About us",
+        "Partners",
+        "Roadmap",
+        "Blog · introduction",
+        "Blog · articles",
+        "Explore the platform",
+        "Portal · login screen"
+      ]
     }
   },
   "es": {
@@ -527,9 +579,12 @@ const portfolioTranslations = {
       },
       "xguardian": {
         "type": "AppSec & ASPM · experiencia profesional",
-        "summary": "Evolución de interfaces, informes y dashboards de una plataforma de seguridad de aplicaciones. Trabajo en equipo, con foco en claridad, contexto y usabilidad.",
-        "delivery": "Informes de seguridad, filtros, métricas y participación en controles de acceso.",
-        "status": "Trabajo profesional"
+        "summary": "Rehice el sitio institucional de XGuardian en 2026, desde la landing page hasta las páginas de contenido, con foco en UI/UX, adaptabilidad, SEO y coherencia visual. En la plataforma interna, contribuí al rediseño completo y a la evolución de interfaces, dashboards e informes, en colaboración con el equipo.",
+        "delivery": "Sitio institucional completo, SEO técnico, rediseño de la plataforma y mejora de flujos de AppSec, con foco en claridad, usabilidad y calidad de las entregas.",
+        "status": "Trabajo profesional",
+        "record": "Las capturas registran el sitio institucional que rehice en 2026.",
+        "visit": "Visitar sitio <span aria-hidden=\"true\">↗</span>",
+        "view": "Ver imágenes del proyecto"
       },
       "qa": {
         "type": "Automatización · iniciativa interna",
@@ -664,6 +719,29 @@ const portfolioTranslations = {
       "audit": "Auditoría",
       "agents": "Agentes",
       "governance": "Gobernanza"
+    },
+    "gallery": {
+      "title": "XGuardian · Sitio institucional 2026",
+      "close": "Cerrar galería",
+      "previous": "Imagen anterior",
+      "next": "Siguiente imagen",
+      "openOriginal": "Abrir imagen en tamaño original",
+      "error": "No se pudo cargar esta imagen. Usa el enlace para abrir el archivo original.",
+      "select": "Ver imagen",
+      "captions": [
+        "Inicio · presentación",
+        "Inicio · contexto y operaciones",
+        "Inicio · capacidades de AppSec",
+        "Inicio · integraciones",
+        "Inicio · demostración y contacto",
+        "Quiénes somos",
+        "Socios",
+        "Roadmap",
+        "Blog · presentación",
+        "Blog · artículos",
+        "Conoce la plataforma",
+        "Portal · pantalla de acceso"
+      ]
     }
   }
 };

@@ -5,7 +5,7 @@
   let mouseX=innerWidth/2,mouseY=innerHeight/2,ringX=mouseX,ringY=mouseY;
   let frame=0,inside=true;
   function enabled() {
-    return precise.matches && !prefersReducedMotion.matches && !document.hidden && inside && !document.documentElement.classList.contains('motion-paused');
+    return precise.matches && !prefersReducedMotion.matches && !document.hidden && inside && !document.body.classList.contains('gallery-open') && !document.documentElement.classList.contains('motion-paused');
   }
   function render() {
     frame=0;
@@ -30,6 +30,7 @@
   document.addEventListener('mouseenter',()=>{inside=true;sync();});
   document.addEventListener('visibilitychange',sync);
   window.addEventListener('portfolio:motionchange',sync);
+  window.addEventListener('portfolio:overlaychange',sync);
   precise.addEventListener?.('change',sync);prefersReducedMotion.addEventListener?.('change',sync);
   sync();
 })();

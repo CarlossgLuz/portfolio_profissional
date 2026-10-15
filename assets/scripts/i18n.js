@@ -65,7 +65,7 @@ const portfolioTranslations = {
       "viewCode": "Ver código <span aria-hidden=\"true\">↗</span>",
       "toca": {
         "status": "Em homologação",
-        "type": "Sistema de gestão · projeto freelance",
+        "type": "Freelancer · sistema de gestão",
         "summary": "Sistema para centralizar a operação de uma clínica de podologia, da agenda e prontuários ao estoque, financeiro e relatórios.",
         "context": "Informações operacionais distribuídas entre diferentes rotinas.",
         "role": "Concepção, arquitetura e desenvolvimento full stack.",
@@ -287,7 +287,7 @@ const portfolioTranslations = {
       "viewCode": "View source <span aria-hidden=\"true\">↗</span>",
       "toca": {
         "status": "Staging",
-        "type": "Management system · freelance project",
+        "type": "Freelancer · management system",
         "summary": "A system designed to centralize a podiatry clinic's operations, from scheduling and medical records to inventory, finance, and reporting.",
         "context": "Operational information spread across different workflows.",
         "role": "Product definition, architecture, and full-stack development.",
@@ -509,7 +509,7 @@ const portfolioTranslations = {
       "viewCode": "Ver código <span aria-hidden=\"true\">↗</span>",
       "toca": {
         "status": "En homologación",
-        "type": "Sistema de gestión · proyecto freelance",
+        "type": "Freelancer · sistema de gestión",
         "summary": "Sistema para centralizar la operación de una clínica de podología, desde la agenda y las historias clínicas hasta el inventario, las finanzas y los informes.",
         "context": "Información operativa distribuida entre diferentes rutinas.",
         "role": "Concepción, arquitectura y desarrollo full stack.",

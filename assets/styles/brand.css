@@ -102,3 +102,11 @@ body{font-family:var(--sans);line-height:1.65}::selection{background:#ffde59;col
 .signal-track{display:flex;width:max-content;gap:0;font-size:.73rem;letter-spacing:.14em;font-weight:600;will-change:transform}
 .signal-group{display:flex;align-items:center;justify-content:space-around;gap:2rem;min-width:100vw;flex:0 0 auto;padding-inline-end:2rem;white-space:nowrap}
 @media(max-width:680px){.signal-track{font-size:.65rem}.signal-group{gap:1.5rem;padding-inline-end:1.5rem}}
+
+/* Match supporting project marks to the established framed artwork. */
+.vault-brain{display:block;width:clamp(42px,5.5vw,72px);height:auto;margin:0 auto .6rem;stroke:#ffde59;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.project-logo-frame{position:relative;display:grid;place-items:center;width:clamp(150px,17vw,235px);aspect-ratio:1;border:1px solid #ffffff24;border-radius:24px;box-shadow:0 28px 70px #0008;transform:perspective(900px) rotateY(-10deg) rotateZ(-5deg);transition:transform 700ms var(--ease-out);overflow:hidden}
+.project-logo-frame img{width:100%;height:100%;object-fit:contain}
+.project--clarium:hover .project-logo-frame{transform:perspective(900px) rotateY(4deg) rotateZ(0)}
+@media(min-width:681px){.project--clarium{grid-template-columns:minmax(0,1.06fr) minmax(0,1fr)}}
+@media(max-width:680px){.project-logo-frame{width:175px}.vault-brain{width:54px}.vault-core span{font-size:.52rem}}

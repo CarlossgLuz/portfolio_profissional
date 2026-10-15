@@ -148,3 +148,12 @@ test('signal banner joins identical groups at the loop seam without a gap',async
   assert.ok(Math.abs(result.end-result.start)<1,'loop boundary aligned');await page.close();
  }
 });
+test('supporting projects identify freelance work and load the Clarium app mark',async()=>{
+ for(const lang of ['pt-BR','en','es']){
+  const page=await browser.newPage({reducedMotion:'reduce'});await page.goto('http://127.0.0.1:4173/?lang='+lang);
+  assert.match(await page.locator('.project--clinic .project__type').innerText(),/Freelancer/i);
+  const icon=page.locator('.project--clarium img');await icon.scrollIntoViewIfNeeded();await icon.evaluate(el=>el.decode());
+  assert.ok(await icon.evaluate(el=>el.complete&&el.naturalWidth>0));
+  assert.match(await icon.getAttribute('src'),/clarium-icon/);await page.close();
+ }
+});

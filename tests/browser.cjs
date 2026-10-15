@@ -10,7 +10,7 @@ before(async () => {
   for(let i=0;i<30;i++){try{await fetch('http://127.0.0.1:4173');break}catch{await new Promise(r=>setTimeout(r,100))}}
 });
 after(async () => {await browser?.close();server?.kill();});
-test('recruiter sees AppSec positioning and relevant projects in every language', async () => {
+test('visitor sees AppSec positioning and relevant projects in every language', async () => {
   for (const lang of ['pt-BR','en','es']) {
     const page = await browser.newPage({reducedMotion:'reduce'});
     const errors=[];page.on('pageerror',e=>errors.push(e.message));
@@ -26,7 +26,7 @@ test('recruiter sees AppSec positioning and relevant projects in every language'
     assert.deepEqual(errors,[]);await page.close();
   }
 });
-test('mobile layout fits, navigation closes on Escape, locale and theme controls work', async () => {
+test('mobile layout fits, navigation closes on Escape and locale controls work', async () => {
   for(const width of [320,375,430,768,1024,1440,1920]) {
     const page=await browser.newPage({viewport:{width,height:900},reducedMotion:'reduce'});
     await page.goto('http://127.0.0.1:4173');
@@ -41,8 +41,8 @@ test('mobile layout fits, navigation closes on Escape, locale and theme controls
     }
     await page.locator(width<=940?'#mob .lang-btn[data-lang="en"]':'.nav-actions .lang-btn[data-lang="en"]').click();
     assert.equal(await page.locator('html').getAttribute('lang'),'en');
-    await page.locator(width<=940?'#theme-toggle-mobile':'#theme-toggle-desktop').click();
-    assert.equal(await page.locator('html').getAttribute('data-theme'),'light');
+    assert.equal(await page.locator('.theme-toggle').count(),0);
+    assert.equal(await page.locator('html').getAttribute('data-theme'),'dark');
     await page.close();
   }
 });
@@ -66,13 +66,12 @@ test('contact remains readable against its background in the dark theme', async 
   });
   assert.ok(contrast>=3,`heading contrast ${contrast}`);await page.close();
 });
-test('WCAG A/AA automated checks pass in both themes', async () => {
+test('WCAG A/AA automated checks pass in the dark theme', async () => {
   const AxeBuilder=require('@axe-core/playwright').default;
-  for(const theme of ['dark','light']) {
+  for(const theme of ['dark']) {
     const context=await browser.newContext({reducedMotion:'reduce'});
     const page=await context.newPage();
     await page.goto('http://127.0.0.1:4173');
-    if(theme==='light')await page.locator('#theme-toggle-desktop').click();
     const result=await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21aa']).analyze();
     assert.deepEqual(result.violations.map(v=>({id:v.id,nodes:v.nodes.map(n=>n.target)})),[],theme);
     await page.close();
@@ -103,4 +102,17 @@ test('pause restores the native cursor and stops its decorative loop', async () 
   await page.locator('#motion-toggle').click();
   assert.equal(await page.locator('body').evaluate(el=>el.classList.contains('cursor-ready')),false);
   await page.close();
+});
+
+test('legacy light preference cannot override dark-only presentation and copy stays neutral',async()=>{
+ for(const lang of ['pt-BR','en','es']) {
+  const page=await browser.newPage({reducedMotion:'reduce'});
+  await page.addInitScript(()=>localStorage.setItem('portfolio-theme','light'));
+  await page.goto('http://127.0.0.1:4173/?lang='+lang);
+  assert.equal(await page.locator('html').getAttribute('data-theme'),'dark');
+  assert.equal(await page.locator('.theme-toggle').count(),0);
+  assert.equal(await page.locator('[data-i18n="hero.availability"], [data-i18n="hero.workMode"]').count(),0);
+  assert.doesNotMatch(await page.locator('#contact').innerText(),/Busco oportunidades|seeking junior|Busco oportunidades júnior/i);
+  await page.close();
+ }
 });

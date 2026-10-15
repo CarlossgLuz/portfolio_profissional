@@ -2,7 +2,6 @@
 @font-face{font-family:Space Grotesk;src:url('../fonts/space-grotesk-regular.ttf') format('truetype');font-weight:400;font-display:swap}
 @font-face{font-family:Space Grotesk;src:url('../fonts/space-grotesk-semibold.ttf') format('truetype');font-weight:500 800;font-display:swap}
 :root{--bg:#080808;--bg-raised:#101010;--surface:#151515;--surface-strong:#222;--text:#c1c1bb;--muted:#92928a;--bright:#f6f5ef;--accent:#ffde59;--accent-strong:#eed04f;--signal:#ffde59;--border:rgba(245,245,235,.12);--border-strong:rgba(245,245,235,.25);--header:rgba(8,8,8,.85);--sans:'Space Grotesk',Arial,sans-serif;--content:1280px;--gutter:clamp(1.2rem,4.5vw,5rem)}
-[data-theme=light]{--bg:#f4f2ec;--bg-raised:#eae7de;--surface:#fffdf5;--surface-strong:#e4dfd1;--text:#45443f;--muted:#69665a;--bright:#171714;--accent:#765e00;--accent-strong:#624e00;--signal:#765e00;--border:rgba(20,20,15,.14);--border-strong:rgba(20,20,15,.28);--header:rgba(244,242,236,.9)}
 body{font-family:var(--sans);line-height:1.65}::selection{background:#ffde59;color:#080808}
 .site-header{border-bottom:1px solid var(--border);backdrop-filter:blur(16px)}
 .site-nav{max-width:1440px;margin:auto;padding-inline:var(--gutter)}
@@ -49,12 +48,6 @@ body{font-family:var(--sans);line-height:1.65}::selection{background:#ffde59;col
 #motion-toggle:disabled{cursor:default;text-decoration:none}
 /* Contact colors follow the active identity, including legacy selectors. */
 .contact{color:var(--text)}.contact .eyebrow{color:var(--accent)}.contact .eyebrow>span:first-child::after{color:var(--muted)}.contact h2{color:var(--bright)}.contact h2 em{color:var(--accent)}.contact__layout>div:first-child p,.contact__actions>p{color:var(--text)}.contact-email,.contact__details a{color:var(--bright)}.contact .button--primary{background:#ffde59;color:#080808}.contact .button--primary:hover{background:#fff1a8;color:#080808}
-[data-theme=light] .brand-stage{background:var(--bg)}
-[data-theme=light] .stage-grid{background-image:linear-gradient(#1717140c 1px,transparent 1px),linear-gradient(90deg,#1717140c 1px,transparent 1px)}
-[data-theme=light] .stage-label,[data-theme=light] .stage-coordinate{color:#69665a}
-[data-theme=light] .stage-orbit{border-color:#765e004f}
-[data-theme=light] .stage-orbit--two{border-color:#17171428}
-[data-theme=light] .brand-mark{filter:drop-shadow(0 28px 35px #17171415)}
 @supports(animation-timeline:view()){
   @media(prefers-reduced-motion:no-preference) and (min-width:941px){
     .motion-ok:not(.motion-paused) .work-art{animation:work-arrival linear both;animation-timeline:view();animation-range:entry 0% cover 35%}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,13 +27,8 @@
   <meta name="twitter:image:alt" content="Carlos Gabriel — AppSec &amp; DevSecOps">
   <script>
     (function () {
-      var key = "portfolio-theme";
-      var stored = null;
-      try { stored = localStorage.getItem(key); } catch (error) {}
-      var system = "dark";
-      var theme = stored === "light" || stored === "dark" ? stored : system;
-      document.documentElement.setAttribute("data-theme", theme);
-      document.documentElement.style.colorScheme = theme;
+      document.documentElement.style.colorScheme = "dark";
+      try { localStorage.removeItem("portfolio-theme"); } catch (error) {}
       document.documentElement.classList.add("js");
       if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
         document.documentElement.classList.add("motion-ok");
@@ -119,9 +114,6 @@
     </div>
     <div class="mobile-menu__footer">
       <a href="./assets/documents/CV_Carlos_Gabriel_PtBR.pdf" class="text-link resume-link" download data-i18n="cta.resume">Baixar currículo</a>
-      <button type="button" class="icon-control theme-toggle theme-toggle--mobile" id="theme-toggle-mobile" data-i18n-aria-label="theme.toLight" aria-label="Alternar para o tema claro" aria-pressed="true">
-        <span class="theme-toggle__icon" aria-hidden="true"></span><span class="theme-toggle__label" data-i18n="theme.dark">Escuro</span>
-      </button>
       <div class="lang-switcher" role="group" data-i18n-aria-label="a11y.language" aria-label="Seleção de idioma">
         <button type="button" class="lang-btn is-active" data-lang="pt-BR" aria-pressed="true" lang="pt-BR">PT</button>
         <button type="button" class="lang-btn" data-lang="en" aria-pressed="false" lang="en">EN</button>
@@ -155,9 +147,6 @@
           <button type="button" class="lang-btn" data-lang="en" aria-pressed="false" lang="en">EN</button>
           <button type="button" class="lang-btn" data-lang="es" aria-pressed="false" lang="es">ES</button>
         </div>
-        <button type="button" class="icon-control theme-toggle" id="theme-toggle-desktop" data-i18n-aria-label="theme.toLight" aria-label="Alternar para o tema claro" aria-pressed="true">
-          <span class="theme-toggle__icon" aria-hidden="true"></span><span class="sr-only theme-toggle__label" data-i18n="theme.dark">Escuro</span>
-        </button>
         <a href="./assets/documents/CV_Carlos_Gabriel_PtBR.pdf" class="nav-resume resume-link" download data-i18n="cta.resumeShort">Currículo</a>
       </div>
       <button class="ham" id="ham" type="button" data-i18n-aria-label="a11y.openMenu" aria-label="Abrir menu" aria-expanded="false" aria-controls="mob">
@@ -170,13 +159,11 @@
     <section id="hero" class="hero" data-i18n-aria-label="hero.label" aria-label="Apresentação">
       <div class="hero__inner wrap">
         <div class="hero__content">
-          <p class="eyebrow hero__eyebrow"><span class="status-dot" aria-hidden="true"></span><span data-i18n="hero.availability">Em busca de oportunidades em AppSec</span></p>
           <h1>Carlos<br>Gabriel<span aria-hidden="true">.</span></h1>
           <p class="hero__role" data-i18n="hero.role">AppSec / DevSecOps / Engenharia de Software</p>
           <p class="hero__summary" data-i18n="hero.summary">Conecto código, segurança e operação. Sou Analista de Desenvolvimento Jr., com experiência prática em AppSec e em trajetória de especialização em segurança de aplicações.</p>
           <ul class="hero__meta" data-i18n-aria-label="hero.detailsLabel" aria-label="Informações profissionais">
             <li data-i18n="hero.location">São Paulo, SP</li>
-            <li data-i18n="hero.workMode">Presencial · híbrido · remoto</li>
             <li>Xmart Solutions</li>
           </ul>
           <div class="hero__actions">
@@ -194,7 +181,7 @@
           <div class="stage-grid"></div><div class="stage-glow"></div>
           <canvas id="brand-canvas"></canvas>
           <div class="stage-orbit stage-orbit--one"></div><div class="stage-orbit stage-orbit--two"></div>
-          <img data-themed-logo class="brand-mark" src="./assets/images/logo-mark.svg" width="500" height="380" alt="">
+          <img class="brand-mark" src="./assets/images/logo-mark.svg" width="500" height="380" alt="">
           <span class="stage-label stage-label--top">CG / SECURITY BY DESIGN</span>
           <span class="stage-label stage-label--bottom">CODE · CONTEXT · SECURITY</span>
           <span class="stage-coordinate">23°33′ S<br>46°38′ W</span>
@@ -386,7 +373,7 @@
       <div class="wrap contact__inner">
         <p class="eyebrow rv"><span>06</span><span data-i18n="contact.label">Contato</span></p>
         <div class="contact__layout">
-          <div class="rv"><h2 id="contact-title" data-i18n="contact.title">Vamos construir<br>com <em>segurança</em>.</h2><p data-i18n="contact.description">Busco oportunidades júnior em AppSec e DevSecOps, conectando minha experiência em desenvolvimento, automação e operação.</p></div>
+          <div class="rv"><h2 id="contact-title" data-i18n="contact.title">Vamos construir<br>com <em>segurança</em>.</h2><p data-i18n="contact.description">Conecto desenvolvimento, segurança de aplicações e automação em projetos e colaborações técnicas.</p></div>
           <div class="contact__actions rv">
             <a href="mailto:carlosgabriel.contato2007@gmail.com" class="contact-email">carlosgabriel.contato2007@gmail.com <span aria-hidden="true">↗</span></a>
             <a href="./assets/documents/CV_Carlos_Gabriel_PtBR.pdf" class="button button--primary resume-link" download data-i18n="cta.resume">Baixar currículo</a>
@@ -395,7 +382,7 @@
               <a href="https://github.com/CarlossgLuz" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
               <a href="tel:+5511967622665" data-i18n="contact.phone">Telefone</a>
             </div>
-            <p data-i18n="contact.location">São Paulo, SP · presencial, híbrido ou remoto</p>
+            <p data-i18n="contact.location">São Paulo, SP</p>
           </div>
         </div>
       </div>
@@ -407,7 +394,6 @@
   </footer>
 
   <script src="./assets/scripts/shared.js" defer></script>
-  <script src="./assets/scripts/theme.js" defer></script>
   <script src="./assets/scripts/i18n.js" defer></script>
   <script src="./assets/scripts/cursor.js" defer></script>
   <script src="./assets/scripts/intro.js" defer></script>

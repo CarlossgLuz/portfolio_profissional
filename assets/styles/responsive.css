@@ -10,7 +10,6 @@
   :root { --header-height: 64px; }
   .npill, .nav-actions { display: none; }
   .ham { display: flex; }
-  .theme-toggle--mobile { display: flex; min-height: 44px; }
   .mobile-menu__footer .text-link { min-height: 44px; }
   .mobile-menu__footer .lang-btn { min-width: 40px; min-height: 44px; }
   .hero { min-height: auto; }

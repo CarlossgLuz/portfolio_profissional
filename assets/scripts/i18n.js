@@ -30,12 +30,6 @@ const portfolioTranslations = {
       "education": "Formação",
       "contact": "Contato"
     },
-    "theme": {
-      "dark": "Escuro",
-      "light": "Claro",
-      "toDark": "Alternar para o tema escuro",
-      "toLight": "Alternar para o tema claro"
-    },
     "cta": {
       "projects": "Ver projetos",
       "resume": "Baixar currículo",
@@ -52,12 +46,10 @@ const portfolioTranslations = {
     },
     "hero": {
       "label": "Apresentação",
-      "availability": "Em busca de oportunidades em AppSec",
       "role": "AppSec / DevSecOps / Engenharia de Software",
       "summary": "Conecto código, segurança e operação. Sou Analista de Desenvolvimento Jr., com experiência prática em AppSec e em trajetória de especialização em segurança de aplicações.",
       "detailsLabel": "Informações profissionais",
-      "location": "São Paulo, SP",
-      "workMode": "Presencial · híbrido · remoto"
+      "location": "São Paulo, SP"
     },
     "projects": {
       "label": "Projetos selecionados",
@@ -204,9 +196,9 @@ const portfolioTranslations = {
     "contact": {
       "label": "Contato",
       "title": "Vamos construir<br>com <em>segurança</em>.",
-      "description": "Busco oportunidades júnior em AppSec e DevSecOps, conectando minha experiência em desenvolvimento, automação e operação.",
+      "description": "Conecto desenvolvimento, segurança de aplicações e automação em projetos e colaborações técnicas.",
       "phone": "Telefone",
-      "location": "São Paulo, SP · presencial, híbrido ou remoto"
+      "location": "São Paulo, SP"
     },
     "footer": {
       "copy": "© 2026 Carlos Gabriel Gomes Luz",
@@ -260,12 +252,6 @@ const portfolioTranslations = {
       "education": "Education",
       "contact": "Contact"
     },
-    "theme": {
-      "dark": "Dark",
-      "light": "Light",
-      "toDark": "Switch to dark theme",
-      "toLight": "Switch to light theme"
-    },
     "cta": {
       "projects": "View projects",
       "resume": "Download resume",
@@ -282,12 +268,10 @@ const portfolioTranslations = {
     },
     "hero": {
       "label": "Introduction",
-      "availability": "Seeking junior AppSec opportunities",
       "role": "AppSec / DevSecOps / Software Engineering",
       "summary": "I connect code, security, and operations. I am a Junior Development Analyst with hands-on AppSec experience, building a specialization in application security.",
       "detailsLabel": "Professional details",
-      "location": "São Paulo, Brazil",
-      "workMode": "On-site · hybrid · remote"
+      "location": "São Paulo, Brazil"
     },
     "projects": {
       "label": "Selected projects",
@@ -434,9 +418,9 @@ const portfolioTranslations = {
     "contact": {
       "label": "Contact",
       "title": "Let’s build<br>with <em>security</em>.",
-      "description": "I am seeking junior AppSec and DevSecOps opportunities, bringing experience in development, automation, and operations.",
+      "description": "I connect development, application security, and automation through projects and technical collaboration.",
       "phone": "Phone",
-      "location": "São Paulo, Brazil · on-site, hybrid, or remote"
+      "location": "São Paulo, Brazil"
     },
     "footer": {
       "copy": "© 2026 Carlos Gabriel Gomes Luz",
@@ -490,12 +474,6 @@ const portfolioTranslations = {
       "education": "Formación",
       "contact": "Contacto"
     },
-    "theme": {
-      "dark": "Oscuro",
-      "light": "Claro",
-      "toDark": "Cambiar al tema oscuro",
-      "toLight": "Cambiar al tema claro"
-    },
     "cta": {
       "projects": "Ver proyectos",
       "resume": "Descargar CV",
@@ -512,12 +490,10 @@ const portfolioTranslations = {
     },
     "hero": {
       "label": "Presentación",
-      "availability": "Busco oportunidades júnior en AppSec",
       "role": "AppSec / DevSecOps / Ingeniería de Software",
       "summary": "Conecto código, seguridad y operaciones. Soy Analista Jr. de Desarrollo con experiencia práctica en AppSec, en proceso de especialización en seguridad de aplicaciones.",
       "detailsLabel": "Información profesional",
-      "location": "São Paulo, Brasil",
-      "workMode": "Presencial · híbrido · remoto"
+      "location": "São Paulo, Brasil"
     },
     "projects": {
       "label": "Proyectos seleccionados",
@@ -664,9 +640,9 @@ const portfolioTranslations = {
     "contact": {
       "label": "Contacto",
       "title": "Construyamos<br>con <em>seguridad</em>.",
-      "description": "Busco oportunidades júnior en AppSec y DevSecOps, conectando mi experiencia en desarrollo, automatización y operaciones.",
+      "description": "Conecto desarrollo, seguridad de aplicaciones y automatización en proyectos y colaboraciones técnicas.",
       "phone": "Teléfono",
-      "location": "São Paulo, Brasil · presencial, híbrido o remoto"
+      "location": "São Paulo, Brasil"
     },
     "footer": {
       "copy": "© 2026 Carlos Gabriel Gomes Luz",

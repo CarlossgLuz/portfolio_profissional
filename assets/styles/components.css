@@ -19,8 +19,6 @@
 .lang-btn { min-width: 36px; min-height: 36px; padding: 0; border: 0; background: transparent; color: var(--muted); font-family: var(--mono); font-size: .58rem; cursor: pointer; }
 .lang-btn.is-active { background: var(--surface-strong); color: var(--bright); }
 .icon-control { display: grid; width: 38px; height: 38px; padding: 0; place-items: center; border: 1px solid var(--border); background: var(--bg-raised); cursor: pointer; }
-.theme-toggle__icon { position: relative; width: 14px; height: 14px; border: 1.5px solid var(--bright); border-radius: 50%; }
-[data-theme="light"] .theme-toggle__icon { border-color: var(--signal); background: var(--signal); box-shadow: 0 0 0 3px color-mix(in srgb, var(--signal), transparent 78%); }
 .ham { display: none; width: 44px; height: 44px; margin-left: auto; padding: 11px 8px; flex-direction: column; justify-content: center; gap: 5px; border: 0; background: transparent; cursor: pointer; }
 .ham span { width: 100%; height: 1px; background: var(--bright); transition: transform 200ms var(--ease-out), opacity 120ms ease; }
 .ham.open span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
@@ -52,7 +50,6 @@
 .mobile-menu__links { display: flex; flex-direction: column; justify-content: center; }
 .ma { padding: .55rem 0; border-bottom: 1px solid var(--border); color: var(--bright); font-size: clamp(1.7rem, 8vw, 2.6rem); line-height: 1.15; text-decoration: none; }
 .mobile-menu__footer { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding-top: 1.5rem; }
-.theme-toggle--mobile { display: none; width: auto; padding-inline: .75rem; gap: .5rem; }
 
 .intro[hidden] { display: none; }
 .intro { position: fixed; z-index: 500; inset: 0; display: grid; place-items: center; padding: 1rem; background: var(--bg); opacity: 0; transition: opacity 180ms ease; }

@@ -3,8 +3,8 @@ const portfolioTranslations = {
   "pt-BR": {
     "meta": {
       "title": "Carlos Gabriel | AppSec & DevSecOps",
-      "description": "Conecto código, segurança e operação. Sou Analista de Desenvolvimento Jr., com experiência prática em AppSec e em trajetória de especialização em segurança de aplicações.",
-      "socialDescription": "Conecto código, segurança e operação. Sou Analista de Desenvolvimento Jr., com experiência prática em AppSec e em trajetória de especialização em segurança de aplicações.",
+      "description": "Segurança de aplicações, análise de vulnerabilidades, controles de acesso e automação, com base prática em desenvolvimento e operação.",
+      "socialDescription": "Segurança de aplicações, análise de vulnerabilidades, controles de acesso e automação, com base prática em desenvolvimento e operação.",
       "locale": "pt_BR",
       "imageAlt": "Carlos Gabriel — AppSec & DevSecOps",
       "jobTitle": "Analista de Desenvolvimento de Sistemas Jr."
@@ -47,7 +47,7 @@ const portfolioTranslations = {
     "hero": {
       "label": "Apresentação",
       "role": "AppSec / DevSecOps / Engenharia de Software",
-      "summary": "Conecto código, segurança e operação. Sou Analista de Desenvolvimento Jr., com experiência prática em AppSec e em trajetória de especialização em segurança de aplicações.",
+      "summary": "Trabalho na evolução de uma plataforma de segurança de aplicações, conectando análise de vulnerabilidades, controles de acesso e automação ao desenvolvimento. Código, integrações e operação sustentam minha atuação.",
       "detailsLabel": "Informações profissionais",
       "location": "São Paulo, SP"
     },
@@ -83,10 +83,10 @@ const portfolioTranslations = {
       },
       "xguardian": {
         "type": "AppSec & ASPM · experiência profissional",
-        "summary": "Refiz o site institucional do XGuardian em 2026, da landing page às páginas de conteúdo, com atenção a UI/UX, responsividade, SEO e consistência visual. Na plataforma interna, contribuí para o redesign completo e a evolução de interfaces, dashboards e relatórios, em colaboração com a equipe.",
-        "delivery": "Institucional completo, SEO técnico, redesign da plataforma e refinamento de fluxos de AppSec, com foco em clareza, usabilidade e qualidade das entregas.",
+        "summary": "Contribuo para a evolução do XGuardian, plataforma de AppSec e ASPM, com trabalho em relatórios e fluxos de análise de vulnerabilidades, métricas e controles de acesso. Participo do desenvolvimento de RBAC e do refinamento das informações que apoiam a análise de achados de segurança.",
+        "delivery": "Relatórios de SAST, SCA, DAST, Container Security e SBOM; métricas e filtros para contextualizar vulnerabilidades; desenvolvimento colaborativo de perfis e permissões. Também contribuí para o redesign completo da plataforma interna, com atenção à clareza e à consistência desses fluxos.",
         "status": "Atuação profissional",
-        "record": "Os prints disponíveis registram o institucional que refiz em 2026.",
+        "record": "Também refiz o institucional de 2026, com trabalho em UI/UX, responsividade e SEO. Os prints registram essa entrega.",
         "visit": "Visitar institucional <span aria-hidden=\"true\">↗</span>",
         "view": "Ver imagens da entrega"
       },
@@ -113,13 +113,13 @@ const portfolioTranslations = {
         "period": "jun 2026 — atual",
         "role": "Analista de Desenvolvimento de Sistemas Jr.",
         "mode": "Presencial",
-        "summary": "Evolução do XGuardian e apoio ao ecossistema de segurança de aplicações, com trabalho em produto, análise de vulnerabilidades e automação.",
+        "summary": "Atuação no XGuardian e no ecossistema de segurança de aplicações, conectando análise de vulnerabilidades, controles de acesso e automação ao ciclo de desenvolvimento.",
         "items": [
-          "Evolução de interfaces, dashboards e relatórios de SAST, SCA, DAST, Container Security e SBOM no XGuardian.",
-          "Investigação e contextualização de vulnerabilidades com OWASP, CVE/CWE, NVD, CVSS e informações de EOL.",
-          "Participação no levantamento e desenvolvimento de controles RBAC, perfis e permissões de APIs.",
-          "Desenvolvimento de QA automatizado para validar funcionalidades, integrações e permissões antes e após releases.",
-          "Apoio técnico ao ecossistema Sonatype e participação em reuniões técnicas em inglês."
+          "Desenvolvimento e evolução de relatórios SAST, SCA, DAST, Container Security e SBOM, com foco na contextualização de achados de segurança.",
+          "Investigação de vulnerabilidades e dependências com OWASP, NVD, CVE/CWE, CVSS, GitHub Advisory Database e informações de EOL.",
+          "Participação no levantamento e na implementação de RBAC, com perfis, permissões e segregação de acesso a operações e APIs.",
+          "Desenvolvimento de QA automatizado para validações pré e pós-release de funcionalidades, integrações e permissões, com registro de evidências.",
+          "Apoio técnico ao ecossistema Sonatype, com documentação, troubleshooting e reuniões técnicas em inglês."
         ]
       },
       "intern": {
@@ -165,7 +165,7 @@ const portfolioTranslations = {
       "label": "Sobre",
       "title": "Código é uma parte.<br>O <em>sistema inteiro</em> importa.",
       "lead": "Minha base é desenvolvimento. Meu foco é segurança de aplicações.",
-      "p1": "Na Xmart Solutions, participo da evolução do XGuardian, uma plataforma de AppSec e ASPM. Trabalho em interfaces, relatórios, métricas e fluxos que ajudam a contextualizar vulnerabilidades e tornar a segurança mais acessível a quem desenvolve.",
+      "p1": "Na Xmart Solutions, participo da evolução do XGuardian, plataforma de AppSec e ASPM. Meu trabalho envolve contextualização de vulnerabilidades, relatórios de segurança, métricas e controles de acesso, conectando necessidades de segurança aos fluxos de desenvolvimento e uso da plataforma.",
       "p2": "Essa experiência se conecta à automação de QA, às integrações por APIs e MCP e à governança de agentes de IA. Linux, infraestrutura e observabilidade completam minha visão sobre como o software funciona, falha e pode melhorar.",
       "quote": "Entender o sistema. Investigar o risco. Construir com responsabilidade."
     },
@@ -251,8 +251,8 @@ const portfolioTranslations = {
   "en": {
     "meta": {
       "title": "Carlos Gabriel | AppSec & DevSecOps",
-      "description": "I connect code, security, and operations. I am a Junior Development Analyst with hands-on AppSec experience, building a specialization in application security.",
-      "socialDescription": "I connect code, security, and operations. I am a Junior Development Analyst with hands-on AppSec experience, building a specialization in application security.",
+      "description": "Application security, vulnerability analysis, access controls, and automation, grounded in hands-on software development and operations.",
+      "socialDescription": "Application security, vulnerability analysis, access controls, and automation, grounded in hands-on software development and operations.",
       "locale": "en_US",
       "imageAlt": "Carlos Gabriel — AppSec & DevSecOps",
       "jobTitle": "Junior Systems Development Analyst"
@@ -295,7 +295,7 @@ const portfolioTranslations = {
     "hero": {
       "label": "Introduction",
       "role": "AppSec / DevSecOps / Software Engineering",
-      "summary": "I connect code, security, and operations. I am a Junior Development Analyst with hands-on AppSec experience, building a specialization in application security.",
+      "summary": "I contribute to an application security platform, connecting vulnerability analysis, access controls, and automation to development. Code, integrations, and operations underpin my work.",
       "detailsLabel": "Professional details",
       "location": "São Paulo, Brazil"
     },
@@ -331,10 +331,10 @@ const portfolioTranslations = {
       },
       "xguardian": {
         "type": "AppSec & ASPM · professional experience",
-        "summary": "I rebuilt the XGuardian corporate website in 2026, from the landing page to the content pages, focusing on UI/UX, responsiveness, SEO, and visual consistency. Within the internal platform, I contributed to the complete redesign and the evolution of interfaces, dashboards, and reports in collaboration with the team.",
-        "delivery": "Complete corporate website, technical SEO, platform redesign, and refined AppSec workflows, with a focus on clarity, usability, and delivery quality.",
+        "summary": "I contribute to XGuardian, an AppSec and ASPM platform, through vulnerability reports and analysis workflows, metrics, and access controls. I take part in RBAC development and in refining the information that supports security findings analysis.",
+        "delivery": "SAST, SCA, DAST, Container Security, and SBOM reports; metrics and filters that put vulnerabilities in context; and collaborative development of access profiles and permissions. I also contributed to the complete internal platform redesign, focusing on the clarity and consistency of these workflows.",
         "status": "Professional work",
-        "record": "The screenshots document the corporate website I rebuilt in 2026.",
+        "record": "I also rebuilt the corporate website in 2026, working on UI/UX, responsiveness, and SEO. The screenshots document that delivery.",
         "visit": "Visit website <span aria-hidden=\"true\">↗</span>",
         "view": "View project images"
       },
@@ -361,13 +361,13 @@ const portfolioTranslations = {
         "period": "Jun 2026 — present",
         "role": "Junior Systems Development Analyst",
         "mode": "On-site",
-        "summary": "Contributing to XGuardian and the application security ecosystem through product development, vulnerability analysis, and automation.",
+        "summary": "Working on XGuardian and the application security ecosystem, connecting vulnerability analysis, access controls, and automation to the development lifecycle.",
         "items": [
-          "Evolving XGuardian interfaces, dashboards, and SAST, SCA, DAST, Container Security, and SBOM reports.",
-          "Investigating and contextualizing vulnerabilities using OWASP, CVE/CWE, NVD, CVSS, and EOL information.",
-          "Contributing to RBAC controls, access profiles, and API permissions.",
-          "Developing automated QA to validate features, integrations, and permissions before and after releases.",
-          "Supporting the Sonatype ecosystem and joining technical meetings in English."
+          "Developing and refining SAST, SCA, DAST, Container Security, and SBOM reports to put security findings in context.",
+          "Investigating vulnerabilities and dependencies using OWASP, NVD, CVE/CWE, CVSS, GitHub Advisory Database, and EOL information.",
+          "Contributing to RBAC requirements and implementation, including access profiles, permissions, and segregation of access to operations and APIs.",
+          "Developing automated QA for pre- and post-release validation of features, integrations, and permissions, with evidence collection.",
+          "Providing technical support for the Sonatype ecosystem, including documentation, troubleshooting, and technical meetings in English."
         ]
       },
       "intern": {
@@ -413,7 +413,7 @@ const portfolioTranslations = {
       "label": "About",
       "title": "Code is one part.<br>The <em>whole system</em> matters.",
       "lead": "My foundation is development. My focus is application security.",
-      "p1": "At Xmart Solutions, I contribute to XGuardian, an AppSec and ASPM platform. I work on interfaces, reports, metrics, and workflows that put vulnerabilities in context and make security more accessible to developers.",
+      "p1": "At Xmart Solutions, I contribute to XGuardian, an AppSec and ASPM platform. My work involves vulnerability context, security reports, metrics, and access controls, connecting security needs to development workflows and day-to-day platform use.",
       "p2": "That experience connects to QA automation, API and MCP integrations, and AI agent governance. Linux, infrastructure, and observability round out my view of how software works, fails, and improves.",
       "quote": "Understand the system. Investigate the risk. Build responsibly."
     },
@@ -499,8 +499,8 @@ const portfolioTranslations = {
   "es": {
     "meta": {
       "title": "Carlos Gabriel | AppSec & DevSecOps",
-      "description": "Conecto código, seguridad y operaciones. Soy Analista Jr. de Desarrollo con experiencia práctica en AppSec, en proceso de especialización en seguridad de aplicaciones.",
-      "socialDescription": "Conecto código, seguridad y operaciones. Soy Analista Jr. de Desarrollo con experiencia práctica en AppSec, en proceso de especialización en seguridad de aplicaciones.",
+      "description": "Seguridad de aplicaciones, análisis de vulnerabilidades, controles de acceso y automatización, con base práctica en desarrollo y operaciones.",
+      "socialDescription": "Seguridad de aplicaciones, análisis de vulnerabilidades, controles de acceso y automatización, con base práctica en desarrollo y operaciones.",
       "locale": "es_ES",
       "imageAlt": "Carlos Gabriel — AppSec & DevSecOps",
       "jobTitle": "Analista Jr. de Desarrollo de Sistemas"
@@ -543,7 +543,7 @@ const portfolioTranslations = {
     "hero": {
       "label": "Presentación",
       "role": "AppSec / DevSecOps / Ingeniería de Software",
-      "summary": "Conecto código, seguridad y operaciones. Soy Analista Jr. de Desarrollo con experiencia práctica en AppSec, en proceso de especialización en seguridad de aplicaciones.",
+      "summary": "Trabajo en la evolución de una plataforma de seguridad de aplicaciones, conectando análisis de vulnerabilidades, controles de acceso y automatización con el desarrollo. El código, las integraciones y las operaciones sustentan mi trabajo.",
       "detailsLabel": "Información profesional",
       "location": "São Paulo, Brasil"
     },
@@ -579,10 +579,10 @@ const portfolioTranslations = {
       },
       "xguardian": {
         "type": "AppSec & ASPM · experiencia profesional",
-        "summary": "Rehice el sitio institucional de XGuardian en 2026, desde la landing page hasta las páginas de contenido, con foco en UI/UX, adaptabilidad, SEO y coherencia visual. En la plataforma interna, contribuí al rediseño completo y a la evolución de interfaces, dashboards e informes, en colaboración con el equipo.",
-        "delivery": "Sitio institucional completo, SEO técnico, rediseño de la plataforma y mejora de flujos de AppSec, con foco en claridad, usabilidad y calidad de las entregas.",
+        "summary": "Contribuyo a la evolución de XGuardian, una plataforma de AppSec y ASPM, mediante informes y flujos de análisis de vulnerabilidades, métricas y controles de acceso. Participo en el desarrollo de RBAC y en la mejora de la información que apoya el análisis de hallazgos de seguridad.",
+        "delivery": "Informes de SAST, SCA, DAST, Container Security y SBOM; métricas y filtros para contextualizar vulnerabilidades; desarrollo colaborativo de perfiles y permisos. También contribuí al rediseño completo de la plataforma interna, con atención a la claridad y coherencia de estos flujos.",
         "status": "Trabajo profesional",
-        "record": "Las capturas registran el sitio institucional que rehice en 2026.",
+        "record": "También rehice el sitio institucional en 2026, con trabajo en UI/UX, adaptabilidad y SEO. Las capturas registran esa entrega.",
         "visit": "Visitar sitio <span aria-hidden=\"true\">↗</span>",
         "view": "Ver imágenes del proyecto"
       },
@@ -609,13 +609,13 @@ const portfolioTranslations = {
         "period": "jun 2026 — actualidad",
         "role": "Analista Jr. de Desarrollo de Sistemas",
         "mode": "Presencial",
-        "summary": "Evolución de XGuardian y apoyo al ecosistema de seguridad de aplicaciones, con trabajo en producto, análisis de vulnerabilidades y automatización.",
+        "summary": "Trabajo en XGuardian y en el ecosistema de seguridad de aplicaciones, conectando análisis de vulnerabilidades, controles de acceso y automatización con el ciclo de desarrollo.",
         "items": [
-          "Evolución de interfaces, dashboards e informes de SAST, SCA, DAST, Container Security y SBOM en XGuardian.",
-          "Investigación y contextualización de vulnerabilidades con OWASP, CVE/CWE, NVD, CVSS e información de EOL.",
-          "Participación en controles RBAC, perfiles y permisos de API.",
-          "Desarrollo de QA automatizado para validar funciones, integraciones y permisos antes y después de releases.",
-          "Apoyo técnico al ecosistema Sonatype y reuniones técnicas en inglés."
+          "Desarrollo y mejora de informes de SAST, SCA, DAST, Container Security y SBOM, con foco en contextualizar hallazgos de seguridad.",
+          "Investigación de vulnerabilidades y dependencias con OWASP, NVD, CVE/CWE, CVSS, GitHub Advisory Database e información de EOL.",
+          "Participación en los requisitos y la implementación de RBAC, con perfiles, permisos y segregación del acceso a operaciones y API.",
+          "Desarrollo de QA automatizado para validar funciones, integraciones y permisos antes y después de releases, con registro de evidencias.",
+          "Apoyo técnico al ecosistema Sonatype, con documentación, troubleshooting y reuniones técnicas en inglés."
         ]
       },
       "intern": {
@@ -661,7 +661,7 @@ const portfolioTranslations = {
       "label": "Sobre mí",
       "title": "El código es una parte.<br>Importa <em>todo el sistema</em>.",
       "lead": "Mi base es el desarrollo. Mi foco es la seguridad de aplicaciones.",
-      "p1": "En Xmart Solutions, participo en la evolución de XGuardian, una plataforma de AppSec y ASPM. Trabajo en interfaces, informes, métricas y flujos que contextualizan vulnerabilidades y acercan la seguridad a los desarrolladores.",
+      "p1": "En Xmart Solutions, participo en la evolución de XGuardian, una plataforma de AppSec y ASPM. Mi trabajo incluye contextualización de vulnerabilidades, informes de seguridad, métricas y controles de acceso, conectando necesidades de seguridad con los flujos de desarrollo y uso de la plataforma.",
       "p2": "Esta experiencia se conecta con automatización de QA, integraciones por API y MCP y gobernanza de agentes de IA. Linux, infraestructura y observabilidad completan mi visión de cómo funciona y mejora el software.",
       "quote": "Entender el sistema. Investigar el riesgo. Construir con responsabilidad."
     },

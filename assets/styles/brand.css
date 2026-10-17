@@ -5,7 +5,7 @@
 body{font-family:var(--sans);line-height:1.65}::selection{background:#ffde59;color:#080808}
 .site-header{border-bottom:1px solid var(--border);backdrop-filter:blur(16px)}
 .site-nav{max-width:1440px;margin:auto;padding-inline:var(--gutter)}
-.nlogo{gap:.7rem}.nlogo>img{width:44px;height:34px;object-fit:contain;background:#080808;padding:3px}.nlogo strong{font-size:.82rem;line-height:1.2}.brand-caption{display:block;margin-top:4px;color:var(--muted);font-family:var(--mono);font-size:.5rem;letter-spacing:.04em;font-weight:400}
+.nlogo{gap:.7rem}.nlogo>img{width:44px;height:34px;object-fit:contain;background:transparent;padding:3px}.nlogo strong{font-size:.82rem;line-height:1.2}.brand-caption{display:block;margin-top:4px;color:var(--muted);font-family:var(--mono);font-size:.5rem;letter-spacing:.04em;font-weight:400}
 .npill{border:0;background:transparent;padding:0;gap:1.5rem}.npill a{font-size:.74rem}.nav-resume{color:var(--bright)}.lang-btn,.icon-control{min-width:38px;min-height:38px}.nav-actions{gap:.65rem}
 .button{min-height:50px;padding:.85rem 1.4rem;border-radius:2px;font-size:.78rem;gap:1rem}.button--primary{background:#ffde59;color:#080808}.button--primary:hover{background:#fff1a8;color:#080808}.button--secondary:hover{background:var(--surface)}
 .hero{position:relative;min-height:calc(100svh - 78px);padding-top:var(--header-height);background:var(--bg)}

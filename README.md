@@ -1,6 +1,6 @@
 # Carlos Gabriel — Portfolio
 
-Professional portfolio focused on Application Security, DevSecOps and software engineering. Original CG black/white/yellow identity, procedural geometric motion, an original six-second brand film, and selected work: XGuardian, QA Automation, Vaultin, Toca dos Pés and Clarium.
+Professional portfolio focused on Application Security, DevSecOps and software engineering. Original CG black/white/yellow identity, procedural geometric motion, an original six-second brand film, and selected work: XGuardian, QA Automation, Open-Vaultin (AI Agent Harness Governance, continuously evolving open source), APIsec (FastAPI authorization lab), Toca dos Pés and Clarium.
 
 ## Development
 
@@ -10,7 +10,7 @@ The site uses native HTML, CSS and JavaScript. No browser framework or productio
 python3 -m http.server 4173
 ```
 
-PT-BR, EN and ES are available through `?lang=` and the language switch. The site is dark-only; previously saved light preferences are ignored. Current Portuguese and English resumes are in `assets/documents`.
+PT-BR, EN and ES are available through `?lang=` and the language switch. The site is dark-only; previously saved light preferences are ignored. Portuguese and English resume downloads are in `assets/documents`.
 
 ## Verification
 

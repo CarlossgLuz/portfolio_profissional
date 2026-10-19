@@ -15,7 +15,7 @@ Official CG mark: black, white and yellow `#FFDE59`. Professional focus: AppSec,
 
 ## Official References
 
-- Portfolio: `https://carlosgabriel.netlify.app/`
+- Portfolio: `https://carlosg.com.br/`
 - GitHub: `https://github.com/CarlossgLuz`
 - LinkedIn: `https://www.linkedin.com/in/dev-carlosgabriel/`
 - Credly: `https://www.credly.com/users/carlos-gabriel.3078ca93`

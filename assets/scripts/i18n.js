@@ -97,10 +97,16 @@ const portfolioTranslations = {
         "status": "Em desenvolvimento"
       },
       "vaultin": {
-        "type": "Governança de IA · projeto autoral",
-        "summary": "Organização de agentes, skills, regras e conhecimento técnico. Fluxos assistidos por IA com versionamento, roteamento de modelos e foco na previsibilidade das execuções.",
-        "delivery": "Centralização de contexto e configurações para apoiar execuções controladas.",
-        "status": "Código aberto"
+        "type": "AI Agent Harness Governance · Python · código aberto",
+        "summary": "Projeto autoral open source em evolução contínua. Governança local-first para agentes de IA, com políticas, catálogos de agentes/skills, hooks do Codex, roteamento por modelo decisor JEV/TypeSafe e fallback determinístico.",
+        "delivery": "Registro persistente de execuções e evidências, conhecimento versionado e sincronização Git/MCP. O cliente executa o loop principal; as garantias de enforcement dependem da integração.",
+        "status": "Open source · Early V1"
+      },
+      "apisec": {
+        "type": "Segurança de APIs · laboratório autoral",
+        "summary": "Laboratório público de AppSec com FastAPI. Simula BOLA, BFLA e BOPLA em cenários isolados e dados fictícios, comparando comportamentos vulneráveis e protegidos.",
+        "delivery": "Testes Pytest, verificações Ruff/Bandit, pipeline GitHub Actions, Docker e relatórios de evidência JSON/Markdown. Sem scans externos; topologia AWS apenas projetada.",
+        "status": "Código aberto · laboratório"
       }
     },
     "experience": {
@@ -345,10 +351,16 @@ const portfolioTranslations = {
         "status": "In development"
       },
       "vaultin": {
-        "type": "AI governance · personal project",
-        "summary": "Organizing agents, skills, rules, and technical knowledge. AI-assisted workflows with version control, model routing, and a focus on predictable execution.",
-        "delivery": "Centralizing context and configuration to support controlled execution.",
-        "status": "Open source"
+        "type": "AI Agent Harness Governance · Python · open source",
+        "summary": "Independent and continuously evolving open-source project. Local-first AI-agent governance with policies, agent/skill registries, Codex hooks, task routing via the JEV/TypeSafe decision model and deterministic fallback.",
+        "delivery": "Durable execution evidence, versioned knowledge, and Git/MCP synchronization. The host keeps the primary agent loop; enforcement depends on client integration.",
+        "status": "Open source · Early V1"
+      },
+      "apisec": {
+        "type": "API security · independent lab",
+        "summary": "Public FastAPI AppSec lab. Reproduces BOLA, BFLA and BOPLA with synthetic data and isolated cases, comparing vulnerable and protected API behavior.",
+        "delivery": "Pytest, Ruff/Bandit, GitHub Actions, Docker, and JSON/Markdown evidence reports. No external scanning; AWS topology is designed but not deployed.",
+        "status": "Open source · laboratory"
       }
     },
     "experience": {
@@ -593,10 +605,16 @@ const portfolioTranslations = {
         "status": "En desarrollo"
       },
       "vaultin": {
-        "type": "Gobernanza de IA · proyecto personal",
-        "summary": "Organización de agentes, skills, reglas y conocimiento técnico. Flujos asistidos por IA con versionado, enrutamiento de modelos y ejecuciones previsibles.",
-        "delivery": "Centralización de contexto y configuraciones para apoyar ejecuciones controladas.",
-        "status": "Código abierto"
+        "type": "AI Agent Harness Governance · Python · código abierto",
+        "summary": "Proyecto independiente de código abierto en evolución continua. Gobernanza local-first de agentes de IA: políticas, catálogo de agentes/skills, hooks de Codex, decisiones de enrutamiento con JEV/TypeSafe y alternativa determinista.",
+        "delivery": "Registro duradero de ejecuciones, evidencias, conocimiento versionado y sincronización Git/MCP. El cliente conserva el bucle principal del agente.",
+        "status": "Código abierto · Early V1"
+      },
+      "apisec": {
+        "type": "Seguridad de APIs · laboratorio propio",
+        "summary": "Laboratorio público AppSec con FastAPI. Simula BOLA, BFLA y BOPLA con datos ficticios en entornos aislados, comparando API vulnerables y protegidas.",
+        "delivery": "Pytest, Ruff/Bandit, GitHub Actions, Docker e informes JSON/Markdown. Sin análisis de terceros; topología AWS solo propuesta.",
+        "status": "Código abierto · laboratorio"
       }
     },
     "experience": {
@@ -780,7 +798,7 @@ function updateMetadata(locale, pack) {
   setMeta('meta[name="twitter:description"]', pack.meta.socialDescription);
   setMeta('meta[name="twitter:image:alt"]', pack.meta.imageAlt);
 
-  const baseUrl = "https://carlosgabriel.netlify.app/";
+  const baseUrl = "https://carlosg.com.br/";
   const localizedUrl = locale === defaultLocale ? baseUrl : `${baseUrl}?lang=${locale}`;
   document.querySelector('link[rel="canonical"]')?.setAttribute("href", localizedUrl);
   setMeta('meta[property="og:url"]', localizedUrl);

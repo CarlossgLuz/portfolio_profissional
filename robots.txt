@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://carlosgabriel.netlify.app/sitemap.xml
+Sitemap: https://carlosg.com.br/sitemap.xml

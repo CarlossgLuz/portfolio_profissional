@@ -18,97 +18,107 @@ endobj
 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
 endobj
 7 0 obj
-<< /Length 6855 >>
+<< /Length 7092 >>
 stream
-BT /F2 17.00 Tf .12 .12 .12 rg 1 0 0 1 50.00 798.00 Tm (CARLOS GABRIEL GOMES LUZ) Tj ET
-BT /F2 8.55 Tf .20 .20 .20 rg 1 0 0 1 50.00 773.00 Tm (APPLICATION SECURITY \(APPSEC\) | DEVSECOPS | ENGENHARIA DE SOFTWARE) Tj ET
-BT /F1 8.40 Tf .35 .35 .35 rg 1 0 0 1 50.00 758.00 Tm (S\343o Paulo, SP | +55 \(11\) 96762-2665 | carlosgabriel.contato2007@gmail.com) Tj ET
-BT /F1 8.40 Tf .35 .35 .35 rg 1 0 0 1 50.00 745.00 Tm (linkedin.com/in/dev-carlosgabriel | github.com/CarlossgLuz | carlosg.com.br) Tj ET
-BT /F2 10.00 Tf .08 .08 .08 rg 1 0 0 1 50.00 723.50 Tm (RESUMO PROFISSIONAL) Tj ET
-0.82 0.62 0.12 RG 0.75 w 50 716.0 m 545 716.0 l S
-BT /F1 8.80 Tf .12 .12 .12 rg 1 0 0 1 50.00 702.80 Tm (Analista de Desenvolvimento de Sistemas Jr. com experi\352ncia pr\341tica em AppSec, ASPM e DevSecOps e foco de carreira em) Tj ET
-BT /F1 8.80 Tf .12 .12 .12 rg 1 0 0 1 50.00 691.10 Tm (seguran\347a de aplica\347\365es. Atua\347\343o na evolu\347\343o do XGuardian, envolvendo an\341lise de vulnerabilidades, seguran\347a da cadeia de) Tj ET
-BT /F1 8.80 Tf .12 .12 .12 rg 1 0 0 1 50.00 679.40 Tm (software, RBAC, m\351tricas e automa\347\343o. Desenvolvo projetos pr\363prios de seguran\347a de APIs e governan\347a de agentes de IA, unindo) Tj ET
-BT /F1 8.80 Tf .12 .12 .12 rg 1 0 0 1 50.00 667.70 Tm (Python, testes, pol\355ticas de execu\347\343o e rastreabilidade.) Tj ET
-BT /F2 10.00 Tf .08 .08 .08 rg 1 0 0 1 50.00 645.50 Tm (EXPERI\312NCIA PROFISSIONAL) Tj ET
-0.82 0.62 0.12 RG 0.75 w 50 638.0 m 545 638.0 l S
-BT /F2 9.00 Tf .12 .12 .12 rg 1 0 0 1 50.00 624.80 Tm (Xmart Solutions | Santo Andr\351, SP) Tj ET
-BT /F2 9.00 Tf .12 .12 .12 rg 1 0 0 1 50.00 610.10 Tm (Analista de Desenvolvimento de Sistemas Jr. | jun/2026 \226 atual) Tj ET
-BT /F1 8.80 Tf .12 .12 .12 rg 1 0 0 1 53.00 595.40 Tm (\225) Tj ET
-BT /F1 8.65 Tf .12 .12 .12 rg 1 0 0 1 64.00 595.40 Tm (Evolu\347\343o do XGuardian, plataforma SaaS de AppSec e ASPM, com melhorias em funcionalidades e relat\363rios de SAST, SCA,) Tj ET
-BT /F1 8.65 Tf .12 .12 .12 rg 1 0 0 1 64.00 584.25 Tm (DAST, Container Security e SBOM, favorecendo a visualiza\347\343o e a contextualiza\347\343o de achados de seguran\347a.) Tj ET
-BT /F1 8.80 Tf .12 .12 .12 rg 1 0 0 1 53.00 570.90 Tm (\225) Tj ET
-BT /F1 8.65 Tf .12 .12 .12 rg 1 0 0 1 64.00 570.90 Tm (Desenvolvimento e aprimoramento de dashboards, m\351tricas, filtros e fluxos de an\341lise de vulnerabilidades, incluindo controles de) Tj ET
-BT /F1 8.65 Tf .12 .12 .12 rg 1 0 0 1 64.00 559.75 Tm (cotas de scans por aplica\347\343o e equipe, com foco na consist\352ncia das informa\347\365es e na usabilidade operacional.) Tj ET
-BT /F1 8.80 Tf .12 .12 .12 rg 1 0 0 1 53.00 546.40 Tm (\225) Tj ET
-BT /F1 8.65 Tf .12 .12 .12 rg 1 0 0 1 64.00 546.40 Tm (Atua\347\343o na investiga\347\343o e contextualiza\347\343o de vulnerabilidades e depend\352ncias com refer\352ncias como OWASP Top 10, NIST NVD,) Tj ET
-BT /F1 8.65 Tf .12 .12 .12 rg 1 0 0 1 64.00 535.25 Tm (MITRE CVE/CWE, CVSS e GitHub Advisory Database, considerando tamb\351m o fim de suporte \(EOL\) de componentes.) Tj ET
-BT /F1 8.80 Tf .12 .12 .12 rg 1 0 0 1 53.00 521.90 Tm (\225) Tj ET
-BT /F1 8.65 Tf .12 .12 .12 rg 1 0 0 1 64.00 521.90 Tm (Participa\347\343o, junto \340 equipe, no levantamento e desenvolvimento de controles RBAC, envolvendo perfis, permiss\365es, segrega\347\343o de) Tj ET
-BT /F1 8.65 Tf .12 .12 .12 rg 1 0 0 1 64.00 510.75 Tm (acesso e prote\347\343o de opera\347\365es e APIs para a plataforma.) Tj ET
-BT /F1 8.80 Tf .12 .12 .12 rg 1 0 0 1 53.00 497.40 Tm (\225) Tj ET
-BT /F1 8.65 Tf .12 .12 .12 rg 1 0 0 1 64.00 497.40 Tm (Apoio t\351cnico e suporte ao ecossistema Sonatype, documenta\347\343o e troubleshooting de ambientes corporativos, incluindo um cen\341rio) Tj ET
-BT /F1 8.65 Tf .12 .12 .12 rg 1 0 0 1 64.00 486.25 Tm (do setor financeiro para utiliza\347\343o de centenas de desenvolvedores. Al\351m da participa\347\343o em reuni\365es t\351cnicas com os) Tj ET
-BT /F1 8.65 Tf .12 .12 .12 rg 1 0 0 1 64.00 475.10 Tm (fornecedores, conduzidas em ingl\352s. Hoje sendo a Xmart Solutions a empresa brasileira parceira da Sonatype com diversos) Tj ET
-BT /F1 8.65 Tf .12 .12 .12 rg 1 0 0 1 64.00 463.95 Tm (profissionais especializados e capacitados para implementa\347\343o e suporte do ecossistema Sonatype.) Tj ET
-BT /F1 8.80 Tf .12 .12 .12 rg 1 0 0 1 53.00 450.60 Tm (\225) Tj ET
-BT /F1 8.65 Tf .12 .12 .12 rg 1 0 0 1 64.00 450.60 Tm (Participa\347\343o na parceria t\351cnica entre Xygeni e Xmart Solutions, com acesso \340 plataforma, capacita\347\343o conduzida por especialistas) Tj ET
-BT /F1 8.65 Tf .12 .12 .12 rg 1 0 0 1 64.00 439.45 Tm (e avalia\347\343o de recursos de AppSec e seguran\347a da cadeia de software.) Tj ET
-BT /F1 8.80 Tf .12 .12 .12 rg 1 0 0 1 53.00 426.10 Tm (\225) Tj ET
-BT /F1 8.65 Tf .12 .12 .12 rg 1 0 0 1 64.00 426.10 Tm (Utiliza\347\343o do Semgrep, OWASP ZAP, Gitleaks e Dependabot em estudos e valida\347\365es.) Tj ET
-BT /F1 8.80 Tf .12 .12 .12 rg 1 0 0 1 53.00 412.75 Tm (\225) Tj ET
-BT /F1 8.65 Tf .12 .12 .12 rg 1 0 0 1 64.00 412.75 Tm (Fluxo de trabalho aplicado a IA generativa e automa\347\365es relacionadas a atividades de engenharia e seguran\347a, integrando modelos,) Tj ET
-BT /F1 8.65 Tf .12 .12 .12 rg 1 0 0 1 64.00 401.60 Tm (agentes e ferramentas por APIs e MCP para apoiar an\341lises t\351cnicas, documenta\347\343o, QA e execu\347\365es controladas de fluxos, com) Tj ET
-BT /F1 8.65 Tf .12 .12 .12 rg 1 0 0 1 64.00 390.45 Tm (aten\347\343o a permiss\343o e prote\347\343o de dados, gerenciando toda governan\347a de agentes e auditando decis\365es.) Tj ET
-BT /F2 9.00 Tf .12 .12 .12 rg 1 0 0 1 50.00 377.10 Tm (Estagi\341rio de Desenvolvimento de Sistemas | dez/2025 \226 jun/2026) Tj ET
-BT /F1 8.80 Tf .12 .12 .12 rg 1 0 0 1 53.00 362.40 Tm (\225) Tj ET
-BT /F1 8.65 Tf .12 .12 .12 rg 1 0 0 1 64.00 362.40 Tm (Atua\347\343o em suporte t\351cnico, ambientes Linux e Proxmox, observabilidade com Zabbix e Grafana e desenvolvimento web, al\351m de) Tj ET
-BT /F1 8.65 Tf .12 .12 .12 rg 1 0 0 1 64.00 351.25 Tm (responsabilidades relacionadas a Redes e Infraestrutura. Amplia\347\343o progressiva de responsabilidades at\351 a efetiva\347\343o.) Tj ET
-BT /F2 10.00 Tf .08 .08 .08 rg 1 0 0 1 50.00 330.40 Tm (FORMA\307\303O ACAD\312MICA) Tj ET
-0.82 0.62 0.12 RG 0.75 w 50 322.9 m 545 322.9 l S
-BT /F1 8.70 Tf .12 .12 .12 rg 1 0 0 1 50.00 309.70 Tm (UNICID | Tecnologia em An\341lise e Desenvolvimento de Sistemas | jun/2026 \226 em andamento) Tj ET
-BT /F1 8.70 Tf .12 .12 .12 rg 1 0 0 1 50.00 295.60 Tm (SENAI | T\351cnico em Desenvolvimento de Sistemas | jul/2024 \226 jun/2026) Tj ET
-BT /F1 8.70 Tf .12 .12 .12 rg 1 0 0 1 50.00 281.50 Tm (PROZ | T\351cnico em Inform\341tica para Internet | jan/2023 \226 dez/2024) Tj ET
-BT /F1 7.2 Tf .40 .40 .40 rg 1 0 0 1 319 34 Tm (CARLOS GABRIEL GOMES LUZ | AppSec / DevSecOps | 1) Tj ET
+BT /F2 17.5 Tf .12 .12 .12 rg 1 0 0 1 50 792.00 Tm (CARLOS GABRIEL GOMES LUZ) Tj ET
+BT /F2 8.55 Tf .21 .21 .21 rg 1 0 0 1 50 767.00 Tm (APPLICATION SECURITY \(APPSEC\) | DEVSECOPS | ENGENHARIA DE SOFTWARE) Tj ET
+BT /F1 8.35 Tf .33 .33 .33 rg 1 0 0 1 50 750.00 Tm (S\343o Paulo, SP | +55 \(11\) 96762-2665 | carlosgabriel.contato2007@gmail.com) Tj ET
+BT /F1 8.35 Tf .33 .33 .33 rg 1 0 0 1 50 737.00 Tm (linkedin.com/in/dev-carlosgabriel | github.com/CarlossgLuz | carlosg.com.br) Tj ET
+BT /F2 10.2 Tf .08 .08 .08 rg 1 0 0 1 50 719.80 Tm (RESUMO PROFISSIONAL) Tj ET
+0.82 0.64 0.14 RG 0.6 w 50 712.80 m 545 712.80 l S
+BT /F1 8.65 Tf .12 .12 .12 rg 1 0 0 1 50 699.80 Tm (Analista de Desenvolvimento de Sistemas Jr. com experi\352ncia pr\341tica em seguran\347a de aplica\347\365es \(AppSec\), ASPM e DevSecOps,) Tj ET
+BT /F1 8.65 Tf .12 .12 .12 rg 1 0 0 1 50 688.15 Tm (em trajet\363ria de especializa\347\343o na \341rea. Atua\347\343o na evolu\347\343o do XGuardian, com participa\347\343o em iniciativas de gest\343o de) Tj ET
+BT /F1 8.65 Tf .12 .12 .12 rg 1 0 0 1 50 676.50 Tm (vulnerabilidades, seguran\347a da cadeia de software, controles de acesso e automa\347\343o. Base s\363lida em desenvolvimento e) Tj ET
+BT /F1 8.65 Tf .12 .12 .12 rg 1 0 0 1 50 664.85 Tm (opera\347\365es, permitindo conectar necessidades de seguran\347a ao c\363digo, \340s integra\347\365es e ao ciclo de vida das aplica\347\365es. Fluxo de) Tj ET
+BT /F1 8.65 Tf .12 .12 .12 rg 1 0 0 1 50 653.20 Tm (trabalho integrado a IA generativa, modelos decisores, agentes e integra\347\365es por APIs e MCP para apoiar investiga\347\365es t\351cnicas,) Tj ET
+BT /F1 8.65 Tf .12 .12 .12 rg 1 0 0 1 50 641.55 Tm (testes de qualidade e melhoria de processos.) Tj ET
+BT /F2 10.2 Tf .08 .08 .08 rg 1 0 0 1 50 620.50 Tm (EXPERI\312NCIA PROFISSIONAL) Tj ET
+0.82 0.64 0.14 RG 0.6 w 50 613.50 m 545 613.50 l S
+BT /F2 9.2 Tf .12 .12 .12 rg 1 0 0 1 50 600.50 Tm (Xmart Solutions | Santo Andr\351, SP) Tj ET
+BT /F2 9.2 Tf .12 .12 .12 rg 1 0 0 1 50 586.90 Tm (Analista de Desenvolvimento de Sistemas Jr. | jun/2026 \226 atual) Tj ET
+BT /F1 8.7 Tf .12 .12 .12 rg 1 0 0 1 52 573.30 Tm (\225) Tj ET
+BT /F1 8.7 Tf .12 .12 .12 rg 1 0 0 1 65 573.30 Tm (Evolu\347\343o do XGuardian, plataforma SaaS de AppSec e ASPM, com melhorias em funcionalidades e relat\363rios de SAST, SCA,) Tj ET
+BT /F1 8.7 Tf .12 .12 .12 rg 1 0 0 1 65 561.70 Tm (DAST, Container Security e SBOM, favorecendo a visualiza\347\343o e a contextualiza\347\343o de achados de seguran\347a.) Tj ET
+BT /F1 8.7 Tf .12 .12 .12 rg 1 0 0 1 52 548.80 Tm (\225) Tj ET
+BT /F1 8.7 Tf .12 .12 .12 rg 1 0 0 1 65 548.80 Tm (Desenvolvimento e aprimoramento de dashboards, m\351tricas, filtros e fluxos de an\341lise de vulnerabilidades, incluindo controles) Tj ET
+BT /F1 8.7 Tf .12 .12 .12 rg 1 0 0 1 65 537.20 Tm (de cotas de scans por aplica\347\343o e equipe, com foco na consist\352ncia das informa\347\365es e na usabilidade operacional.) Tj ET
+BT /F1 8.7 Tf .12 .12 .12 rg 1 0 0 1 52 524.30 Tm (\225) Tj ET
+BT /F1 8.7 Tf .12 .12 .12 rg 1 0 0 1 65 524.30 Tm (Atua\347\343o na investiga\347\343o e contextualiza\347\343o de vulnerabilidades e depend\352ncias com refer\352ncias como OWASP Top 10, NIST) Tj ET
+BT /F1 8.7 Tf .12 .12 .12 rg 1 0 0 1 65 512.70 Tm (NVD, MITRE CVE/CWE, CVSS e GitHub Advisory Database, considerando tamb\351m o fim de suporte \(EOL\) de componentes.) Tj ET
+BT /F1 8.7 Tf .12 .12 .12 rg 1 0 0 1 52 499.80 Tm (\225) Tj ET
+BT /F1 8.7 Tf .12 .12 .12 rg 1 0 0 1 65 499.80 Tm (Participa\347\343o, junto \340 equipe, no levantamento e desenvolvimento de controles RBAC, envolvendo perfis, permiss\365es,) Tj ET
+BT /F1 8.7 Tf .12 .12 .12 rg 1 0 0 1 65 488.20 Tm (segrega\347\343o de acesso e prote\347\343o de opera\347\365es e APIs para a plataforma.) Tj ET
+BT /F1 8.7 Tf .12 .12 .12 rg 1 0 0 1 52 475.30 Tm (\225) Tj ET
+BT /F1 8.7 Tf .12 .12 .12 rg 1 0 0 1 65 475.30 Tm (Apoio t\351cnico e suporte ao ecossistema Sonatype, documenta\347\343o e troubleshooting de ambientes corporativos, incluindo um) Tj ET
+BT /F1 8.7 Tf .12 .12 .12 rg 1 0 0 1 65 463.70 Tm (cen\341rio do setor financeiro para utiliza\347\343o de centenas de desenvolvedores. Al\351m da participa\347\343o em reuni\365es t\351cnicas com os) Tj ET
+BT /F1 8.7 Tf .12 .12 .12 rg 1 0 0 1 65 452.10 Tm (fornecedores, conduzidas em ingl\352s. Hoje sendo a Xmart Solutions a empresa brasileira parceira da Sonatype com diversos) Tj ET
+BT /F1 8.7 Tf .12 .12 .12 rg 1 0 0 1 65 440.50 Tm (profissionais especializados e capacitados para implementa\347\343o e suporte do ecossistema Sonatype.) Tj ET
+BT /F1 8.7 Tf .12 .12 .12 rg 1 0 0 1 52 427.60 Tm (\225) Tj ET
+BT /F1 8.7 Tf .12 .12 .12 rg 1 0 0 1 65 427.60 Tm (Participa\347\343o na parceria t\351cnica entre Xygeni e Xmart Solutions, com acesso \340 plataforma, capacita\347\343o conduzida por) Tj ET
+BT /F1 8.7 Tf .12 .12 .12 rg 1 0 0 1 65 416.00 Tm (especialistas e avalia\347\343o de recursos de AppSec e seguran\347a da cadeia de software.) Tj ET
+BT /F1 8.7 Tf .12 .12 .12 rg 1 0 0 1 52 403.10 Tm (\225) Tj ET
+BT /F1 8.7 Tf .12 .12 .12 rg 1 0 0 1 65 403.10 Tm (Utiliza\347\343o do Semgrep, OWASP ZAP, Gitleaks e Dependabot em estudos e valida\347\365es.) Tj ET
+BT /F1 8.7 Tf .12 .12 .12 rg 1 0 0 1 52 390.20 Tm (\225) Tj ET
+BT /F1 8.7 Tf .12 .12 .12 rg 1 0 0 1 65 390.20 Tm (Fluxo de trabalho aplicado a IA generativa e automa\347\365es relacionadas a atividades de engenharia e seguran\347a, integrando) Tj ET
+BT /F1 8.7 Tf .12 .12 .12 rg 1 0 0 1 65 378.60 Tm (modelos, agentes e ferramentas por APIs e MCP para apoiar an\341lises t\351cnicas, documenta\347\343o, QA e execu\347\365es controladas de) Tj ET
+BT /F1 8.7 Tf .12 .12 .12 rg 1 0 0 1 65 367.00 Tm (fluxos, com aten\347\343o a permiss\343o e prote\347\343o de dados, gerenciando toda governan\347a de agentes e auditando decis\365es.) Tj ET
+BT /F2 9.2 Tf .12 .12 .12 rg 1 0 0 1 50 354.10 Tm (Estagi\341rio de Desenvolvimento de Sistemas | dez/2025 \226 jun/2026) Tj ET
+BT /F1 8.7 Tf .12 .12 .12 rg 1 0 0 1 52 340.50 Tm (\225) Tj ET
+BT /F1 8.7 Tf .12 .12 .12 rg 1 0 0 1 65 340.50 Tm (Atua\347\343o em suporte t\351cnico, ambientes Linux e Proxmox, observabilidade com Zabbix e Grafana e desenvolvimento web, al\351m) Tj ET
+BT /F1 8.7 Tf .12 .12 .12 rg 1 0 0 1 65 328.90 Tm (de responsabilidades relacionadas a Redes e Infraestrutura. Amplia\347\343o progressiva de responsabilidades at\351 a efetiva\347\343o.) Tj ET
+BT /F2 10.2 Tf .08 .08 .08 rg 1 0 0 1 50 309.80 Tm (FORMA\307\303O ACAD\312MICA) Tj ET
+0.82 0.64 0.14 RG 0.6 w 50 302.80 m 545 302.80 l S
+BT /F1 8.6 Tf .12 .12 .12 rg 1 0 0 1 50 289.80 Tm (UNICID | Tecnologia em An\341lise e Desenvolvimento de Sistemas | jun/2026 \226 dez/2027 \(previs\343o\)) Tj ET
+BT /F1 8.6 Tf .12 .12 .12 rg 1 0 0 1 50 275.80 Tm (SENAI | T\351cnico em Desenvolvimento de Sistemas | jul/2024 \226 jun/2026) Tj ET
+BT /F1 8.6 Tf .12 .12 .12 rg 1 0 0 1 50 261.80 Tm (PROZ | T\351cnico em Inform\341tica para Internet | jan/2023 \226 dez/2024) Tj ET
+BT /F1 7.2 Tf .38 .38 .38 rg 1 0 0 1 320 35 Tm (CARLOS GABRIEL GOMES LUZ | AppSec / DevSecOps | 1) Tj ET
 endstream
 endobj
 8 0 obj
-<< /Length 4764 >>
+<< /Length 5957 >>
 stream
-BT /F2 10.00 Tf .08 .08 .08 rg 1 0 0 1 50.00 781.50 Tm (PROJETOS E INICIATIVAS SELECIONADAS) Tj ET
-0.82 0.62 0.12 RG 0.75 w 50 774.0 m 545 774.0 l S
-BT /F2 9.00 Tf .12 .12 .12 rg 1 0 0 1 50.00 760.80 Tm (APIsec | laborat\363rio autoral de seguran\347a de APIs) Tj ET
-BT /F1 8.70 Tf .12 .12 .12 rg 1 0 0 1 50.00 746.10 Tm (Laborat\363rio p\372blico em FastAPI que simula falhas BOLA, BFLA e BOPLA \(OWASP API Security Top 10:2023\), comparando cen\341rios) Tj ET
-BT /F1 8.70 Tf .12 .12 .12 rg 1 0 0 1 50.00 734.60 Tm (vulner\341veis e protegidos. Testes com Pytest, an\341lise est\341tica com Ruff e Bandit, GitHub Actions, Docker e gera\347\343o de relat\363rios) Tj ET
-BT /F1 8.70 Tf .12 .12 .12 rg 1 0 0 1 50.00 723.10 Tm (Markdown/JSON. Cen\341rios isolados, dados fict\355cios e sem explora\347\343o de terceiros. github.com/CarlossgLuz/APIsec-LabTest) Tj ET
-BT /F2 9.00 Tf .12 .12 .12 rg 1 0 0 1 50.00 708.40 Tm (Open-Vaultin | AI Agent Harness Governance | open source) Tj ET
-BT /F1 8.70 Tf .12 .12 .12 rg 1 0 0 1 50.00 693.70 Tm (Projeto autoral open source em evolu\347\343o cont\355nua \(Early V1\), escrito em Python. Camada local-first de governan\347a de agent harness:) Tj ET
-BT /F1 8.70 Tf .12 .12 .12 rg 1 0 0 1 50.00 682.20 Tm (agentes e skills, pol\355ticas, roteamento de tarefas com modelo decisor JEV/TypeSafe e fallback determin\355stico, hooks do Codex,) Tj ET
-BT /F1 8.70 Tf .12 .12 .12 rg 1 0 0 1 50.00 670.70 Tm (registro persistente de execu\347\365es, evid\352ncias, conhecimento versionado e sincroniza\347\343o Git/MCP. O cliente permanece respons\341vel) Tj ET
-BT /F1 8.70 Tf .12 .12 .12 rg 1 0 0 1 50.00 659.20 Tm (pelo loop principal; enforcement depende da integra\347\343o. github.com/CarlossgLuz/Open-Vaultin) Tj ET
-BT /F2 9.00 Tf .12 .12 .12 rg 1 0 0 1 50.00 644.50 Tm (Sistema de QA automatizado | iniciativa interna) Tj ET
-BT /F1 8.70 Tf .12 .12 .12 rg 1 0 0 1 50.00 629.80 Tm (Desenvolvimento de solu\347\343o de valida\347\343o pr\351 e p\363s-release para funcionalidades, integra\347\365es, permiss\365es e pipelines por APIs, com) Tj ET
-BT /F1 8.70 Tf .12 .12 .12 rg 1 0 0 1 50.00 618.30 Tm (execu\347\365es controladas, coleta de evid\352ncias e rastreabilidade.) Tj ET
-BT /F2 9.00 Tf .12 .12 .12 rg 1 0 0 1 50.00 603.60 Tm (Benchmarking de ferramentas SAST) Tj ET
-BT /F1 8.70 Tf .12 .12 .12 rg 1 0 0 1 50.00 588.90 Tm (Elabora\347\343o de cen\341rios controlados com refer\352ncias como OWASP Benchmark para avaliar cobertura, precis\343o, falsos positivos e) Tj ET
-BT /F1 8.70 Tf .12 .12 .12 rg 1 0 0 1 50.00 577.40 Tm (falsos negativos, apoiando compara\347\365es t\351cnicas.) Tj ET
-BT /F2 10.00 Tf .08 .08 .08 rg 1 0 0 1 50.00 555.20 Tm (COMPET\312NCIAS T\311CNICAS) Tj ET
-0.82 0.62 0.12 RG 0.75 w 50 547.7 m 545 547.7 l S
-BT /F1 8.65 Tf .12 .12 .12 rg 1 0 0 1 50.00 534.50 Tm (AppSec / DevSecOps: ASPM, SAST, SCA, DAST, Container Security, Secrets Scanning, SBOM, Secure SDLC, vulnerabilidades,) Tj ET
-BT /F1 8.65 Tf .12 .12 .12 rg 1 0 0 1 50.00 523.00 Tm (supply chain security, RBAC.) Tj ET
-BT /F1 8.65 Tf .12 .12 .12 rg 1 0 0 1 50.00 508.70 Tm (An\341lise de seguran\347a: OWASP Top 10, OWASP API Security Top 10, NVD, CVE/CWE, CVSS, GitHub Advisory Database; testes de) Tj ET
-BT /F1 8.65 Tf .12 .12 .12 rg 1 0 0 1 50.00 497.20 Tm (autoriza\347\343o BOLA/BFLA/BOPLA.) Tj ET
-BT /F1 8.65 Tf .12 .12 .12 rg 1 0 0 1 50.00 482.90 Tm (Ferramentas: Sonatype Nexus Repository/Lifecycle/Firewall, XGuardian, Xygeni, Semgrep, OWASP ZAP, Gitleaks, Dependabot, Ruff,) Tj ET
-BT /F1 8.65 Tf .12 .12 .12 rg 1 0 0 1 50.00 471.40 Tm (Bandit, Pytest.) Tj ET
-BT /F1 8.65 Tf .12 .12 .12 rg 1 0 0 1 50.00 457.10 Tm (IA / automa\347\343o: AI Agent Harness Governance, agentes/skills, JEV/TypeSafe, roteamento e fallback, MCP, APIs, registros de) Tj ET
-BT /F1 8.65 Tf .12 .12 .12 rg 1 0 0 1 50.00 445.60 Tm (execu\347\343o, CI/CD.) Tj ET
-BT /F1 8.65 Tf .12 .12 .12 rg 1 0 0 1 50.00 431.30 Tm (Desenvolvimento / opera\347\365es: Python, FastAPI, JS/TS, React/Next.js, SQL, Git, GitHub Actions, GitLab CI/CD, Linux, Docker,) Tj ET
-BT /F1 8.65 Tf .12 .12 .12 rg 1 0 0 1 50.00 419.80 Tm (AWS/Azure, Proxmox, Zabbix/Grafana.) Tj ET
-BT /F2 10.00 Tf .08 .08 .08 rg 1 0 0 1 50.00 398.00 Tm (CERTIFICA\307\325ES E IDIOMAS) Tj ET
-0.82 0.62 0.12 RG 0.75 w 50 390.5 m 545 390.5 l S
-BT /F1 8.70 Tf .12 .12 .12 rg 1 0 0 1 50.00 377.30 Tm (Microsoft Azure Fundamentals \(AZ-900\) | fev/2026 \225 Scrum Foundation Professional Certification \(SFPC\) | out/2024) Tj ET
-BT /F1 8.70 Tf .12 .12 .12 rg 1 0 0 1 50.00 363.00 Tm (Ingl\352s: B2 \(intermedi\341rio superior\) | documenta\347\343o e reuni\365es t\351cnicas; em aperfei\347oamento.) Tj ET
-BT /F1 7.2 Tf .40 .40 .40 rg 1 0 0 1 319 34 Tm (CARLOS GABRIEL GOMES LUZ | AppSec / DevSecOps | 2) Tj ET
+BT /F2 10.2 Tf .08 .08 .08 rg 1 0 0 1 50 779.80 Tm (PROJETOS E INICIATIVAS SELECIONADAS) Tj ET
+0.82 0.64 0.14 RG 0.6 w 50 772.80 m 545 772.80 l S
+BT /F2 9.2 Tf .12 .12 .12 rg 1 0 0 1 50 759.80 Tm (Sistema de QA \(Quality Assurance\) automatizado para valida\347\365es de plataforma) Tj ET
+BT /F1 8.55 Tf .12 .12 .12 rg 1 0 0 1 50 746.20 Tm (Desenvolvimento de solu\347\343o interna para apoiar testes pr\351 e p\363s-release da plataforma, abrangendo valida\347\343o de funcionalidades,) Tj ET
+BT /F1 8.55 Tf .12 .12 .12 rg 1 0 0 1 50 734.65 Tm (integra\347\365es e permiss\365es, com execu\347\365es controladas customiz\341veis, registro de evid\352ncias e rastreabilidade. Iniciativa voltada a) Tj ET
+BT /F1 8.55 Tf .12 .12 .12 rg 1 0 0 1 50 723.10 Tm (reduzir a depend\352ncia de verifica\347\365es exclusivamente manuais, economizando tempo e profissionais para as valida\347\365es.) Tj ET
+BT /F2 9.2 Tf .12 .12 .12 rg 1 0 0 1 50 708.55 Tm (Benchmarking de ferramentas SAST) Tj ET
+BT /F1 8.55 Tf .12 .12 .12 rg 1 0 0 1 50 694.95 Tm (Elabora\347\343o e evolu\347\343o de cen\341rios controlados baseados em refer\352ncias reconhecidas, como o OWASP Benchmark, para avaliar) Tj ET
+BT /F1 8.55 Tf .12 .12 .12 rg 1 0 0 1 50 683.40 Tm (cobertura, precis\343o e ocorr\352ncia de falsos positivos e falsos negativos, apoiando a an\341lise comparativa de ferramentas e a valida\347\343o) Tj ET
+BT /F1 8.55 Tf .12 .12 .12 rg 1 0 0 1 50 671.85 Tm (t\351cnica de resultados de seguran\347a.) Tj ET
+BT /F2 9.2 Tf .12 .12 .12 rg 1 0 0 1 50 657.30 Tm (Orquestra\347\343o e auditoria de agentes e skills com IA) Tj ET
+BT /F1 8.55 Tf .12 .12 .12 rg 1 0 0 1 50 643.70 Tm (Explora\347\343o e desenvolvimento de fluxos com modelos comerciais e abertos, agentes, APIs e Model Context Protocol \(MCP\),) Tj ET
+BT /F1 8.55 Tf .12 .12 .12 rg 1 0 0 1 50 632.15 Tm (voltados \340 automa\347\343o de rotinas t\351cnicas. \312nfase em governan\347a, rastreabilidade, controle de acesso e uso respons\341vel de) Tj ET
+BT /F1 8.55 Tf .12 .12 .12 rg 1 0 0 1 50 620.60 Tm (modelos.) Tj ET
+BT /F2 9.2 Tf .12 .12 .12 rg 1 0 0 1 50 606.05 Tm (Open-Vaultin | AI Agent Harness Governance | open source) Tj ET
+BT /F1 8.55 Tf .12 .12 .12 rg 1 0 0 1 50 592.45 Tm (Projeto autoral, independente e open source, em aprimoramento cont\355nuo \(Early V1\), voltado a Harness Engineering e governan\347a) Tj ET
+BT /F1 8.55 Tf .12 .12 .12 rg 1 0 0 1 50 580.90 Tm (de agentes de IA. Implementa agentes e skills, pol\355ticas, hooks do Codex, contexto persistente, registro de execu\347\365es e) Tj ET
+BT /F1 8.55 Tf .12 .12 .12 rg 1 0 0 1 50 569.35 Tm (evid\352ncias, sincroniza\347\343o Git/MCP e roteamento consultivo com modelo decisor JEV/TypeSafe e fallback determin\355stico. O cliente) Tj ET
+BT /F1 8.55 Tf .12 .12 .12 rg 1 0 0 1 50 557.80 Tm (mant\351m o loop principal; as garantias de execu\347\343o dependem da integra\347\343o. github.com/CarlossgLuz/Open-Vaultin) Tj ET
+BT /F2 9.2 Tf .12 .12 .12 rg 1 0 0 1 50 543.25 Tm (APIsec | laborat\363rio autoral de seguran\347a de APIs) Tj ET
+BT /F1 8.55 Tf .12 .12 .12 rg 1 0 0 1 50 529.65 Tm (Laborat\363rio p\372blico em FastAPI para demonstrar BOLA, BFLA e BOPLA \(OWASP API Security Top 10:2023\), comparando) Tj ET
+BT /F1 8.55 Tf .12 .12 .12 rg 1 0 0 1 50 518.10 Tm (comportamentos vulner\341veis e protegidos em cen\341rios isolados com dados fict\355cios. Inclui testes Pytest, Ruff, Bandit, Docker, CI) Tj ET
+BT /F1 8.55 Tf .12 .12 .12 rg 1 0 0 1 50 506.55 Tm (pelo GitHub Actions e relat\363rios de evid\352ncias Markdown/JSON. N\343o executa scans de terceiros.) Tj ET
+BT /F1 8.55 Tf .12 .12 .12 rg 1 0 0 1 50 495.00 Tm (github.com/CarlossgLuz/APIsec-LabTest) Tj ET
+BT /F2 10.2 Tf .08 .08 .08 rg 1 0 0 1 50 474.25 Tm (COMPET\312NCIAS T\311CNICAS) Tj ET
+0.82 0.64 0.14 RG 0.6 w 50 467.25 m 545 467.25 l S
+BT /F1 8.5 Tf .12 .12 .12 rg 1 0 0 1 50 454.25 Tm (AppSec e DevSecOps: CI/CD, ASPM, SAST, SCA, DAST, Container Security, Secrets Scanning, SBOM, Secure SDLC, Secure Code) Tj ET
+BT /F1 8.5 Tf .12 .12 .12 rg 1 0 0 1 50 442.65 Tm (Review, Vulnerability Management, EOL, Supply Chain Security e RBAC.) Tj ET
+BT /F1 8.5 Tf .12 .12 .12 rg 1 0 0 1 50 428.25 Tm (An\341lise de vulnerabilidades: OWASP Top 10, NIST NVD, MITRE CVE/CWE, CVSS, GitHub Advisory Database.) Tj ET
+BT /F1 8.5 Tf .12 .12 .12 rg 1 0 0 1 50 413.85 Tm (Ferramentas e integra\347\365es: XGuardian, Sonatype Guide, Nexus Repository, Nexus Lifecycle/IQ, Nexus Firewall, Xygeni, Semgrep,) Tj ET
+BT /F1 8.5 Tf .12 .12 .12 rg 1 0 0 1 50 402.25 Tm (OWASP ZAP, Gitleaks, Dependabot, GitHub Actions e GitLab CI/CD.) Tj ET
+BT /F1 8.5 Tf .12 .12 .12 rg 1 0 0 1 50 387.85 Tm (IA e automa\347\343o: LLMs comerciais e open source, Hugging Face, agentes, APIs, MCP, roteamento de modelos, engenharia de) Tj ET
+BT /F1 8.5 Tf .12 .12 .12 rg 1 0 0 1 50 376.25 Tm (prompts, orquestra\347\343o de fluxos e governan\347a.) Tj ET
+BT /F1 8.5 Tf .12 .12 .12 rg 1 0 0 1 50 361.85 Tm (Desenvolvimento e opera\347\365es: Python, JavaScript, TypeScript, React, Next.js, APIs REST, SQL, Git/GitHub, Linux, Docker,) Tj ET
+BT /F1 8.5 Tf .12 .12 .12 rg 1 0 0 1 50 350.25 Tm (AWS, Azure, Proxmox, Zabbix, Grafana e Prometheus.) Tj ET
+BT /F2 10.2 Tf .08 .08 .08 rg 1 0 0 1 50 329.65 Tm (CERTIFICA\307\325ES E IDIOMAS) Tj ET
+0.82 0.64 0.14 RG 0.6 w 50 322.65 m 545 322.65 l S
+BT /F1 8.6 Tf .12 .12 .12 rg 1 0 0 1 50 309.65 Tm (Microsoft Azure Fundamentals \(AZ-900\) | fev/2026) Tj ET
+BT /F1 8.6 Tf .12 .12 .12 rg 1 0 0 1 50 295.55 Tm (Scrum Foundation Professional Certification \(SFPC\) | out/2024 \226 out/2027) Tj ET
+BT /F1 8.6 Tf .12 .12 .12 rg 1 0 0 1 50 281.45 Tm (Ingl\352s: B2 \(intermedi\341rio superior\) | Uso em documenta\347\343o e reuni\365es t\351cnicas internacionais, em aperfei\347oamento com aulas) Tj ET
+BT /F1 8.6 Tf .12 .12 .12 rg 1 0 0 1 50 269.85 Tm (particulares.) Tj ET
+BT /F1 7.2 Tf .38 .38 .38 rg 1 0 0 1 320 35 Tm (CARLOS GABRIEL GOMES LUZ | AppSec / DevSecOps | 2) Tj ET
 endstream
 endobj
 xref
@@ -121,9 +131,9 @@ xref
 0000000405 00000 n 
 0000000502 00000 n 
 0000000604 00000 n 
-0000007510 00000 n 
+0000007747 00000 n 
 trailer
 << /Size 9 /Root 1 0 R >>
 startxref
-12325
+13755
 %%EOF
